@@ -1,0 +1,37 @@
+# Project exclude paths
+/local.properties
+/.idea/
+*.iml
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/classes/
+/build/
+
+# Play / release signing (never commit secrets)
+keystore.properties
+*.jks
+*.keystore
+app/release/app-release.aab
+
+# Native build intermediates
+.cxx/
+build/
+app/build/
+**/build/
+**/.cxx/
+.aider*
+/app/release/app-release.apk
+/app/release/output-metadata.json
+/tools/i18n.py
+/fix_strings.py
+.bug-hunter/
+*.zip
+/AssemblyDroid/
+__pycache__/
+*.pyc
+.DS_Store
+**/.DS_Store
+.mimocode/
+
+# Installable binaries are published as GitHub Release assets
+/artifacts/*.apk
