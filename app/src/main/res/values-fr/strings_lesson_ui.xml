@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Détection automatique (système)</string>
+    <string name="lesson_playground_show">⚡ Bac à sable</string>
+    <string name="lesson_playground_hide">⚡ Masquer l’éditeur</string>
+</resources>

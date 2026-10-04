@@ -1,0 +1,1 @@
+PASS browser platform: actual AVR worker GPIO, virtual clocks, pause/single-step/reset/resume/stop, registers,multichannel graph/trigger/virtualVCD/decoder,numeric SPICE save/export,339board matrix,component matrix,library/USBcontrols,group copy with wire/undo/alignment,scene search/navigation,narrowdialog

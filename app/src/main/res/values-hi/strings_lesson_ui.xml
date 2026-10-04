@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">स्वतः पहचान (सिस्टम)</string>
+    <string name="lesson_playground_show">⚡ प्लेग्राउंड</string>
+    <string name="lesson_playground_hide">⚡ एडिटर छिपाएँ</string>
+</resources>

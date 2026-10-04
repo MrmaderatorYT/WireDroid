@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Încă nu există o cheie API — atinge „Cheie” pentru a adăuga una.</string>
+    <string name="ai_err_hint_model">Acest model nu este disponibil pentru cheia ta. Alege altul din listă.</string>
+    <string name="ai_err_hint_key">Verifică cheia API, apoi numele modelului.</string>
+    <string name="ai_err_hint_rejected">Cheia a fost respinsă. Atinge „Cheie” și folosește „Salvează și verifică” pentru a afla de ce.</string>
+    <string name="ai_err_hint_rate">Prea multe cereri — așteaptă puțin și încearcă din nou.</string>
+    <string name="ai_err_hint_google">Partea Google are probleme acum. De obicei o nouă încercare funcționează.</string>
+    <string name="ai_err_empty">Răspuns gol — bugetul de ieșire s-a consumat probabil pe raționamentul intern. Reîncearcă sau reformulează.</string>
+    <string name="ai_err_network">Eroare de rețea: %1$s</string>
+    <string name="ai_key_works">Cheia funcționează.</string>
+    <string name="ai_key_rejected">Google a respins această cheie (HTTP %1$d).%2$s\n\nDe obicei a fost revocată, aparține unui proiect cu Generative Language API dezactivat sau a fost copiată doar parțial.</string>
+    <string name="ai_key_check_failed">Cheia nu a putut fi verificată: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Nu s-a putut contacta Google pentru verificarea cheii: %1$s</string>
+    <string name="ai_key_problem_empty">Cheia este goală.</string>
+    <string name="ai_key_problem_url">Aceasta este o adresă web, nu o cheie. Deschide-o și copiază cheia afișată.</string>
+    <string name="ai_key_problem_openai">Pare o cheie OpenAI. Acest asistent folosește Google Gemini; obține o cheie la aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Cheia pare trunchiată la %1$d caractere. Verifică dacă a fost copiată integral.</string>
+</resources>

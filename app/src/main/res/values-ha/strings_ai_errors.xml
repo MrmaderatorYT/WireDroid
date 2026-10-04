@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Babu maɓallin API tukuna — danna “Maɓalli” don ƙara ɗaya.</string>
+    <string name="ai_err_hint_model">Wannan samfurin ba ya samuwa ga maɓallinka. Zaɓi wani daga jerin.</string>
+    <string name="ai_err_hint_key">Duba maɓallin API, sannan sunan samfurin.</string>
+    <string name="ai_err_hint_rejected">An ƙi maɓallin. Danna “Maɓalli” ka yi amfani da “Ajiye kuma tabbatar” don ganin dalili.</string>
+    <string name="ai_err_hint_rate">An iyakance yawan buƙatu — jira kaɗan ka sake gwadawa.</string>
+    <string name="ai_err_hint_google">Ɓangaren Google yana kasawa yanzu. Sake gwadawa yakan yi aiki.</string>
+    <string name="ai_err_empty">Amsa mara komai — mai yiwuwa an kashe kasafin fitarwa a tunani na ciki. Sake gwadawa ko sake tsara tambayar.</string>
+    <string name="ai_err_network">Kuskuren hanyar sadarwa: %1$s</string>
+    <string name="ai_key_works">Maɓallin yana aiki.</string>
+    <string name="ai_key_rejected">Google ya ƙi wannan maɓallin (HTTP %1$d).%2$s\n\nSau da yawa an soke shi, na aikin da aka kashe Generative Language API ne, ko kuma an kwafe shi bai cika ba.</string>
+    <string name="ai_key_check_failed">An kasa duba maɓallin: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">An kasa isa ga Google don duba maɓallin: %1$s</string>
+    <string name="ai_key_problem_empty">Maɓallin babu komai.</string>
+    <string name="ai_key_problem_url">Wannan adireshin yanar gizo ne, ba maɓalli ba. Buɗe shi sannan ka kwafe maɓallin da ya nuna.</string>
+    <string name="ai_key_problem_openai">Wannan yayi kama da maɓallin OpenAI. Wannan mataimakin yana amfani da Google Gemini; sami maɓalli a aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Maɓallin ya yi kama da yankakke a haruffa %1$d. Duba ko an kwafe shi duka.</string>
+</resources>

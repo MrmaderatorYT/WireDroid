@@ -1,0 +1,2 @@
+PASS (.cpp): full IDE editor/tabs/toolbar, right drawer docking and close, inline sketch opening, source resolution, unsaved editor compilation, real Clang C++17 build, native GPIO, visible LED HIGH/LOW, digitalRead INPUT_PULLUP roundtrip, compiler diagnostics, stop.
+

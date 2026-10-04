@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Kunci</string>
+    <string name="ai_ready">Pembantu AI sedia. Tanya tentang Java, minta kod diterangkan, cari pepijat, refaktor, optimumkan atau jana ujian.</string>
+    <string name="ai_loaded_file">%1$s dimuatkan (%2$d aksara). Tanya apa-apa tentang kod ini.</string>
+    <string name="ai_loaded_file_short">%1$s dimuatkan (%2$d aksara).</string>
+    <string name="ai_key_not_set">Belum ada kunci API. Ketik “Kunci” untuk menambah kunci Gemini anda dari aistudio.google.com</string>
+    <string name="ai_key_needed_first">Tambah kunci API anda dahulu — ketik “Kunci”.</string>
+    <string name="ai_model_changed">Model ditukar kepada %1$s</string>
+    <string name="ai_key_saved_checking">Kunci disimpan. Sedang menyemaknya dengan Google…</string>
+    <string name="ai_key_verified">Kunci disahkan. Model: %1$s</string>
+    <string name="ai_key_saved_unverified">Kunci telah disimpan, tetapi semakan tidak lulus:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Tidak dapat menyimpan kunci</string>
+    <string name="ai_key_save_failed_message">Storan selamat peranti ini menolaknya, jadi kunci tidak disimpan. Ia sengaja tidak disimpan tanpa penyulitan.</string>
+    <string name="ai_key_check_title">Semak kunci ini</string>
+    <string name="ai_key_save_anyway">Simpan juga</string>
+    <string name="ai_key_save_verify">Simpan &amp; sahkan</string>
+    <string name="ai_key_get">Dapatkan kunci</string>
+    <string name="ai_insert_into_editor">↧ Sisip ke editor</string>
+    <string name="ai_insert_desc">Sisipkan kod ini ke dalam editor yang terbuka</string>
+    <string name="ai_queued">Dalam baris gilir (%1$s) — kembali ke editor untuk menggunakannya</string>
+</resources>

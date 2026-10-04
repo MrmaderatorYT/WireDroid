@@ -1,0 +1,27 @@
+10-03 03:06:01.309 15208 15208 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 15208 (linker64), pid 15208 (linker64)
+10-03 03:06:01.378 15227 15227 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-03 03:06:01.378 15227 15227 F DEBUG   : Build fingerprint: 'samsung/gts4lvwifixx/gts4lvwifi:11/RP1A.200720.012/T720XXS3DWA1:user/release-keys'
+10-03 03:06:01.378 15227 15227 F DEBUG   : Revision: '9'
+10-03 03:06:01.379 15227 15227 F DEBUG   : ABI: 'arm64'
+10-03 03:06:01.379 15227 15227 F DEBUG   : Processor: '4'
+10-03 03:06:01.380 15227 15227 F DEBUG   : Timestamp: 2026-10-03 03:06:01+0300
+10-03 03:06:01.380 15227 15227 F DEBUG   : pid: 15208, tid: 15208, name: linker64  >>> /system/bin/linker64 <<<
+10-03 03:06:01.380 15227 15227 F DEBUG   : uid: 10453
+10-03 03:06:01.380 15227 15227 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0
+10-03 03:06:01.380 15227 15227 F DEBUG   : Cause: null pointer dereference
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x0  0000007b0aab0710  x1  0000000000000000  x2  0000000000000000  x3  0000000000000000
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x4  0000563dfc000000  x5  61642f617461642f  x6  0000007b0bc03000  x7  00000000031f53b0
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x8  0000000000000000  x9  0000000000000000  x10 0000000000004001  x11 0000000000000000
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x12 0000000000000018  x13 000000006ac046e9  x14 00120c6847443a9b  x15 000065713cff59cc
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x16 0000007b0a4ce930  x17 0000007b0a4c329c  x18 0000007b0b90a000  x19 0000007b0aab0710
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x20 0000007fffab8a18  x21 0000007fffab8a30  x22 0000000000000001  x23 0000000000000000
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x24 0000000000000000  x25 0000000000000000  x26 0000000000000000  x27 0000000000000000
+10-03 03:06:01.380 15227 15227 F DEBUG   :     x28 0000000000000000  x29 0000007fffab88e0
+10-03 03:06:01.380 15227 15227 F DEBUG   :     lr  0000007b0aaa2dd0  sp  0000007fffab88e0  pc  0000007b0aaa07e4  pst 0000000060000000
+10-03 03:06:01.386 15227 15227 F DEBUG   : backtrace:
+10-03 03:06:01.386 15227 15227 F DEBUG   :     NOTE: Function names and BuildId information is missing for some frames due
+10-03 03:06:01.386 15227 15227 F DEBUG   :     NOTE: to unreadable libraries. For unwinds of apps, only shared libraries
+10-03 03:06:01.386 15227 15227 F DEBUG   :     NOTE: found under the lib/ directory are readable.
+10-03 03:06:01.386 15227 15227 F DEBUG   :       #00 pc 00000000000087e4  /data/data/com.ccs.wiredroid/cache/embedded/uno/simulation.elf
+10-03 03:06:01.386 15227 15227 F DEBUG   :       #01 pc 000000000000adcc  /data/data/com.ccs.wiredroid/cache/embedded/uno/simulation.elf
+10-03 03:06:01.386 15227 15227 F DEBUG   :       #02 pc 0000000000088170  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+108) (BuildId: c919444c281fb53f55fdb0ff16ae9dbd)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shown as the last row when the findings list was cut short. -->
+    <string name="problems_truncated">…and %1$d more findings not shown</string>
+    <!-- Shown instead of an empty list when the compiler could not be run at all. -->
+    <string name="problems_analysis_failed">Could not analyse this file: %1$s</string>
+    <string name="problems_filter_errors">Errors %1$d</string>
+    <string name="problems_filter_security">Security %1$d</string>
+    <string name="problems_filter_warnings">Warnings %1$d</string>
+    <string name="problems_filter_info">Info %1$d</string>
+    <string name="problems_all_filtered">Everything found is filtered out. Tick a box above to see it.</string>
+    <string name="problems_none">No problems found.</string>
+    <string name="problems_scope_current">This file only</string>
+</resources>

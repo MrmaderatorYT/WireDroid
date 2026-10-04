@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Usuń</string>
+    <string name="ai_history_delete_message">„%1$s” zostanie trwale usunięty.</string>
+    <string name="ai_history_delete_title">Usunąć tę rozmowę?</string>
+    <string name="ai_history_empty">Nie ma jeszcze zapisanych rozmów. Zapytaj o coś asystenta, a pojawi się tutaj.</string>
+    <string name="ai_history_meta">%1$d wiadomości · %2$s</string>
+    <string name="ai_history_restored">Przywrócono zapisaną rozmowę (%1$d wiadomości).</string>
+    <string name="ai_history_title">Zapisane rozmowy</string>
+    <string name="ai_history_untitled">Rozmowa bez tytułu</string>
+    <string name="ai_new_chat">Nowa rozmowa</string>
+    <string name="ai_new_chat_started">Rozpoczęto nową rozmowę. Poprzednia jest zapisana.</string>
+    <string name="md_pane_preview_on">Wyrenderowano tutaj. Dotknij oka ponownie, aby wrócić do edytora.</string>
+</resources>

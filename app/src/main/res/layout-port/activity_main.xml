@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/idea_bg">
+
+    <!-- ══════════════ MAIN CONTENT ══════════════ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- The entire action row scrolls when the constructor narrows the IDE. -->
+        <HorizontalScrollView android:id="@+id/toolbarScroller"
+            android:layout_width="match_parent" android:layout_height="44dp"
+            android:fillViewport="true" android:scrollbars="horizontal"
+            android:background="@color/idea_toolbar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:maxWidth="160dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/idea_text"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif" />
+
+            <!-- Undo / Redo handled by menu -->
+
+            <TextView
+                android:id="@+id/toolbarBack"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="@color/idea_text"
+                android:textSize="18sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone"
+                android:contentDescription="@string/a11y_back" />
+
+            <TextView
+                android:id="@+id/toolbarOverflow"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                
+                android:gravity="center"
+                android:text="⋮"
+                android:textColor="@color/idea_text"
+                android:textSize="20sp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/a11y_overflow_menu" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        </HorizontalScrollView>
+
+        <!--
+            ── MENU BAR ──
+            Filled in code by EditorMenuBar; a host rather than a static layout
+            because the menus are built from the same action names the command
+            palette uses, and one list is easier to keep honest than two.
+        -->
+        <LinearLayout
+            android:id="@+id/menuBarHost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/idea_toolbar" />
+
+        <View
+            android:id="@+id/menuBarSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/idea_separator" />
+
+        <!-- ── FILE TABS BAR ── -->
+        <LinearLayout
+            android:id="@+id/tabsBar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/idea_toolbar">
+
+            <!--
+                One strip per editor pane, laid out with the same 1:1 weights as
+                the panes below, so a tab always sits over the editor it opens in.
+                The second strip is gone until the view is split.
+            -->
+            <LinearLayout
+                android:id="@+id/tabsGroup1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tabsRecycler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:scrollbars="none" />
+
+                <!-- New tab button -->
+                <TextView
+                    android:id="@+id/btnNewTab"
+                    android:layout_width="36dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textColor="@color/idea_text_dim"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/a11y_new_tab" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tabsGroupDivider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/idea_tab_border"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/tabsGroup2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tabsRecycler2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Active tab accent line -->
+        <View
+            android:id="@+id/tabBorder"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/idea_tab_border" />
+
+        <!-- ── FIND & REPLACE BAR (hidden by default) ── -->
+        <ViewStub
+            android:id="@+id/stubFindBar"
+            android:layout="@layout/panel_find_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- ── KEY ACCESSORY BAR & QUICK FIX ── -->
+        <LinearLayout
+            android:id="@+id/accessoryBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:background="@color/idea_toolbar"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <!-- IntelliJ Quick-Fix Lightbulb Button -->
+            <ImageView
+                android:id="@+id/btnLightbulb"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:scaleType="centerInside"
+                android:padding="4dp"
+                android:src="@drawable/ic_lightbulb"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:visibility="gone"
+                android:contentDescription="Quick Fix" />
+
+            <HorizontalScrollView
+                android:id="@+id/keyAccessoryBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/accessoryBarLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="6dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- ── BREADCRUMBS BAR (path + enclosing member) ──
+             Deliberately a sibling of the editor, not an overlay on it: taps
+             here can never reach the editor text or start a selection. -->
+        <com.ccs.wiredroid.ui.BreadcrumbBar
+            android:id="@+id/breadcrumbBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:contentDescription="@string/crumb_a11y_bar" />
+
+        <!-- ── EDITORS CONTAINER (SPLIT) ── -->
+        <LinearLayout
+            android:id="@+id/editorsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/wrapperEditor1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="1dp">
+
+                <com.ccs.wiredroid.ui.WireDroidCodeEditor
+                    android:id="@+id/editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_editor" />
+
+                <com.ccs.wiredroid.ui.InlayHintsOverlay
+                    android:id="@+id/inlayOverlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ccs.wiredroid.debug.BreakpointOverlay
+                    android:id="@+id/breakpointOverlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_breakpoint_overlay" />
+
+                <com.ccs.wiredroid.debug.BookmarkOverlay
+                    android:id="@+id/bookmarkOverlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_bookmark_overlay" />
+
+                <com.ccs.wiredroid.ui.GitGutterOverlay
+                    android:id="@+id/gitGutterOverlay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/gutter_a11y_overlay" />
+
+
+                <!--
+                    Problems mapped onto the editor's height, so a file longer
+                    than the screen still shows where its errors are. Sits left
+                    of the minimap so the two do not overlap when both are on.
+                -->
+                <com.ccs.wiredroid.ui.ErrorStripeOverlay
+                    android:id="@+id/errorStripe1"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="48dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/a11y_error_stripe" />
+                <com.ccs.wiredroid.ui.MinimapView
+                    android:id="@+id/minimapView1"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:alpha="0.85"
+                    android:contentDescription="@string/a11y_minimap" />
+            </FrameLayout>
+
+            <View
+                android:id="@+id/editorDivider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/idea_separator"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:id="@+id/wrapperEditor2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="1dp"
+                android:visibility="gone">
+
+                <com.ccs.wiredroid.ui.WireDroidCodeEditor
+                    android:id="@+id/editor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_editor2" />
+
+                <com.ccs.wiredroid.ui.InlayHintsOverlay
+                    android:id="@+id/inlayOverlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ccs.wiredroid.debug.BreakpointOverlay
+                    android:id="@+id/breakpointOverlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_breakpoint_overlay" />
+
+                <com.ccs.wiredroid.debug.BookmarkOverlay
+                    android:id="@+id/bookmarkOverlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/a11y_bookmark_overlay" />
+
+                <com.ccs.wiredroid.ui.GitGutterOverlay
+                    android:id="@+id/gitGutterOverlay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/gutter_a11y_overlay" />
+
+
+                <!--
+                    Problems mapped onto the editor's height, so a file longer
+                    than the screen still shows where its errors are. Sits left
+                    of the minimap so the two do not overlap when both are on.
+                -->
+                <com.ccs.wiredroid.ui.ErrorStripeOverlay
+                    android:id="@+id/errorStripe2"
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="48dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/a11y_error_stripe" />
+                <com.ccs.wiredroid.ui.MinimapView
+                    android:id="@+id/minimapView2"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:alpha="0.85"
+                    android:visibility="gone"
+                    android:contentDescription="@string/a11y_minimap" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Editor / Console divider (draggable) -->
+        <View
+            android:id="@+id/consoleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/idea_separator" />
+
+        <!-- ── DEBUG TOOLBAR (hidden by default) ── -->
+        <ViewStub
+            android:id="@+id/stubDebugToolbar"
+            android:layout="@layout/panel_debug_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <!-- ── BOTTOM PANEL TABS (scrollable so Bytecode stays reachable on narrow screens) ── -->
+        <LinearLayout
+            android:id="@+id/bottomTabsBar"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:background="@color/idea_toolbar">
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fillViewport="false"
+                android:scrollbars="none"
+                android:fadeScrollbars="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tabRun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_run"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_run" />
+
+                    <TextView
+                        android:id="@+id/tabProblems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_problems"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_problems" />
+
+                    <TextView
+                        android:id="@+id/tabBytecode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_bytecode"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_bytecode" />
+
+                    <TextView
+                        android:id="@+id/tabDebug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_debug"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:contentDescription="@string/a11y_tab_debug" />
+
+                    <TextView
+                        android:id="@+id/tabDebugConsole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_debug_console"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:contentDescription="@string/a11y_tab_debug_console" />
+
+                    <TextView
+                        android:id="@+id/tabCallGraph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_call_graph"
+                        android:textColor="@color/idea_accent"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_call_graph" />
+
+                    <TextView
+                        android:id="@+id/tabBookmarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_bookmarks"
+                        android:textSize="14sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_bookmarks" />
+
+                    <TextView
+                        android:id="@+id/tabDeps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_deps"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_deps" />
+
+                    <TextView
+                        android:id="@+id/tabProfiler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_profiler"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_profiler" />
+
+                    <TextView
+                        android:id="@+id/tabTodo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_todo"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="@string/a11y_tab_todo" />
+
+                    <TextView
+                        android:id="@+id/tabConsole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/tab_console"
+                        android:textSize="11sp"
+                        android:clickable="true"
+                        android:focusable="true" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Switch
+                android:id="@+id/toggleLiveMetrics"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="72dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="2dp"
+                android:text="@string/run_metrics_toggle"
+                android:textColor="@color/idea_text_dim"
+                android:textSize="10sp"
+                android:showText="false"
+                android:switchMinWidth="32dp"
+                android:switchPadding="4dp"
+                android:visibility="gone"
+                android:contentDescription="@string/a11y_run_metrics_toggle"
+                android:tooltipText="@string/a11y_run_metrics_toggle" />
+
+            <TextView
+                android:id="@+id/btnCopyPanel"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:text="⎘"
+                android:textColor="@color/idea_text_dim"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Copy to clipboard" />
+
+            <TextView
+                android:id="@+id/btnClearConsole"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:text="⊘"
+                android:textColor="@color/idea_text_dim"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/a11y_clear_console" />
+
+        </LinearLayout>
+
+        <!-- ── RUN / PROBLEMS CONTENT ── -->
+        <FrameLayout
+            android:id="@+id/bottomPanelContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- ── JShell Console ── -->
+            <LinearLayout
+                android:id="@+id/panelJShell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/idea_console_bg"
+                android:visibility="gone">
+                <ScrollView
+                    android:id="@+id/jshellScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fillViewport="true">
+                    <TextView
+                        android:id="@+id/jshellOutput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textColor="@color/idea_console_text"
+                        android:fontFamily="monospace"
+                        android:textSize="12sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textIsSelectable="true" />
+                </ScrollView>
+                <EditText
+                    android:id="@+id/jshellInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="jshell> enter Java code here..."
+                    android:textColorHint="@color/idea_text_dim"
+                    android:textColor="@color/idea_text"
+                    android:fontFamily="monospace"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:background="@color/idea_toolbar"
+                    android:padding="12dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!--
+                Output and the input line share one column so the field sits
+                under the text the program just printed, the way a terminal
+                reads. The whole column is what gets shown or hidden when the
+                bottom panel switches.
+            -->
+            <LinearLayout
+                android:id="@+id/panelRun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/idea_console_bg">
+
+                <ScrollView
+                    android:id="@+id/consoleScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/idea_console_bg"
+                    android:fillViewport="true">
+
+                    <TextView
+                        android:id="@+id/consoleOutput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:textColor="@color/idea_console_text"
+                        android:fontFamily="monospace"
+                        android:textSize="12sp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textIsSelectable="true" />
+
+                </ScrollView>
+
+                <!-- Shown only while a program is running. -->
+                <LinearLayout
+                    android:id="@+id/consoleInputRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/idea_toolbar"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/consoleInput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/console_input_hint"
+                        android:textColorHint="@color/idea_text_dim"
+                        android:textColor="@color/idea_text"
+                        android:fontFamily="monospace"
+                        android:singleLine="true"
+                        android:imeOptions="actionSend"
+                        android:inputType="text"
+                        android:background="@android:color/transparent"
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        android:contentDescription="@string/a11y_console_input" />
+
+                    <TextView
+                        android:id="@+id/btnConsoleSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/console_input_send"
+                        android:textColor="@color/idea_text"
+                        android:textSize="12sp"
+                        android:padding="12dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/a11y_console_send" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ViewStub
+                android:id="@+id/stubProblemsPanel"
+                android:layout="@layout/panel_problems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- ── Bookmarks list ── -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bookmarksRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/idea_console_bg"
+                android:visibility="gone"
+                android:scrollbars="vertical" />
+
+            <!-- ── Bytecode viewer: split (method tree + instructions) ── -->
+            <ViewStub
+                android:id="@+id/stubBytecodePanel"
+                android:layout="@layout/panel_bytecode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Debug Console (output during debugging) -->
+            <ViewStub
+                android:id="@+id/stubDebugConsole"
+                android:layout="@layout/panel_debug_console"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Debug Split View -->
+            <ViewStub
+                android:id="@+id/stubDebuggerPanel"
+                android:layout="@layout/panel_debugger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Call Graph panel -->
+            <ViewStub
+                android:id="@+id/stubCallGraphPanel"
+                android:layout="@layout/panel_call_graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- ── Dependency Graph panel ── -->
+            <ViewStub
+                android:id="@+id/stubDepsPanel"
+                android:layout="@layout/panel_deps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- ── Profiler panel ── -->
+            <ViewStub
+                android:id="@+id/stubProfilerPanel"
+                android:layout="@layout/panel_profiler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- ── TODO/FIXME panel ── -->
+            <ViewStub
+                android:id="@+id/stubTodoPanel"
+                android:layout="@layout/panel_todo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+                    <com.ccs.wiredroid.ui.LiveMetricsView
+                android:id="@+id/liveMetrics"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="bottom"
+                android:visibility="gone" />
+
+            <!-- Floats over the console, last child so nothing can cover it.
+                 Only shown for the Run panel; see refreshConsoleScrollEndButton. -->
+            <ImageView
+                android:id="@+id/btnConsoleScrollEnd"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end|bottom"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="14dp"
+                android:padding="7dp"
+                android:elevation="4dp"
+                android:background="@drawable/bg_console_scroll_end"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_console_scroll_end"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="@string/a11y_console_scroll_to_end" />
+
+            </FrameLayout>
+
+        <!-- ── FILE PATH BAR (tap to copy) ──
+             A sibling of bottomPanelContent, never a child of it: that container
+             is a FrameLayout whose panels overlap and are swapped by visibility,
+             so a bar placed inside would cover the console (as liveMetrics does)
+             instead of sitting under it. Here it takes its own 26dp row between
+             the console and the status bar. -->
+        <com.ccs.wiredroid.ui.PathCopyBar
+            android:id="@+id/filePathBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:contentDescription="@string/pathbar_a11y" />
+
+        <LinearLayout
+            android:id="@+id/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:orientation="horizontal"
+            android:background="@color/idea_statusbar"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/statusLineCol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                tools:text="Ln 1, Col 1"
+                android:textColor="@color/idea_statusbar_text"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:background="@color/idea_separator"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/statusFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/idea_text_dim"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/statusReadOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_lock_open"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/a11y_status_read_only" />
+
+            <TextView
+                android:id="@+id/statusLineSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/status_line_separator_lf"
+                android:textColor="@color/idea_statusbar_text"
+                android:textSize="10sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/a11y_status_line_separator" />
+
+            <TextView
+                android:id="@+id/statusEncoding"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/status_encoding"
+                android:textColor="@color/idea_statusbar_text"
+                android:textSize="10sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/a11y_status_encoding" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/statusLanguage"
+                android:text="C/C++"
+                android:textColor="@color/idea_statusbar_text"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvAppVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/idea_statusbar_text"
+                android:textSize="10sp"
+                tools:text="v1.8.0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ══════════════ FILE MANAGER DRAWER ══════════════ -->
+    <include
+        layout="@layout/drawer_file_manager"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

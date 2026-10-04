@@ -1,0 +1,8 @@
+{
+  "name": "wiredroid-mcu-deps",
+  "private": true,
+  "dependencies": {
+    "avr8js": "0.21.0",
+    "esbuild": "0.25.12"
+  }
+}

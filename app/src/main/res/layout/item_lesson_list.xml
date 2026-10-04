@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blockList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:fontFamily="monospace"
+    android:textSize="13sp"
+    android:lineSpacingMultiplier="1.3"
+    android:textColor="#C9CEC9"
+    android:visibility="gone" />

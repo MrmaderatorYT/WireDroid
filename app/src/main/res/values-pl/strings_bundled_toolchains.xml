@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ kompiluje dla JDK 21 i uruchamia pliki .class we wbudowanej JVM. Środowisko wykonawcze jest dołączone; przy pierwszym uruchomieniu rozpakowuje tylko około 145 MB do pamięci wewnętrznej.</string>
+    <string name="settings_ndk_bundled_desc">Opcjonalny łańcuch narzędzi C++ jest pobierany na żądanie: 344 MB pobierania i około 1,85 GB pamięci wewnętrznej po instalacji.</string>
+    <string name="settings_ndk_bundled_install">Pobierz NDK C++ (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 jest pobierane z oryginalnego wydania: 344 MB przez sieć i około 1,85 GB pamięci wewnętrznej po rozpakowaniu. Przerwane pobieranie zostanie wznowione. Kontynuować?</string>
+    <string name="settings_ndk_install_action">Pobierz</string>
+    <string name="ndk_bundled_no_space">NDK r29 wymaga co najmniej %1$d MB wolnego miejsca w pamięci wewnętrznej.</string>
+    <string name="ndk_bundled_unsupported">NDK C++ wymaga urządzenia ARM64 z systemem Android 9 lub nowszym.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, pobierane na żądanie)</string>
+    <string name="np_native_ndk_bundled_note">C i C++ z Clang 21. NDK to 344 MB pobierania i około 1,85 GB po instalacji.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Ostrzeżenie: źródła C++ wymagają NDK. Zainstaluj je w Ustawieniach → Pobierz NDK C++. Pominięto.</string>
+    <string name="native_compiling_sources">Kompilowanie źródeł natywnych…</string>
+    <string name="ndk_downloading">Pobieranie NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Weryfikacja pobranego pliku…</string>
+    <string name="ndk_download_http">Pobieranie NDK zwróciło HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Pobieranie NDK zakończyło się przedwcześnie. Spróbuj ponownie, aby je wznowić.</string>
+    <string name="ndk_download_too_large">Pobieranie NDK było dłuższe niż oczekiwano i zostało przerwane.</string>
+    <string name="ndk_download_checksum_failed">Pobrane NDK nie przeszło kontroli integralności i zostało usunięte. Spróbuj ponownie.</string>
+    <string name="ndk_download_restart">Częściowo pobrane NDK nie odpowiada już wydaniu. Spróbuj ponownie, aby zacząć od nowa.</string>
+    <string name="settings_ndk_cancel">Anuluj pobieranie</string>
+    <string name="settings_ndk_cancelled">Pobieranie NDK anulowane. Pobrana część została zachowana.</string>
+</resources>

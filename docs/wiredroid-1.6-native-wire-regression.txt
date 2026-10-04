@@ -1,0 +1,47 @@
+INSTRUMENTATION_STATUS: stream=PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: stream=PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+FAIL: java.lang.AssertionError: document.getElementById('serialOutput').textContent.includes('42') expected true; logs="\n00:35:09 Готово · 2569 деталей Fritzing\n00:35:09 Запуск 1 C/C++ програм\n00:35:09 Arduino Uno: uno.cpp · Clang · C++17 / C11 · 11 файлів · \n00:35:11 Помилка C/C++\n00:35:11 ✕ Arduino Uno: /data/data/com.ccs.wiredroid/cache/example-checks-93926717171668/i2c-eeprom/sketches/uno.cpp:3:80: error: call to member function 'write' is ambiguous\n00:35:11 ✕     3 | void setup(){Serial.begin(9600);Wire.begin();Wire.beginTransmission(0x50);Wire.write(0);Wire.write(10);Wire.write(42);Serial.println(Wire.endTransmission());}\n00:35:11 ✕       |                                                                           ~~~~~^~~~~\n00:35:11 ✕ /data/user/0/com.ccs.wiredroid/cache/embedded/uno/api/Print.h:51:12: note: candidate function\n00:35:11 ✕    51 |     size_t write(const char *str) {\n00:35:11 ✕       |            ^\n00:35:11 ✕ /data/user/0/com.ccs.wiredroid/cache/embedded/uno/Wire.h:13:9: note: candidate function\n00:35:11 ✕    13 |  size_t write(uint8_t v)override{if(tx.size()>=1024)return 0;tx.push_back(v);return 1;}\n00:35:11 ✕       |         ^\n00:35:11 ✕ /data/data/com.ccs.wiredroid/cache/example-checks-93926717171668/i2c-eeprom/sketches/uno.cpp:4:47: error: call to member function 'write' is ambiguous\n00:35:11 ✕     4 | void loop(){Wire.beginTransmission(0x50);Wire.write(0);Wire.write(10);Wire.endTransmission();Wire.requestFrom(0x50,1);if(Wire.available())Serial.println(Wire.read());delay(1000);}\n00:35:11 ✕       |                                          ~~~~~^~~~~\n00:35:11 ✕ /data/user/0/com.ccs.wiredroid/cache/embedded/uno/api/Print.h:51:12: note: candidate function\n00:35:11 ✕    51 |     size_t write(const char *str) {\n00:35:11 ✕       |            ^\n00:35:11 ✕ /data/user/0/com.ccs.wiredroid/cache/embedded/uno/Wire.h:13:9: note: candidate function\n00:35:11 ✕    13 |  size_t write(uint8_t v)override{if(tx.size()>=1024)return 0;tx.push_back(v);return 1;}\n00:35:11 ✕       |         ^\n00:35:11 ✕ 2 errors generated.\n00:35:11 ✕ "; stopOrigins="[]"
+
+INSTRUMENTATION_CODE: 0

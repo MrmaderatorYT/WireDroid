@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lib_add_local">Tambah JAR, WAR atau AAR setempat…</string>
+    <string name="lib_add_local_note">Disalin ke dalam folder libs/ projek dan diletakkan pada classpath kompilasi. WAR atau AAR akan dibuka — jar di dalamnya itulah yang diperlukan oleh pengkompil.</string>
+    <string name="lib_local_no_project">Buka projek dahulu</string>
+    <string name="lib_local_importing">Mengimport…</string>
+    <string name="lib_local_failed">Import gagal: %1$s</string>
+    <string name="lib_local_gradle_written">Diisytiharkan dalam build.gradle</string>
+    <string name="lib_local_maven_note">Ada pada classpath di sini. Maven tiada cara yang kemas untuk mengisytiharkan jar setempat, jadi pom.xml dibiarkan tidak berubah — binaan pada mesin lain tidak akan melihatnya.</string>
+    <plurals name="lib_local_added">
+        <item quantity="other">%1$d jar ditambah: %2$s</item>
+    </plurals>
+</resources>

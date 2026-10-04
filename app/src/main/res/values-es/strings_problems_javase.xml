@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: el análisis en vivo usa actualmente el classpath de Android, por lo que algunas clases estándar de Java SE pueden aparecer por error como no disponibles. Toma como referencia el resultado de compilar o ejecutar.</string>
+</resources>

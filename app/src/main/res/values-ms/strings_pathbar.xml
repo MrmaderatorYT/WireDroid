@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pathbar_a11y">Laluan fail aktif — ketik untuk menyalin</string>
+    <string name="pathbar_clip_label">Laluan fail WireDroid</string>
+    <string name="pathbar_copied">Laluan disalin ke papan keratan</string>
+    <string name="pathbar_copy_failed">Tidak dapat mencapai papan keratan</string>
+</resources>

@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · Квадратурний енкодер",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "encoder",
+      "part": "Rotary_Encoder_fix",
+      "x": 430,
+      "y": 120,
+      "rotation": 0,
+      "label": "Квадратурний енкодер",
+      "scale": 1,
+      "electrical": {
+        "type": "encoder",
+        "parameters": {
+          "pulsesPerTurn": 20,
+          "encoderRpm": 30
+        }
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "encoder",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "uno",
+        "pin": "connector64"
+      },
+      "b": {
+        "node": "encoder",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "encoder",
+        "pin": "connector1"
+      },
+      "color": "#94a3b8",
+      "routing": "orthogonal"
+    }
+  ]
+}

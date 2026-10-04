@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="16dp"
+    android:height="16dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- record — badge only; the language wedge is layered on top -->
+    <path
+        android:pathData="M6,2h12a4,4 0 0 1 4,4v12a4,4 0 0 1 -4,4h-12a4,4 0 0 1 -4,-4v-12a4,4 0 0 1 4,-4z"
+        android:fillColor="#3E9B9B" />
+    <path
+        android:pathData="M9,5.5H13.2A2.8,2.8 0 0 1 13.2,11.1L15.7,16.5H13.2L11,11.1V16.5H9ZM11,7.5H13.2A1.6,1.6 0 0 1 13.2,10.7H11Z"
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd" />
+</vector>

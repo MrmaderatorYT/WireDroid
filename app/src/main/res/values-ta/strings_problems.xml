@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_truncated">…மேலும் %1$d கண்டுபிடிப்புகள் காட்டப்படவில்லை</string>
+    <string name="problems_analysis_failed">இந்தக் கோப்பை ஆய்வு செய்ய முடியவில்லை: %1$s</string>
+    <string name="problems_filter_errors">பிழைகள் %1$d</string>
+    <string name="problems_filter_security">பாதுகாப்பு %1$d</string>
+    <string name="problems_filter_warnings">எச்சரிக்கைகள் %1$d</string>
+    <string name="problems_filter_info">தகவல் %1$d</string>
+    <string name="problems_all_filtered">கண்டுபிடிக்கப்பட்ட அனைத்தும் வடிகட்டப்பட்டுள்ளன. பார்க்க மேலே ஒரு பெட்டியைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="problems_none">சிக்கல்கள் எதுவும் இல்லை.</string>
+    <string name="problems_scope_current">இந்தக் கோப்பில் மட்டும்</string>
+</resources>

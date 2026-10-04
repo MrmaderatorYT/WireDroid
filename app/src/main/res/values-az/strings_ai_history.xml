@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Sil</string>
+    <string name="ai_history_delete_message">«%1$s» birdəfəlik silinəcək.</string>
+    <string name="ai_history_delete_title">Bu söhbət silinsin?</string>
+    <string name="ai_history_empty">Hələ saxlanılmış söhbət yoxdur. Köməkçidən nəsə soruşun və o burada görünəcək.</string>
+    <string name="ai_history_meta">%1$d mesaj · %2$s</string>
+    <string name="ai_history_restored">Saxlanılmış söhbət bərpa olundu (%1$d mesaj).</string>
+    <string name="ai_history_title">Saxlanılmış söhbətlər</string>
+    <string name="ai_history_untitled">Adsız söhbət</string>
+    <string name="ai_new_chat">Yeni söhbət</string>
+    <string name="ai_new_chat_started">Yeni söhbət başladıldı. Əvvəlki saxlanılıb.</string>
+    <string name="md_pane_preview_on">Burada göstərilir. Redaktora qayıtmaq üçün gözə yenidən toxunun.</string>
+</resources>

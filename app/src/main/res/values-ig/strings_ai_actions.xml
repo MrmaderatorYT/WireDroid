@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Omume ngwa ngwa</string>
+    <string name="ai_action_explain">Kọwaa</string>
+    <string name="ai_action_find_bugs">Chọta njehie</string>
+    <string name="ai_action_refactor">Megharịa</string>
+    <string name="ai_action_optimize">Kwalite</string>
+    <string name="ai_action_document">Dee akwụkwọ</string>
+    <string name="ai_action_test">Dee ule</string>
+    <string name="ai_action_agent">Ọnọdụ onyeozi</string>
+    <string name="ai_agent_on">Ọnọdụ onyeozi gbanyere — onye enyemaka nwere ike dezie faịlụ</string>
+    <string name="ai_agent_off">Ọnọdụ onyeozi gbanyụrụ</string>
+    <string name="ai_need_file">Buru ụzọ mepee faịlụ — omume ndị a na-arụ ọrụ na koodu ị na-ele.</string>
+</resources>

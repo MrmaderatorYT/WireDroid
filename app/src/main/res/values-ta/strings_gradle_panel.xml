@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gradle_branch_tasks">பணிகள்</string>
+    <string name="gradle_repos_none">build.gradle இல் எந்தக் களஞ்சியமும் அறிவிக்கப்படவில்லை</string>
+    <string name="gradle_task_no_javadoc">பயன்பாட்டுடன் Javadoc கருவி வழங்கப்படவில்லை, எனவே இந்தப் பணியைச் சாதனத்தில் இயக்க முடியாது.</string>
+    <string name="gradle_task_no_publish">தொலைநிலைக் களஞ்சியத்தில் வெளியிடுவது ஆதரிக்கப்படவில்லை. publishToMavenLocal ஐப் பயன்படுத்தவும்.</string>
+    <string name="build_panel_open">உருவாக்கக் கருவி</string>
+</resources>

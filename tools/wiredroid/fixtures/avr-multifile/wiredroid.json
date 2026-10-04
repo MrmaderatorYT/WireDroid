@@ -1,0 +1,1 @@
+{"boards":{"uno":{"profile":"arduino:avr:uno","mode":"mcu","coreVersion":"1.8.6","sources":["src/**/*.c","src/boards/uno/**"],"defines":["PROJECT_VALUE=6"]}}}

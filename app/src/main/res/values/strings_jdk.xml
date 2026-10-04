@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Strings for the per-project target JDK chooser (project creation and
+  Project Structure). Release labels themselves come from JavaVersions, and
+  settings_java_target_maps_to / a11y_settings_java_target are reused from
+  strings.xml so the wording matches the global setting.
+-->
+<resources>
+
+    <string name="jdk_picker_label">Target JDK</string>
+    <string name="jdk_picker_hint">Written into the project build file. The bundled compiler emits Java %1$s to %2$s.</string>
+
+    <string name="jdk_dialog_title">Target JDK</string>
+    <string name="jdk_applied">Project now targets %1$s</string>
+    <string name="jdk_applied_no_build_file">%1$s saved for this project — no compiler level in the build file to update</string>
+
+</resources>

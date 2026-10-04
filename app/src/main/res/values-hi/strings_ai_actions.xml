@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">त्वरित क्रियाएँ</string>
+    <string name="ai_action_explain">समझाएँ</string>
+    <string name="ai_action_find_bugs">बग खोजें</string>
+    <string name="ai_action_refactor">रीफ़ैक्टर करें</string>
+    <string name="ai_action_optimize">अनुकूलित करें</string>
+    <string name="ai_action_document">दस्तावेज़ बनाएँ</string>
+    <string name="ai_action_test">टेस्ट लिखें</string>
+    <string name="ai_action_agent">एजेंट मोड</string>
+    <string name="ai_agent_on">एजेंट मोड चालू — सहायक फ़ाइलें संपादित कर सकता है</string>
+    <string name="ai_agent_off">एजेंट मोड बंद</string>
+    <string name="ai_need_file">पहले कोई फ़ाइल खोलें — ये क्रियाएँ उस कोड पर काम करती हैं जो आप देख रहे हैं।</string>
+</resources>

@@ -1,0 +1,1 @@
+PASS: I²C EEPROM ACK/NACK/read/write/disconnection, L293D PWM/direction, HD44780 initialization and text, microsecond PWM edges and VCD

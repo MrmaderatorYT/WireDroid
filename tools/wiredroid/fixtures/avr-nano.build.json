@@ -1,0 +1,27 @@
+{
+  "profile": "arduino:avr:nano:atmega328",
+  "node": "nano",
+  "compiler": "avr-g++ (GCC) 7.3.0",
+  "coreVersion": "1.8.6",
+  "variant": "eightanaloginputs",
+  "mcu": "atmega328p",
+  "clockHz": 16000000,
+  "flashBytes": 922,
+  "ramBytes": 9,
+  "hexSha256": "678ccbab899fcd680fcfd3e5f89e9aaef8941261a4e2a3fc39d12403ad5299c9",
+  "sources": [
+    "sketches/nano.cpp"
+  ],
+  "libraries": [],
+  "defines": [],
+  "limitations": [
+    "External local AVR compiler required; not an Android-native toolchain.",
+    "AVR core default uses C++11 without exceptions and has no general STL runtime.",
+    "Imported .ino requires explicit function prototypes."
+  ],
+  "version": 1,
+  "sourceDigest": "036a86e4b155c46522f88274194aa757adb605af4a5279fc22c86bd509484775",
+  "origin": "local-build-fixture",
+  "sourceRelationship": "Compiled locally; source/configuration snapshot digests recorded afterward from preserved fixture sources",
+  "configDigest": "cc9c7d2e527766636c97ab67948f938449f88b1e4d0f24d45efe0e3ff599baa7"
+}

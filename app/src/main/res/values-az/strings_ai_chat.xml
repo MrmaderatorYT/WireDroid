@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Açar</string>
+    <string name="ai_ready">AI köməkçi hazırdır. Java, kodun izahı, səhvlərin tapılması, refaktorinq, optimallaşdırma və testlər barədə soruşun.</string>
+    <string name="ai_loaded_file">%1$s yükləndi (%2$d simvol). Bu kod barədə istənilən sual verin.</string>
+    <string name="ai_loaded_file_short">%1$s yükləndi (%2$d simvol).</string>
+    <string name="ai_key_not_set">Hələ API açarı yoxdur. Gemini açarınızı aistudio.google.com-dan əlavə etmək üçün «Açar»a toxunun.</string>
+    <string name="ai_key_needed_first">Əvvəlcə API açarınızı əlavə edin — «Açar»a toxunun.</string>
+    <string name="ai_model_changed">Model %1$s-ə dəyişdirildi</string>
+    <string name="ai_key_saved_checking">Açar saxlanıldı. Google-da yoxlanılır…</string>
+    <string name="ai_key_verified">Açar təsdiqləndi. Model: %1$s</string>
+    <string name="ai_key_saved_unverified">Açar saxlanıldı, lakin yoxlama uğursuz oldu:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Açarı saxlamaq mümkün olmadı</string>
+    <string name="ai_key_save_failed_message">Bu cihazın təhlükəsiz yaddaşı onu qəbul etmədi, ona görə açar saxlanılmadı. Şifrələnməmiş şəkildə qəsdən saxlanılmır.</string>
+    <string name="ai_key_check_title">Bu açarı yoxlayın</string>
+    <string name="ai_key_save_anyway">Yenə də saxla</string>
+    <string name="ai_key_save_verify">Saxla və yoxla</string>
+    <string name="ai_key_get">Açar al</string>
+    <string name="ai_insert_into_editor">↧ Redaktora əlavə et</string>
+    <string name="ai_insert_desc">Bu kodu açıq redaktora əlavə et</string>
+    <string name="ai_queued">Növbədə (%1$s) — tətbiq etmək üçün redaktora qayıdın</string>
+</resources>

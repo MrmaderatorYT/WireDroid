@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Hichapụ</string>
+    <string name="ai_history_delete_message">A ga-ehichapụ “%1$s” kpamkpam.</string>
+    <string name="ai_history_delete_title">Hichapụ mkparịta ụka a?</string>
+    <string name="ai_history_empty">Enweghị mkparịta ụka echekwara ka ugbu a. Jụọ onye enyemaka ihe, ọ ga-apụta ebe a.</string>
+    <string name="ai_history_meta">ozi %1$d · %2$s</string>
+    <string name="ai_history_restored">Eweghachiri mkparịta ụka echekwara (ozi %1$d).</string>
+    <string name="ai_history_title">Mkparịta ụka echekwara</string>
+    <string name="ai_history_untitled">Mkparịta ụka na-enweghị aha</string>
+    <string name="ai_new_chat">Mkparịta ụka ọhụrụ</string>
+    <string name="ai_new_chat_started">Amalitela mkparịta ụka ọhụrụ. Echekwara nke gara aga.</string>
+    <string name="md_pane_preview_on">E gosiri ya ebe a. Pịa anya ahụ ọzọ ịlaghachi n’editọ.</string>
+</resources>

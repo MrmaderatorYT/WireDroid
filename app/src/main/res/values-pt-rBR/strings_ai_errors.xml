@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_empty">Resposta vazia — o orçamento de saída provavelmente foi gasto no raciocínio interno. Tente de novo ou reformule a pergunta.</string>
+    <string name="ai_err_hint_google">O lado do Google está falhando agora. Tentar de novo costuma funcionar.</string>
+    <string name="ai_err_hint_key">Verifique a chave de API e depois o nome do modelo.</string>
+    <string name="ai_err_hint_model">Este modelo não está disponível para a sua chave. Escolha outro na lista de modelos.</string>
+    <string name="ai_err_hint_rate">Limite de requisições — espere um pouco e tente de novo.</string>
+    <string name="ai_err_hint_rejected">A chave foi recusada. Toque em “Chave” e use Salvar e verificar para ver o motivo.</string>
+    <string name="ai_err_network">Erro de rede: %1$s</string>
+    <string name="ai_err_no_key">Ainda não há chave de API — toque em “Chave” para adicionar uma.</string>
+    <string name="ai_key_check_failed">Não foi possível verificar a chave: HTTP %1$d%2$s</string>
+    <string name="ai_key_problem_empty">A chave está vazia.</string>
+    <string name="ai_key_problem_openai">Isso parece uma chave da OpenAI. Este assistente fala com o Google Gemini; pegue uma chave em aistudio.google.com.</string>
+    <string name="ai_key_problem_short">A chave parece cortada em %1$d caracteres. Confira se ela foi copiada inteira.</string>
+    <string name="ai_key_problem_url">Isso é um endereço da web, não uma chave. Abra-o e copie a chave que ele mostra.</string>
+    <string name="ai_key_rejected">O Google recusou esta chave (HTTP %1$d).%2$s
+
+Normalmente a chave foi revogada, pertence a um projeto com a Generative Language API desligada, ou foi copiada só em parte.</string>
+    <string name="ai_key_unreachable">Não foi possível falar com o Google para verificar a chave: %1$s</string>
+    <string name="ai_key_works">A chave funciona.</string>
+</resources>

@@ -1,0 +1,215 @@
+[
+  {
+    "id": "blink-uno",
+    "title": "Arduino Uno · миготіння LED",
+    "description": "Uno + резистор + LED; увімкнення та вимкнення кожні 500 мс.",
+    "projectName": "Uno_Blink",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "button-uno",
+    "title": "Arduino Uno · кнопка та LED",
+    "description": "Кнопка на D2 з INPUT_PULLUP керує LED на D13.",
+    "projectName": "Uno_Button_LED",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "traffic-uno",
+    "title": "Arduino Uno · світлофор",
+    "description": "Три LED на D8, D9 і D10 з окремими резисторами.",
+    "projectName": "Uno_Traffic_Lights",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "alternating-nano",
+    "title": "Arduino Nano · два LED",
+    "description": "Червоний і зелений LED по черзі на D2 та D3.",
+    "projectName": "Nano_Alternating_LED",
+    "board": "nano",
+    "files": [
+      "circuit.wire.json",
+      "sketches/nano.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "blink-esp32",
+    "title": "ESP32 QT Py · миготіння LED",
+    "description": "Модуль ESP32, вихід A0, резистор і LED.",
+    "projectName": "ESP32_Blink",
+    "board": "esp32",
+    "files": [
+      "circuit.wire.json",
+      "sketches/esp32.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "servo-sweep",
+    "title": "Arduino Uno · рух сервопривода",
+    "description": "Серво плавно повертається між 0° та 180°.",
+    "projectName": "Uno_Servo_Sweep",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "servo-pot",
+    "title": "Arduino Uno · потенціометр керує серво",
+    "description": "Крутіть ручку потенціометра: C++ задає серво кут від 0° до 180°.",
+    "projectName": "Uno_Potentiometer_Servo",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "electronics-rc",
+    "title": "Arduino Uno · RC та напруга",
+    "description": "C++ читає напругу заряджання конденсатора на A0. Резистор 10 kΩ, C = 100 µF.",
+    "projectName": "Wire_electronics_rc",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "README.md",
+      "sketches/uno.cpp"
+    ]
+  },
+  {
+    "id": "motor-driver",
+    "title": "Arduino Uno · DC двигун та L293D",
+    "description": "Двигун набирає оберти, зупиняється та змінює напрямок. PWM на D9 задає швидкість; інспектор показує струм і rpm.",
+    "projectName": "Wire_motor_driver",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "README.md",
+      "sketches/uno.cpp"
+    ]
+  },
+  {
+    "id": "stepper-driver",
+    "title": "Arduino Uno · Stepper та L293D",
+    "description": "Стандартна бібліотека Stepper керує двома обмотками через L293D. 100 кроків вперед і назад.",
+    "projectName": "Wire_stepper_driver",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "README.md",
+      "sketches/uno.cpp"
+    ]
+  },
+  {
+    "id": "lcd-project",
+    "title": "Arduino Uno · LCD та C++ проєкт",
+    "description": "LiquidCrystal, src/, include/ та власна Arduino бібліотека Counter. LCD показує лічильник.",
+    "projectName": "Wire_lcd_project",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "README.md",
+      "sketches/uno.cpp",
+      "include/display.h",
+      "src/measure.c",
+      "src/display.cpp",
+      "libraries/Counter/library.properties",
+      "libraries/Counter/src/Counter.h",
+      "libraries/Counter/src/Counter.cpp"
+    ]
+  },
+  {
+    "id": "i2c-eeprom",
+    "title": "Arduino Uno · I²C EEPROM",
+    "description": "Wire записує байт 42 в EEPROM, читає його через SDA/SCL і виводить у Serial.",
+    "projectName": "Wire_i2c_eeprom",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "README.md",
+      "sketches/uno.cpp"
+    ]
+  },
+  {
+    "id": "a4988-microsteps",
+    "title": "Arduino Uno · A4988 та мікрокроки",
+    "description": "STEP/DIR, п’ять режимів від повного до 1/16 кроку, enable і sleep. Зовнішнє джерело 9 V.",
+    "projectName": "Wire_a4988_microsteps",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "unipolar-stepper",
+    "title": "Arduino Uno · Уніполярний мотор та ULN2003",
+    "description": "Чотири напівобмотки, спільні контакти живлення та напівкрокова послідовність. Рух вперед і назад.",
+    "projectName": "Wire_unipolar_stepper",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "esc-bldc",
+    "title": "Arduino Uno · ESC та BLDC",
+    "description": "Активація ESC імпульсом 1000 µs, плавне прискорення, зупинка та повторний запуск.",
+    "projectName": "Wire_esc_bldc",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "quadrature-encoder",
+    "title": "Arduino Uno · Квадратурний енкодер",
+    "description": "Входи D2/D3 з INPUT_PULLUP, переривання CHANGE і лічильник положення. Автоматичне обертання 30 rpm.",
+    "projectName": "Wire_quadrature_encoder",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "README.md"
+    ]
+  },
+  {
+    "id": "avr-blink",
+    "title": "AVR Uno · прошивка MCU",
+    "description": "Зібраний HEX для ATmega328P: LED кожні 100 ms, віртуальний час і покрокове налагодження.",
+    "projectName": "AVR_Uno_Blink",
+    "board": "uno",
+    "files": [
+      "circuit.wire.json",
+      "sketches/uno.cpp",
+      "wiredroid.json",
+      ".wiredroid/firmware/uno.hex",
+      "README.md",
+      ".wiredroid/firmware/uno.json"
+    ]
+  }
+]

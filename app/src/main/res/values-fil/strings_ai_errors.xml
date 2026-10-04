@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_empty">Walang laman ang sagot — malamang naubos sa panloob na pangangatwiran ang badyet ng output. Subukan ulit o baguhin ang tanong.</string>
+    <string name="ai_err_hint_google">May problema ngayon sa panig ng Google. Kadalasan gumagana ang pagsubok ulit.</string>
+    <string name="ai_err_hint_key">Suriin ang API key, tapos ang pangalan ng modelo.</string>
+    <string name="ai_err_hint_model">Hindi available sa iyong key ang modelong ito. Pumili ng iba sa listahan ng modelo.</string>
+    <string name="ai_err_hint_rate">Umabot sa limitasyon — maghintay sandali at subukan ulit.</string>
+    <string name="ai_err_hint_rejected">Tinanggihan ang key. Pindutin ang “Key” at gamitin ang I-save at i-verify para makita kung bakit.</string>
+    <string name="ai_err_network">Error sa network: %1$s</string>
+    <string name="ai_err_no_key">Wala pang API key — pindutin ang “Key” para magdagdag.</string>
+    <string name="ai_key_check_failed">Hindi nasuri ang key: HTTP %1$d%2$s</string>
+    <string name="ai_key_problem_empty">Walang laman ang key.</string>
+    <string name="ai_key_problem_openai">Mukhang OpenAI key iyan. Ang assistant na ito ay nakikipag-usap sa Google Gemini; kumuha ng key sa aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Mukhang putol ang key sa %1$d na karakter. Tiyaking nakopya ang buo.</string>
+    <string name="ai_key_problem_url">Web address iyan, hindi key. Buksan ito, tapos kopyahin ang key na ipinapakita nito.</string>
+    <string name="ai_key_rejected">Tinanggihan ng Google ang key na ito (HTTP %1$d).%2$s
+
+Kadalasan binawi ang key, kabilang ito sa proyektong nakapatay ang Generative Language API, o bahagi lang ang nakopya.</string>
+    <string name="ai_key_unreachable">Hindi maabot ang Google para suriin ang key: %1$s</string>
+    <string name="ai_key_works">Gumagana ang key.</string>
+</resources>

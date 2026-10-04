@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Sürətli əməliyyatlar</string>
+    <string name="ai_action_explain">İzah et</string>
+    <string name="ai_action_find_bugs">Səhvləri tap</string>
+    <string name="ai_action_refactor">Yenidən qur</string>
+    <string name="ai_action_optimize">Optimallaşdır</string>
+    <string name="ai_action_document">Sənədləşdir</string>
+    <string name="ai_action_test">Testlər yaz</string>
+    <string name="ai_action_agent">Agent rejimi</string>
+    <string name="ai_agent_on">Agent rejimi aktiv — assistent faylları dəyişə bilər</string>
+    <string name="ai_agent_off">Agent rejimi söndürüldü</string>
+    <string name="ai_need_file">Əvvəlcə fayl açın — bu əməliyyatlar baxdığınız kodla işləyir.</string>
+</resources>

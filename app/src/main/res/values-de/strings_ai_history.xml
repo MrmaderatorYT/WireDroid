@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Löschen</string>
+    <string name="ai_history_delete_message">„%1$s“ wird endgültig entfernt.</string>
+    <string name="ai_history_delete_title">Diesen Chat löschen?</string>
+    <string name="ai_history_empty">Noch keine gespeicherten Unterhaltungen. Fragen Sie den Assistenten etwas, dann erscheint sie hier.</string>
+    <string name="ai_history_meta">%1$d Nachrichten · %2$s</string>
+    <string name="ai_history_restored">Gespeicherten Chat wiederhergestellt (%1$d Nachrichten).</string>
+    <string name="ai_history_title">Gespeicherte Chats</string>
+    <string name="ai_history_untitled">Unbenannter Chat</string>
+    <string name="ai_new_chat">Neuer Chat</string>
+    <string name="ai_new_chat_started">Neuer Chat begonnen. Der vorherige ist gespeichert.</string>
+    <string name="md_pane_preview_on">Hier gerendert. Tippen Sie erneut auf das Auge, um zum Editor zurückzukehren.</string>
+</resources>

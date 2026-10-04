@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Nessuna chiave API — tocca «Chiave» per aggiungerne una.</string>
+    <string name="ai_err_hint_model">Questo modello non è disponibile per la tua chiave. Scegline un altro dall’elenco.</string>
+    <string name="ai_err_hint_key">Controlla la chiave API, poi il nome del modello.</string>
+    <string name="ai_err_hint_rejected">La chiave è stata rifiutata. Tocca «Chiave» e usa «Salva e verifica» per capire perché.</string>
+    <string name="ai_err_hint_rate">Troppe richieste — attendi un momento e riprova.</string>
+    <string name="ai_err_hint_google">Il lato Google sta fallendo ora. Riprovare di solito funziona.</string>
+    <string name="ai_err_empty">Risposta vuota — il budget di output è probabilmente finito nel ragionamento interno. Riprova o riformula.</string>
+    <string name="ai_err_network">Errore di rete: %1$s</string>
+    <string name="ai_key_works">La chiave funziona.</string>
+    <string name="ai_key_rejected">Google ha rifiutato questa chiave (HTTP %1$d).%2$s\n\nDi solito è stata revocata, appartiene a un progetto con la Generative Language API disattivata, o è stata copiata solo in parte.</string>
+    <string name="ai_key_check_failed">Impossibile verificare la chiave: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Impossibile raggiungere Google per verificare la chiave: %1$s</string>
+    <string name="ai_key_problem_empty">La chiave è vuota.</string>
+    <string name="ai_key_problem_url">Questo è un indirizzo web, non una chiave. Aprilo e copia la chiave mostrata.</string>
+    <string name="ai_key_problem_openai">Sembra una chiave OpenAI. Questo assistente usa Google Gemini; ottieni una chiave su aistudio.google.com.</string>
+    <string name="ai_key_problem_short">La chiave sembra troncata a %1$d caratteri. Controlla di averla copiata tutta.</string>
+</resources>

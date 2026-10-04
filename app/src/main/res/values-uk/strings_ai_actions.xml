@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Швидкі дії</string>
+    <string name="ai_action_explain">Пояснити</string>
+    <string name="ai_action_find_bugs">Знайти помилки</string>
+    <string name="ai_action_refactor">Рефакторити</string>
+    <string name="ai_action_optimize">Оптимізувати</string>
+    <string name="ai_action_document">Документувати</string>
+    <string name="ai_action_test">Написати тести</string>
+    <string name="ai_action_agent">Режим агента</string>
+    <string name="ai_agent_on">Режим агента увімкнено — асистент може змінювати файли</string>
+    <string name="ai_agent_off">Режим агента вимкнено</string>
+    <string name="ai_need_file">Спершу відкрийте файл — ці дії працюють із кодом, який ви бачите.</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_label">Java runtime</string>
+    <string name="np_runtime_art">ART</string>
+    <string name="np_runtime_java_se">Java SE 21</string>
+    <string name="np_runtime_art_note">Fast Android runtime with direct access to Android APIs.</string>
+    <string name="np_runtime_java_se_note">ECJ targets JDK 21 and runs .class files in an embedded JVM. The first run downloads about 150 MB and stores about 145 MB.</string>
+
+    <string name="javase_runtime_downloading">Downloading Java SE 21 runtime… %1$d%%</string>
+    <string name="javase_runtime_verifying">Verifying the Java SE 21 runtime…</string>
+    <string name="javase_runtime_installing">Installing the Java SE 21 runtime… %1$d%%</string>
+    <string name="javase_runtime_ready">Java SE 21 runtime is ready</string>
+    <string name="javase_runtime_no_space">Java SE 21 needs at least %1$d MB of free internal storage for installation.</string>
+    <string name="javase_runtime_checksum_failed">The Java SE 21 download failed its integrity check.</string>
+    <string name="javase_runtime_invalid">The installed Java SE 21 runtime is incomplete.</string>
+    <string name="javase_process_died">The Java SE process stopped before it could report a result.</string>
+    <string name="javase_compiling">Compiling with ECJ for JDK 21…</string>
+    <string name="javase_running">Running %1$s in the embedded JVM…</string>
+    <string name="javase_no_sources">No Java sources found.</string>
+    <string name="problems_javase_classpath_note">Java SE 21: Live analysis currently uses the Android classpath, so standard Java SE classes may be reported as unavailable. Use the build or run result as the source of truth.</string>
+</resources>

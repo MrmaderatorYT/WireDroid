@@ -1,0 +1,5 @@
+servo-sweep
+INSTRUMENTATION_RESULT: stream=FAIL: java.lang.AssertionError: WireApp.getMotionStates().servo.active expected true; logs="\n23:44:29 Готово · 2569 деталей Fritzing\n23:44:29 Запуск 1 C/C++ програм\n23:44:30 Arduino Uno: uno.cpp · Clang · C++17 / C11 · 11 файлів · \n23:44:42 Симуляцію зупинено"
+
+INSTRUMENTATION_CODE: 0
+

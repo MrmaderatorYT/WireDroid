@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub: this starts
+    hidden and many sessions never show it, but it was still inflated on
+    every cold start.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debugToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:orientation="horizontal"
+    android:background="@color/idea_toolbar"
+    android:gravity="center_vertical"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/debugLocation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text=""
+        android:textColor="@color/idea_accent"
+        android:textSize="10sp"
+        android:fontFamily="monospace" />
+
+    <TextView
+        android:id="@+id/btnDebugStepOver"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Step Over"
+        android:textColor="@color/idea_text_dim"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_step_over" />
+
+    <TextView
+        android:id="@+id/btnDebugStepInto"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Step Into"
+        android:textColor="@color/idea_text_dim"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_step_into" />
+
+    <TextView
+        android:id="@+id/btnDebugStepOut"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Step Out"
+        android:textColor="@color/idea_text_dim"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_step_out" />
+
+    <TextView
+        android:id="@+id/btnDebugResume"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Resume"
+        android:drawableStart="@drawable/ic_debug_resume"
+        android:drawablePadding="4dp"
+        android:textColor="@color/idea_run_green"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_resume" />
+
+    <TextView
+        android:id="@+id/btnDebugStop"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Stop"
+        android:drawableStart="@drawable/ic_debug_stop"
+        android:drawablePadding="4dp"
+        android:textColor="@color/idea_error_text"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_stop" />
+
+    <TextView
+        android:id="@+id/btnDebugEvaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="Eval"
+        android:textColor="@color/idea_text_dim"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_debug_evaluate" />
+
+    <TextView
+        android:id="@+id/btnToggleBreakpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:gravity="center"
+        android:text="BP"
+        android:drawableStart="@drawable/ic_debug_breakpoint"
+        android:drawablePadding="4dp"
+        android:textColor="@color/idea_error_text"
+        android:textSize="10sp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/a11y_toggle_breakpoint" />
+
+</LinearLayout>

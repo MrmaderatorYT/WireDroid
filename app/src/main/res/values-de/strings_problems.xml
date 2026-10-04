@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_all_filtered">Alles Gefundene ist ausgefiltert. Setzen Sie oben ein Häkchen, um es zu sehen.</string>
+    <string name="problems_analysis_failed">Diese Datei konnte nicht analysiert werden: %1$s</string>
+    <string name="problems_filter_errors">Fehler %1$d</string>
+    <string name="problems_filter_info">Info %1$d</string>
+    <string name="problems_filter_security">Sicherheit %1$d</string>
+    <string name="problems_filter_warnings">Warnungen %1$d</string>
+    <string name="problems_none">Keine Probleme gefunden.</string>
+    <string name="problems_scope_current">Nur diese Datei</string>
+    <string name="problems_truncated">…und %1$d weitere Funde, die nicht gezeigt werden</string>
+</resources>

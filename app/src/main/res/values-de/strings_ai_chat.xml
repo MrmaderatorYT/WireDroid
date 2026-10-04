@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Key</string>
+    <string name="ai_ready">KI-Assistent bereit. Fragen Sie zu Java, Code-Erklärungen, Fehlersuche, Refactoring, Optimierung oder Tests.</string>
+    <string name="ai_loaded_file">%1$s geladen (%2$d Zeichen). Fragen Sie alles zu diesem Code.</string>
+    <string name="ai_loaded_file_short">%1$s geladen (%2$d Zeichen).</string>
+    <string name="ai_key_not_set">Noch kein API-Schlüssel. Tippen Sie auf „Key“, um Ihren Gemini-Schlüssel von aistudio.google.com hinzuzufügen.</string>
+    <string name="ai_key_needed_first">Fügen Sie zuerst Ihren API-Schlüssel hinzu — tippen Sie auf „Key“.</string>
+    <string name="ai_model_changed">Modell auf %1$s geändert</string>
+    <string name="ai_key_saved_checking">Schlüssel gespeichert. Wird bei Google geprüft…</string>
+    <string name="ai_key_verified">Schlüssel bestätigt. Modell: %1$s</string>
+    <string name="ai_key_saved_unverified">Der Schlüssel wurde gespeichert, die Prüfung schlug jedoch fehl:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Schlüssel konnte nicht gespeichert werden</string>
+    <string name="ai_key_save_failed_message">Der sichere Speicher dieses Geräts hat ihn abgelehnt, der Schlüssel wurde also nicht behalten. Unverschlüsselt wird er bewusst nicht abgelegt.</string>
+    <string name="ai_key_check_title">Diesen Schlüssel prüfen</string>
+    <string name="ai_key_save_anyway">Trotzdem speichern</string>
+    <string name="ai_key_save_verify">Speichern &amp; prüfen</string>
+    <string name="ai_key_get">Schlüssel holen</string>
+    <string name="ai_insert_into_editor">↧ In den Editor einfügen</string>
+    <string name="ai_insert_desc">Diesen Code in den geöffneten Editor einfügen</string>
+    <string name="ai_queued">In der Warteschlange (%1$s) — zum Anwenden zurück in den Editor</string>
+</resources>

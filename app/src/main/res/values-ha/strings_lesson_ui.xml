@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Gano ta atomatik (tsarin)</string>
+    <string name="lesson_playground_show">⚡ Filin gwaji</string>
+    <string name="lesson_playground_hide">⚡ Ɓoye edita</string>
+</resources>

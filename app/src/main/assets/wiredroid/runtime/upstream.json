@@ -1,0 +1,14 @@
+{
+  "ArduinoCore-API": {
+    "repository": "https://github.com/arduino/ArduinoCore-API",
+    "commit": "0f4e57ea193a00163ae59f0f0ff478feae7eb5db"
+  },
+  "LiquidCrystal": {
+    "repository": "https://github.com/arduino-libraries/LiquidCrystal",
+    "commit": "42022e0bb7e11829317467bab28ed42af23e0ee5"
+  },
+  "Stepper": {
+    "repository": "https://github.com/arduino-libraries/Stepper",
+    "commit": "262f7b37acb7a1bc9f759eff7a3369358e534d65"
+  }
+}

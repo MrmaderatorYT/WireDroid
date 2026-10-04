@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_bg">
+
+    <!-- Top Toolbar -->
+    <LinearLayout
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:background="@color/idea_toolbar">
+
+        <TextView
+            android:id="@+id/btnMaterialBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="←"
+            android:textSize="20sp"
+            android:textColor="@color/idea_console_text"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tvMaterialTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/idea_console_text" />
+
+        <TextView
+            android:id="@+id/btnPlaygroundToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:text="⚡ Playground"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/idea_accent"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Toggle Java Playground" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/materialToolbarSep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+    <!-- Split Content: Lesson Pager (Top) + Interactive Playground (Bottom) -->
+    <LinearLayout
+        android:id="@+id/materialSplitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Top pane: Lesson Pager -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pagerMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/idea_console_bg" />
+
+        <!-- Middle Split Divider / Control Bar -->
+        <LinearLayout
+            android:id="@+id/playgroundDividerBar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="8dp"
+            android:background="@color/idea_toolbar"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvPlaygroundHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⚡ Java Playground"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/idea_accent" />
+
+            <TextView
+                android:id="@+id/btnPlaygroundRun"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:gravity="center"
+                android:text="▶ Run"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/btnPlaygroundClear"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:gravity="center"
+                android:text="🔄 Reset"
+                android:textSize="11sp"
+                android:textColor="@color/idea_text_dim"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/btnPlaygroundExpand"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="⤢"
+                android:textSize="14sp"
+                android:textColor="@color/idea_text_dim"
+                android:background="?attr/selectableItemBackground"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/btnPlaygroundClose"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="✕"
+                android:textSize="14sp"
+                android:textColor="@color/idea_text_dim"
+                android:background="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <!-- Bottom pane: Playground Editor + Mini Console -->
+        <LinearLayout
+            android:id="@+id/playgroundContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/idea_bg"
+            android:visibility="gone">
+
+            <!-- Interactive CodeEditor -->
+            <com.ccs.wiredroid.ui.WireDroidCodeEditor
+                android:id="@+id/playgroundEditor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/playgroundConsoleSep"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/idea_separator" />
+
+            <!-- Console Output Box -->
+            <LinearLayout
+                android:id="@+id/playgroundConsoleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:background="@color/idea_console_bg">
+
+                <LinearLayout
+                    android:id="@+id/playgroundConsoleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="6dp"
+                    android:background="@color/idea_toolbar">
+
+                    <TextView
+                        android:id="@+id/tvPlaygroundConsoleTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Console Output"
+                        android:textSize="11sp"
+                        android:textColor="@color/idea_text_dim" />
+
+                    <TextView
+                        android:id="@+id/btnPlaygroundConsoleClear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear"
+                        android:textSize="11sp"
+                        android:padding="4dp"
+                        android:textColor="@color/idea_text_dim"
+                        android:background="?attr/selectableItemBackground" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvPlaygroundOutput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:textSize="12sp"
+                        android:textIsSelectable="true"
+                        android:textColor="@color/idea_console_text" />
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/materialBottomSep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/materialBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/idea_toolbar">
+
+        <TextView
+            android:id="@+id/btnMaterialPrev"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/material_prev"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/idea_console_text"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tvMaterialPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="64dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/idea_text_dim" />
+
+        <TextView
+            android:id="@+id/btnMaterialNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/material_next"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/idea_console_text"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</LinearLayout>

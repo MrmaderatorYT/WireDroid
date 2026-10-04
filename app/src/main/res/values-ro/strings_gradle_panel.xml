@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="build_panel_open">Unealtă de build</string>
+    <string name="gradle_branch_tasks">Sarcini</string>
+    <string name="gradle_repos_none">Niciun repository declarat în build.gradle</string>
+    <string name="gradle_task_no_javadoc">Aplicația nu include o unealtă Javadoc, deci această sarcină nu poate rula pe dispozitiv.</string>
+    <string name="gradle_task_no_publish">Publicarea într-un repository la distanță nu este acceptată. Folosește publishToMavenLocal.</string>
+</resources>

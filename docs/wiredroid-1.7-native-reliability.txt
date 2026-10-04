@@ -1,0 +1,7 @@
+PASS Android scene migration: schema revision 2, legacy scale preserved
+PASS Android backup: corrupt primary restored from validated scene
+PASS Android journal: complete checked interrupted commit recovered
+PASS Android editor checkpoints: separate buffer, removed after explicit save
+PASS Android compiler navigation: project-contained locations
+PASS Android editor storage: encoding/BOM preserved; explicit deletion clears recovery
+

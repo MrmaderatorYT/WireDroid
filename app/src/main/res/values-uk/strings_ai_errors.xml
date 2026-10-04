@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Ключа API ще немає — натисніть «Ключ», щоб додати.</string>
+    <string name="ai_err_hint_model">Ця модель недоступна для вашого ключа. Оберіть іншу зі списку моделей.</string>
+    <string name="ai_err_hint_key">Перевірте ключ API, потім назву моделі.</string>
+    <string name="ai_err_hint_rejected">Ключ відхилено. Натисніть «Ключ» і скористайтеся «Зберегти й перевірити», щоб побачити причину.</string>
+    <string name="ai_err_hint_rate">Забагато запитів — зачекайте трохи й спробуйте ще раз.</string>
+    <string name="ai_err_hint_google">Зараз збоїть бік Google. Зазвичай допомагає повторна спроба.</string>
+    <string name="ai_err_empty">Порожня відповідь — бюджет виводу, найпевніше, пішов на внутрішні міркування. Спробуйте ще раз або переформулюйте запит.</string>
+    <string name="ai_err_network">Помилка мережі: %1$s</string>
+    <string name="ai_key_works">Ключ працює.</string>
+    <string name="ai_key_rejected">Google відхилив цей ключ (HTTP %1$d).%2$s\n\nЗазвичай ключ відкликано, він належить проєкту з вимкненим Generative Language API або скопійований не повністю.</string>
+    <string name="ai_key_check_failed">Не вдалося перевірити ключ: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Не вдалося звʼязатися з Google, щоб перевірити ключ: %1$s</string>
+    <string name="ai_key_problem_empty">Ключ порожній.</string>
+    <string name="ai_key_problem_url">Це вебадреса, а не ключ. Відкрийте її й скопіюйте ключ, який там показано.</string>
+    <string name="ai_key_problem_openai">Схоже на ключ OpenAI. Цей асистент працює з Google Gemini; ключ можна взяти на aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Ключ виглядає обрізаним — %1$d символів. Перевірте, чи скопійовано його повністю.</string>
+</resources>

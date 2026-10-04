@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/insnOffset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="40dp"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/insnLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="42dp"
+        android:layout_marginStart="4dp"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:textColor="#FFC66D" />
+
+    <TextView
+        android:id="@+id/insnOpcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="120dp"
+        android:layout_marginStart="6dp"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:textColor="#CC7832" />
+
+    <TextView
+        android:id="@+id/insnOperand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:textColor="#A9B7C6" />
+
+    <TextView
+        android:id="@+id/insnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:textColor="#808080" />
+</LinearLayout>

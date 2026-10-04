@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub, and so the list
+    has room for the filter row above it.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/problemsPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_console_bg"
+    android:visibility="gone">
+
+    <!--
+        Horizontally scrollable because four labels with counts do not fit across
+        a phone in every language, and a filter that is half off-screen is worse
+        than one you have to nudge.
+    -->
+    <HorizontalScrollView
+        android:id="@+id/problemsFilterScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/idea_toolbar"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp">
+
+            <!--
+                Scope first, then severity: which files you are looking at is the
+                bigger decision, and it changes what the severity counts mean.
+            -->
+            <Switch
+                android:id="@+id/filterScopeCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textSize="12sp"
+                android:text="@string/problems_scope_current" />
+
+            <View
+                android:id="@+id/problemsFilterSep"
+                android:layout_width="1dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/idea_separator" />
+
+            <CheckBox
+                android:id="@+id/filterErrors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/filterSecurity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/filterWarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/filterInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textSize="12sp"
+                android:checked="true" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/problemsDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+    <TextView
+        android:id="@+id/problemsJavaSeNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="7dp"
+        android:background="@color/idea_toolbar"
+        android:text="@string/problems_javase_classpath_note"
+        android:textColor="@color/idea_text"
+        android:textSize="11sp"
+        android:lineSpacingExtra="1dp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/problemsRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/idea_console_bg"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/problemsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+</LinearLayout>

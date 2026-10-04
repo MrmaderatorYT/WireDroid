@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Security scanner findings (com.ccs.wiredroid.analysis.SecurityRules).
+    Every key is prefixed sec_ so this file never collides with strings.xml.
+
+    These messages are read by someone who has just been told their code has a
+    security problem, so each one says what is wrong AND what to do instead.
+    "Insecure SQL" is not actionable; "build it with PreparedStatement" is.
+-->
+<resources>
+
+    <!-- Shown in the problems list beside the finding. -->
+    <string name="problem_security">🛡 SECURITY</string>
+
+    <!-- ── Hardcoded credentials ─────────────────────────────────────────── -->
+    <string name="sec_hardcoded_credential">Hardcoded credential in “%1$s” — anyone who decompiles the APK can read it. Move it to a build config, an environment variable or the Android Keystore.</string>
+    <string name="sec_vendor_key">This looks like a real API key committed into the source. Revoke it, then load it from configuration instead of a literal.</string>
+    <string name="sec_url_credentials">User name and password embedded in a URL. They end up in logs, crash reports and proxy history — pass them as separate credentials.</string>
+
+    <!-- ── SQL injection ─────────────────────────────────────────────────── -->
+    <string name="sec_sql_concat">SQL built by string concatenation — SQL injection. Use a PreparedStatement with ? placeholders, or rawQuery with a selectionArgs array.</string>
+    <string name="sec_sql_format">SQL built with String.format — the arguments are not escaped. Use a PreparedStatement with ? placeholders instead.</string>
+    <string name="sec_sql_raw_exec">A concatenated statement is executed directly. Bind the values as parameters rather than pasting them into the SQL text.</string>
+
+    <!-- ── Cryptography and transport ────────────────────────────────────── -->
+    <string name="sec_weak_hash">%1$s is broken and must not be used for passwords or signatures. Use SHA-256 for integrity, and bcrypt/scrypt/Argon2 for passwords.</string>
+    <string name="sec_weak_cipher">Weak cipher “%1$s”. Use AES with GCM; ECB mode leaks the structure of the plaintext.</string>
+    <string name="sec_trust_all_certs">This accepts every TLS certificate, which removes the protection TLS exists to provide and makes the connection trivially interceptable.</string>
+    <string name="sec_cleartext_http">Plain http:// to a public host — the traffic is readable and modifiable on the way. Use https://.</string>
+    <string name="sec_insecure_random">Random and Math.random are predictable and must not generate tokens, keys or salts. Use SecureRandom.</string>
+
+    <!-- ── Android specifics ─────────────────────────────────────────────── -->
+    <string name="sec_world_accessible">World-readable/writable mode makes this file available to every app on the device. It has been deprecated since API 17 and throws since API 24.</string>
+    <string name="sec_js_interface">addJavascriptInterface exposes Java methods to page JavaScript. On loaded remote content this is remote code execution.</string>
+    <string name="sec_webview_js">JavaScript is enabled in a WebView that loads a URL. Make sure the content is yours and cannot be replaced in transit.</string>
+    <string name="sec_secret_on_external">Secrets written to external storage are readable by other apps and survive uninstall. Keep them in app-private storage or the Keystore.</string>
+
+</resources>

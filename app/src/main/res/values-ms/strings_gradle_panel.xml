@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gradle_branch_tasks">Tugasan</string>
+    <string name="gradle_repos_none">Tiada repositori diisytiharkan dalam build.gradle</string>
+    <string name="gradle_task_no_javadoc">Alat Javadoc tidak disertakan dengan aplikasi, jadi tugasan ini tidak boleh dijalankan pada peranti.</string>
+    <string name="gradle_task_no_publish">Penerbitan ke repositori jauh tidak disokong. Gunakan publishToMavenLocal.</string>
+    <string name="build_panel_open">Alat binaan</string>
+</resources>

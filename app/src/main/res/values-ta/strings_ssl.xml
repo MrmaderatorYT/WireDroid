@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssl_title">SSL சான்றிதழ்கள்</string>
+    <string name="ssl_subtitle">நேரடி வழங்கியிலிருந்தோ உள்ளூர்க் கோப்பிலிருந்தோ TLS சங்கிலியை ஆய்வு செய்</string>
+    <string name="ssl_label_host">வழங்கி</string>
+    <string name="ssl_label_port">துறை</string>
+    <string name="ssl_hint_host">example.com</string>
+    <string name="ssl_hint_port">443</string>
+    <string name="ssl_action_fetch">பெறு</string>
+    <string name="ssl_action_open_file">கோப்பைத் திற</string>
+    <string name="ssl_action_clear">அழி</string>
+    <string name="ssl_action_copy_pem">PEM ஐ நகலெடு</string>
+    <string name="ssl_picker_title">சான்றிதழ்க் கோப்பைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="ssl_status_idle">வழங்கியை உள்ளிடவும், அல்லது .crt / .cer / .pem / .der கோப்பைத் திறக்கவும்</string>
+    <string name="ssl_status_connecting">%1$s:%2$d உடன் இணைக்கப்படுகிறது…</string>
+    <string name="ssl_status_reading">%1$s படிக்கப்படுகிறது…</string>
+    <string name="ssl_status_source_host">%1$s:%2$d</string>
+    <string name="ssl_status_source_file">கோப்பு: %1$s</string>
+    <string name="ssl_status_error">பிழை: %1$s</string>
+    <string name="ssl_status_elapsed">%1$d மி.வி</string>
+    <plurals name="ssl_status_chain">
+        <item quantity="one">%1$d சான்றிதழ்</item>
+        <item quantity="other">%1$d சான்றிதழ்கள்</item>
+    </plurals>
+    <string name="ssl_error_empty_host">முதலில் வழங்கியின் பெயரை உள்ளிடவும்</string>
+    <string name="ssl_error_bad_port">துறை 1 முதல் 65535 வரையிலான எண்ணாக இருக்க வேண்டும்</string>
+    <string name="ssl_error_no_certs">இந்த மூலத்தில் சான்றிதழ்கள் எதுவும் இல்லை</string>
+    <string name="ssl_error_read_file">கோப்பைப் படிக்க முடியவில்லை: %1$s</string>
+    <string name="ssl_error_parse">அறியப்பட்ட X.509 சான்றிதழ் அல்ல: %1$s</string>
+    <string name="ssl_error_too_large">சான்றிதழாக இருக்க முடியாத அளவுக்குக் கோப்பு பெரியது (%1$d KB)</string>
+    <string name="ssl_error_no_picker">இந்தச் சாதனத்தில் கோப்புத் தேர்வி எதுவும் இல்லை</string>
+    <string name="ssl_error_missing_file">கோப்பு கிடைக்கவில்லை: %1$s</string>
+    <string name="ssl_notice_inspection">ஆய்வுப் பயன்முறை: பெறும்போது சான்றிதழ் சரிபார்ப்பு நிறுத்தப்படுகிறது, எனவே காலாவதியான, தானே கையொப்பமிட்ட சங்கிலிகளையும் படிக்க முடியும். இந்த இணைப்பு இந்தத் திரைக்கு மட்டுமே பயன்படுகிறது.</string>
+    <string name="ssl_section_connection">இணைப்பு</string>
+    <string name="ssl_label_peer">இணை</string>
+    <string name="ssl_label_protocol">நெறிமுறை</string>
+    <string name="ssl_label_cipher">மறையீட்டுத் தொகுப்பு</string>
+    <string name="ssl_label_handshake">கைகுலுக்கல்</string>
+    <string name="ssl_section_subject">பொருள்</string>
+    <string name="ssl_section_issuer">வழங்குநர்</string>
+    <string name="ssl_section_validity">செல்லுபடித்தன்மை</string>
+    <string name="ssl_section_details">விவரங்கள்</string>
+    <string name="ssl_section_san">மாற்றுப் பொருள் பெயர்கள்</string>
+    <string name="ssl_section_usage">கட்டுப்பாடுகளும் பயன்பாடும்</string>
+    <string name="ssl_section_fingerprints">கைரேகைகள்</string>
+    <string name="ssl_label_not_before">இதற்கு முன் அல்ல</string>
+    <string name="ssl_label_not_after">இதற்குப் பின் அல்ல</string>
+    <string name="ssl_label_remaining">மீதம்</string>
+    <string name="ssl_label_serial">வரிசை எண் (hex)</string>
+    <string name="ssl_label_sig_alg">கையொப்ப நெறிமுறை</string>
+    <string name="ssl_label_key">பொது விசை</string>
+    <string name="ssl_label_version">பதிப்பு</string>
+    <string name="ssl_label_basic_constraints">அடிப்படைக் கட்டுப்பாடுகள்</string>
+    <string name="ssl_label_key_usage">விசைப் பயன்பாடு</string>
+    <string name="ssl_label_ext_key_usage">விரிவாக்கப்பட்ட விசைப் பயன்பாடு</string>
+    <string name="ssl_label_sha256">SHA-256</string>
+    <string name="ssl_label_sha1">SHA-1</string>
+    <string name="ssl_value_none">—</string>
+    <string name="ssl_value_version">v%1$d</string>
+    <string name="ssl_value_key_sized">%1$s, %2$d பிட்டுகள்</string>
+    <string name="ssl_value_ca_yes">சான்றிதழ் அதிகாரம்</string>
+    <string name="ssl_value_ca_no">இறுதிப் பயனர் (CA அல்ல)</string>
+    <string name="ssl_value_path_len">CA, கீழே மேலும் %1$d நிலைகளுக்குக் கையொப்பமிடலாம்</string>
+    <string name="ssl_value_path_len_unlimited">CA, சங்கிலி ஆழத்திற்கு வரம்பில்லை</string>
+    <string name="ssl_value_self_signed">தானே கையொப்பமிட்டது (பொருளும் வழங்குநரும் ஒன்றே)</string>
+    <string name="ssl_value_expired">%1$d நாட்களுக்கு முன் காலாவதியானது</string>
+    <string name="ssl_value_expires_today">இன்று காலாவதியாகிறது</string>
+    <string name="ssl_value_expiring_soon">%1$d நாட்களில் காலாவதியாகும்</string>
+    <string name="ssl_value_valid">%1$d நாட்கள் மீதம்</string>
+    <string name="ssl_value_not_yet_valid">இன்னும் செல்லுபடியாகவில்லை — %1$d நாட்களில் தொடங்கும்</string>
+    <string name="ssl_date_format">yyyy-MM-dd HH:mm:ss z</string>
+    <string name="ssl_depth_badge">#%1$d</string>
+    <string name="ssl_depth_leaf">இலை</string>
+    <string name="ssl_depth_intermediate">இடைநிலை</string>
+    <string name="ssl_depth_root">வேர்</string>
+    <string name="ssl_chain_break">சங்கிலி முறிவு — இந்தச் சான்றிதழின் வழங்குநர் அடுத்ததன் பொருளுடன் பொருந்தவில்லை</string>
+    <string name="ssl_chain_unnamed">(பொதுப் பெயர் இல்லை)</string>
+    <string name="ssl_rdn_cn">பொதுப் பெயர்</string>
+    <string name="ssl_rdn_o">நிறுவனம்</string>
+    <string name="ssl_rdn_ou">நிறுவனப் பிரிவு</string>
+    <string name="ssl_rdn_c">நாடு</string>
+    <string name="ssl_rdn_st">மாநிலம் / மாகாணம்</string>
+    <string name="ssl_rdn_l">ஊர்</string>
+    <string name="ssl_rdn_street">தெரு</string>
+    <string name="ssl_rdn_email">மின்னஞ்சல்</string>
+    <string name="ssl_rdn_dc">களக் கூறு</string>
+    <string name="ssl_rdn_uid">பயனர் ID</string>
+    <string name="ssl_rdn_serial">வரிசை எண்</string>
+    <string name="ssl_rdn_title">பட்டம்</string>
+    <string name="ssl_eku_any">எந்தப் பயன்பாடும்</string>
+    <string name="ssl_eku_server_auth">TLS வழங்கி அங்கீகாரம்</string>
+    <string name="ssl_eku_client_auth">TLS சார்பு அங்கீகாரம்</string>
+    <string name="ssl_eku_code_signing">குறியீட்டுக் கையொப்பம்</string>
+    <string name="ssl_eku_email">மின்னஞ்சல் பாதுகாப்பு</string>
+    <string name="ssl_eku_timestamp">நேர முத்திரையிடல்</string>
+    <string name="ssl_eku_ocsp">OCSP கையொப்பம்</string>
+    <string name="ssl_toast_pem_copied">PEM கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது</string>
+    <string name="ssl_clip_label">சான்றிதழ் PEM</string>
+    <string name="ssl_a11y_host">ஆய்வு செய்ய வேண்டிய வழங்கியின் பெயர்</string>
+    <string name="ssl_a11y_port">TLS துறை, இயல்பாக 443</string>
+    <string name="ssl_a11y_fetch">சான்றிதழ்ச் சங்கிலியைப் பெறு</string>
+    <string name="ssl_a11y_open_file">சான்றிதழ்க் கோப்பைத் திற</string>
+    <string name="ssl_a11y_clear">முடிவுகளை அழி</string>
+    <string name="ssl_a11y_copy_pem">இந்தச் சான்றிதழை PEM ஆக நகலெடு</string>
+    <string-array name="ssl_san_types">
+        <item>பிற பெயர்</item>
+        <item>மின்னஞ்சல்</item>
+        <item>DNS</item>
+        <item>X.400 முகவரி</item>
+        <item>அடைவுப் பெயர்</item>
+        <item>EDI தரப்புப் பெயர்</item>
+        <item>URI</item>
+        <item>IP முகவரி</item>
+        <item>பதிவு செய்யப்பட்ட ID</item>
+    </string-array>
+    <string-array name="ssl_key_usage_bits">
+        <item>எண்ணிலக்கக் கையொப்பம்</item>
+        <item>மறுக்க இயலாமை</item>
+        <item>விசை மறையாக்கம்</item>
+        <item>தரவு மறையாக்கம்</item>
+        <item>விசை ஒப்பந்தம்</item>
+        <item>சான்றிதழ்க் கையொப்பம்</item>
+        <item>CRL கையொப்பம்</item>
+        <item>மறையாக்கம் மட்டும்</item>
+        <item>மறைவிலக்கம் மட்டும்</item>
+    </string-array>
+</resources>

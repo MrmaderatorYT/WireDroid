@@ -1,0 +1,61 @@
+tools/wiredroid/boards.test.cjs
+PASS 339 independent support rows; Uno/Nano MCU/pin/core/upload metadata; unknown capabilities remain unavailable
+
+tools/wiredroid/circuits.test.cjs
+PASS: preflight power short, LED resistor and bypass, output/output modes, dangling component pins, powered potentiometer and sensor ADC, orthogonal routing, route validation
+
+tools/wiredroid/devices-regression.test.cjs
+PASS: A4988 all microstep controls/averaged current limit/ENABLE translator/RESET/SLEEP/wake/power; 595 shift-latch-clear-OE; PCF weak HIGH/address/readback/power; SSD horizontal/vertical windows/operands/display; LCD shift/home/decrement/CGRAM/cursor
+
+tools/wiredroid/devices.test.cjs
+PASS: I²C EEPROM ACK/NACK/read/write/disconnection, L293D PWM/direction, HD44780 initialization and text, microsecond PWM edges and VCD
+
+tools/wiredroid/electronics-ratings.test.cjs
+PASS: explicit ratings provenance/limits/reference polarity, no inferred ratings, DC stall current, MOS body diode, unipolar windings/stepping/load
+
+tools/wiredroid/electronics-static-sparse.test.cjs
+PASS: dt=0 freezes C/L/motor/stepper history, changed GPIO static states, sparse/dense pivot and residual agreement, 250-resistor analytic ladder. Sparse 19.7 ms; dense 8.8 ms; 251 unknowns.
+PASS: 1000-resistor chain 142.5 ms; peak 3000 sparse matrix entries; 5538445 operations across all Newton iterations.
+
+tools/wiredroid/electronics.test.cjs
+PASS: divider voltage/current, RC charging, LED diode equation, RL transient, DC motor direction and inertia, NPN/MOS switch, rail short
+
+tools/wiredroid/engine.test.cjs
+PASS: validation, pin lookup, resistor propagation, LED polarity, short circuit, history and pull-up button
+
+tools/wiredroid/esc-encoder.test.cjs
+PASS: ESC arming/throttle/acceleration/neutral/reverse/fail-signal/power/control; encoder quadrature phase/direction/all virtual-time edges/mechanical source/open-contact pullups/disconnected common
+
+tools/wiredroid/examples.test.cjs
+PASS: 17 complete examples, valid parts/contacts/wires, digital LED paths, button pullup, export copies and component size bounds
+
+tools/wiredroid/mcu-protocol.test.cjs
+PASS MCU register-level UART RX queue/nullbyte/overflow, SPI hostreply+hardwarecycles, TWI100kHz/addressACK/dataNACK delayed9clock completion; compiledecho still separate
+
+tools/wiredroid/mcu-runtime.test.cjs
+PASS actual worker/runtime async pause-step-reset acknowledgements, timeout cleanup, pause during pendingbus and bounded1ms multiboard ordering
+
+tools/wiredroid/mcu.test.cjs
+PASS AVR: real Arduino core HEX, 100ms GPIO, deterministic virtual clocks, Timer0 PWM, ADC, UART output, external interrupt ISR, pause/step/breakpoint/reset, persistent EEPROM, strict HEX and Nano/multi-file artifacts
+
+tools/wiredroid/mechanics.test.cjs
+PASS: servo speed, torque/load/stall, customized pulse endpoints, disconnected power/GND/control, continuous neutral/deadband/acceleration/reversal, parameter validation
+
+tools/wiredroid/models.test.cjs
+PASS: complete structural contact mapping, trimpot/LCD/L298/ULN/A4988 aliases, false image/backpack bindings removed, explicit family limits and no inferred datasheet verification
+
+tools/wiredroid/motion-state.test.cjs
+PASS: physical angles replace stale manual preview synchronously, angle/active DOM state agrees, no second integration, manual preview stays animated, motor rpm and commanded target are exposed
+
+tools/wiredroid/motion.test.cjs
+PASS: servo model, powered pulse propagation, no position from PWM alone, missing power/GND/signal stops motion, slider potentiometer bus support
+
+tools/wiredroid/motor-examples.test.cjs
+PASS: ready A4988 1/16-current-limited rotation/enable and ULN2003 unipolar half-step forward/reverse example wiring
+
+tools/wiredroid/signals.test.cjs
+PASS virtual timestamps/1ps multichannel VCD/clocks; PWM provenance; period/pulse/trigger; UART framing/parity/invert; SPI4modes/MSB/LSB; I2C START/address/ACK/NACK/STOP; bounded traces
+
+tools/wiredroid/spice.test.cjs
+PASS: bounded numeric custom SPICE models, suffixes/continuations, unsafe and incompatible syntax rejected, RC/PWM snapshot deck, custom diode, explicit unsupported parts, reference, analytic divider topology. Text export verified; external ngspice execution not performed.
+

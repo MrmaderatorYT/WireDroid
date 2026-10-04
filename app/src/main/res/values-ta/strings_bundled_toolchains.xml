@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ, JDK 21 ஐ இலக்காகக் கொண்டு .class கோப்புகளை உள்ளிணைந்த JVM இல் இயக்குகிறது. இயக்க நேரம் உடன் வருகிறது; முதல் முறை சுமார் 145 MB மட்டுமே உள் சேமிப்பில் பிரித்தெடுக்கப்படும்.</string>
+    <string name="settings_ndk_bundled_desc">விருப்பமான C++ கருவித்தொகுப்பு தேவைப்படும்போது பதிவிறக்கப்படுகிறது: 344 MB பதிவிறக்கம், நிறுவிய பின் சுமார் 1.85 GB உள் சேமிப்பு தேவை.</string>
+    <string name="settings_ndk_bundled_install">C++ NDK ஐப் பதிவிறக்கு (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 அதன் அதிகாரப்பூர்வ வெளியீட்டிலிருந்து பதிவிறக்கப்படுகிறது: பிணையத்தில் 344 MB, பிரித்தெடுத்த பின் சுமார் 1.85 GB உள் சேமிப்பு. தடைபட்ட பதிவிறக்கம் நின்ற இடத்திலிருந்தே தொடரும். தொடரவா?</string>
+    <string name="settings_ndk_install_action">பதிவிறக்கு</string>
+    <string name="ndk_bundled_no_space">NDK r29 க்கு உள் சேமிப்பில் குறைந்தது %1$d MB இடம் தேவை.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK க்கு Android 9 அல்லது அதற்குப் பிந்தைய பதிப்பில் இயங்கும் ARM64 சாதனம் தேவை.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, தேவைப்படும்போது பதிவிறக்கம்)</string>
+    <string name="np_native_ndk_bundled_note">Clang 21 உடன் C மற்றும் C++. NDK 344 MB பதிவிறக்கம், நிறுவிய பின் சுமார் 1.85 GB தேவை.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">எச்சரிக்கை: C++ மூலங்களுக்கு NDK தேவை. அமைப்புகள் → C++ NDK ஐப் பதிவிறக்கு என்பதில் நிறுவவும். தவிர்க்கப்படுகிறது.</string>
+    <string name="native_compiling_sources">சொந்த மூலங்கள் தொகுக்கப்படுகின்றன…</string>
+    <string name="ndk_downloading">NDK r29 பதிவிறக்கப்படுகிறது… %1$s / %2$s</string>
+    <string name="ndk_verifying">பதிவிறக்கம் சரிபார்க்கப்படுகிறது…</string>
+    <string name="ndk_download_http">NDK பதிவிறக்கம் HTTP %1$d ஐத் திருப்பியது.</string>
+    <string name="ndk_download_incomplete">NDK பதிவிறக்கம் முன்கூட்டியே முடிந்தது. தொடர மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="ndk_download_too_large">NDK பதிவிறக்கம் எதிர்பார்த்ததை விட நீளமாக இருந்ததால் நிறுத்தப்பட்டது.</string>
+    <string name="ndk_download_checksum_failed">NDK பதிவிறக்கம் நேர்மைச் சோதனையில் தோல்வியடைந்ததால் நீக்கப்பட்டது. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="ndk_download_restart">பகுதியளவு NDK பதிவிறக்கம் இனி வெளியீட்டுடன் பொருந்தவில்லை. முதலிலிருந்து தொடங்க மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="settings_ndk_cancel">பதிவிறக்கத்தை ரத்துசெய்</string>
+    <string name="settings_ndk_cancelled">NDK பதிவிறக்கம் ரத்துசெய்யப்பட்டது. பதிவிறக்கியது அடுத்த முறைக்காக வைக்கப்பட்டுள்ளது.</string>
+</resources>

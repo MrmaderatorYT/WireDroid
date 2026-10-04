@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="native_disabled_skipped">Native Quellen übersprungen: Ihr Bau ist in den Einstellungen ausgeschaltet.</string>
+    <string name="native_tcc_cannot_cpp">%1$s ist C++, das TCC nicht bauen kann. Stellen Sie den Compiler in den Einstellungen auf NDK um.</string>
+    <string name="np_native_label">Nativer Code (JNI)</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">C und C++ mit echter Optimierung. Benötigt einen Download von etwa 130 MB.</string>
+    <string name="np_native_note">Kompiliert die .c- und .cpp-Dateien dieses Projekts zu .so und legt sie in den Bibliothekspfad, damit System.loadLibrary sie findet.</string>
+    <string name="np_native_tcc">TCC — eingebaut</string>
+    <string name="np_native_tcc_note">Kein Download, kompiliert sofort. Nur C, und es optimiert sehr wenig.</string>
+    <string name="settings_native_backend">Compiler</string>
+    <string name="settings_native_enable">Native Quellen bauen</string>
+    <string name="settings_native_enable_desc">Wenn aktiv, werden .c- und .cpp-Dateien eines Projekts zu .so kompiliert und in den Bibliothekspfad gelegt, damit System.loadLibrary sie findet. Sonst werden sie ignoriert.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">Die echte Android-Toolchain: C und C++, richtige Optimierung. Kostet einen Download von etwa 130 MB, der auf rund 500 MB entpackt wird.</string>
+    <string name="settings_native_ndk_missing">NDK ist ausgewählt, aber nicht installiert — installieren Sie es unten oder wechseln Sie zu TCC.</string>
+    <string name="settings_native_section">Nativer Code (JNI)</string>
+    <string name="settings_native_tcc">TCC — eingebaut</string>
+    <string name="settings_native_tcc_desc">Steckt in der App, nichts herunterzuladen, kompiliert im Nu. Nur C: C++ kann es nicht bauen, und es optimiert sehr wenig.</string>
+</resources>

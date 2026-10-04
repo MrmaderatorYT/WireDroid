@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Share</string>
+    <string name="ai_history_delete_message">Za a share “%1$s” har abada.</string>
+    <string name="ai_history_delete_title">A share wannan tattaunawar?</string>
+    <string name="ai_history_empty">Babu tattaunawar da aka ajiye tukuna. Tambayi mataimakin wani abu, sai ta bayyana anan.</string>
+    <string name="ai_history_meta">saƙonni %1$d · %2$s</string>
+    <string name="ai_history_restored">An dawo da tattaunawar da aka ajiye (saƙonni %1$d).</string>
+    <string name="ai_history_title">Tattaunawar da aka ajiye</string>
+    <string name="ai_history_untitled">Tattaunawa mara suna</string>
+    <string name="ai_new_chat">Sabuwar tattaunawa</string>
+    <string name="ai_new_chat_started">An fara sabuwar tattaunawa. An ajiye ta baya.</string>
+    <string name="md_pane_preview_on">An nuna shi anan. Sake danna idon don komawa editan.</string>
+</resources>

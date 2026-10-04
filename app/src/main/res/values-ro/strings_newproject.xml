@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Un fișier, fără proiect · pornește imediat</string>
+    <string name="np_scratch_language">Limbaj</string>
+    <string name="np_scratch_location_label">Fișierul va fi creat în</string>
+    <string name="np_scratch_note">Ținut în afara proiectelor tale, așa că rămâne când treci de la unul la altul.</string>
+    <string name="np_scratch_preview_label">Fișier</string>
+    <string name="np_template_scratch">Ciornă</string>
+</resources>

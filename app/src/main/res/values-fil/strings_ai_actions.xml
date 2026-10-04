@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_action_agent">Agent mode</string>
+    <string name="ai_action_document">Idokumento</string>
+    <string name="ai_action_explain">Ipaliwanag</string>
+    <string name="ai_action_find_bugs">Maghanap ng bug</string>
+    <string name="ai_action_optimize">I-optimize</string>
+    <string name="ai_action_refactor">I-refactor</string>
+    <string name="ai_action_test">Sumulat ng test</string>
+    <string name="ai_actions_title">Mabilisang aksyon</string>
+    <string name="ai_agent_off">Naka-off ang agent mode</string>
+    <string name="ai_agent_on">Naka-on ang agent mode — kayang mag-edit ng file ang assistant</string>
+    <string name="ai_need_file">Magbukas muna ng file — sa code na tinitingnan mo gumagana ang mga aksyong ito.</string>
+</resources>

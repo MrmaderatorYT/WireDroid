@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Pas encore de clé API — touchez « Clé » pour en ajouter une.</string>
+    <string name="ai_err_hint_model">Ce modèle n’est pas disponible pour votre clé. Choisissez-en un autre dans la liste.</string>
+    <string name="ai_err_hint_key">Vérifiez la clé API, puis le nom du modèle.</string>
+    <string name="ai_err_hint_rejected">La clé a été refusée. Touchez « Clé » et utilisez « Enregistrer et vérifier » pour savoir pourquoi.</string>
+    <string name="ai_err_hint_rate">Trop de requêtes — patientez un instant et réessayez.</string>
+    <string name="ai_err_hint_google">Le côté de Google est en panne. Réessayer fonctionne généralement.</string>
+    <string name="ai_err_empty">Réponse vide — le budget de sortie est probablement parti dans le raisonnement interne. Réessayez ou reformulez.</string>
+    <string name="ai_err_network">Erreur réseau : %1$s</string>
+    <string name="ai_key_works">La clé fonctionne.</string>
+    <string name="ai_key_rejected">Google a refusé cette clé (HTTP %1$d).%2$s\n\nLe plus souvent elle a été révoquée, appartient à un projet dont l’API Generative Language est désactivée, ou n’a été copiée qu’en partie.</string>
+    <string name="ai_key_check_failed">Impossible de vérifier la clé : HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Impossible de joindre Google pour vérifier la clé : %1$s</string>
+    <string name="ai_key_problem_empty">La clé est vide.</string>
+    <string name="ai_key_problem_url">C’est une adresse web, pas une clé. Ouvrez-la, puis copiez la clé affichée.</string>
+    <string name="ai_key_problem_openai">Cela ressemble à une clé OpenAI. Cet assistant utilise Google Gemini ; obtenez une clé sur aistudio.google.com.</string>
+    <string name="ai_key_problem_short">La clé semble tronquée à %1$d caractères. Vérifiez qu’elle a été copiée en entier.</string>
+</resources>

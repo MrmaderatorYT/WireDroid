@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Split terminal screen ─────────────────────────────────────────── -->
+
+    <string name="terminal_title">Split Terminal</string>
+
+    <!-- Panes are numbered by position, so the first pane is always "Terminal 1". -->
+    <string name="terminal_pane_name">Terminal %1$d</string>
+    <string name="terminal_pane_running">running</string>
+    <string name="terminal_close_symbol">✕</string>
+    <string name="terminal_input_hint">jshell&gt; enter Java code…</string>
+
+    <!-- Toolbar actions -->
+    <string name="terminal_menu_add_pane">Add pane</string>
+    <string name="terminal_menu_close_pane">Close pane</string>
+    <string name="terminal_menu_split_columns">Split: columns</string>
+    <string name="terminal_menu_split_rows">Split: rows</string>
+
+    <!-- Status line -->
+    <string name="terminal_layout_columns">columns</string>
+    <string name="terminal_layout_rows">rows</string>
+    <string name="terminal_status">%1$d panes — %2$s</string>
+    <string name="terminal_status_compact">%1$d panes — narrow window, showing %2$s</string>
+    <string name="terminal_switcher_label">Panes:</string>
+
+    <!-- Toasts -->
+    <string name="terminal_toast_max_panes">At most %1$d panes fit on one screen</string>
+    <string name="terminal_toast_last_pane">The last pane cannot be closed</string>
+
+    <!-- Close confirmation -->
+    <string name="terminal_close_confirm_title">Close pane?</string>
+    <string name="terminal_close_confirm_message">%1$s is still running a command. Closing the pane discards it along with its output.</string>
+    <string name="terminal_close_confirm_yes">Close anyway</string>
+    <string name="terminal_cancel">Cancel</string>
+
+    <!-- Content descriptions -->
+    <string name="terminal_a11y_close_pane">Close %1$s</string>
+    <string name="terminal_a11y_input">Command input for %1$s</string>
+    <string name="terminal_a11y_output">Output of %1$s</string>
+    <string name="terminal_a11y_select_pane">Show %1$s</string>
+    <string name="terminal_a11y_divider">Drag to resize the panes on either side</string>
+
+    <!-- ── Session output (JShellPanelManager) ───────────────────────────── -->
+
+    <string name="terminal_welcome">"Welcome to JShell for Android.\nType Java statements (e.g. System.out.println(\"Hi\");)\n\n"</string>
+    <string name="terminal_prompt_echo">"jshell> %1$s\n"</string>
+    <string name="terminal_help">"Available commands:\n  /help    - Show this help message\n  /clear   - Clear the console output\n  /reset   - Reset JShell memory (forget variables)\n  /history - Show history of entered commands\n\n"</string>
+    <string name="terminal_cleared">"Console cleared.\n\n"</string>
+    <string name="terminal_reset_done">"JShell state reset. All variables are forgotten.\n\n"</string>
+    <string name="terminal_history_empty">"History is empty.\n\n"</string>
+    <string name="terminal_history_header">"History:\n"</string>
+    <string name="terminal_history_entry">"  %1$d: %2$s\n"</string>
+    <string name="terminal_unknown_command">"Unknown command: %1$s. Type /help for available commands.\n\n"</string>
+    <string name="terminal_error">"Error: %1$s\n"</string>
+    <string name="terminal_error_no_class">"Error: Could not find compiled class.\n"</string>
+    <string name="terminal_error_scratch_dir">"Cannot create the session scratch directory: %1$s"</string>
+
+</resources>

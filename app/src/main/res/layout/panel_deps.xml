@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub: this panel
+    starts hidden and most sessions never open it, but it was still inflated
+    on every cold start along with every other bottom panel.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/depsPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_console_bg"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/depsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/idea_toolbar"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <TextView
+            android:id="@+id/depsRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="↻"
+            android:textColor="@color/idea_accent"
+            android:textSize="14sp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_deps_refresh" />
+
+        <TextView
+            android:id="@+id/depsFitToScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Fit"
+            android:textColor="@color/idea_text"
+            android:textSize="11sp"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/depsStatus"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text=""
+            android:textColor="@color/idea_text_dim"
+            android:textSize="10sp"
+            android:fontFamily="monospace"
+            android:maxLines="1"
+            android:ellipsize="start"
+            android:paddingEnd="8dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ccs.wiredroid.ui.DependencyGraphView
+            android:id="@+id/depsGraphView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/depsZoomControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/depsZoomIn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/idea_text"
+                android:background="@drawable/bg_console_scroll_end"
+                android:elevation="4dp"
+                android:contentDescription="Zoom In" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:id="@+id/depsZoomOut"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="−"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/idea_text"
+                android:background="@drawable/bg_console_scroll_end"
+                android:elevation="4dp"
+                android:contentDescription="Zoom Out" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

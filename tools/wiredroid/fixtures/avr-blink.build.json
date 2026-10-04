@@ -1,0 +1,27 @@
+{
+  "profile": "arduino:avr:uno",
+  "node": "uno",
+  "compiler": "avr-g++ (GCC) 7.3.0",
+  "coreVersion": "1.8.6",
+  "variant": "standard",
+  "mcu": "atmega328p",
+  "clockHz": 16000000,
+  "flashBytes": 922,
+  "ramBytes": 9,
+  "hexSha256": "678ccbab899fcd680fcfd3e5f89e9aaef8941261a4e2a3fc39d12403ad5299c9",
+  "sources": [
+    "avr-blink/sketches/uno.cpp"
+  ],
+  "libraries": [],
+  "defines": [],
+  "limitations": [
+    "External local AVR compiler required; not an Android-native toolchain.",
+    "AVR core default uses C++11 without exceptions and has no general STL runtime.",
+    "Imported .ino requires explicit function prototypes."
+  ],
+  "version": 1,
+  "sourceDigest": "fa67952d3a5209debe92df1d17b923444793e331b6baf6fb841f4c9104618d32",
+  "origin": "local-build-fixture",
+  "sourceRelationship": "Compiled locally; source/configuration snapshot digests recorded afterward from preserved fixture sources",
+  "configDigest": "3340e25f66e7c893fbe297f5f92a4573ef53eed5f7316e0b6ab38ccd772d6664"
+}

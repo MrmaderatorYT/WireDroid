@@ -1,0 +1,4 @@
+2026-10-03 03:29:05 Europe/Kyiv: embedded Clang failed compiling alternating-nano.
+Compiler output preserved in wiredroid-1.7-native-examples-release.txt.
+Android crash-buffer snapshot taken afterwards contained only unrelated repeated system-service exceptions; no relevant compiler backtrace was retained. Those unrelated records are omitted.
+A subsequent DEBUG-only dump likewise contained no native compiler stack.

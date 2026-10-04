@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_console_scroll_to_end">கன்சோலை இறுதிக்கு உருட்டு</string>
+    <string name="console_autoscroll_following">தானியங்கு உருட்டல் இயக்கத்தில் — கன்சோல் புதிய வெளியீட்டைப் பின்தொடர்கிறது</string>
+    <string name="console_autoscroll_paused">தானியங்கு உருட்டல் இடைநிறுத்தப்பட்டது — இறுதிக்குச் செல்ல தட்டவும்</string>
+</resources>

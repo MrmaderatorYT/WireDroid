@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">No API key yet — tap “Key” to add one.</string>
+    <string name="ai_err_hint_model">This model is not available to your key. Pick another one from the model list.</string>
+    <string name="ai_err_hint_key">Check the API key, then the model name.</string>
+    <string name="ai_err_hint_rejected">The key was rejected. Tap “Key” and use Save &amp; verify to see why.</string>
+    <string name="ai_err_hint_rate">Rate limited — wait a moment and try again.</string>
+    <string name="ai_err_hint_google">Google’s side is failing right now. Retrying usually works.</string>
+    <string name="ai_err_empty">Empty answer — the output budget was likely spent on internal reasoning. Retry, or rephrase the question.</string>
+    <string name="ai_err_network">Network error: %1$s</string>
+    <string name="ai_key_works">The key works.</string>
+    <string name="ai_key_rejected">Google rejected this key (HTTP %1$d).%2$s\n\nUsually the key was revoked, belongs to a project with the Generative Language API switched off, or was only partly copied.</string>
+    <string name="ai_key_check_failed">Could not check the key: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Could not reach Google to check the key: %1$s</string>
+    <string name="ai_key_problem_empty">The key is empty.</string>
+    <string name="ai_key_problem_url">That is a web address, not a key. Open it, then copy the key it shows.</string>
+    <string name="ai_key_problem_openai">That looks like an OpenAI key. This assistant talks to Google Gemini; get a key at aistudio.google.com.</string>
+    <string name="ai_key_problem_short">The key looks cut short at %1$d characters. Check that all of it was copied.</string>
+</resources>

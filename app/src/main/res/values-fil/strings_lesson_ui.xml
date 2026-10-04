@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Awtomatikong tukuyin (sistema)</string>
+    <string name="lesson_playground_hide">⚡ Itago ang editor</string>
+    <string name="lesson_playground_show">⚡ Playground</string>
+</resources>

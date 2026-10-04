@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Acțiuni rapide</string>
+    <string name="ai_action_explain">Explică</string>
+    <string name="ai_action_find_bugs">Găsește erori</string>
+    <string name="ai_action_refactor">Refactorizează</string>
+    <string name="ai_action_optimize">Optimizează</string>
+    <string name="ai_action_document">Documentează</string>
+    <string name="ai_action_test">Scrie teste</string>
+    <string name="ai_action_agent">Mod agent</string>
+    <string name="ai_agent_on">Mod agent activat — asistentul poate edita fișiere</string>
+    <string name="ai_agent_off">Mod agent dezactivat</string>
+    <string name="ai_need_file">Deschideți întâi un fișier — aceste acțiuni lucrează pe codul afișat.</string>
+</resources>

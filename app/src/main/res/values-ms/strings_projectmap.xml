@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_title">Peta Projek</string>
+    <string name="map_scanning">Mengimbas projek…</string>
+    <string name="map_settling">menyusun atur…</string>
+    <string name="map_ready">sedia</string>
+    <string name="map_status">%1$d kelas · %2$d kebergantungan</string>
+    <string name="map_status_capped">%1$d daripada %2$d kelas · %3$d kebergantungan · %4$d tersembunyi</string>
+    <string name="map_status_line">%1$s — %2$s</string>
+    <string name="map_selected">%1$s · %2$d jiran (%3$d masuk, %4$d keluar)</string>
+    <string name="map_btn_fit">Muat</string>
+    <string name="map_btn_legend">Petunjuk</string>
+    <string name="map_btn_clear">Kosongkan</string>
+    <string name="map_dialog_close">Tutup</string>
+    <string name="map_legend_title">Pakej</string>
+    <string name="map_legend_row">■  %1$s — %2$d kelas</string>
+    <string name="map_legend_hidden">%1$d kelas yang paling sedikit sambungannya disembunyikan supaya peta kekal mudah dibaca.</string>
+    <string name="map_group_root">(pakej akar dikongsi)</string>
+    <string name="map_empty_title">Tiada kelas untuk dipetakan</string>
+    <string name="map_empty_hint">Peta melukis kelas .java dan .kt serta import antaranya. Projek ini belum ada — tambah satu kelas dan buka peta semula.</string>
+    <string name="map_no_project">Tiada projek dibuka</string>
+    <string name="map_error">Tidak dapat membina peta: %1$s</string>
+    <string name="map_toast_missing_file">Fail itu sudah tiada</string>
+    <string name="map_a11y_canvas">Peta projek. Seret untuk mengalih, cubit untuk zum, ketik kelas untuk membukanya, tekan lama untuk menyerlahkan kebergantungannya.</string>
+    <string name="map_a11y_fit">Muatkan seluruh peta pada skrin</string>
+    <string name="map_a11y_legend">Tunjukkan petunjuk warna pakej</string>
+    <string name="map_a11y_clear">Kosongkan kelas yang diserlahkan</string>
+</resources>

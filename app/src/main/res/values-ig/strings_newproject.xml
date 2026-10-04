@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Otu faịlụ, ọ dịghị ọrụ · ọ na-agba ọsọ ozugbo</string>
+    <string name="np_scratch_language">Asụsụ</string>
+    <string name="np_scratch_location_label">A ga-emepụta faịlụ na</string>
+    <string name="np_scratch_note">A na-edebe ya n’èzí ọrụ gị, ya mere ọ na-adịgide mgbe ị na-agbanwe n’etiti ha.</string>
+    <string name="np_scratch_preview_label">Faịlụ</string>
+    <string name="np_template_scratch">Mkpirisi</string>
+</resources>

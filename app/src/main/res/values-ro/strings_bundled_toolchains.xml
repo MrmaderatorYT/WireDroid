@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ compilează pentru JDK 21 și rulează fișierele .class într-o JVM încorporată. Mediul de execuție este inclus; la prima rulare se extrag doar aproximativ 145 MB în stocarea internă.</string>
+    <string name="settings_ndk_bundled_desc">Setul opțional de instrumente C++ este descărcat la cerere: 344 MB de descărcat și aproximativ 1,85 GB de memorie internă după instalare.</string>
+    <string name="settings_ndk_bundled_install">Descarcă NDK C++ (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 este descărcat din versiunea originală: 344 MB prin rețea și aproximativ 1,85 GB de memorie internă după extragere. O descărcare întreruptă se reia de unde a rămas. Continuați?</string>
+    <string name="settings_ndk_install_action">Descarcă</string>
+    <string name="ndk_bundled_no_space">NDK r29 necesită cel puțin %1$d MB liberi în stocarea internă.</string>
+    <string name="ndk_bundled_unsupported">NDK C++ necesită un dispozitiv ARM64 cu Android 9 sau mai nou.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, descărcat la cerere)</string>
+    <string name="np_native_ndk_bundled_note">C și C++ cu Clang 21. NDK necesită 344 MB de descărcat și aproximativ 1,85 GB după instalare.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Avertisment: sursele C++ necesită NDK. Instalați-l din Setări → Descarcă NDK C++. Se omite.</string>
+    <string name="native_compiling_sources">Se compilează sursele native…</string>
+    <string name="ndk_downloading">Se descarcă NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Se verifică descărcarea…</string>
+    <string name="ndk_download_http">Descărcarea NDK a returnat HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Descărcarea NDK s-a oprit prea curând. Încercați din nou pentru a o relua.</string>
+    <string name="ndk_download_too_large">Descărcarea NDK a fost mai lungă decât se aștepta și a fost oprită.</string>
+    <string name="ndk_download_checksum_failed">Descărcarea NDK nu a trecut verificarea de integritate și a fost ștearsă. Încercați din nou.</string>
+    <string name="ndk_download_restart">Descărcarea parțială a NDK nu mai corespunde versiunii publicate. Încercați din nou pentru a reîncepe.</string>
+    <string name="settings_ndk_cancel">Anulează descărcarea</string>
+    <string name="settings_ndk_cancelled">Descărcarea NDK a fost anulată. Partea descărcată a fost păstrată.</string>
+</resources>

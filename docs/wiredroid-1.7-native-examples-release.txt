@@ -1,0 +1,8 @@
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+FAIL: java.lang.AssertionError: document.querySelector('[data-node=led_red]').classList.contains('led-on') expected true; logs="\n03:28:43 Готово · 2570 деталей Fritzing\n03:28:44 Запуск 1 C/C++ програм\n03:28:44 Arduino Nano: nano.cpp · Clang · C++17 / C11 · 11 файлів · \n03:29:05 Помилка C/C++\n03:29:05 ✕ Arduino Nano: PLEASE submit a bug report to https://github.com/android-ndk/ndk/issues and include the crash backtrace.\n03:29:05 ✕ "; stopOrigins="[]"
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_title">UML வரைபடம்</string>
+    <string name="uml_failed">UML — திட்டத்தைப் படிக்க முடியவில்லை: %1$s</string>
+    <string name="uml_btn_source">PlantUML மூலம்</string>
+    <string name="uml_btn_canvas">வரைபடம்</string>
+    <string name="uml_btn_copy">நகலெடு</string>
+    <string name="uml_btn_fit">பொருத்து</string>
+    <string name="uml_btn_apply">பயன்படுத்து</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_applied">வரைபடம் புதுப்பிக்கப்பட்டது</string>
+    <string name="uml_no_types_found">குறியீட்டில் UML வகுப்புகள் எதுவும் இல்லை</string>
+    <plurals name="uml_summary">
+        <item quantity="one">%1$d வகுப்பு · %2$d தொடர்புகள்</item>
+        <item quantity="other">%1$d வகுப்புகள் · %2$d தொடர்புகள்</item>
+    </plurals>
+</resources>

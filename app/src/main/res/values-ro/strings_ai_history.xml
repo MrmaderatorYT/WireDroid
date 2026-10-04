@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Șterge</string>
+    <string name="ai_history_delete_message">„%1$s” va fi eliminată definitiv.</string>
+    <string name="ai_history_delete_title">Ștergi această conversație?</string>
+    <string name="ai_history_empty">Încă nu există conversații salvate. Întreabă asistentul ceva și va apărea aici.</string>
+    <string name="ai_history_meta">%1$d mesaje · %2$s</string>
+    <string name="ai_history_restored">Conversație salvată restaurată (%1$d mesaje).</string>
+    <string name="ai_history_title">Conversații salvate</string>
+    <string name="ai_history_untitled">Conversație fără titlu</string>
+    <string name="ai_new_chat">Conversație nouă</string>
+    <string name="ai_new_chat_started">A început o conversație nouă. Cea anterioară este salvată.</string>
+    <string name="md_pane_preview_on">Randat aici. Atinge din nou ochiul pentru a reveni la editor.</string>
+</resources>

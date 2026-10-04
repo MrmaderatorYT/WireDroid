@@ -1,0 +1,1 @@
+PASS: twelve complete examples, valid parts/contacts/wires, digital LED paths, button pullup, export copies and component size bounds

@@ -1,0 +1,1 @@
+PASS: moving servo horn, intermediate animated angles, direct potentiometer rotation and keyboard control, powered command propagation, stop freeze, manual preview, fixed contacts and rotated geometry, phone layout

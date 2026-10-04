@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ ń ṣàkójọ fún JDK 21, ó sì ń ṣiṣẹ́ àwọn fáìlì .class nínú JVM tí a fi sínú app. Runtime náà wà nínú app; ìṣiṣẹ́ àkọ́kọ́ kan máa tú nǹkan bí 145 MB sínú ibi ìpamọ́ inú.</string>
+    <string name="settings_ndk_bundled_desc">A ń gba ohun-èlò C++ àṣàyàn nígbà tí a nílò rẹ̀: ìgbàsílẹ̀ 344 MB àti nǹkan bí 1.85 GB ibi ìtọ́jú inú lẹ́yìn ìfisílẹ̀.</string>
+    <string name="settings_ndk_bundled_install">Gba C++ NDK (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">A ń gba NDK r29 láti ibi ìtúsílẹ̀ àkọ́kọ́ rẹ̀: 344 MB nípasẹ̀ nẹ́tíwọ́kì àti nǹkan bí 1.85 GB ibi ìtọ́jú inú lẹ́yìn ìtúpalẹ̀. Ìgbàsílẹ̀ tí ó dá dúró máa tẹ̀síwájú láti ibi tí ó dúró. Ṣé kí a tẹ̀síwájú?</string>
+    <string name="settings_ndk_install_action">Gbà</string>
+    <string name="ndk_bundled_no_space">NDK r29 nílò ó kéré tán %1$d MB àyè òfo nínú ibi ìpamọ́ inú.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK nílò ẹ̀rọ ARM64 tí ó ní Android 9 tàbí tuntun.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, ìgbàsílẹ̀ nígbà tí a nílò)</string>
+    <string name="np_native_ndk_bundled_note">C àti C++ pẹ̀lú Clang 21. NDK jẹ́ ìgbàsílẹ̀ 344 MB, ó sì gba nǹkan bí 1.85 GB lẹ́yìn ìfisílẹ̀.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Ìkìlọ̀: àwọn kóòdù C++ nílò NDK. Fi í sílẹ̀ ní Ìṣàtúnṣe → Gba C++ NDK. A fò ó.</string>
+    <string name="native_compiling_sources">Ń ṣàkójọ àwọn orísun native…</string>
+    <string name="ndk_downloading">Ń gba NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Ń ṣàyẹ̀wò ìgbàsílẹ̀…</string>
+    <string name="ndk_download_http">Ìgbàsílẹ̀ NDK dá HTTP %1$d padà.</string>
+    <string name="ndk_download_incomplete">Ìgbàsílẹ̀ NDK dúró kí ó tó parí. Gbìyànjú lẹ́ẹ̀kan sí i láti tẹ̀síwájú.</string>
+    <string name="ndk_download_too_large">Ìgbàsílẹ̀ NDK tóbi ju bí a ṣe retí, a dá a dúró.</string>
+    <string name="ndk_download_checksum_failed">Ìgbàsílẹ̀ NDK kò kọjá àyẹ̀wò ìdúróṣinṣin, a parẹ́ rẹ̀. Gbìyànjú lẹ́ẹ̀kan sí i.</string>
+    <string name="ndk_download_restart">Ìgbàsílẹ̀ NDK tí kò parí kò bá ìtúsílẹ̀ mọ́. Gbìyànjú lẹ́ẹ̀kan sí i láti bẹ̀rẹ̀ láti ìbẹ̀rẹ̀.</string>
+    <string name="settings_ndk_cancel">Fagilé ìgbàsílẹ̀</string>
+    <string name="settings_ndk_cancelled">A fagilé ìgbàsílẹ̀ NDK. A pa apá tí a gbà mọ́.</string>
+</resources>

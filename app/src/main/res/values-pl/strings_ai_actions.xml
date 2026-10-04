@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Szybkie akcje</string>
+    <string name="ai_action_explain">Wyjaśnij</string>
+    <string name="ai_action_find_bugs">Znajdź błędy</string>
+    <string name="ai_action_refactor">Refaktoryzuj</string>
+    <string name="ai_action_optimize">Optymalizuj</string>
+    <string name="ai_action_document">Udokumentuj</string>
+    <string name="ai_action_test">Napisz testy</string>
+    <string name="ai_action_agent">Tryb agenta</string>
+    <string name="ai_agent_on">Tryb agenta włączony — asystent może edytować pliki</string>
+    <string name="ai_agent_off">Tryb agenta wyłączony</string>
+    <string name="ai_need_file">Najpierw otwórz plik — te akcje działają na widocznym kodzie.</string>
+</resources>

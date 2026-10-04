@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Arrow: shaft from y=3 down to the head base at y=10, apex at y=16. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M11,3L13,3L13,10L17,10L12,16L7,10L11,10Z" />
+
+    <!-- The bar the arrow lands on — this is what reads as "end", not "down". -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M5,18L19,18L19,20L5,20Z" />
+</vector>

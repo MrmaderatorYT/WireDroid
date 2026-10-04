@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Jeden plik, bez projektu · uruchamia się od razu</string>
+    <string name="np_scratch_language">Język</string>
+    <string name="np_scratch_location_label">Plik zostanie utworzony w</string>
+    <string name="np_scratch_note">Trzymany poza projektami, więc przetrwa przełączanie między nimi.</string>
+    <string name="np_scratch_preview_label">Plik</string>
+    <string name="np_template_scratch">Brudnopis</string>
+</resources>

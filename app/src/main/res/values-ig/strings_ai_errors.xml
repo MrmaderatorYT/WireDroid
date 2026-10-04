@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Enweghị igodo API ka ugbu a — pịa “Igodo” iji tinye otu.</string>
+    <string name="ai_err_hint_model">Ụdị a adịghị maka igodo gị. Họrọ ọzọ na ndepụta ahụ.</string>
+    <string name="ai_err_hint_key">Lelee igodo API, mgbe ahụ aha ụdị ahụ.</string>
+    <string name="ai_err_hint_rejected">Ajụrụ igodo ahụ. Pịa “Igodo” ma jiri “Chekwaa ma nyochaa” ịhụ ihe kpatara ya.</string>
+    <string name="ai_err_hint_rate">Oke arịrịọ — chere ntakịrị ma nwaa ọzọ.</string>
+    <string name="ai_err_hint_google">Akụkụ Google na-ada ugbu a. Ịnwale ọzọ na-arụkarị ọrụ.</string>
+    <string name="ai_err_empty">Azịza tọgbọrọ chakoo — o yikarịrị ka mmefu mmepụta gara n’echiche ime. Nwaa ọzọ ma ọ bụ gbanwee ajụjụ.</string>
+    <string name="ai_err_network">Njehie netwọk: %1$s</string>
+    <string name="ai_key_works">Igodo ahụ na-arụ ọrụ.</string>
+    <string name="ai_key_rejected">Google jụrụ igodo a (HTTP %1$d).%2$s\n\nỌtụtụ mgbe a kagburu ya, ọ bụ nke ọrụ ebe a gbanyụrụ Generative Language API, ma ọ bụ e depụtara ya naanị akụkụ.</string>
+    <string name="ai_key_check_failed">Enweghị ike ịlele igodo: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Enweghị ike iru Google ka a lelee igodo: %1$s</string>
+    <string name="ai_key_problem_empty">Igodo ahụ tọgbọrọ chakoo.</string>
+    <string name="ai_key_problem_url">Nke ahụ bụ adreesị weebụ, ọ bụghị igodo. Mepee ya, wee depụta igodo o gosiri.</string>
+    <string name="ai_key_problem_openai">Nke ahụ dị ka igodo OpenAI. Onye enyemaka a na-eji Google Gemini; nweta igodo na aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Igodo ahụ dị ka e bipụrụ ya na mkpụrụedemede %1$d. Lelee ma e depụtara ya niile.</string>
+</resources>

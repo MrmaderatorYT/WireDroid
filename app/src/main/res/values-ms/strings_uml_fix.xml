@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_title">Rajah UML</string>
+    <string name="uml_failed">UML — tidak dapat membaca projek: %1$s</string>
+    <string name="uml_btn_source">Sumber PlantUML</string>
+    <string name="uml_btn_canvas">Rajah</string>
+    <string name="uml_btn_copy">Salin</string>
+    <string name="uml_btn_fit">Muat</string>
+    <string name="uml_btn_apply">Guna</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_applied">Rajah dikemas kini</string>
+    <string name="uml_no_types_found">Tiada kelas UML ditemui dalam kod</string>
+    <plurals name="uml_summary">
+        <item quantity="other">%1$d kelas · %2$d hubungan</item>
+    </plurals>
+</resources>

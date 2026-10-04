@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">விரைவுச் செயல்கள்</string>
+    <string name="ai_action_explain">விளக்கு</string>
+    <string name="ai_action_find_bugs">பிழைகளைக் கண்டறி</string>
+    <string name="ai_action_refactor">மறுசீரமை</string>
+    <string name="ai_action_optimize">உகந்ததாக்கு</string>
+    <string name="ai_action_document">ஆவணப்படுத்து</string>
+    <string name="ai_action_test">சோதனைகளை எழுது</string>
+    <string name="ai_action_agent">முகவர் பயன்முறை</string>
+    <string name="ai_agent_on">முகவர் பயன்முறை இயக்கத்தில் — உதவியாளர் கோப்புகளைத் திருத்த முடியும்</string>
+    <string name="ai_agent_off">முகவர் பயன்முறை நிறுத்தப்பட்டது</string>
+    <string name="ai_need_file">முதலில் ஒரு கோப்பைத் திறக்கவும் — இந்தச் செயல்கள் நீங்கள் பார்க்கும் குறியீட்டில் வேலை செய்கின்றன.</string>
+</resources>

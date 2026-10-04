@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Kọ́kọ́rọ́</string>
+    <string name="ai_ready">Olùrànlọ́wọ́ AI ti ṣetán. Béèrè nípa Java, ìtúmọ̀ kóòdù, wíwá àṣìṣe, àtúnṣe, ìmúdára tàbí àwọn àyẹ̀wò.</string>
+    <string name="ai_loaded_file">A ti gbé %1$s wọlé (àmì %2$d). Béèrè ohunkóhun nípa kóòdù yìí.</string>
+    <string name="ai_loaded_file_short">A ti gbé %1$s wọlé (àmì %2$d).</string>
+    <string name="ai_key_not_set">Kò sí kọ́kọ́rọ́ API síbẹ̀. Tẹ “Kọ́kọ́rọ́” láti fi kọ́kọ́rọ́ Gemini rẹ kún láti aistudio.google.com</string>
+    <string name="ai_key_needed_first">Kọ́kọ́ fi kọ́kọ́rọ́ API rẹ kún — tẹ “Kọ́kọ́rọ́”.</string>
+    <string name="ai_model_changed">A yí àwòṣe padà sí %1$s</string>
+    <string name="ai_key_saved_checking">A ti fi kọ́kọ́rọ́ pamọ́. À ń bá Google ṣàyẹ̀wò rẹ̀…</string>
+    <string name="ai_key_verified">A ti fọwọ́sí kọ́kọ́rọ́. Àwòṣe: %1$s</string>
+    <string name="ai_key_saved_unverified">A fi kọ́kọ́rọ́ pamọ́, ṣùgbọ́n àyẹ̀wò kò kọjá:\n%1$s</string>
+    <string name="ai_key_save_failed_title">A kò lè fi kọ́kọ́rọ́ pamọ́</string>
+    <string name="ai_key_save_failed_message">Ibi ìpamọ́ àbò ẹ̀rọ yìí kọ̀ ọ́, nítorí náà a kò fi kọ́kọ́rọ́ pamọ́. A kò fi pamọ́ láìsí ìṣírò ní mọ̀ọ́mọ̀.</string>
+    <string name="ai_key_check_title">Ṣàyẹ̀wò kọ́kọ́rọ́ yìí</string>
+    <string name="ai_key_save_anyway">Fi pamọ́ síbẹ̀</string>
+    <string name="ai_key_save_verify">Fi pamọ́ kí o sì ṣàyẹ̀wò</string>
+    <string name="ai_key_get">Gba kọ́kọ́rọ́</string>
+    <string name="ai_insert_into_editor">↧ Fi sínú olóòtú</string>
+    <string name="ai_insert_desc">Fi kóòdù yìí sínú olóòtú tí ó ṣí</string>
+    <string name="ai_queued">Ní ìlà (%1$s) — padà sí olóòtú láti lò ó</string>
+</resources>

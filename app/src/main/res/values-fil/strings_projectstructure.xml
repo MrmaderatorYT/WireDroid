@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for ProjectStructureActivity. Every key is prefixed ps_ so this file
+    stays self-contained; menu_project_structure lives here too, because the only
+    thing that uses it is the palette entry that opens this screen.
+-->
+<resources>
+
+    <string name="menu_project_structure">Project Structure</string>
+
+    <string name="ps_title">Project Structure</string>
+    <string name="ps_loading">Reading project…</string>
+    <string name="ps_no_project">No project is open.</string>
+    <string name="ps_error_render">Could not read the project structure: %1$s</string>
+    <string name="ps_none">—</string>
+
+    <!-- Project -->
+    <string name="ps_section_project">Project</string>
+    <string name="ps_field_name">Name</string>
+    <string name="ps_field_location">Location</string>
+    <string name="ps_field_build_system">Build system</string>
+    <string name="ps_field_coordinates">Coordinates</string>
+    <string name="ps_field_packaging">Packaging</string>
+    <string name="ps_field_main_class">Main class</string>
+    <string name="ps_field_build_script">Build script</string>
+    <string name="ps_build_system_none">None (loose sources)</string>
+
+    <!-- SDK -->
+    <string name="ps_section_sdk">SDK</string>
+    <string name="ps_sdk_name">Bundled toolchain</string>
+    <string name="ps_sdk_hint">WireDroid compiles on the device, so there is no external JDK to choose. These are the tools doing the work.</string>
+    <string name="ps_sdk_entry">%1$s %2$s</string>
+    <string name="ps_sdk_range">Compiles %1$s through %2$s</string>
+
+    <!-- Language level -->
+    <string name="ps_section_language_level">Language level</string>
+    <string name="ps_level_hint">Applies to every compile and run. This is the same setting Settings edits.</string>
+    <string name="ps_level_maps_to">%1$s (compiles as %2$s)</string>
+    <string name="ps_level_effective">Sources are compiled at %1$s.</string>
+    <string name="ps_level_declared">%1$s sets %2$s to %3$s.</string>
+    <string name="ps_level_declared_none">The build script states no language level.</string>
+    <string name="ps_level_mismatch">The build script asks for %1$s, but this device compiles at %2$s.</string>
+    <string name="ps_level_changed">Language level set to %1$s</string>
+    <string name="ps_a11y_level">Project language level</string>
+
+    <!-- Modules -->
+    <string name="ps_section_modules">Modules</string>
+    <string name="ps_modules_empty">Single-module project.</string>
+    <string name="ps_module_meta">%1$s · %2$s</string>
+    <string name="ps_module_ok">declared</string>
+    <string name="ps_module_missing">declared, missing on disk</string>
+    <string name="ps_module_undeclared">on disk, not declared</string>
+
+    <!-- Libraries -->
+    <string name="ps_section_libraries">Libraries</string>
+    <string name="ps_libraries_empty">No dependencies declared.</string>
+    <string name="ps_library_meta">%1$s · %2$s</string>
+    <string name="ps_library_cached">downloaded</string>
+    <string name="ps_library_not_cached">not downloaded</string>
+    <string name="ps_libraries_truncated">…and %1$d more, not listed.</string>
+    <string name="ps_library_jar">Jar: %1$s</string>
+    <string name="ps_library_jar_none">No jar in the local repository yet. Run Sync Dependencies to fetch it.</string>
+    <string name="ps_dialog_close">Close</string>
+    <string name="ps_a11y_library">Library %1$s</string>
+
+    <!-- Source roots -->
+    <string name="ps_section_source_roots">Source roots</string>
+    <string name="ps_root_main_java">Java sources</string>
+    <string name="ps_root_main_kotlin">Kotlin sources</string>
+    <string name="ps_root_main_resources">Resources</string>
+    <string name="ps_root_test_java">Java tests</string>
+    <string name="ps_root_test_kotlin">Kotlin tests</string>
+    <string name="ps_root_test_resources">Test resources</string>
+    <string name="ps_root_files">%1$s — %2$d files</string>
+    <string name="ps_root_files_capped">%1$s — %2$d+ files</string>
+    <string name="ps_root_absent">%1$s — absent</string>
+
+    <!-- Warnings -->
+    <string name="ps_section_warnings">Build script warnings</string>
+
+    <string name="ps_a11y_edit">I-edit ang %1$s</string>
+    <string name="ps_edit_name_done">Pinalitan ng pangalan sa %1$s</string>
+    <string name="ps_edit_name_hint">Artifact id</string>
+    <string name="ps_edit_name_title">Pangalan ng proyekto</string>
+    <string name="ps_edit_needs_pom">Walang pom.xml ang proyektong ito na mapapalitan ng pangalan.</string>
+    <string name="ps_edit_no_element">Walang elementong &lt;%1$s&gt; ang pom.</string>
+    <string name="ps_edit_package_done">Inilipat ang package sa %1$s</string>
+    <string name="ps_edit_package_failed">Hindi nailipat ang package.</string>
+    <string name="ps_edit_package_hint">com.example.app</string>
+    <string name="ps_edit_package_title">Batayang package</string>
+    <string name="ps_field_package">Package</string>
+    <string name="settings_open_project_structure">Istruktura ng proyekto</string>
+    <string name="settings_open_project_structure_desc">Pangalan, package, antas ng wika at mga library</string>
+    <string name="settings_open_project_structure_no_project">Magbukas muna ng proyekto</string>
+</resources>

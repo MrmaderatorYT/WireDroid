@@ -1,0 +1,7 @@
+INSTRUMENTATION_STATUS: stream=PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: stream=PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: existing project overwrite rejected
+
+INSTRUMENTATION_CODE: -1

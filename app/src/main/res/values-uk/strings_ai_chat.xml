@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Ключ</string>
+    <string name="ai_ready">AI-асистент готовий. Питайте про Java, пояснення коду, пошук помилок, рефакторинг, оптимізацію чи генерацію тестів.</string>
+    <string name="ai_loaded_file">Завантажено %1$s (%2$d символів). Питайте що завгодно про цей код.</string>
+    <string name="ai_loaded_file_short">Завантажено %1$s (%2$d символів).</string>
+    <string name="ai_key_not_set">Ключа API ще немає. Натисніть «Ключ», щоб додати свій ключ Gemini з aistudio.google.com</string>
+    <string name="ai_key_needed_first">Спершу додайте ключ API — натисніть «Ключ».</string>
+    <string name="ai_model_changed">Модель змінено на %1$s</string>
+    <string name="ai_key_saved_checking">Ключ збережено. Перевіряю його в Google…</string>
+    <string name="ai_key_verified">Ключ підтверджено. Модель: %1$s</string>
+    <string name="ai_key_saved_unverified">Ключ збережено, але перевірка не пройшла:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Не вдалося зберегти ключ</string>
+    <string name="ai_key_save_failed_message">Захищене сховище цього пристрою його відхилило, тож ключ не збережено. У незашифрованому вигляді він навмисно не зберігається.</string>
+    <string name="ai_key_check_title">Перевірте цей ключ</string>
+    <string name="ai_key_save_anyway">Однаково зберегти</string>
+    <string name="ai_key_save_verify">Зберегти й перевірити</string>
+    <string name="ai_key_get">Отримати ключ</string>
+    <string name="ai_insert_into_editor">↧ Вставити в редактор</string>
+    <string name="ai_insert_desc">Вставити цей код у відкритий редактор</string>
+    <string name="ai_queued">У черзі (%1$s) — поверніться в редактор, щоб застосувати</string>
+</resources>

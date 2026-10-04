@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="np_template_circuit">WireDroid · Circuit</string>
+<string name="np_caption_circuit">Boards, connections and programmable digital simulation</string>
+<string name="wire_workspace">Circuit workspace</string>
+</resources>

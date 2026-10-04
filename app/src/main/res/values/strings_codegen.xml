@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Implement Methods -->
+    <string name="implement_pick_title">Methods to implement</string>
+    <string name="implement_generate">Generate</string>
+    <string name="implement_nothing_missing">Every inherited method is already implemented</string>
+    <string name="implement_failed">Could not read the hierarchy: %1$s</string>
+    <plurals name="implement_generated">
+        <item quantity="one">%d method generated</item>
+        <item quantity="other">%d methods generated</item>
+    </plurals>
+
+    <!-- Generate boilerplate -->
+    <string name="generate_pick_fields_title">Fields to include</string>
+    <string name="generate_no_fields">No instance fields found in this class</string>
+    <string name="generate_none_selected">No fields selected</string>
+    <string name="generate_done">Generated</string>
+    <string name="generate_constructor_no_arg">No-arg Constructor</string>
+    <string name="generate_select_none">Select None</string>
+
+    <!-- Split view from a long press on a tab -->
+    <string name="tab_split_open_beside">Open beside the current file</string>
+    <string name="tab_split_move_back">Move back to the first pane</string>
+    <string name="tab_split_swap">Swap the two panes</string>
+    <string name="tab_split_close">Close the split</string>
+    <string name="tab_untitled">Untitled</string>
+
+    <!-- Theme follows the system -->
+    <string name="settings_theme_follow_system">Follow the system theme</string>
+    <string name="settings_theme_follow_hint_night">Android is in dark mode — this pick becomes your night theme.</string>
+    <string name="settings_theme_follow_hint_day">Android is in light mode — this pick becomes your day theme.</string>
+    <string name="settings_theme_follow_hint_off">One theme at all times, whatever Android does.</string>
+
+    <!-- Run configuration -->
+    <string name="run_config_env_note">Variables are set for the run and removed afterwards, so they do not leak into the next one.</string>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profiler_complete">Pemprofilan selesai. Keputusan ada pada tab Profile.</string>
+    <string name="profiler_failed">Pemprofilan tidak selesai — program tidak berjalan.</string>
+    <string name="profiler_no_classes">Tiada apa-apa untuk diprofil: pengkompil tidak menghasilkan sebarang kelas.</string>
+</resources>

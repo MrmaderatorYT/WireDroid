@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: Binciken kai tsaye yana amfani da classpath na Android a yanzu, don haka ana iya nuna azuzuwan Java SE na asali a matsayin babu su bisa kuskure. A dogara da sakamakon ginawa ko gudanarwa.</string>
+</resources>

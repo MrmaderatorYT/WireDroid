@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_native_section">சொந்தக் குறியீடு (JNI)</string>
+    <string name="settings_native_enable">சொந்த மூலங்களை உருவாக்கு</string>
+    <string name="settings_native_enable_desc">இயக்கத்தில் இருக்கும்போது, திட்டத்தில் உள்ள .c மற்றும் .cpp கோப்புகள் .so ஆகத் தொகுக்கப்பட்டு நூலகப் பாதையில் வைக்கப்படும், இதனால் System.loadLibrary அவற்றைக் கண்டுபிடிக்கும். நிறுத்தினால் அவை புறக்கணிக்கப்படும்.</string>
+    <string name="settings_native_backend">தொகுப்பான்</string>
+    <string name="settings_native_tcc">TCC — உள்ளிணைந்தது</string>
+    <string name="settings_native_tcc_desc">பயன்பாட்டுக்குள்ளேயே வருகிறது, பதிவிறக்க எதுவும் இல்லை, கண் இமைக்கும் நேரத்தில் தொகுக்கிறது. C மட்டுமே: C++ ஐ உருவாக்க முடியாது, உகப்பாக்கமும் மிகக் குறைவு.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">உண்மையான Android கருவித்தொகுப்பு: C மற்றும் C++, முறையான உகப்பாக்கம். சுமார் 130 MB பதிவிறக்கம் தேவை, விரிந்தால் சுமார் 500 MB.</string>
+    <string name="settings_native_ndk_missing">NDK தேர்ந்தெடுக்கப்பட்டுள்ளது ஆனால் நிறுவப்படவில்லை — கீழே நிறுவவும், அல்லது TCC க்கு மாறவும்.</string>
+    <string name="native_disabled_skipped">சொந்த மூலங்கள் தவிர்க்கப்பட்டன: அவற்றை உருவாக்குவது அமைப்புகளில் நிறுத்தப்பட்டுள்ளது.</string>
+    <string name="native_tcc_cannot_cpp">%1$s என்பது C++, அதை TCC ஆல் உருவாக்க முடியாது. அமைப்புகளில் தொகுப்பானை NDK ஆக மாற்றவும்.</string>
+    <string name="np_native_label">சொந்தக் குறியீடு (JNI)</string>
+    <string name="np_native_note">இந்தத் திட்டத்தில் உள்ள .c மற்றும் .cpp கோப்புகளை .so ஆகத் தொகுத்து நூலகப் பாதையில் வைக்கிறது, இதனால் System.loadLibrary அவற்றைக் கண்டுபிடிக்கும்.</string>
+    <string name="np_native_tcc">TCC — உள்ளிணைந்தது</string>
+    <string name="np_native_tcc_note">பதிவிறக்கம் இல்லை, உடனடியாகத் தொகுக்கிறது. C மட்டுமே, உகப்பாக்கமும் மிகக் குறைவு.</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">உண்மையான உகப்பாக்கத்துடன் C மற்றும் C++. சுமார் 130 MB பதிவிறக்கம் தேவை.</string>
+</resources>

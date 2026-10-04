@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for HashCalculatorActivity (v1.10.0).
+    Every key is prefixed hash_ so this file stays self-contained.
+-->
+<resources>
+
+    <string name="hash_title">Hash Calculator</string>
+
+    <!-- Algorithm labels -->
+    <string name="hash_algo_md5">MD5</string>
+    <string name="hash_algo_sha1">SHA-1</string>
+    <string name="hash_algo_sha256">SHA-256</string>
+    <string name="hash_algo_sha512">SHA-512</string>
+    <string name="hash_algo_crc32">CRC32</string>
+
+    <!-- File header -->
+    <string name="hash_no_file">No file selected</string>
+    <string name="hash_size_detail">%1$s (%2$s bytes)</string>
+    <string name="hash_modified">Modified %1$s</string>
+    <string name="hash_size_unknown">Unknown size</string>
+    <string name="hash_modified_unknown">Modification date unknown</string>
+    <string name="hash_size_b">%1$d B</string>
+    <string name="hash_size_kb">%1$.1f KB</string>
+    <string name="hash_size_mb">%1$.1f MB</string>
+    <string name="hash_size_gb">%1$.2f GB</string>
+
+    <!-- Progress -->
+    <string name="hash_progress">%1$s / %2$s — %3$d%%</string>
+    <string name="hash_progress_unknown">%1$s read</string>
+
+    <!-- Status line -->
+    <string name="hash_status_idle">Choose a file to compute its checksums</string>
+    <string name="hash_status_computing">Computing…</string>
+    <string name="hash_status_done">Done — %1$s in %2$d ms</string>
+    <string name="hash_status_ready">Checksums ready</string>
+    <string name="hash_status_cancelled">Cancelled</string>
+    <string name="hash_status_error">Error: %1$s</string>
+
+    <!-- Sections and actions -->
+    <string name="hash_section_checksums">Checksums</string>
+    <string name="hash_section_compare">Compare</string>
+    <string name="hash_action_cancel">Cancel</string>
+    <string name="hash_action_open">Open file</string>
+    <string name="hash_action_recompute">Recompute</string>
+
+    <!-- Comparison -->
+    <string name="hash_compare_hint">Paste the expected hash…</string>
+    <string name="hash_compare_match">✓ Matches %1$s</string>
+    <string name="hash_compare_mismatch">✗ No match</string>
+    <string name="hash_compare_pending">Waiting for the checksums…</string>
+
+    <!-- Clipboard -->
+    <string name="hash_clip_label">Checksum</string>
+    <string name="hash_toast_copied">%1$s copied to clipboard</string>
+
+    <!-- Values and errors -->
+    <string name="hash_value_pending">—</string>
+    <string name="hash_value_unavailable">Not available on this device</string>
+    <string name="hash_error_no_picker">No file picker available</string>
+    <string name="hash_error_open_failed">Cannot open file: %1$s</string>
+    <string name="hash_error_no_stream">The file could not be opened for reading</string>
+    <string name="hash_error_layout">Error: %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="hash_a11y_row">%1$s checksum, tap to copy</string>
+    <string name="hash_a11y_cancel">Cancel the computation</string>
+    <string name="hash_a11y_open">Open another file</string>
+    <string name="hash_a11y_recompute">Compute the checksums again</string>
+    <string name="hash_a11y_compare">Expected hash to compare against</string>
+    <string name="hash_a11y_progress">Computation progress</string>
+
+</resources>

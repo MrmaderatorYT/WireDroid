@@ -1,0 +1,10 @@
+{
+  "library": "usb-serial-for-android",
+  "version": "3.9.0",
+  "commit": "e1018ab31c118b7d2e15fc7c2e9c5b19f33eb1f1",
+  "url": "https://github.com/mik3y/usb-serial-for-android",
+  "license": "MIT",
+  "modifications": [
+    "Added release-mode BuildConfig compatibility constant; driver source unchanged."
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="abstract class">
+  <title>abstract class</title>
+  <path d="M6,2h12a4,4 0 0 1 4,4v12a4,4 0 0 1 -4,4h-12a4,4 0 0 1 -4,-4v-12a4,4 0 0 1 4,-4z" fill="#9876AA"/>
+  <path d="M11,5.5h2l3.4,11h-2.1l-0.7,-2.4h-3.2l-0.7,2.4h-2.1zM10.1,12.2h3.8l-1.9,-4.6z" fill="#FFFFFF" fill-rule="evenodd"/>
+</svg>

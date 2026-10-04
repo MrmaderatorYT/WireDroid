@@ -1,0 +1,42 @@
+{
+  "protocol": "STK500v1",
+  "scope": "synthetic protocol fixture; not physical hardware evidence",
+  "mcu": "atmega328p",
+  "pageSize": 128,
+  "programBytes": 2,
+  "signature": "1e950f",
+  "exchanges": [
+    {
+      "tx": "3020",
+      "rx": "1410"
+    },
+    {
+      "tx": "7520",
+      "rx": "141e950f10"
+    },
+    {
+      "tx": "5020",
+      "rx": "1410"
+    },
+    {
+      "tx": "55000020",
+      "rx": "1410"
+    },
+    {
+      "tx": "640080460102ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff20",
+      "rx": "1410"
+    },
+    {
+      "tx": "55000020",
+      "rx": "1410"
+    },
+    {
+      "tx": "7400804620",
+      "rx": "140102ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff10"
+    },
+    {
+      "tx": "5120",
+      "rx": "1410"
+    }
+  ]
+}

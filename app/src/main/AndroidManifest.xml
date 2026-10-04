@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--
+        Bluetooth share deliberately declares NO bluetooth permission. The file is
+        handed to the system's own Bluetooth share activity through a FileProvider
+        URI, and that app holds the permissions and drives the transfer. Declaring
+        BLUETOOTH_CONNECT here would add a Play Console disclosure and a runtime
+        prompt for something this app never actually calls.
+    -->
+
+    <!--
+        Form factors. Declaring these keeps the app installable on Chromebooks,
+        Android desktops and tablets without the hardware a phone happens to
+        have: Play treats a touchscreen as required unless told otherwise, and
+        RECORD_AUDIO implies a required microphone the same way. Voice input is
+        one feature of an IDE, not its price of entry, and everything here works
+        with a keyboard and a mouse.
+    -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <!-- Freeform / DeX windowing is nice to have, never a install requirement. -->
+    <uses-feature
+        android:name="android.software.freeform_window_management"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+
+    <!-- Android 11+ PackageVisibilityFilter: declare queried packages for implicit intents -->
+    <queries>
+        <!-- Browser for opening URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <!-- Share targets -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".WireDroidApplication"
+        android:enableOnBackInvokedCallback="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:resizeableActivity="true"
+        android:theme="@style/Theme.WireDroid.Fullscreen">
+
+        <activity android:name=".wire.WireActivity" android:exported="false" android:theme="@style/Theme.WireDroid.Fullscreen" />
+
+        <!-- Samsung DeX: allow the desktop-sized layout instead of a phone-shaped box. -->
+        <meta-data
+            android:name="com.samsung.android.keepalive.density"
+            android:value="true" />
+        <meta-data
+            android:name="com.samsung.android.multidisplay.keep_process_alive"
+            android:value="true" />
+
+        <!--
+            Launcher. Shows the splash for a fixed interval and gates the first run
+            behind the Java licence notice, then hands over to WelcomeActivity.
+        -->
+        <!--
+            No android:noHistory here. It would finish the splash as soon as it
+            stops being visible, and the licence gate offers a "Licences" button
+            that opens CreditsActivity — coming back from that would land on a
+            destroyed activity and drop the user out of the app. The splash
+            finishes itself in openWelcome() instead, which is the same effect
+            without breaking the one navigation it actually allows.
+        -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WireDroid.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.WireDroid.Fullscreen" />
+
+        <!--
+            configChanges keeps the editor alive while a DeX/freeform window is
+            dragged, instead of recreating the activity on every frame of the
+            resize.
+
+            "orientation" and "screenLayout" are deliberately NOT listed. There is
+            a layout-port/activity_main.xml, and the port qualifier is resolved by
+            orientation: handling that change ourselves would pin whichever layout
+            happened to be loaded first and the portrait variant would never appear
+            again. Leaving it out costs one recreation when the window actually
+            turns, which is exactly when the other layout is wanted.
+        -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="screenSize|smallestScreenSize|keyboardHidden|keyboard|density|uiMode"
+            android:theme="@style/Theme.WireDroid.Fullscreen">
+            <layout
+                android:defaultWidth="900dp"
+                android:defaultHeight="640dp"
+                android:minWidth="360dp"
+                android:minHeight="360dp"
+                android:gravity="center" />
+        </activity>
+
+        <!--
+            Handler for files opened from other apps. Invisible: it resolves the
+            incoming URI, works out which project it belongs to and hands over
+            to MainActivity, so it never shows or lands in the back stack.
+
+            Three filters are needed because providers describe the same file in
+            incompatible ways:
+              1. specific MIME types, which a well-behaved provider reports;
+              2. filename patterns, for the far more common case of a generic
+                 octet-stream or text/plain with the extension in the path;
+              3. a share-sheet filter, so "Send to" works from mail and chat.
+            An extension-only filter would miss providers that hide the name;
+            a MIME-only filter would miss nearly every file manager.
+        -->
+        <activity
+            android:name=".ui.FileOpenActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:label="@string/open_with_label"
+            android:theme="@android:style/Theme.NoDisplay">
+
+            <intent-filter android:label="@string/open_with_label">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="text/x-java" />
+                <data android:mimeType="text/x-java-source" />
+                <data android:mimeType="text/x-kotlin" />
+                <data android:mimeType="application/java" />
+                <data android:mimeType="application/java-archive" />
+                <data android:mimeType="application/x-java-archive" />
+                <data android:mimeType="application/x-java-class" />
+                <data android:mimeType="application/x-jar" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/x-zip-compressed" />
+                <data android:mimeType="application/x-tar" />
+                <data android:mimeType="application/gzip" />
+                <data android:mimeType="application/x-gzip" />
+                <data android:mimeType="application/x-rar-compressed" />
+                <data android:mimeType="application/vnd.rar" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/open_with_label">
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="*/*" />
+                <data android:pathPattern=".*\\.java" />
+                <data android:pathPattern=".*\\..*\\.java" />
+                <data android:pathPattern=".*\\..*\\..*\\.java" />
+                <data android:pathPattern=".*\\.kt" />
+                <data android:pathPattern=".*\\..*\\.kt" />
+                <data android:pathPattern=".*\\..*\\..*\\.kt" />
+                <data android:pathPattern=".*\\.kts" />
+                <data android:pathPattern=".*\\..*\\.kts" />
+                <data android:pathPattern=".*\\.jar" />
+                <data android:pathPattern=".*\\..*\\.jar" />
+                <data android:pathPattern=".*\\..*\\..*\\.jar" />
+                <data android:pathPattern=".*\\.class" />
+                <data android:pathPattern=".*\\..*\\.class" />
+                <data android:pathPattern=".*\\.gradle" />
+                <data android:pathPattern=".*\\..*\\.gradle" />
+                <data android:pathPattern=".*\\.tar" />
+                <data android:pathPattern=".*\\..*\\.tar" />
+                <data android:pathPattern=".*\\.tgz" />
+                <data android:pathPattern=".*\\..*\\.tgz" />
+                <data android:pathPattern=".*\\.gz" />
+                <data android:pathPattern=".*\\..*\\.gz" />
+                <data android:pathPattern=".*\\.rar" />
+                <data android:pathPattern=".*\\..*\\.rar" />
+                <data android:pathPattern=".*\\.zip" />
+                <data android:pathPattern=".*\\..*\\.zip" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/open_with_label">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/x-java" />
+                <data android:mimeType="text/x-java-source" />
+                <data android:mimeType="text/x-kotlin" />
+                <data android:mimeType="application/java-archive" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:exported="false"
+            android:label="@string/menu_settings"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.CreditsActivity"
+            android:exported="false"
+            android:label="@string/credits_title"
+            android:parentActivityName=".ui.WelcomeActivity" />
+
+        <activity
+            android:name=".git.GitActivity"
+            android:exported="false"
+            android:label="@string/git_activity_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".git.GitDiffActivity"
+            android:exported="false"
+            android:label="@string/git_diff_activity_title"
+            android:parentActivityName=".git.GitActivity" />
+        <activity
+            android:name=".git.GitConflictEditorActivity"
+            android:screenOrientation="unspecified"
+            android:parentActivityName=".git.GitActivity" />
+
+        <activity
+            android:name=".ui.LibraryManagerActivity"
+            android:exported="false"
+            android:label="@string/lib_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.LearnActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.TutorialActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".learn.LessonActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.GlobalSearchActivity"
+            android:exported="false"
+            android:label="@string/menu_global_search"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.MediaPlayerActivity"
+            android:exported="false"
+            android:label="@string/media_player_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!--
+            Without configChanges a rotation recreated this Activity and the whole
+            conversation went with it — the message views are built in code, and
+            nothing was saved. It also dropped any reply still in flight, because
+            the callback held the Activity that had just been destroyed. The
+            editor and the other long-lived screens are declared the same way.
+        -->
+        <activity
+            android:name=".ai.ChatHistoryActivity"
+            android:exported="false"
+            android:label="@string/ai_history_title"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|keyboard|density|uiMode"
+            android:parentActivityName=".ai.AiChatActivity" />
+
+        <activity
+            android:name=".ai.AiChatActivity"
+            android:exported="false"
+            android:label="@string/ai_title"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|keyboard|density|uiMode"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".tools.bytecode.BytecodeEditorActivity"
+            android:exported="false"
+            android:label="Bytecode Editor"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.ClassBrowserActivity"
+            android:exported="false"
+            android:label="@string/class_browser_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.SvgViewerActivity"
+            android:exported="false"
+            android:label="SVG Viewer"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.HtmlViewerActivity"
+            android:exported="false"
+            android:label="HTML Viewer"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.JShellActivity"
+            android:exported="false"
+            android:label="JShell"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.ImageViewerActivity"
+            android:exported="false"
+            android:label="@string/image_viewer_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.HexEditorActivity"
+            android:exported="false"
+            android:label="@string/hex_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.CallGraphActivity"
+            android:exported="false"
+            android:label="Call Graph"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.DatabaseInspectorActivity"
+            android:exported="false"
+            android:label="Database Inspector"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.HttpApiClientActivity"
+            android:exported="false"
+            android:label="HTTP Client"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.WebViewPreviewActivity"
+            android:exported="false"
+            android:label="WebView Preview"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- ── v1.10.0 tools ──────────────────────────────────────────────── -->
+
+        <activity
+            android:name=".ui.HashCalculatorActivity"
+            android:exported="false"
+            android:label="@string/hash_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.SslCertificateActivity"
+            android:exported="false"
+            android:label="@string/ssl_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.SplitTerminalActivity"
+            android:exported="false"
+            android:label="@string/terminal_title"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|keyboard|density|uiMode"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ai.SemanticSearchActivity"
+            android:exported="false"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode" />
+
+        <activity
+            android:name=".db.SchemaDiagramActivity"
+            android:exported="false"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode" />
+
+        <activity
+            android:name=".db.DbClientActivity"
+            android:exported="false"
+            android:label="@string/db_client_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!-- ── v1.11.0 ────────────────────────────────────────────────────── -->
+
+        <activity
+            android:name=".ui.SearchEverywhereActivity"
+            android:exported="false"
+            android:label="@string/se_title"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.ProjectMapActivity"
+            android:exported="false"
+            android:label="@string/map_title"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.TmxViewerActivity"
+            android:exported="false"
+            android:label="TMX Map Viewer"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.AtlasViewerActivity"
+            android:exported="false"
+            android:label="Atlas Texture Inspector"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.UmlDiagramActivity"
+            android:exported="false"
+            android:label="UML Class Diagram Generator"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden|density|uiMode"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
+            android:name=".ui.ProjectStructureActivity"
+            android:exported="false"
+            android:label="@string/ps_title"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <!--
+            adjustResize keeps the pinned Create bar above the keyboard on API
+            34 and below; on 35+ FullScreenHelper turns off decor fitting, so
+            the Activity also applies the ime inset itself. No configChanges:
+            the form is rebuilt from onSaveInstanceState on rotation.
+        -->
+        <activity
+            android:name=".ui.NewProjectActivity"
+            android:exported="false"
+            android:label="@string/np_title"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="com.ccs.wiredroid.startup.PreferencesInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>

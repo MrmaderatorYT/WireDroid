@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Clé</string>
+    <string name="ai_ready">Assistant IA prêt. Posez vos questions sur Java, l’explication de code, la recherche de bugs, le refactoring, l’optimisation ou les tests.</string>
+    <string name="ai_loaded_file">%1$s chargé (%2$d caractères). Posez n’importe quelle question sur ce code.</string>
+    <string name="ai_loaded_file_short">%1$s chargé (%2$d caractères).</string>
+    <string name="ai_key_not_set">Pas encore de clé API. Touchez « Clé » pour ajouter votre clé Gemini depuis aistudio.google.com</string>
+    <string name="ai_key_needed_first">Ajoutez d’abord votre clé API — touchez « Clé ».</string>
+    <string name="ai_model_changed">Modèle changé pour %1$s</string>
+    <string name="ai_key_saved_checking">Clé enregistrée. Vérification auprès de Google…</string>
+    <string name="ai_key_verified">Clé vérifiée. Modèle : %1$s</string>
+    <string name="ai_key_saved_unverified">La clé a été enregistrée, mais la vérification a échoué :\n%1$s</string>
+    <string name="ai_key_save_failed_title">Impossible d’enregistrer la clé</string>
+    <string name="ai_key_save_failed_message">Le stockage sécurisé de cet appareil l’a refusé, la clé n’a donc pas été conservée. Elle n’est délibérément pas stockée en clair.</string>
+    <string name="ai_key_check_title">Vérifiez cette clé</string>
+    <string name="ai_key_save_anyway">Enregistrer quand même</string>
+    <string name="ai_key_save_verify">Enregistrer et vérifier</string>
+    <string name="ai_key_get">Obtenir une clé</string>
+    <string name="ai_insert_into_editor">↧ Insérer dans l’éditeur</string>
+    <string name="ai_insert_desc">Insérer ce code dans l’éditeur ouvert</string>
+    <string name="ai_queued">En file d’attente (%1$s) — revenez à l’éditeur pour l’appliquer</string>
+</resources>

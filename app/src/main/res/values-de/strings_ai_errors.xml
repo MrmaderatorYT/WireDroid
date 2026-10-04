@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Noch kein API-Schlüssel — tippen Sie auf „Key“, um einen hinzuzufügen.</string>
+    <string name="ai_err_hint_model">Dieses Modell ist für Ihren Schlüssel nicht verfügbar. Wählen Sie ein anderes aus der Liste.</string>
+    <string name="ai_err_hint_key">Prüfen Sie den API-Schlüssel, dann den Modellnamen.</string>
+    <string name="ai_err_hint_rejected">Der Schlüssel wurde abgelehnt. Tippen Sie auf „Key“ und nutzen Sie „Speichern &amp; prüfen“.</string>
+    <string name="ai_err_hint_rate">Zu viele Anfragen — kurz warten und erneut versuchen.</string>
+    <string name="ai_err_hint_google">Googles Seite fällt gerade aus. Ein erneuter Versuch hilft meist.</string>
+    <string name="ai_err_empty">Leere Antwort — das Ausgabebudget ging vermutlich für internes Denken drauf. Erneut versuchen oder umformulieren.</string>
+    <string name="ai_err_network">Netzwerkfehler: %1$s</string>
+    <string name="ai_key_works">Der Schlüssel funktioniert.</string>
+    <string name="ai_key_rejected">Google hat diesen Schlüssel abgelehnt (HTTP %1$d).%2$s\n\nMeist wurde er widerrufen, gehört zu einem Projekt mit deaktivierter Generative Language API oder wurde nur teilweise kopiert.</string>
+    <string name="ai_key_check_failed">Schlüssel konnte nicht geprüft werden: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Google war zur Prüfung des Schlüssels nicht erreichbar: %1$s</string>
+    <string name="ai_key_problem_empty">Der Schlüssel ist leer.</string>
+    <string name="ai_key_problem_url">Das ist eine Webadresse, kein Schlüssel. Öffnen Sie sie und kopieren Sie den angezeigten Schlüssel.</string>
+    <string name="ai_key_problem_openai">Das sieht nach einem OpenAI-Schlüssel aus. Dieser Assistent nutzt Google Gemini; Schlüssel gibt es auf aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Der Schlüssel wirkt abgeschnitten (%1$d Zeichen). Prüfen Sie, ob er vollständig kopiert wurde.</string>
+</resources>

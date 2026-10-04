@@ -1,0 +1,4 @@
+PASS: avr-blink · project copy, real AVR firmware execution, pause/step/reset/stop, per-board size 50% saved
+PASS: avr-blink · project copy, real AVR firmware execution, pause/step/reset/stop, per-board size 50% saved
+PASS: existing project overwrite rejected
+

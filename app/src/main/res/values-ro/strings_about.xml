@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_source_code">Cod sursă</string>
+    <string name="settings_source_code_copied">Adresa depozitului a fost copiată</string>
+    <string name="settings_source_code_hint">Open-source sub licența GPL-3.0. Atinge pentru a deschide depozitul; ține apăsat pentru a copia adresa.</string>
+    <string name="splash_open_source">WireDroid este software open-source, licențiat sub GPL-3.0. Linkul către cod se află în setări.</string>
+</resources>

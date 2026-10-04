@@ -1,0 +1,1 @@
+PASS: bend dragging, orthogonal path, net highlight, wire color/save, preflight blocks short, problem navigation, live ADC reply, PWM graph, Serial send/receive and phone layout

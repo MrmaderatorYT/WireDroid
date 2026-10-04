@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lib_add_local">Lokale JAR-, WAR- oder AAR-Datei hinzufügen…</string>
+    <string name="lib_add_local_note">Wird in den Ordner libs/ des Projekts kopiert und auf den Kompilier-Klassenpfad gelegt. Ein WAR oder AAR wird entpackt — der Compiler braucht die Jars darin.</string>
+    <string name="lib_local_failed">Import fehlgeschlagen: %1$s</string>
+    <string name="lib_local_gradle_written">In build.gradle deklariert</string>
+    <string name="lib_local_importing">Wird importiert…</string>
+    <string name="lib_local_maven_note">Hier auf dem Klassenpfad. Maven kann eine lokale Jar nicht sauber deklarieren, daher bleibt die pom.xml unverändert — ein Build auf einem anderen Rechner sieht sie nicht.</string>
+    <string name="lib_local_no_project">Öffnen Sie zuerst ein Projekt</string>
+</resources>

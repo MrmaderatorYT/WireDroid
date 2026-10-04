@@ -1,0 +1,1 @@
+PASS: servo model, powered pulse propagation, no position from PWM alone, missing power/GND/signal stops motion, slider potentiometer bus support

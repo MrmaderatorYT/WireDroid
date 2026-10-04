@@ -1,0 +1,4 @@
+PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: existing project overwrite rejected
+

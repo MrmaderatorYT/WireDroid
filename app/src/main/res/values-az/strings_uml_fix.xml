@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_applied">Diaqram yeniləndi</string>
+    <string name="uml_btn_apply">Tətbiq et</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_no_types_found">Kodda UML sinifləri tapılmadı</string>
+</resources>

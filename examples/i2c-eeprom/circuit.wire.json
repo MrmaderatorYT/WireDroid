@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · I²C EEPROM",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "eeprom",
+      "part": "sparkfun-digitalic-eeprom-i2c-smd",
+      "x": 420,
+      "y": 130,
+      "rotation": 0,
+      "label": "EEPROM-I2C",
+      "scale": 1
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector7"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "uno",
+        "pin": "connector4"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector4"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "uno",
+        "pin": "connector5"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector5"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_5",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_6",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_7",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_8",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "eeprom",
+        "pin": "connector6"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

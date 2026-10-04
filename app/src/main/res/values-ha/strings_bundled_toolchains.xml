@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ na tarawa domin JDK 21 kuma yana gudanar da fayilolin .class a cikin JVM da aka saka. An haɗa runtime ɗin; farkon gudu yana cire kusan MB 145 kawai zuwa ma’ajiyar ciki.</string>
+    <string name="settings_ndk_bundled_desc">Ana sauke kayan aikin C++ na zaɓi lokacin da ake bukata: sauke na 344 MB da kusan 1.85 GB na ma\'ajiyar ciki bayan shigarwa.</string>
+    <string name="settings_ndk_bundled_install">Sauke C++ NDK (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">Ana sauke NDK r29 daga asalin sakinsa: 344 MB ta hanyar sadarwa da kusan 1.85 GB na ma\'ajiyar ciki bayan buɗewa. Sauke da aka katse zai ci gaba daga inda ya tsaya. A ci gaba?</string>
+    <string name="settings_ndk_install_action">Sauke</string>
+    <string name="ndk_bundled_no_space">NDK r29 yana buƙatar aƙalla MB %1$d na sarari a ma’ajiyar ciki.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK na bukatar na\'urar ARM64 mai Android 9 ko sabo.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, ana saukewa lokacin bukata)</string>
+    <string name="np_native_ndk_bundled_note">C da C++ da Clang 21. NDK sauke ne na 344 MB kuma yana amfani da kusan 1.85 GB bayan shigarwa.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Gargaɗi: hanyoyin C++ na bukatar NDK. Ka shigar da shi a Saitunan → Sauke C++ NDK. An tsallake.</string>
+    <string name="native_compiling_sources">Ana tattara tushen native…</string>
+    <string name="ndk_downloading">Ana sauke NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Ana tabbatar da abin da aka sauke…</string>
+    <string name="ndk_download_http">Sauke NDK ya mayar da HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Sauke NDK ya tsaya kafin lokaci. Sake gwadawa don ci gaba.</string>
+    <string name="ndk_download_too_large">Sauke NDK ya fi tsawon da ake tsammani, an tsayar da shi.</string>
+    <string name="ndk_download_checksum_failed">Sauke NDK bai wuce binciken mutunci ba, an goge shi. Sake gwadawa.</string>
+    <string name="ndk_download_restart">Sauke NDK da bai kammala ba bai dace da sakin ba. Sake gwadawa don farawa.</string>
+    <string name="settings_ndk_cancel">Soke saukewa</string>
+    <string name="settings_ndk_cancelled">An soke sauke NDK. An kiyaye abin da aka sauke.</string>
+</resources>

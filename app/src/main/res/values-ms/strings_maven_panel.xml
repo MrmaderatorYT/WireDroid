@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maven_panel_title">Maven</string>
+    <string name="maven_panel_open">Maven</string>
+    <string name="maven_panel_reload">⟳</string>
+    <string name="maven_panel_reload_desc">Muat semula kebergantungan</string>
+    <string name="maven_panel_refresh">⤓</string>
+    <string name="maven_panel_refresh_desc">Baca semula fail binaan</string>
+    <string name="maven_panel_no_project">Buka projek Maven atau Gradle untuk menggunakan panel ini.</string>
+    <string name="maven_branch_lifecycle">Kitaran hayat</string>
+    <string name="maven_branch_plugins">Pemalam</string>
+    <string name="maven_branch_dependencies">Kebergantungan</string>
+    <string name="maven_branch_repositories">Repositori</string>
+    <string name="maven_none_declared">tiada diisytiharkan</string>
+    <string name="maven_central_implicit">Maven Central (tersirat)</string>
+    <string name="maven_validate_deps">%1$d kebergantungan diisytiharkan</string>
+    <string name="maven_validate_ok">validate: BUILD SUCCESS</string>
+    <string name="maven_validate_warned">validate: selesai dengan amaran</string>
+    <string name="maven_phase_no_verify">Pembina terbina dalam tiada fasa integration-test, jadi verify tidak boleh berjalan. Gunakan test dan package.</string>
+    <string name="maven_phase_no_site">Penjanaan tapak memerlukan pemalam site Maven, yang tidak berjalan pada peranti.</string>
+    <string name="maven_phase_no_deploy">Penyebaran ke repositori jauh tidak disokong. Gunakan install untuk repositori setempat.</string>
+</resources>

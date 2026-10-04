@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profiler_complete">Profiling complete. Results on the Profile tab.</string>
+    <string name="profiler_failed">Profiling did not finish — the program did not run.</string>
+    <string name="profiler_no_classes">Nothing to profile: the compiler produced no classes.</string>
+</resources>

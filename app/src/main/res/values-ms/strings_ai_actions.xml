@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Tindakan pantas</string>
+    <string name="ai_action_explain">Terangkan</string>
+    <string name="ai_action_find_bugs">Cari pepijat</string>
+    <string name="ai_action_refactor">Refaktor</string>
+    <string name="ai_action_optimize">Optimumkan</string>
+    <string name="ai_action_document">Dokumenkan</string>
+    <string name="ai_action_test">Tulis ujian</string>
+    <string name="ai_action_agent">Mod ejen</string>
+    <string name="ai_agent_on">Mod ejen hidup — pembantu boleh menyunting fail</string>
+    <string name="ai_agent_off">Mod ejen mati</string>
+    <string name="ai_need_file">Buka fail dahulu — tindakan ini berfungsi pada kod yang sedang anda lihat.</string>
+</resources>

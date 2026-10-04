@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_title">Saved chats</string>
+    <string name="ai_history_empty">No saved conversations yet. Ask the assistant something and it will appear here.</string>
+    <string name="ai_history_untitled">Untitled chat</string>
+    <string name="ai_history_meta">%1$d messages · %2$s</string>
+    <string name="ai_history_delete_title">Delete this chat?</string>
+    <string name="ai_history_delete_message">“%1$s” will be removed permanently.</string>
+    <string name="ai_history_delete_confirm">Delete</string>
+    <string name="ai_new_chat">New chat</string>
+    <string name="ai_new_chat_started">Started a new chat. The previous one is saved.</string>
+    <string name="ai_history_restored">Restored a saved chat (%1$d messages).</string>
+    <string name="md_pane_preview_on">Rendered here. Tap the eye again to go back to the editor.</string>
+</resources>

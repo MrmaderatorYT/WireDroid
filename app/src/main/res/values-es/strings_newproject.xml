@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Un archivo, sin proyecto · se ejecuta al instante</string>
+    <string name="np_scratch_language">Idioma</string>
+    <string name="np_scratch_location_label">El archivo se creará en</string>
+    <string name="np_scratch_note">Se guarda fuera de tus proyectos, así que sobrevive al cambiar entre ellos.</string>
+    <string name="np_scratch_preview_label">Archivo</string>
+    <string name="np_template_scratch">Borrador</string>
+</resources>

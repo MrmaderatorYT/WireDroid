@@ -1,0 +1,8 @@
+INSTRUMENTATION_RESULT: stream=PASS: blink-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: button-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: traffic-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: alternating-nano · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: blink-esp32 · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+FAIL: java.lang.AssertionError: WireApp.getMotionStates().servo.active expected true; logs="\n23:37:33 Готово · 2569 деталей Fritzing\n23:37:34 Запуск 1 C/C++ програм\n23:37:34 Arduino Uno: uno.cpp · Clang · C++17 / C11 · 11 файлів · \n23:37:36 Симуляцію зупинено"
+
+INSTRUMENTATION_CODE: 0

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · кнопка та LED",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 50,
+      "y": 80,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.85
+    },
+    {
+      "id": "resistor",
+      "part": "resistor",
+      "x": 390,
+      "y": 110,
+      "rotation": 0,
+      "label": "220 Ω",
+      "scale": 0.75
+    },
+    {
+      "id": "led",
+      "part": "LED-generic-5mm_6852162_005",
+      "x": 535,
+      "y": 110,
+      "rotation": 0,
+      "label": "Червоний LED",
+      "scale": 0.8,
+      "ledColor": "#e60000"
+    },
+    {
+      "id": "button",
+      "part": "Pushbutton",
+      "x": 420,
+      "y": 280,
+      "rotation": 0,
+      "label": "Кнопка",
+      "scale": 0.85
+    }
+  ],
+  "wires": [
+    {
+      "a": {
+        "node": "uno",
+        "pin": "connector56"
+      },
+      "b": {
+        "node": "resistor",
+        "pin": "connector0"
+      },
+      "color": "#4ade80",
+      "id": "wire_1"
+    },
+    {
+      "a": {
+        "node": "resistor",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "led",
+        "pin": "connector1"
+      },
+      "color": "#4ade80",
+      "id": "wire_2"
+    },
+    {
+      "a": {
+        "node": "led",
+        "pin": "connector0"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector88"
+      },
+      "color": "#94a3b8",
+      "id": "wire_3"
+    },
+    {
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "button",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "id": "wire_4"
+    },
+    {
+      "a": {
+        "node": "button",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector88"
+      },
+      "color": "#94a3b8",
+      "id": "wire_5"
+    }
+  ]
+}

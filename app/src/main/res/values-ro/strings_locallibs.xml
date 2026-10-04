@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lib_add_local">Adaugă un JAR, WAR sau AAR local…</string>
+    <string name="lib_add_local_note">Copiat în folderul libs/ al proiectului și pus pe classpath-ul de compilare. Un WAR sau AAR este despachetat — compilatorului îi trebuie jar-urile din el.</string>
+    <string name="lib_local_failed">Importul a eșuat: %1$s</string>
+    <string name="lib_local_gradle_written">Declarat în build.gradle</string>
+    <string name="lib_local_importing">Se importă…</string>
+    <string name="lib_local_maven_note">Aici este pe classpath. Maven nu are o cale curată de a declara un jar local, deci pom.xml rămâne neschimbat — o compilare pe altă mașină nu îl va vedea.</string>
+    <string name="lib_local_no_project">Deschide mai întâi un proiect</string>
+</resources>

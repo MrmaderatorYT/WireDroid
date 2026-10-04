@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ menyasarkan JDK 21 dan menjalankan fail .class dalam JVM terbenam. Masa jalan disertakan; larian pertama hanya mengekstrak kira-kira 145 MB ke storan dalaman.</string>
+    <string name="settings_ndk_bundled_desc">Rantaian alat C++ pilihan dimuat turun apabila diperlukan: muat turun 344 MB yang memerlukan kira-kira 1.85 GB storan dalaman setelah dipasang.</string>
+    <string name="settings_ndk_bundled_install">Muat turun NDK C++ (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 dimuat turun daripada keluaran rasminya: 344 MB melalui rangkaian, dan kira-kira 1.85 GB storan dalaman selepas diekstrak. Muat turun yang terganggu akan disambung dari tempat ia berhenti. Teruskan?</string>
+    <string name="settings_ndk_install_action">Muat turun</string>
+    <string name="ndk_bundled_no_space">NDK r29 memerlukan sekurang-kurangnya %1$d MB storan dalaman kosong.</string>
+    <string name="ndk_bundled_unsupported">NDK C++ memerlukan peranti ARM64 yang menjalankan Android 9 atau lebih baharu.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, dimuat turun apabila diperlukan)</string>
+    <string name="np_native_ndk_bundled_note">C dan C++ dengan Clang 21. NDK ialah muat turun 344 MB dan memerlukan kira-kira 1.85 GB setelah dipasang.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Amaran: sumber C++ memerlukan NDK. Pasangnya di Tetapan → Muat turun NDK C++. Dilangkau.</string>
+    <string name="native_compiling_sources">Mengkompil sumber natif…</string>
+    <string name="ndk_downloading">Memuat turun NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Mengesahkan muat turun…</string>
+    <string name="ndk_download_http">Muat turun NDK memulangkan HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Muat turun NDK berakhir awal. Cuba lagi untuk menyambungnya.</string>
+    <string name="ndk_download_too_large">Muat turun NDK lebih panjang daripada jangkaan dan telah dihentikan.</string>
+    <string name="ndk_download_checksum_failed">Muat turun NDK gagal pemeriksaan integritinya dan telah dibuang. Cuba lagi.</string>
+    <string name="ndk_download_restart">Muat turun NDK separa tidak lagi sepadan dengan keluaran itu. Cuba lagi untuk bermula semula.</string>
+    <string name="settings_ndk_cancel">Batalkan muat turun</string>
+    <string name="settings_ndk_cancelled">Muat turun NDK dibatalkan. Bahagian yang telah dimuat turun disimpan untuk lain kali.</string>
+</resources>

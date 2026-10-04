@@ -1,0 +1,306 @@
+plugins {
+    id 'com.android.application'
+}
+
+def keystorePropertiesFile = rootProject.file('keystore.properties')
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.withInputStream { keystoreProperties.load(it) }
+}
+
+// Metadata retained for shared IDE settings and import compatibility. Embedded
+// projects use C/C++; these JVM language payloads are not packaged.
+ext.bundledScalaVersion = '3.3.4'
+ext.bundledGroovyVersion = '4.0.24'
+ext.bundledClojureVersion = '1.11.4'
+
+android {
+    namespace 'com.ccs.wiredroid'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    ndkVersion '28.2.13676358'
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    defaultConfig {
+        testInstrumentationRunner 'com.ccs.wiredroid.wire.WireExamplesInstrumentation'
+        // Unique ID for Google Play (change if you use your own domain)
+        applicationId 'com.ccs.wiredroid'
+        buildConfigField 'boolean', 'EMBEDDED_EDITION', 'true'
+        minSdk 26
+        targetSdk 36
+        // Shared IDE compatibility metadata; no JVM compiler payload is bundled.
+        buildConfigField "String", "BUNDLED_SCALA_VERSION", "\"${bundledScalaVersion}\""
+        buildConfigField "String", "BUNDLED_GROOVY_VERSION", "\"${bundledGroovyVersion}\""
+        buildConfigField "String", "BUNDLED_CLOJURE_VERSION", "\"${bundledClojureVersion}\""
+
+        versionCode 1
+        versionName '1.0.0'
+
+        ndk {
+            abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86_64', 'x86'
+        }
+
+        externalNativeBuild {
+            cmake {
+                arguments "-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-z,max-page-size=16384",
+                          "-DCMAKE_EXE_LINKER_FLAGS=-Wl,-z,max-page-size=16384"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+
+    signingConfigs {
+        release {
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile rootProject.file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            // Shared editor plugins and dynamic resource lookups require their
+            // original names. Keep them available in the embedded edition.
+            minifyEnabled false
+            // Deliberately left off: the app looks resources up by name —
+            // getIdentifier("btnExitZenMode", …) and resStr(name, fallback) for
+            // menu labels — and the shrinker cannot see those references, so it
+            // would remove strings that are used.
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging true
+            keepDebugSymbols += ['**/libwiredroid_clang.so',
+                                 '**/libwiredroid_lld.so']
+        }
+        resources {
+            excludes += 'META-INF/versions/9/OSGI-INF/MANIFEST.MF'
+            excludes += '**/*.kotlin_builtins'
+            excludes += 'META-INF/*.kotlin_module'
+            excludes += 'META-INF/proguard/*'
+            excludes += 'META-INF/NOTICE'
+            excludes += 'META-INF/LICENSE'
+        }
+    }
+
+    // Stream existing compressed archives directly from assets.
+    androidResources {
+        // Already-compressed archives. Deflating them again gains nothing and
+        // makes every read on the device pay to inflate.
+        noCompress += ['xz', 'jar']
+        // Embedded examples contain public .wiredroid/firmware manifests and HEX.
+        // Preserve those directories while ignoring desktop/VCS metadata.
+        ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:<dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~:.gitignore'
+    }
+
+
+}
+
+dependencies {
+    // Unit tests run on the JVM, not a device. The classes worth testing
+    // here — the lexer, the AST parser, the rule sets, the ECJ output parser —
+    // are pure text in, findings out, and they take a null Context because
+    // every string lookup in them is already guarded for it.
+    testImplementation 'junit:junit:4.13.2'
+    // org.xmlpull lives in android.jar, so on the JVM it is the stub that
+    // throws "not mocked". kXML is the real implementation Android itself
+    // uses; on the test classpath it stands in for it so the pom parser can
+    // be tested without a device.
+    testImplementation 'net.sf.kxml:kxml2:2.3.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    // Page-per-lesson swiping. Material pulls it in transitively, but a
+    // direct API use deserves a direct declaration.
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'io.github.Rosemoe.sora-editor:editor:0.23.6'
+    implementation 'io.github.Rosemoe.sora-editor:language-java:0.23.6'
+
+    // Shared IDE adapters still reference these APIs at compile time. Embedded
+    // Run uses EmbeddedRunner; JVM compilers are not included in the APK.
+    compileOnly 'org.eclipse.jdt:ecj:3.46.0'
+    testImplementation 'org.eclipse.jdt:ecj:3.46.0'
+    def sdkD8 = androidComponents.sdkComponents.sdkDirectory.map {
+        it.file('build-tools/36.0.0/lib/d8.jar')
+    }
+    compileOnly files(sdkD8)
+    testImplementation files(sdkD8)
+
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+
+    // RAR reading for project import. Pure Java, RAR4 only — RAR5 is refused
+    // with an explanation rather than a stack trace (see RarSupport).
+    implementation 'com.github.junrar:junrar:7.5.5'
+
+    // Java SE runtime payloads are .tar.xz files inside the signed Pojav APK.
+    implementation 'org.apache.commons:commons-compress:1.27.1'
+    implementation 'org.tukaani:xz:1.10'
+
+    // JVM bytecode disassembly (javap-style text, like Recaf)
+    implementation 'org.ow2.asm:asm:9.6'
+    implementation 'org.ow2.asm:asm-util:9.6'
+
+    // JGit — pure Java git implementation (works on Android, no native binary, no root)
+    implementation('org.eclipse.jgit:org.eclipse.jgit:5.13.5.202508271544-r') {
+        // JGit's bundled HTTP/SSH transports we don't need; SLF4J pulled separately
+        exclude group: 'com.jcraft', module: 'jsch'
+    }
+    implementation 'org.slf4j:slf4j-nop:1.7.36'
+
+    // Kotlin is required by the Sora editor and AndroidX, independently of
+    // any user-program compiler. The large Kotlin compiler/runtime payloads
+    // are unnecessary for Arduino C/C++ projects.
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.2.10'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4'
+
+    // SVG rendering
+    implementation 'com.caverock:androidsvg:1.4'
+
+    // HTTP client for built-in REST client
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+
+    // Offline speech-to-text (Vosk)
+    implementation 'com.alphacephei:vosk-android:0.3.75'
+
+    // JSON parsing for HTTP client
+    implementation 'org.json:json:20231013'
+
+    // ── Remote database client ───────────────────────────────────────────────
+    // Both drivers dex cleanly under D8 --min-api 26. What android.jar does not
+    // provide is only reached on optional paths (JMX, JNDI DataSource lookup,
+    // Kerberos/GSSAPI, XA transactions), so a plain host/port/user connection
+    // works; DbDrivers documents which ones fail and why.
+    implementation('org.postgresql:postgresql:42.7.4') {
+        // Compile-time nullness annotations only — nothing to ship.
+        exclude group: 'org.checkerframework'
+    }
+    // MySQL wire-compatible. Chosen over mysql-connector-j, whose newer releases
+    // hard-require java.sql types Android does not have.
+    implementation('org.mariadb.jdbc:mariadb-java-client:3.4.1') {
+        // Windows integrated auth: 3.8 MB of JNA that can never run on Android.
+        exclude group: 'com.github.waffle'
+        exclude group: 'net.java.dev.jna'
+        // Keep the SLF4J 1.7 API already paired with our slf4j-nop binding;
+        // letting this pull 2.0 would leave the binding unmatched at runtime.
+        exclude group: 'org.slf4j'
+    }
+
+    // App Startup — optimize initialization
+    implementation 'androidx.startup:startup-runtime:1.1.1'
+
+    // Baseline Profiles — faster cold start
+    implementation 'androidx.profileinstaller:profileinstaller:1.3.1'
+}
+
+configurations.all {
+    // JGit transitively pulls Bouncycastle which clashes with Android's built-in;
+    // JGit core works without it for our HTTPS-only use case.
+    exclude group: 'org.bouncycastle'
+}
+
+// Binary payloads live in source control, so a truncated or accidentally
+// replaced part must fail the build rather than produce an APK that only fails
+// on the user's first toolchain installation.
+ext.bundledToolchainHashes = [
+    'src/main/jniLibs/arm64-v8a/libwiredroid_clang.so':
+        'bfe63185a80144d8d236d31462725807cba97fdc7e1d481fa511804a4f19f95a',
+    'src/main/jniLibs/arm64-v8a/libwiredroid_lld.so':
+        '5a7432c0537a9740e4bbab89c879f53b85cb2c1f8e412f86d9bb14878843add9'
+]
+// The NDK archive is no longer bundled — at 344 MiB of already-compressed payload
+// it took most of an App Bundle base module's 500 MB ceiling on its own, and only
+// C++ users ever need it. NdkManager fetches it from its upstream release instead.
+//
+// Nothing local is left to checksum, so the guard moves up a level: the pin that
+// NdkManager enforces at runtime must still match what README.txt documents. The
+// mistake this catches is a half-done version bump — a new URL with the old hash
+// would otherwise build cleanly and fail on every user's first C++ build.
+ext.ndkArchiveHash =
+        '02e10e4ddfe8deaeb0bd0cf29d04c981ed5bc8a5d6b560ebb9e7661f472d684b'
+ext.ndkArchiveBytes = 360_538_712L
+
+task verifyBundledToolchains {
+    inputs.files bundledToolchainHashes.keySet().collect { file(it) }
+    inputs.dir file('src/main/assets')
+    inputs.file file('src/main/java/com/ccs/wiredroid/tools/compilers/NdkManager.java')
+    inputs.property 'ndkArchiveHash', ndkArchiveHash
+    inputs.property 'ndkArchiveBytes', ndkArchiveBytes
+    doLast {
+        def assetRoot = file('src/main/assets').toPath()
+        java.nio.file.Files.walk(assetRoot).withCloseable { stream ->
+            stream.filter { java.nio.file.Files.isRegularFile(it) }.forEach { path ->
+                def relative = assetRoot.relativize(path).toString().replace('\\', '/')
+                def hidden = relative.split('/').findAll { it.startsWith('.') }
+                if (!hidden.isEmpty() && !(hidden.size() == 1 && hidden[0] in ['.DS_Store', '.gitignore'])
+                        && !(relative ==~ /wiredroid\/examples\/[a-z0-9-]{1,50}\/\.wiredroid\/firmware\/[a-zA-Z0-9_-]{1,64}\.(hex|json)/)) {
+                    throw new GradleException("Unexpected hidden asset; exclude private metadata before packaging: ${relative}")
+                }
+            }
+        }
+        bundledToolchainHashes.each { path, expected ->
+            def payload = file(path)
+            if (!payload.isFile()) {
+                throw new GradleException("Bundled toolchain payload is missing: ${path}")
+            }
+            def digest = java.security.MessageDigest.getInstance('SHA-256')
+            payload.withInputStream { input ->
+                byte[] buffer = new byte[64 * 1024]
+                int count
+                while ((count = input.read(buffer)) != -1) {
+                    digest.update(buffer, 0, count)
+                }
+            }
+            def actual = digest.digest().encodeHex().toString()
+            if (actual != expected) {
+                throw new GradleException(
+                    "Bundled toolchain checksum mismatch for ${path}: ${actual}")
+            }
+        }
+
+        def manager = file('src/main/java/com/ccs/wiredroid/tools/compilers/NdkManager.java')
+        def managerText = manager.getText('UTF-8')
+        if (!managerText.contains(ndkArchiveHash)) {
+            throw new GradleException(
+                    "NdkManager.java no longer pins the documented NDK archive SHA-256 " +
+                    "(${ndkArchiveHash}). Update README.txt and ndkArchiveHash together, " +
+                    "or the app will reject every download.")
+        }
+        def digits = String.valueOf(ndkArchiveBytes)
+        if (!managerText.contains(digits) && !managerText.contains(
+                digits.replaceAll(/(?<=\d)(?=(\d{3})+$)/, '_'))) {
+            throw new GradleException(
+                    "NdkManager.java no longer pins the documented NDK archive length " +
+                    "(${ndkArchiveBytes} bytes). Update README.txt and ndkArchiveBytes " +
+                    "together with it.")
+        }
+    }
+}
+
+
+tasks.named('preBuild').configure { dependsOn tasks.named('verifyBundledToolchains') }

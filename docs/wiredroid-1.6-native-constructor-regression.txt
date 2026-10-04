@@ -1,0 +1,13 @@
+INSTRUMENTATION_RESULT: stream=PASS: blink-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: button-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: traffic-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: alternating-nano · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: blink-esp32 · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: servo-sweep · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: servo-pot · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: electronics-rc · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: motor-driver · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: stepper-driver · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+FAIL: java.lang.AssertionError: WireApp.getDevices().lcd?.text[0].includes('WireDroid C++') expected true; logs="\n00:22:04 Готово · 2569 деталей Fritzing\n00:22:04 Запуск 1 C/C++ програм\n00:22:04 Arduino Uno: uno.cpp · Clang · C++17 / C11 · 14 файлів · Counter\n00:22:30 Arduino Uno: C++ скомпільовано · запуск GPIO-моделі\n00:22:30 Arduino Uno: WARNING: linker: Warning: \"/data/app/~~qN8qBsuZSGTqt62AhjoYmA==/com.ccs.wiredroid-3jwmuehS5r2pxewuCINH3g==/lib/arm64/libc++_shared.so\" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)\n00:22:30 Помилка C/C++\n00:22:30 ✕ Arduino Uno: Програма завершилась, код 139"; stopOrigins="[]"
+
+INSTRUMENTATION_CODE: 0

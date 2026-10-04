@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape" xmlns:ns2="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" version="1.1" baseProfile="tiny" id="_x30_" ns1:version="0.48.4 r9939" ns2:docname="svg.breadboard.ADMP504.svg" x="0px" y="0px" width="15.348px" height="29.786px" viewBox="0 0 15.348 29.786" xml:space="preserve">
+<ns2:namedview id="namedview2997" objecttolerance="10" bordercolor="#666666" gridtolerance="10" guidetolerance="10" borderopacity="1" pagecolor="#ffffff" ns1:cy="14.893" ns1:cx="-15.233453" showgrid="false" ns1:zoom="7.9231856" ns1:pageshadow="2" ns1:window-width="919" ns1:window-height="851" ns1:window-y="0" ns1:window-x="0" ns1:window-maximized="0" ns1:pageopacity="0" ns1:current-layer="_x30_">
+	</ns2:namedview>
+<desc id="0.0">
+	<referenceFile id="0.0.0">ADMP504_Breadboard.svg</referenceFile>
+</desc>
+<path id="_x30_.1" fill="#237B3D" d="M-0.023,0v13.403v2.98v13.402h15.349V0H-0.023L-0.023,0z" />
+<g id="g2989">
+	<rect id="_x30_.4.0" x="9.375" y="23.945" fill="#403619" stroke="#9A916C" stroke-width="1.5" width="3.5" height="3.5" />
+	<circle id="connector2pin" fill="#403619" stroke="#9A916C" stroke-width="1.5" cx="3.924" cy="25.693" r="1.75" />
+	<circle id="connector1pin" fill="#403619" stroke="#9A916C" stroke-width="1.5" cx="11.125" cy="25.695" r="1.75" />
+	<circle id="connector4pin" fill="#403619" stroke="#9A916C" stroke-width="1.5" cx="11.125" cy="4.093" r="1.75" />
+	<circle id="connector3pin" fill="#403619" stroke="#9A916C" stroke-width="1.5" cx="3.924" cy="4.091" r="1.75" />
+</g>
+<circle id="MicrophonePort" fill="#000600" stroke="#465224" stroke-width="3" cx="5.359" cy="14.893" r="2.292" />
+</svg>

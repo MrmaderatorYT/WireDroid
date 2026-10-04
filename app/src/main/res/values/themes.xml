@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Без DayNight: завжди одна палітра Darcula — кнопки діалогів не «ламаються» у системній темній темі -->
+    <style name="Theme.WireDroid" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/idea_toolbar</item>
+        <item name="colorPrimaryVariant">@color/idea_bg</item>
+        <item name="colorOnPrimary">@color/idea_text</item>
+        <item name="colorSecondary">@color/idea_accent</item>
+        <item name="colorSecondaryVariant">@color/idea_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/idea_toolbar</item>
+        <item name="colorOnSurface">@color/idea_text</item>
+        <item name="colorOnSurfaceVariant">@color/idea_text_dim</item>
+        <item name="android:colorBackground">@color/idea_bg</item>
+        <item name="android:textColorPrimary">@color/idea_text</item>
+        <item name="android:textColorSecondary">@color/idea_text_dim</item>
+        <item name="android:statusBarColor">@color/idea_bg</item>
+        <item name="android:navigationBarColor">@color/idea_statusbar</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="colorControlHighlight">#334A86C8</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.WireDroid.AlertDialog</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.WireDroid.AlertDialog</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.WireDroid.ActionOverflowMenu</item>
+        <item name="popupMenuStyle">@style/Widget.WireDroid.PopupMenu</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.WireDroid.PopupMenu</item>
+    </style>
+
+    <style name="Theme.WireDroid.Dialog" parent="Theme.Material3.Dark.Dialog">
+        <item name="colorPrimary">@color/idea_toolbar</item>
+        <item name="colorPrimaryVariant">@color/idea_bg</item>
+        <item name="colorOnPrimary">@color/idea_text</item>
+        <item name="colorSecondary">@color/idea_accent</item>
+        <item name="colorSecondaryVariant">@color/idea_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/idea_toolbar</item>
+        <item name="colorOnSurface">@color/idea_text</item>
+        <item name="colorOnSurfaceVariant">@color/idea_text_dim</item>
+        <item name="android:colorBackground">@color/idea_bg</item>
+        <item name="android:textColorPrimary">@color/idea_text</item>
+        <item name="android:textColorSecondary">@color/idea_text_dim</item>
+        <item name="colorControlHighlight">#334A86C8</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeOverlay.WireDroid.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/idea_accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/idea_toolbar</item>
+        <item name="colorOnSurface">@color/idea_text</item>
+        <item name="android:textColorPrimary">@color/idea_text</item>
+        <item name="android:textColorSecondary">@color/idea_text_dim</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.WireDroid.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.WireDroid.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.WireDroid.DialogButton</item>
+    </style>
+
+    <style name="Widget.WireDroid.DialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/idea_accent</item>
+        <item name="rippleColor">#334A86C8</item>
+    </style>
+
+    <style name="Widget.WireDroid.Button.Rounded" parent="Widget.Material3.Button">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Widget.WireDroid.ActionOverflowMenu" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background_dark</item>
+    </style>
+
+    <style name="Widget.WireDroid.ActionOverflowMenu.Light" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background_light</item>
+    </style>
+
+    <style name="Widget.WireDroid.PopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background_dark</item>
+    </style>
+
+    <style name="Widget.WireDroid.PopupMenu.Light" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/popup_menu_background_light</item>
+    </style>
+
+    <style name="ThemeOverlay.WireDroid.PopupMenu" parent="ThemeOverlay.Material3">
+        <item name="android:colorBackground">#2B2D30</item>
+        <item name="colorSurface">#2B2D30</item>
+        <item name="colorOnSurface">@color/idea_text</item>
+        <item name="android:textColorPrimary">@color/idea_text</item>
+        <item name="android:popupBackground">@drawable/popup_menu_background_dark</item>
+    </style>
+
+    <style name="ThemeOverlay.WireDroid.PopupMenu.Light" parent="ThemeOverlay.Material3">
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1E1E1E</item>
+        <item name="android:textColorPrimary">#1E1E1E</item>
+        <item name="android:popupBackground">@drawable/popup_menu_background_light</item>
+    </style>
+
+    <style name="Theme.WireDroid.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#E7E7E7</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorOnPrimary">#1E1E1E</item>
+        <item name="colorSecondary">#1F6FEB</item>
+        <item name="colorSecondaryVariant">#1F6FEB</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">#E7E7E7</item>
+        <item name="colorOnSurface">#1E1E1E</item>
+        <item name="colorOnSurfaceVariant">#606060</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#1E1E1E</item>
+        <item name="android:textColorSecondary">#606060</item>
+        <item name="android:statusBarColor">#E7E7E7</item>
+        <item name="android:navigationBarColor">#E7E7E7</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorControlHighlight">#331F6FEB</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.WireDroid.AlertDialog.Light</item>
+        <item name="alertDialogTheme">@style/ThemeOverlay.WireDroid.AlertDialog.Light</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.WireDroid.ActionOverflowMenu.Light</item>
+        <item name="popupMenuStyle">@style/Widget.WireDroid.PopupMenu.Light</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.WireDroid.PopupMenu.Light</item>
+    </style>
+
+    <style name="Theme.WireDroid.Light.Dialog" parent="Theme.Material3.Light.Dialog">
+        <item name="colorPrimary">#E7E7E7</item>
+        <item name="colorPrimaryVariant">#FFFFFF</item>
+        <item name="colorOnPrimary">#1E1E1E</item>
+        <item name="colorSecondary">#1F6FEB</item>
+        <item name="colorSecondaryVariant">#1F6FEB</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">#E7E7E7</item>
+        <item name="colorOnSurface">#1E1E1E</item>
+        <item name="colorOnSurfaceVariant">#606060</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#1E1E1E</item>
+        <item name="android:textColorSecondary">#606060</item>
+        <item name="colorControlHighlight">#331F6FEB</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ThemeOverlay.WireDroid.AlertDialog.Light" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">#1F6FEB</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1E1E1E</item>
+        <item name="android:textColorPrimary">#1E1E1E</item>
+        <item name="android:textColorSecondary">#606060</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.WireDroid.DialogButton.Light</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.WireDroid.DialogButton.Light</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.WireDroid.DialogButton.Light</item>
+    </style>
+
+    <style name="Widget.WireDroid.DialogButton.Light" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">#1F6FEB</item>
+        <item name="rippleColor">#331F6FEB</item>
+    </style>
+
+    <!-- Fullscreen theme: прибирає status bar та navigation bar -->
+    <style name="Theme.WireDroid.Fullscreen" parent="Theme.WireDroid">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:navigationBarColor">#00000000</item>
+    </style>
+</resources>

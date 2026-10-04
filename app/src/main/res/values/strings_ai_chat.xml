@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Key</string>
+    <string name="ai_ready">AI Assistant ready. Ask about Java, explain code, find bugs, refactor, optimize or generate tests.</string>
+    <string name="ai_loaded_file">Loaded %1$s (%2$d characters). Ask anything about this code.</string>
+    <string name="ai_loaded_file_short">Loaded %1$s (%2$d characters).</string>
+    <string name="ai_key_not_set">No API key yet. Tap “Key” to add your Gemini key from aistudio.google.com</string>
+    <string name="ai_key_needed_first">Add your API key first — tap “Key”.</string>
+    <string name="ai_model_changed">Model changed to %1$s</string>
+    <string name="ai_key_saved_checking">Key saved. Checking it with Google…</string>
+    <string name="ai_key_verified">Key verified. Model: %1$s</string>
+    <string name="ai_key_saved_unverified">The key was saved, but the check did not pass:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Could not save the key</string>
+    <string name="ai_key_save_failed_message">This device’s secure storage refused it, so the key was not kept. It is deliberately not stored unencrypted instead.</string>
+    <string name="ai_key_check_title">Check this key</string>
+    <string name="ai_key_save_anyway">Save anyway</string>
+    <string name="ai_key_save_verify">Save &amp; verify</string>
+    <string name="ai_key_get">Get a key</string>
+    <string name="ai_insert_into_editor">↧ Insert into editor</string>
+    <string name="ai_insert_desc">Insert this code into the open editor</string>
+    <string name="ai_queued">Queued (%1$s) — go back to the editor to apply it</string>
+</resources>

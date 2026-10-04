@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Width of the draggable handle between the two editor panes.
+
+        A resource rather than a literal because the tab strips above the panes
+        use the same value: the strips and the panes share their weights so a tab
+        sits over the editor it opens in, and that only holds while the gap
+        between them is the same width in both rows.
+
+        Wider than the line it draws — a 1dp target cannot be hit with a finger.
+    -->
+    <dimen name="split_handle_width">14dp</dimen>
+
+</resources>

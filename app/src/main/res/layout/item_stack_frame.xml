@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/frameMarker"
+        android:layout_width="14dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textSize="11sp"
+        android:textColor="#FFC66D" />
+
+    <TextView
+        android:id="@+id/frameNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="monospace"
+        android:textSize="11sp"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/frameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:fontFamily="monospace"
+        android:textSize="11sp"
+        android:textColor="#A9B7C6"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>

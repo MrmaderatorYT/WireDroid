@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_applied">आरेख अपडेट हुआ</string>
+    <string name="uml_btn_apply">लागू करें</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_no_types_found">कोड में कोई UML क्लास नहीं मिली</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lib_add_local">Add a local JAR, WAR or AAR…</string>
+    <string name="lib_add_local_note">Copied into the project\'s libs/ folder and put on the compile classpath. A WAR or AAR is unpacked — the jars inside it are what a compiler needs.</string>
+
+    <string name="lib_local_no_project">Open a project first</string>
+    <string name="lib_local_importing">Importing…</string>
+    <string name="lib_local_failed">Import failed: %1$s</string>
+    <string name="lib_local_gradle_written">Declared in build.gradle</string>
+    <string name="lib_local_maven_note">On the classpath here. Maven has no clean way to declare a local jar, so pom.xml is left unchanged — a build on another machine will not see it.</string>
+
+    <plurals name="lib_local_added">
+        <item quantity="one">Added %1$d jar: %2$s</item>
+        <item quantity="other">Added %1$d jars: %2$s</item>
+    </plurals>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Cheie</string>
+    <string name="ai_ready">Asistentul AI este pregătit. Întreabă despre Java, explicarea codului, căutarea erorilor, refactorizare, optimizare sau teste.</string>
+    <string name="ai_loaded_file">%1$s încărcat (%2$d caractere). Întreabă orice despre acest cod.</string>
+    <string name="ai_loaded_file_short">%1$s încărcat (%2$d caractere).</string>
+    <string name="ai_key_not_set">Încă nu există o cheie API. Atinge „Cheie” pentru a adăuga cheia Gemini de la aistudio.google.com</string>
+    <string name="ai_key_needed_first">Adaugă mai întâi cheia API — atinge „Cheie”.</string>
+    <string name="ai_model_changed">Model schimbat în %1$s</string>
+    <string name="ai_key_saved_checking">Cheie salvată. O verific la Google…</string>
+    <string name="ai_key_verified">Cheie verificată. Model: %1$s</string>
+    <string name="ai_key_saved_unverified">Cheia a fost salvată, dar verificarea nu a trecut:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Cheia nu a putut fi salvată</string>
+    <string name="ai_key_save_failed_message">Stocarea securizată a acestui dispozitiv a refuzat-o, deci cheia nu a fost păstrată. În mod deliberat nu este stocată necriptat.</string>
+    <string name="ai_key_check_title">Verifică această cheie</string>
+    <string name="ai_key_save_anyway">Salvează oricum</string>
+    <string name="ai_key_save_verify">Salvează și verifică</string>
+    <string name="ai_key_get">Obține o cheie</string>
+    <string name="ai_insert_into_editor">↧ Inserează în editor</string>
+    <string name="ai_insert_desc">Inserează acest cod în editorul deschis</string>
+    <string name="ai_queued">În coadă (%1$s) — revino la editor pentru a aplica</string>
+</resources>

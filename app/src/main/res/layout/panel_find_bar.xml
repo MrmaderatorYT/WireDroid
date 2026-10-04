@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub: this starts
+    hidden and many sessions never show it, but it was still inflated on
+    every cold start.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#252527"
+    android:visibility="gone">
+
+    <!-- Find row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etFind"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:hint="@string/find_hint"
+            android:contentDescription="@string/a11y_find_input"
+            android:textColorHint="#555555"
+            android:textColor="@color/idea_text"
+            android:textSize="12sp"
+            android:background="#2B2B2B"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/btnFindPrev"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:text="↑"
+            android:textColor="@color/idea_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_find_previous" />
+
+        <TextView
+            android:id="@+id/btnFindNext"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:text="↓"
+            android:textColor="@color/idea_text"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_find_next" />
+
+        <TextView
+            android:id="@+id/btnFindClose"
+            android:layout_width="32dp"
+            android:layout_height="28dp"
+            android:text="✕"
+            android:textColor="@color/idea_text_dim"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_find_close" />
+
+        <Switch
+            android:id="@+id/switchFindScope"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="File"
+            android:textColor="@color/idea_accent"
+            android:textSize="10sp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:layout_marginStart="4dp"
+            android:thumbTint="@color/idea_accent"
+            android:trackTint="@color/idea_toolbar"
+            android:contentDescription="@string/a11y_find_scope" />
+
+    </LinearLayout>
+
+    <!-- Replace row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etReplace"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:hint="@string/replace_hint"
+            android:contentDescription="@string/a11y_replace_input"
+            android:textColorHint="#555555"
+            android:textColor="@color/idea_text"
+            android:textSize="12sp"
+            android:background="#2B2B2B"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/btnReplace"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/replace"
+            android:textColor="@color/idea_accent"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_replace" />
+
+        <TextView
+            android:id="@+id/btnReplaceAll"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/replace_all"
+            android:textColor="@color/idea_accent"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_replace_all" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/findBarDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+</LinearLayout>

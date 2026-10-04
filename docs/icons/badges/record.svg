@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="record">
+  <title>record</title>
+  <path d="M6,2h12a4,4 0 0 1 4,4v12a4,4 0 0 1 -4,4h-12a4,4 0 0 1 -4,-4v-12a4,4 0 0 1 4,-4z" fill="#3E9B9B"/>
+  <path d="M9,5.5H13.2A2.8,2.8 0 0 1 13.2,11.1L15.7,16.5H13.2L11,11.1V16.5H9ZM11,7.5H13.2A1.6,1.6 0 0 1 13.2,10.7H11Z" fill="#FFFFFF" fill-rule="evenodd"/>
+</svg>

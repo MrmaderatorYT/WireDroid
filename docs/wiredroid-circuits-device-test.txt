@@ -1,0 +1,2 @@
+PASS: real Clang C++17, exact 10-bit analogRead through powered potentiometer/sensor, live input changes, manual ADC for unsupported sensor, button INPUT_PULLUP, PWM monitor trace, bidirectional Serial.available/peek/read/write/print with ASCII and UTF-8 echo; runtime output/output halt and preflight power-short halt.
+

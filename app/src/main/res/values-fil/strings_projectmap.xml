@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Project Map (v1.11.0) — every key prefixed map_ so it stays out of the way
+     of the shared strings.xml that other screens edit. -->
+<resources>
+
+    <string name="map_title">Project Map</string>
+
+    <!-- Status line -->
+    <string name="map_scanning">Scanning project…</string>
+    <string name="map_settling">laying out…</string>
+    <string name="map_ready">ready</string>
+    <string name="map_status">%1$d classes · %2$d dependencies</string>
+    <string name="map_status_capped">%1$d of %2$d classes · %3$d dependencies · %4$d hidden</string>
+    <string name="map_status_line">%1$s — %2$s</string>
+    <string name="map_selected">%1$s · %2$d neighbours (%3$d in, %4$d out)</string>
+
+    <!-- Buttons -->
+    <string name="map_btn_fit">Fit</string>
+    <string name="map_btn_legend">Legend</string>
+    <string name="map_btn_clear">Clear</string>
+    <string name="map_dialog_close">Close</string>
+
+    <!-- Legend -->
+    <string name="map_legend_title">Packages</string>
+    <string name="map_legend_row">■  %1$s — %2$d classes</string>
+    <string name="map_legend_hidden">%1$d least-connected classes are hidden so the map stays readable.</string>
+    <string name="map_group_root">(shared root package)</string>
+
+    <!-- Empty and error states -->
+    <string name="map_empty_title">No classes to map</string>
+    <string name="map_empty_hint">The map draws .java and .kt classes and the imports between them. This project has none yet — add a class and open the map again.</string>
+    <string name="map_no_project">No project is open</string>
+    <string name="map_error">Could not build the map: %1$s</string>
+    <string name="map_toast_missing_file">That file no longer exists</string>
+
+    <!-- Accessibility -->
+    <string name="map_a11y_canvas">Project map. Drag to pan, pinch to zoom, tap a class to open it, long press to highlight its dependencies.</string>
+    <string name="map_a11y_fit">Fit the whole map on screen</string>
+    <string name="map_a11y_legend">Show the package colour legend</string>
+    <string name="map_a11y_clear">Clear the highlighted class</string>
+
+</resources>

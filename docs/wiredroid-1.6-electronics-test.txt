@@ -1,0 +1,1 @@
+PASS: divider voltage/current, RC charging, LED diode equation, RL transient, DC motor direction and inertia, NPN/MOS switch, rail short

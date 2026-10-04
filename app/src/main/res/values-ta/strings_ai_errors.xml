@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">இன்னும் API விசை இல்லை — சேர்க்க “விசை” என்பதைத் தட்டவும்.</string>
+    <string name="ai_err_hint_model">உங்கள் விசைக்கு இந்த மாதிரி கிடைக்கவில்லை. மாதிரிப் பட்டியலிலிருந்து வேறொன்றைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="ai_err_hint_key">முதலில் API விசையையும், பிறகு மாதிரியின் பெயரையும் சரிபார்க்கவும்.</string>
+    <string name="ai_err_hint_rejected">விசை நிராகரிக்கப்பட்டது. “விசை” என்பதைத் தட்டி, காரணத்தைப் பார்க்க “சேமித்துச் சரிபார்” என்பதைப் பயன்படுத்தவும்.</string>
+    <string name="ai_err_hint_rate">வேக வரம்பு எட்டப்பட்டது — சிறிது நேரம் காத்திருந்து மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="ai_err_hint_google">தற்போது Google பக்கத்தில் சிக்கல் உள்ளது. மீண்டும் முயற்சிப்பது பொதுவாக வேலை செய்யும்.</string>
+    <string name="ai_err_empty">காலியான பதில் — வெளியீட்டு வரம்பு உள்முக சிந்தனையிலேயே செலவாகியிருக்கலாம். மீண்டும் முயற்சிக்கவும், அல்லது கேள்வியை வேறுவிதமாகக் கேட்கவும்.</string>
+    <string name="ai_err_network">பிணையப் பிழை: %1$s</string>
+    <string name="ai_key_works">விசை வேலை செய்கிறது.</string>
+    <string name="ai_key_rejected">Google இந்த விசையை நிராகரித்தது (HTTP %1$d).%2$s\n\nபொதுவாக விசை ரத்து செய்யப்பட்டிருக்கும், Generative Language API அணைக்கப்பட்ட திட்டத்தைச் சேர்ந்ததாக இருக்கும், அல்லது ஒரு பகுதி மட்டுமே நகலெடுக்கப்பட்டிருக்கும்.</string>
+    <string name="ai_key_check_failed">விசையைச் சரிபார்க்க முடியவில்லை: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">விசையைச் சரிபார்க்க Google ஐ அணுக முடியவில்லை: %1$s</string>
+    <string name="ai_key_problem_empty">விசை காலியாக உள்ளது.</string>
+    <string name="ai_key_problem_url">அது ஒரு இணைய முகவரி, விசை அல்ல. அதைத் திறந்து, அங்கே காட்டப்படும் விசையை நகலெடுக்கவும்.</string>
+    <string name="ai_key_problem_openai">இது OpenAI விசை போலத் தெரிகிறது. இந்த உதவியாளர் Google Gemini உடன் பேசுகிறது; aistudio.google.com இல் விசை பெறவும்.</string>
+    <string name="ai_key_problem_short">விசை %1$d எழுத்துகளில் துண்டிக்கப்பட்டதுபோல் தெரிகிறது. முழுவதும் நகலெடுக்கப்பட்டதா எனச் சரிபார்க்கவும்.</string>
+</resources>

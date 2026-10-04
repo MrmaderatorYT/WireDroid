@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gutter_a11y_overlay">Git மாற்றக் குறிகள்</string>
+    <string name="gutter_hunk_added">%1$d ஆம் வரியில் சேர்க்கப்பட்டது</string>
+    <string name="gutter_hunk_modified">%1$d ஆம் வரியில் மாற்றப்பட்டது</string>
+    <string name="gutter_hunk_deleted">%1$d ஆம் வரிக்கு முன் நீக்கப்பட்டது</string>
+    <string name="gutter_hunk_no_original">கடைசி commit க்குப் பிறகு இந்தத் தொகுதி புதிது.</string>
+    <string name="gutter_revert_hunk">இந்த மாற்றத்தைத் திரும்பப் பெறு</string>
+    <string name="gutter_close">மூடு</string>
+    <string name="gutter_reverted">மாற்றம் திரும்பப் பெறப்பட்டது</string>
+    <string name="gutter_revert_failed">இந்த மாற்றத்தைத் திரும்பப் பெற முடியவில்லை</string>
+    <string name="crumb_a11y_bar">கோப்புப் பாதைத் தடங்கள்</string>
+    <string name="crumb_separator">›</string>
+    <string name="crumb_no_member">…</string>
+    <string name="crumb_empty">(காலியான கோப்புறை)</string>
+    <string name="crumb_no_members">(முறைகளோ புலங்களோ இல்லை)</string>
+    <string name="crumb_member_entry">%1$s — வரி %2$d</string>
+</resources>

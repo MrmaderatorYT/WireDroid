@@ -1,0 +1,46 @@
+{
+  "profile": "arduino:avr:uno",
+  "node": "uno",
+  "compiler": "avr-g++ (GCC) 7.3.0",
+  "coreVersion": "1.8.6",
+  "variant": "standard",
+  "mcu": "atmega328p",
+  "clockHz": 16000000,
+  "flashBytes": 5198,
+  "ramBytes": 447,
+  "hexSha256": "7fc11a2850c1fc9751abbe18a143606e8184dfdca2571ca388f8e5f2ec087289",
+  "sources": [
+    "/private/tmp/WireDroid-work/app/src/main/assets/wiredroid/runtime/libraries/LiquidCrystal/src/LiquidCrystal.cpp",
+    "/private/tmp/WireDroid-work/app/src/main/assets/wiredroid/runtime/libraries/Stepper/src/Stepper.cpp",
+    "libraries/Counter/src/Counter.cpp",
+    "libraries/Support/src/Support.cpp",
+    "sketches/uno.cpp",
+    "src/boards/uno/driver.cpp",
+    "src/measure.c",
+    "/private/tmp/wiredroid-avr-toolchain/avr-1.8.6/libraries/SPI/src/SPI.cpp",
+    "/private/tmp/wiredroid-avr-toolchain/avr-1.8.6/libraries/Wire/src/Wire.cpp",
+    "/private/tmp/wiredroid-avr-toolchain/avr-1.8.6/libraries/Wire/src/utility/twi.c"
+  ],
+  "libraries": [
+    "Counter",
+    "EEPROM",
+    "LiquidCrystal",
+    "SPI",
+    "Stepper",
+    "Support",
+    "Wire"
+  ],
+  "defines": [
+    "PROJECT_VALUE=6"
+  ],
+  "limitations": [
+    "External local AVR compiler required; not an Android-native toolchain.",
+    "AVR core default uses C++11 without exceptions and has no general STL runtime.",
+    "Imported .ino requires explicit function prototypes."
+  ],
+  "version": 1,
+  "sourceDigest": "7a5ebde970ef0d5d3204652c39da064b67915ec3d7743fbccc9c1f8a4acb6077",
+  "origin": "local-build-fixture",
+  "sourceRelationship": "Compiled locally; source/configuration snapshot digests recorded afterward from preserved fixture sources",
+  "configDigest": "a7cdfc69690a7887800de305a5c6d2bdad287e0e656ef133a52e8877a0acae3a"
+}

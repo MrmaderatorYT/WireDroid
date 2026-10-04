@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub: this panel
+    starts hidden and most sessions never open it, but it was still inflated
+    on every cold start along with every other bottom panel.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bytecodeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_console_bg"
+    android:visibility="gone">
+
+    <!-- toolbar: search + toggles -->
+    <LinearLayout
+        android:id="@+id/bytecodeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/idea_toolbar"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <EditText
+            android:id="@+id/bytecodeSearch"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:hint="@string/bytecode_search_hint"
+            android:contentDescription="@string/a11y_bytecode_search"
+            android:textColorHint="@color/idea_text_dim"
+            android:textColor="@color/idea_console_text"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp" />
+
+        <TextView
+            android:id="@+id/bytecodeToggleHex"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="HEX"
+            android:textColor="@color/idea_text_dim"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_toggle_hex" />
+
+        <TextView
+            android:id="@+id/bytecodeToggleLines"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Ln"
+            android:textColor="@color/idea_console_text"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_toggle_lines" />
+
+        <TextView
+            android:id="@+id/bytecodeToggleComments"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Cmt"
+            android:textColor="@color/idea_console_text"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_toggle_comments" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/idea_separator" />
+
+        <TextView
+            android:id="@+id/bytecodeEditInsn"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Edit"
+            android:textColor="@color/idea_accent"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_edit" />
+
+        <TextView
+            android:id="@+id/bytecodeSave"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Save"
+            android:textColor="@color/idea_run_green"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_save" />
+
+        <TextView
+            android:id="@+id/bytecodeRun"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="▶ Run"
+            android:textColor="@color/idea_run_green"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_run" />
+
+        <TextView
+            android:id="@+id/bytecodeOpenEditor"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Editor"
+            android:textColor="@color/idea_accent"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_open_editor" />
+
+        <TextView
+            android:id="@+id/bytecodeCallGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/tab_call_graph"
+            android:textColor="@color/idea_accent"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/a11y_bytecode_call_graph" />
+    </LinearLayout>
+
+    <!-- status line (class name / method count) -->
+    <TextView
+        android:id="@+id/bytecodeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="10sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/idea_text_dim"
+        android:background="@color/idea_console_bg" />
+
+    <!-- split: method tree (left) | instructions (right) -->
+    <LinearLayout
+        android:id="@+id/bytecodeSplitPanel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bytecodeMethodTree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/idea_separator" />
+
+        <FrameLayout
+            android:id="@+id/bytecodeInsnSlot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal"
+                android:fillViewport="false">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bytecodeInstructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false" />
+            </HorizontalScrollView>
+
+            <ScrollView
+                android:id="@+id/bytecodeHexScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bytecodeHexOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:fontFamily="monospace"
+                        android:textSize="10sp"
+                        android:textColor="@color/idea_console_text"
+                        android:textIsSelectable="true" />
+                </HorizontalScrollView>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

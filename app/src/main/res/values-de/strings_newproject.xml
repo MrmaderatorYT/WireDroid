@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Eine Datei, kein Projekt · läuft sofort</string>
+    <string name="np_scratch_language">Sprache</string>
+    <string name="np_scratch_location_label">Datei wird erstellt in</string>
+    <string name="np_scratch_note">Wird außerhalb Ihrer Projekte abgelegt und überlebt so den Wechsel zwischen ihnen.</string>
+    <string name="np_scratch_preview_label">Datei</string>
+    <string name="np_template_scratch">Notizdatei</string>
+</resources>

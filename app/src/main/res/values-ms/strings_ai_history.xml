@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_title">Sembang tersimpan</string>
+    <string name="ai_history_empty">Belum ada perbualan tersimpan. Tanya pembantu sesuatu dan ia akan muncul di sini.</string>
+    <string name="ai_history_untitled">Sembang tanpa tajuk</string>
+    <string name="ai_history_meta">%1$d mesej · %2$s</string>
+    <string name="ai_history_delete_title">Padam sembang ini?</string>
+    <string name="ai_history_delete_message">“%1$s” akan dibuang secara kekal.</string>
+    <string name="ai_history_delete_confirm">Padam</string>
+    <string name="ai_new_chat">Sembang baharu</string>
+    <string name="ai_new_chat_started">Sembang baharu dimulakan. Yang sebelumnya telah disimpan.</string>
+    <string name="ai_history_restored">Sembang tersimpan dipulihkan (%1$d mesej).</string>
+    <string name="md_pane_preview_on">Dipaparkan di sini. Ketik ikon mata sekali lagi untuk kembali ke editor.</string>
+</resources>

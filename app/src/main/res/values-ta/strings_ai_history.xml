@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_title">சேமித்த உரையாடல்கள்</string>
+    <string name="ai_history_empty">இதுவரை சேமித்த உரையாடல்கள் இல்லை. உதவியாளரிடம் ஏதேனும் கேளுங்கள், அது இங்கே தோன்றும்.</string>
+    <string name="ai_history_untitled">தலைப்பில்லா உரையாடல்</string>
+    <string name="ai_history_meta">%1$d செய்திகள் · %2$s</string>
+    <string name="ai_history_delete_title">இந்த உரையாடலை நீக்கவா?</string>
+    <string name="ai_history_delete_message">“%1$s” நிரந்தரமாக நீக்கப்படும்.</string>
+    <string name="ai_history_delete_confirm">நீக்கு</string>
+    <string name="ai_new_chat">புதிய உரையாடல்</string>
+    <string name="ai_new_chat_started">புதிய உரையாடல் தொடங்கியது. முந்தையது சேமிக்கப்பட்டுள்ளது.</string>
+    <string name="ai_history_restored">சேமித்த உரையாடல் மீட்டெடுக்கப்பட்டது (%1$d செய்திகள்).</string>
+    <string name="md_pane_preview_on">இங்கே காட்டப்படுகிறது. திருத்திக்குத் திரும்ப கண் சின்னத்தை மீண்டும் தட்டவும்.</string>
+</resources>

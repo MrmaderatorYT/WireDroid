@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Fáìlì kan, láìsí iṣẹ́ àkànṣe · ó ń ṣiṣẹ́ lẹ́sẹ̀kẹsẹ̀</string>
+    <string name="np_scratch_language">Èdè</string>
+    <string name="np_scratch_location_label">A ó ṣẹ̀dá fáìlì náà ní</string>
+    <string name="np_scratch_note">A pa á mọ́ lóde àwọn iṣẹ́ rẹ, nítorí náà ó wà nígbà tí o bá ń yí wọn padà.</string>
+    <string name="np_scratch_preview_label">Fáìlì</string>
+    <string name="np_template_scratch">Ìdánwò</string>
+</resources>

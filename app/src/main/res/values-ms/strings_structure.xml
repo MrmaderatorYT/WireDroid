@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="structure_options_desc">Pengisihan dan penapisan struktur</string>
+    <string name="structure_sort_source">Isih: Susunan sumber</string>
+    <string name="structure_sort_alpha">Isih: Mengikut abjad</string>
+    <string name="structure_sort_kind">Isih: Mengikut jenis</string>
+    <string name="structure_sort_visibility">Isih: Mengikut keterlihatan</string>
+    <string name="structure_show_fields">Tunjuk: Medan</string>
+    <string name="structure_show_non_public">Tunjuk: Bukan public</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_menu_schema">திட்டவரைவு</string>
+    <string name="schema_title">தரவுத்தள திட்டவரைவு</string>
+    <string name="schema_loading">திட்டவரைவு படிக்கப்படுகிறது…</string>
+    <string name="schema_fit">பொருத்து</string>
+    <string name="schema_no_connection">முதலில் ஒரு தரவுத்தளத்துடன் இணைக்கவும்</string>
+    <string name="schema_empty">இந்தத் தரவுத்தளத்தில் அட்டவணைகள் இல்லை</string>
+    <string name="schema_failed">திட்டவரைவைப் படிக்க முடியவில்லை: %1$s</string>
+    <string name="schema_omitted">மேலும் %1$d காட்டப்படவில்லை</string>
+    <string name="schema_no_keys">அயல் விசைகள் எதுவும் அறிவிக்கப்படவில்லை, எனவே அட்டவணைகள் இணைப்பின்றி வரையப்படுகின்றன.</string>
+    <plurals name="schema_tables">
+        <item quantity="one">%d அட்டவணை</item>
+        <item quantity="other">%d அட்டவணைகள்</item>
+    </plurals>
+    <plurals name="schema_links">
+        <item quantity="one">%d அயல் விசை</item>
+        <item quantity="other">%d அயல் விசைகள்</item>
+    </plurals>
+    <string name="semantic_title">பொருள் சார்ந்த தேடல்</string>
+    <string name="semantic_hint">நாம் எங்கே தரவுத்தளத்தில் எழுதுகிறோம்?</string>
+    <string name="semantic_ready">திட்டத்தைப் பற்றி உங்கள் சொந்த வார்த்தைகளில் கேளுங்கள்.</string>
+    <string name="semantic_reading">திட்டம் படிக்கப்படுகிறது…</string>
+    <string name="semantic_asking">%1$d கோப்புகள் பற்றிக் கேட்கப்படுகிறது…</string>
+    <string name="semantic_no_key">பொருள் சார்ந்த தேடலைப் பயன்படுத்த அமைப்புகளில் Gemini API விசையை அமைக்கவும்.</string>
+    <string name="semantic_no_project">முதலில் ஒரு திட்டத்தைத் திறக்கவும்</string>
+    <string name="semantic_empty_project">இங்கே Java அல்லது Kotlin மூலங்கள் எதுவும் இல்லை</string>
+    <string name="semantic_no_match">இந்தத் திட்டத்தில் அதற்குப் பொருந்துவது எதுவும் இல்லை.</string>
+    <string name="semantic_failed">தேடல் தோல்வியடைந்தது: %1$s</string>
+    <plurals name="semantic_found">
+        <item quantity="one">%d கோப்பு</item>
+        <item quantity="other">%d கோப்புகள்</item>
+    </plurals>
+    <string name="settings_inlay_hints">அளபுருப் பெயர்க் குறிப்புகள்</string>
+</resources>

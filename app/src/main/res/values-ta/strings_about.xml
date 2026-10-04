@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_open_source">WireDroid என்பது GPL-3.0 உரிமத்தின் கீழ் வழங்கப்படும் திறந்த மூல மென்பொருள். குறியீட்டுக்கான இணைப்பு அமைப்புகளில் உள்ளது.</string>
+    <string name="settings_source_code">மூலக் குறியீடு</string>
+    <string name="settings_source_code_hint">GPL-3.0 உரிமத்தின் கீழ் திறந்த மூலம். களஞ்சியத்தைத் திறக்க தட்டவும்; முகவரியை நகலெடுக்க நீண்ட நேரம் அழுத்தவும்.</string>
+    <string name="settings_source_code_copied">களஞ்சிய முகவரி நகலெடுக்கப்பட்டது</string>
+</resources>

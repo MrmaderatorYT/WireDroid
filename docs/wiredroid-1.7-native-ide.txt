@@ -1,0 +1,6 @@
+FAIL java.lang.AssertionError: Failed save changed source
+	at com.ccs.wiredroid.wire.WireIdeReliabilityChecks.require(WireIdeReliabilityChecks.java:75)
+	at com.ccs.wiredroid.wire.WireIdeReliabilityChecks.run(WireIdeReliabilityChecks.java:56)
+	at com.ccs.wiredroid.wire.WireExamplesInstrumentation.onStart(WireExamplesInstrumentation.java:55)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2218)
+

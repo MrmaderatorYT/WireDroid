@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="generate_constructor_no_arg">Constructor sin argumentos</string>
+    <string name="generate_select_none">No seleccionar nada</string>
+</resources>

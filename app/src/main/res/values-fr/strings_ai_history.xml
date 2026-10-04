@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Supprimer</string>
+    <string name="ai_history_delete_message">« %1$s » sera supprimé définitivement.</string>
+    <string name="ai_history_delete_title">Supprimer cette conversation ?</string>
+    <string name="ai_history_empty">Aucune conversation enregistrée pour l’instant. Posez une question à l’assistant et elle apparaîtra ici.</string>
+    <string name="ai_history_meta">%1$d messages · %2$s</string>
+    <string name="ai_history_restored">Conversation enregistrée restaurée (%1$d messages).</string>
+    <string name="ai_history_title">Conversations enregistrées</string>
+    <string name="ai_history_untitled">Conversation sans titre</string>
+    <string name="ai_new_chat">Nouvelle conversation</string>
+    <string name="ai_new_chat_started">Nouvelle conversation démarrée. La précédente est enregistrée.</string>
+    <string name="md_pane_preview_on">Rendu ici. Touchez de nouveau l’œil pour revenir à l’éditeur.</string>
+</resources>

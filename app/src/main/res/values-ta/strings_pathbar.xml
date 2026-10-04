@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pathbar_a11y">செயலில் உள்ள கோப்பின் பாதை — நகலெடுக்க தட்டவும்</string>
+    <string name="pathbar_clip_label">WireDroid கோப்புப் பாதை</string>
+    <string name="pathbar_copied">பாதை கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது</string>
+    <string name="pathbar_copy_failed">கிளிப்போர்டை அணுக முடியவில்லை</string>
+</resources>

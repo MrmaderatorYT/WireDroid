@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Fayil ɗaya, babu aiki · yana gudu nan take</string>
+    <string name="np_scratch_language">Harshe</string>
+    <string name="np_scratch_location_label">Za a ƙirƙiri fayil a</string>
+    <string name="np_scratch_note">Ana ajiye shi waje da ayyukanka, don haka yana nan ko da ka canza tsakaninsu.</string>
+    <string name="np_scratch_preview_label">Fayil</string>
+    <string name="np_template_scratch">Gwaji</string>
+</resources>

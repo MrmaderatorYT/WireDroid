@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Un fichier, sans projet · s’exécute immédiatement</string>
+    <string name="np_scratch_language">Langage</string>
+    <string name="np_scratch_location_label">Le fichier sera créé dans</string>
+    <string name="np_scratch_note">Conservé hors de vos projets, il survit donc au passage de l’un à l’autre.</string>
+    <string name="np_scratch_preview_label">Fichier</string>
+    <string name="np_template_scratch">Brouillon</string>
+</resources>

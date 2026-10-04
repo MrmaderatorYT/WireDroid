@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for the two editor-chrome features: the Git gutter (gutter_*)
+    and the breadcrumb path bar (crumb_*).
+-->
+<resources>
+
+    <!-- ── Git gutter ── -->
+    <string name="gutter_a11y_overlay">Git change markers</string>
+    <string name="gutter_hunk_added">Added at line %1$d</string>
+    <string name="gutter_hunk_modified">Modified at line %1$d</string>
+    <string name="gutter_hunk_deleted">Deleted before line %1$d</string>
+    <string name="gutter_hunk_no_original">This block is new since the last commit.</string>
+    <string name="gutter_revert_hunk">Revert this hunk</string>
+    <string name="gutter_close">Close</string>
+    <string name="gutter_reverted">Hunk reverted</string>
+    <string name="gutter_revert_failed">Could not revert this hunk</string>
+
+    <!-- ── Breadcrumbs ── -->
+    <string name="crumb_a11y_bar">File path breadcrumbs</string>
+    <string name="crumb_separator">›</string>
+    <string name="crumb_no_member">…</string>
+    <string name="crumb_empty">(empty folder)</string>
+    <string name="crumb_no_members">(no methods or fields found)</string>
+    <string name="crumb_member_entry">%1$s — line %2$d</string>
+
+</resources>

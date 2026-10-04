@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Strings for the New Project screen (com.ccs.wiredroid.ui.NewProjectActivity).
+  dialog_create, dialog_cancel and the jdk_picker_* keys are reused from
+  strings.xml / strings_jdk.xml so the wording matches the rest of the app.
+  File paths shown in the structure preview are literals, not resources.
+-->
+<resources>
+
+    <string name="np_title">New Project</string>
+
+    <!-- Template rail -->
+    <string name="np_template_java">Java</string>
+    <string name="np_template_kotlin">Kotlin</string>
+    <string name="np_template_bytecode">Bytecode</string>
+    <string name="np_template_scratch">Scratch</string>
+    <string name="np_scratch_location_label">File will be created in</string>
+    <string name="np_scratch_preview_label">File</string>
+    <string name="np_template_playground">Playground</string>
+
+    <string name="np_caption_java">Maven or Gradle · JUnit 4 · sources in src/main/java</string>
+    <string name="np_caption_kotlin">Gradle only · Kotlin %1$s · sources in src/main/kotlin</string>
+    <string name="np_caption_bytecode">No build system · .asm sources, classes in out/</string>
+    <string name="np_caption_scratch">One file, no project · runs straight away</string>
+    <string name="np_scratch_language">Language</string>
+    <string name="np_scratch_note">Kept outside your projects, so it survives switching between them.</string>
+    <string name="np_caption_playground">A fixed sample project with a file for every feature</string>
+
+    <!-- Name and location -->
+    <string name="np_name_label">Name</string>
+    <string name="np_name_hint">Project name</string>
+    <string name="np_name_exists">A project named %1$s already exists here</string>
+    <string name="np_location_label">Project will be created in</string>
+    <string name="np_location_resolving">Locating the WireDroid folder…</string>
+    <string name="np_playground_replaces">The existing Playground folder will be deleted and rewritten</string>
+
+    <!-- Build system -->
+    <string name="np_build_label">Build system</string>
+    <string name="np_build_maven">Maven</string>
+    <string name="np_build_gradle">Gradle</string>
+    <string name="np_kotlin_gradle_only">Kotlin projects are generated for Gradle only</string>
+
+    <!-- Git -->
+    <string name="np_git_label">Create Git repository</string>
+    <string name="np_git_note">Runs git init and makes one initial commit</string>
+    <string name="np_git_initial_commit">Initial commit</string>
+    <string name="np_git_failed">Project created, but the Git repository failed: %1$s</string>
+
+    <!-- Advanced settings -->
+    <string name="np_advanced_collapsed">▸ Advanced settings</string>
+    <string name="np_advanced_expanded">▾ Advanced settings</string>
+    <string name="np_group_label">GroupId</string>
+    <string name="np_group_hint">com.example.app</string>
+    <string name="np_group_invalid">Use a dotted package, for example com.acme.app</string>
+    <string name="np_artifact_label">ArtifactId</string>
+    <string name="np_artifact_hint">artifact-id</string>
+    <string name="np_artifact_sanitized">Will be written as %1$s</string>
+
+    <!-- Preview and actions -->
+    <string name="np_preview_label">Project structure</string>
+    <string name="np_creating">Creating…</string>
+    <string name="np_replace">Replace</string>
+    <string name="np_failed">Could not create the project: %1$s</string>
+
+    <string name="np_template_samples">Samples</string>
+    <string name="np_caption_samples">30+ ready-to-run Java examples and learning templates</string>
+    <string name="np_sample_label">Choose Sample</string>
+</resources>

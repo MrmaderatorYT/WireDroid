@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lib_add_local">உள்ளூர் JAR, WAR அல்லது AAR ஐச் சேர்…</string>
+    <string name="lib_add_local_note">திட்டத்தின் libs/ கோப்புறைக்கு நகலெடுக்கப்பட்டு, தொகுப்பு classpath இல் சேர்க்கப்படுகிறது. WAR அல்லது AAR பிரிக்கப்படும் — அதற்குள் உள்ள jar கோப்புகளே தொகுப்பானுக்குத் தேவை.</string>
+    <string name="lib_local_no_project">முதலில் ஒரு திட்டத்தைத் திறக்கவும்</string>
+    <string name="lib_local_importing">இறக்குமதி செய்யப்படுகிறது…</string>
+    <string name="lib_local_failed">இறக்குமதி தோல்வியடைந்தது: %1$s</string>
+    <string name="lib_local_gradle_written">build.gradle இல் அறிவிக்கப்பட்டது</string>
+    <string name="lib_local_maven_note">இங்கே classpath இல் உள்ளது. உள்ளூர் jar ஐ அறிவிக்க Maven இல் தூய்மையான வழி இல்லை, எனவே pom.xml மாற்றப்படவில்லை — வேறு கணினியில் நடக்கும் உருவாக்கம் இதைப் பார்க்காது.</string>
+    <plurals name="lib_local_added">
+        <item quantity="one">%1$d jar சேர்க்கப்பட்டது: %2$s</item>
+        <item quantity="other">%1$d jar கோப்புகள் சேர்க்கப்பட்டன: %2$s</item>
+    </plurals>
+</resources>

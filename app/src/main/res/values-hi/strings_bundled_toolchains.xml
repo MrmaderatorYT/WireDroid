@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ, JDK 21 के लिए कंपाइल करता है और .class फ़ाइलों को एम्बेडेड JVM में चलाता है। रनटाइम शामिल है; पहली बार केवल लगभग 145 MB डेटा इंटरनल स्टोरेज में निकाला जाता है।</string>
+    <string name="settings_ndk_bundled_desc">वैकल्पिक C++ टूलचेन ज़रूरत पड़ने पर डाउनलोड होती है: 344 MB डाउनलोड और इंस्टॉल होने के बाद लगभग 1.85 GB इंटरनल स्टोरेज।</string>
+    <string name="settings_ndk_bundled_install">C++ NDK डाउनलोड करें (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 उसकी मूल रिलीज़ से डाउनलोड होता है: नेटवर्क से 344 MB और निकालने के बाद लगभग 1.85 GB इंटरनल स्टोरेज। रुका हुआ डाउनलोड वहीं से जारी रहता है। जारी रखें?</string>
+    <string name="settings_ndk_install_action">डाउनलोड</string>
+    <string name="ndk_bundled_no_space">NDK r29 के लिए इंटरनल स्टोरेज में कम से कम %1$d MB खाली जगह चाहिए।</string>
+    <string name="ndk_bundled_unsupported">C++ NDK के लिए Android 9 या नया ARM64 डिवाइस चाहिए।</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, ज़रूरत पर डाउनलोड)</string>
+    <string name="np_native_ndk_bundled_note">Clang 21 के साथ C और C++। NDK 344 MB का डाउनलोड है और इंस्टॉल होने पर लगभग 1.85 GB लेता है।</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">चेतावनी: C++ स्रोतों के लिए NDK चाहिए। इसे सेटिंग्स → C++ NDK डाउनलोड करें से इंस्टॉल करें। छोड़ा जा रहा है।</string>
+    <string name="native_compiling_sources">नेटिव स्रोत कंपाइल किए जा रहे हैं…</string>
+    <string name="ndk_downloading">NDK r29 डाउनलोड हो रहा है… %1$s / %2$s</string>
+    <string name="ndk_verifying">डाउनलोड की जाँच हो रही है…</string>
+    <string name="ndk_download_http">NDK डाउनलोड ने HTTP %1$d लौटाया।</string>
+    <string name="ndk_download_incomplete">NDK डाउनलोड समय से पहले रुक गया। जारी रखने के लिए फिर कोशिश करें।</string>
+    <string name="ndk_download_too_large">NDK डाउनलोड अपेक्षा से बड़ा था और रोक दिया गया।</string>
+    <string name="ndk_download_checksum_failed">NDK डाउनलोड अखंडता जाँच में विफल रहा और हटा दिया गया। फिर कोशिश करें।</string>
+    <string name="ndk_download_restart">अधूरा NDK डाउनलोड अब रिलीज़ से मेल नहीं खाता। नए सिरे से शुरू करने के लिए फिर कोशिश करें।</string>
+    <string name="settings_ndk_cancel">डाउनलोड रद्द करें</string>
+    <string name="settings_ndk_cancelled">NDK डाउनलोड रद्द किया गया। डाउनलोड हुआ हिस्सा सुरक्षित रखा गया है।</string>
+</resources>

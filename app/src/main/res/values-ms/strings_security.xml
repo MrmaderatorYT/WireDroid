@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problem_security">🛡 KESELAMATAN</string>
+    <string name="sec_hardcoded_credential">Kelayakan ditulis terus dalam “%1$s” — sesiapa yang menyahkompil APK boleh membacanya. Pindahkannya ke config binaan, pemboleh ubah persekitaran atau Android Keystore.</string>
+    <string name="sec_vendor_key">Ini kelihatan seperti kunci API sebenar yang di-commit ke dalam sumber. Batalkannya, kemudian muatkannya daripada konfigurasi dan bukan sebagai nilai literal.</string>
+    <string name="sec_url_credentials">Nama pengguna dan kata laluan tertanam dalam URL. Ia akan berakhir dalam log, laporan ranap dan sejarah proksi — hantarkannya sebagai kelayakan berasingan.</string>
+    <string name="sec_sql_concat">SQL dibina dengan gabungan rentetan — suntikan SQL. Gunakan PreparedStatement dengan pemegang tempat ?, atau rawQuery dengan tatasusunan selectionArgs.</string>
+    <string name="sec_sql_format">SQL dibina dengan String.format — argumennya tidak dilepaskan. Gunakan PreparedStatement dengan pemegang tempat ? sebaliknya.</string>
+    <string name="sec_sql_raw_exec">Pernyataan yang digabungkan dilaksanakan terus. Ikat nilainya sebagai parameter dan bukan menampalnya ke dalam teks SQL.</string>
+    <string name="sec_weak_hash">%1$s sudah rosak dan tidak boleh digunakan untuk kata laluan atau tandatangan. Gunakan SHA-256 untuk integriti, dan bcrypt/scrypt/Argon2 untuk kata laluan.</string>
+    <string name="sec_weak_cipher">Sifer lemah “%1$s”. Gunakan AES dengan GCM; mod ECB membocorkan struktur teks asal.</string>
+    <string name="sec_trust_all_certs">Ini menerima setiap sijil TLS, yang menghapuskan perlindungan yang menjadi tujuan TLS dan menjadikan sambungan mudah dipintas.</string>
+    <string name="sec_cleartext_http">http:// biasa ke hos awam — trafiknya boleh dibaca dan diubah dalam perjalanan. Gunakan https://.</string>
+    <string name="sec_insecure_random">Random dan Math.random boleh diramal dan tidak boleh menjana token, kunci atau salt. Gunakan SecureRandom.</string>
+    <string name="sec_world_accessible">Mod boleh dibaca/ditulis oleh sesiapa menjadikan fail ini tersedia kepada setiap aplikasi pada peranti. Ia telah ditamatkan sejak API 17 dan menimbulkan ralat sejak API 24.</string>
+    <string name="sec_js_interface">addJavascriptInterface mendedahkan kaedah Java kepada JavaScript halaman. Pada kandungan jauh yang dimuatkan, ini ialah pelaksanaan kod jauh.</string>
+    <string name="sec_webview_js">JavaScript dihidupkan dalam WebView yang memuatkan URL. Pastikan kandungan itu milik anda dan tidak boleh digantikan dalam perjalanan.</string>
+    <string name="sec_secret_on_external">Rahsia yang ditulis ke storan luaran boleh dibaca oleh aplikasi lain dan kekal selepas nyahpasang. Simpannya dalam storan persendirian aplikasi atau Keystore.</string>
+</resources>

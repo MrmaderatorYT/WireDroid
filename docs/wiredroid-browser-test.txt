@@ -1,0 +1,1 @@
+PASS: per-part resizing, rotated contact/wire alignment, size persistence and undo/redo, examples button, library, SVG contacts, native bridge signals, input reply, C++ defaults, board catalog, LED signal, drag, undo/redo, persistence, live IDE theme, narrow panel tabs, complete diagnostics, desktop and phone rendering

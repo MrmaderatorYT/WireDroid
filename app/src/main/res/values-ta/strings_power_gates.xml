@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_profile_inlay">அளபுருப் பெயர்க் குறிப்புகள்</string>
+    <string name="settings_profile_inlay_desc">நீங்கள் தட்டச்சு செய்யும்போதே திட்டத்தை மீண்டும் அட்டவணைப்படுத்துகிறது — பின்னணியில் நடக்கும் மிகச் செலவான செயல்.</string>
+    <string name="settings_profile_gutter">Git மாற்றக் குறிகள்</string>
+    <string name="settings_profile_gutter_desc">ஒவ்வொரு திருத்தத்திற்குப் பிறகும் ஒப்பீட்டை இயக்குகிறது.</string>
+</resources>

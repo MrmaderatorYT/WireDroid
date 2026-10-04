@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Belum ada kunci API — ketik “Kunci” untuk menambahnya.</string>
+    <string name="ai_err_hint_model">Model ini tidak tersedia untuk kunci anda. Pilih yang lain daripada senarai model.</string>
+    <string name="ai_err_hint_key">Semak kunci API dahulu, kemudian nama model.</string>
+    <string name="ai_err_hint_rejected">Kunci ditolak. Ketik “Kunci” dan gunakan Simpan &amp; sahkan untuk melihat sebabnya.</string>
+    <string name="ai_err_hint_rate">Had kadar dicapai — tunggu sebentar dan cuba lagi.</string>
+    <string name="ai_err_hint_google">Pihak Google sedang bermasalah sekarang. Mencuba semula biasanya berjaya.</string>
+    <string name="ai_err_empty">Jawapan kosong — bajet output berkemungkinan habis pada penaakulan dalaman. Cuba lagi, atau ubah cara soalan ditanya.</string>
+    <string name="ai_err_network">Ralat rangkaian: %1$s</string>
+    <string name="ai_key_works">Kunci ini berfungsi.</string>
+    <string name="ai_key_rejected">Google menolak kunci ini (HTTP %1$d).%2$s\n\nBiasanya kunci telah dibatalkan, milik projek yang Generative Language API-nya dimatikan, atau disalin separuh sahaja.</string>
+    <string name="ai_key_check_failed">Tidak dapat menyemak kunci: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Tidak dapat menghubungi Google untuk menyemak kunci: %1$s</string>
+    <string name="ai_key_problem_empty">Kunci itu kosong.</string>
+    <string name="ai_key_problem_url">Itu alamat web, bukan kunci. Bukanya, kemudian salin kunci yang dipaparkan.</string>
+    <string name="ai_key_problem_openai">Itu kelihatan seperti kunci OpenAI. Pembantu ini bercakap dengan Google Gemini; dapatkan kunci di aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Kunci kelihatan terpotong pada %1$d aksara. Pastikan kesemuanya telah disalin.</string>
+</resources>

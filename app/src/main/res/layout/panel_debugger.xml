@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debuggerSplitPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_console_bg"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/debuggerJavaSeNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:background="#26E6A23C"
+        android:text="@string/debug_javase_unsupported_banner"
+        android:textColor="#E6A23C"
+        android:textSize="11sp"
+        android:lineSpacingExtra="1dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/idea_console_bg">
+
+    <!-- Left: Call Stack -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/callStackRecycler"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/idea_console_bg"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never" />
+
+    <!-- Збережено для зворотної сумісності (прихований) -->
+    <TextView
+        android:id="@+id/callStackOutput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/idea_separator" />
+
+    <!-- Right: Variables & Watches -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/variablesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/idea_console_bg"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never" />
+
+        <!-- Збережено для зворотної сумісності старого коду (прихований) -->
+        <TextView
+            android:id="@+id/variablesOutput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/idea_separator" />
+
+        <LinearLayout
+            android:id="@+id/watchesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/idea_console_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp">
+
+                <TextView
+                    android:id="@+id/btnAddWatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:gravity="center"
+                    android:text="+ Add Watch"
+                    android:textColor="#499C54"
+                    android:textSize="11sp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/a11y_add_watch" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <TextView
+                    android:id="@+id/watchesOutput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textColor="@color/idea_console_text"
+                    android:fontFamily="monospace"
+                    android:textSize="11sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textIsSelectable="true" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

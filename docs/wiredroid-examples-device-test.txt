@@ -1,0 +1,7 @@
+PASS: blink-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: button-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: traffic-uno · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: alternating-nano · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: blink-esp32 · copied project, C++ build, native GPIO/LED behaviour, per-board size 50% saved
+PASS: existing project overwrite rejected
+

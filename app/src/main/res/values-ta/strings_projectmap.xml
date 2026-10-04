@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_title">திட்ட வரைபடம்</string>
+    <string name="map_scanning">திட்டம் வருடப்படுகிறது…</string>
+    <string name="map_settling">அமைக்கப்படுகிறது…</string>
+    <string name="map_ready">தயார்</string>
+    <string name="map_status">%1$d வகுப்புகள் · %2$d சார்புகள்</string>
+    <string name="map_status_capped">%2$d இல் %1$d வகுப்புகள் · %3$d சார்புகள் · %4$d மறைக்கப்பட்டவை</string>
+    <string name="map_status_line">%1$s — %2$s</string>
+    <string name="map_selected">%1$s · %2$d அண்டைகள் (%3$d உள்ளே, %4$d வெளியே)</string>
+    <string name="map_btn_fit">பொருத்து</string>
+    <string name="map_btn_legend">விளக்கக்குறிப்பு</string>
+    <string name="map_btn_clear">அழி</string>
+    <string name="map_dialog_close">மூடு</string>
+    <string name="map_legend_title">தொகுப்புகள்</string>
+    <string name="map_legend_row">■  %1$s — %2$d வகுப்புகள்</string>
+    <string name="map_legend_hidden">வரைபடம் படிக்கக்கூடியதாக இருக்க, மிகக் குறைவாக இணைக்கப்பட்ட %1$d வகுப்புகள் மறைக்கப்பட்டுள்ளன.</string>
+    <string name="map_group_root">(பொதுவான வேர்த் தொகுப்பு)</string>
+    <string name="map_empty_title">வரைபடமாக்க வகுப்புகள் இல்லை</string>
+    <string name="map_empty_hint">வரைபடம் .java மற்றும் .kt வகுப்புகளையும் அவற்றுக்கு இடையிலான import களையும் வரைகிறது. இந்தத் திட்டத்தில் இன்னும் எதுவும் இல்லை — ஒரு வகுப்பைச் சேர்த்து வரைபடத்தை மீண்டும் திறக்கவும்.</string>
+    <string name="map_no_project">எந்தத் திட்டமும் திறக்கப்படவில்லை</string>
+    <string name="map_error">வரைபடத்தை உருவாக்க முடியவில்லை: %1$s</string>
+    <string name="map_toast_missing_file">அந்தக் கோப்பு இனி இல்லை</string>
+    <string name="map_a11y_canvas">திட்ட வரைபடம். நகர்த்த இழுக்கவும், அளவை மாற்ற இரு விரல்களால் கிள்ளவும், வகுப்பைத் திறக்க தட்டவும், அதன் சார்புகளை முன்னிலைப்படுத்த நீண்ட நேரம் அழுத்தவும்.</string>
+    <string name="map_a11y_fit">முழு வரைபடத்தையும் திரையில் பொருத்து</string>
+    <string name="map_a11y_legend">தொகுப்பு வண்ண விளக்கக்குறிப்பைக் காட்டு</string>
+    <string name="map_a11y_clear">முன்னிலைப்படுத்திய வகுப்பை அழி</string>
+</resources>

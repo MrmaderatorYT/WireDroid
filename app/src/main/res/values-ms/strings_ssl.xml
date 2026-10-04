@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssl_title">Sijil SSL</string>
+    <string name="ssl_subtitle">Periksa rantaian TLS daripada hos langsung atau fail setempat</string>
+    <string name="ssl_label_host">Hos</string>
+    <string name="ssl_label_port">Port</string>
+    <string name="ssl_hint_host">example.com</string>
+    <string name="ssl_hint_port">443</string>
+    <string name="ssl_action_fetch">Ambil</string>
+    <string name="ssl_action_open_file">Buka fail</string>
+    <string name="ssl_action_clear">Kosongkan</string>
+    <string name="ssl_action_copy_pem">Salin PEM</string>
+    <string name="ssl_picker_title">Pilih fail sijil</string>
+    <string name="ssl_status_idle">Masukkan hos, atau buka fail .crt / .cer / .pem / .der</string>
+    <string name="ssl_status_connecting">Menyambung ke %1$s:%2$d…</string>
+    <string name="ssl_status_reading">Membaca %1$s…</string>
+    <string name="ssl_status_source_host">%1$s:%2$d</string>
+    <string name="ssl_status_source_file">Fail: %1$s</string>
+    <string name="ssl_status_error">Ralat: %1$s</string>
+    <string name="ssl_status_elapsed">%1$d ms</string>
+    <plurals name="ssl_status_chain">
+        <item quantity="other">%1$d sijil</item>
+    </plurals>
+    <string name="ssl_error_empty_host">Masukkan nama hos dahulu</string>
+    <string name="ssl_error_bad_port">Port mestilah nombor antara 1 dan 65535</string>
+    <string name="ssl_error_no_certs">Tiada sijil ditemui dalam sumber ini</string>
+    <string name="ssl_error_read_file">Tidak dapat membaca fail: %1$s</string>
+    <string name="ssl_error_parse">Bukan sijil X.509 yang dikenali: %1$s</string>
+    <string name="ssl_error_too_large">Fail terlalu besar untuk menjadi sijil (%1$d KB)</string>
+    <string name="ssl_error_no_picker">Tiada pemilih fail tersedia pada peranti ini</string>
+    <string name="ssl_error_missing_file">Fail tidak ditemui: %1$s</string>
+    <string name="ssl_notice_inspection">Mod pemeriksaan: pengesahan sijil dimatikan semasa pengambilan, jadi rantaian yang luput dan ditandatangani sendiri masih boleh dibaca. Sambungan ini digunakan untuk skrin ini sahaja.</string>
+    <string name="ssl_section_connection">Sambungan</string>
+    <string name="ssl_label_peer">Rakan</string>
+    <string name="ssl_label_protocol">Protokol</string>
+    <string name="ssl_label_cipher">Suite sifer</string>
+    <string name="ssl_label_handshake">Jabat tangan</string>
+    <string name="ssl_section_subject">Subjek</string>
+    <string name="ssl_section_issuer">Pengeluar</string>
+    <string name="ssl_section_validity">Kesahan</string>
+    <string name="ssl_section_details">Butiran</string>
+    <string name="ssl_section_san">Nama alternatif subjek</string>
+    <string name="ssl_section_usage">Kekangan dan penggunaan</string>
+    <string name="ssl_section_fingerprints">Cap jari</string>
+    <string name="ssl_label_not_before">Tidak sebelum</string>
+    <string name="ssl_label_not_after">Tidak selepas</string>
+    <string name="ssl_label_remaining">Baki</string>
+    <string name="ssl_label_serial">Siri (hex)</string>
+    <string name="ssl_label_sig_alg">Algoritma tandatangan</string>
+    <string name="ssl_label_key">Kunci awam</string>
+    <string name="ssl_label_version">Versi</string>
+    <string name="ssl_label_basic_constraints">Kekangan asas</string>
+    <string name="ssl_label_key_usage">Penggunaan kunci</string>
+    <string name="ssl_label_ext_key_usage">Penggunaan kunci lanjutan</string>
+    <string name="ssl_label_sha256">SHA-256</string>
+    <string name="ssl_label_sha1">SHA-1</string>
+    <string name="ssl_value_none">—</string>
+    <string name="ssl_value_version">v%1$d</string>
+    <string name="ssl_value_key_sized">%1$s, %2$d bit</string>
+    <string name="ssl_value_ca_yes">Pihak Berkuasa Sijil</string>
+    <string name="ssl_value_ca_no">Entiti akhir (bukan CA)</string>
+    <string name="ssl_value_path_len">CA, boleh menandatangani %1$d aras lagi di bawah</string>
+    <string name="ssl_value_path_len_unlimited">CA, kedalaman rantaian tanpa had</string>
+    <string name="ssl_value_self_signed">Ditandatangani sendiri (subjek sama dengan pengeluar)</string>
+    <string name="ssl_value_expired">Luput %1$d hari lalu</string>
+    <string name="ssl_value_expires_today">Luput hari ini</string>
+    <string name="ssl_value_expiring_soon">Luput dalam %1$d hari</string>
+    <string name="ssl_value_valid">%1$d hari lagi</string>
+    <string name="ssl_value_not_yet_valid">Belum sah — bermula dalam %1$d hari</string>
+    <string name="ssl_date_format">yyyy-MM-dd HH:mm:ss z</string>
+    <string name="ssl_depth_badge">#%1$d</string>
+    <string name="ssl_depth_leaf">daun</string>
+    <string name="ssl_depth_intermediate">perantaraan</string>
+    <string name="ssl_depth_root">akar</string>
+    <string name="ssl_chain_break">Rantaian terputus — pengeluar sijil ini tidak sepadan dengan subjek sijil berikutnya</string>
+    <string name="ssl_chain_unnamed">(tiada nama biasa)</string>
+    <string name="ssl_rdn_cn">Nama biasa</string>
+    <string name="ssl_rdn_o">Organisasi</string>
+    <string name="ssl_rdn_ou">Unit organisasi</string>
+    <string name="ssl_rdn_c">Negara</string>
+    <string name="ssl_rdn_st">Negeri / wilayah</string>
+    <string name="ssl_rdn_l">Bandar</string>
+    <string name="ssl_rdn_street">Jalan</string>
+    <string name="ssl_rdn_email">E-mel</string>
+    <string name="ssl_rdn_dc">Komponen domain</string>
+    <string name="ssl_rdn_uid">ID pengguna</string>
+    <string name="ssl_rdn_serial">Siri</string>
+    <string name="ssl_rdn_title">Gelaran</string>
+    <string name="ssl_eku_any">Sebarang penggunaan</string>
+    <string name="ssl_eku_server_auth">Pengesahan pelayan TLS</string>
+    <string name="ssl_eku_client_auth">Pengesahan klien TLS</string>
+    <string name="ssl_eku_code_signing">Penandatanganan kod</string>
+    <string name="ssl_eku_email">Perlindungan e-mel</string>
+    <string name="ssl_eku_timestamp">Penanda masa</string>
+    <string name="ssl_eku_ocsp">Penandatanganan OCSP</string>
+    <string name="ssl_toast_pem_copied">PEM disalin ke papan keratan</string>
+    <string name="ssl_clip_label">PEM sijil</string>
+    <string name="ssl_a11y_host">Nama hos untuk diperiksa</string>
+    <string name="ssl_a11y_port">Port TLS, 443 secara lalai</string>
+    <string name="ssl_a11y_fetch">Ambil rantaian sijil</string>
+    <string name="ssl_a11y_open_file">Buka fail sijil</string>
+    <string name="ssl_a11y_clear">Kosongkan keputusan</string>
+    <string name="ssl_a11y_copy_pem">Salin sijil ini sebagai PEM</string>
+    <string-array name="ssl_san_types">
+        <item>Nama lain</item>
+        <item>E-mel</item>
+        <item>DNS</item>
+        <item>Alamat X.400</item>
+        <item>Nama direktori</item>
+        <item>Nama pihak EDI</item>
+        <item>URI</item>
+        <item>Alamat IP</item>
+        <item>ID berdaftar</item>
+    </string-array>
+    <string-array name="ssl_key_usage_bits">
+        <item>Tandatangan digital</item>
+        <item>Tidak boleh disangkal</item>
+        <item>Penyulitan kunci</item>
+        <item>Penyulitan data</item>
+        <item>Persetujuan kunci</item>
+        <item>Penandatanganan sijil</item>
+        <item>Penandatanganan CRL</item>
+        <item>Sulit sahaja</item>
+        <item>Nyahsulit sahaja</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jdk_picker_label">இலக்கு JDK</string>
+    <string name="jdk_picker_hint">திட்டத்தின் உருவாக்கக் கோப்பில் எழுதப்படுகிறது. உள்ளிணைந்த தொகுப்பான் Java %1$s ஐ %2$s க்கு உருவாக்குகிறது.</string>
+    <string name="jdk_dialog_title">இலக்கு JDK</string>
+    <string name="jdk_applied">திட்டம் இப்போது %1$s ஐ இலக்காகக் கொண்டுள்ளது</string>
+    <string name="jdk_applied_no_build_file">இந்தத் திட்டத்திற்கு %1$s சேமிக்கப்பட்டது — உருவாக்கக் கோப்பில் புதுப்பிக்கத் தொகுப்பான் நிலை இல்லை</string>
+</resources>

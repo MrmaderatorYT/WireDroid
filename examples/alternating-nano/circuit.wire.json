@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "name": "Arduino Nano · два LED",
+  "nodes": [
+    {
+      "id": "nano",
+      "part": "Arduino Nano3(fix)",
+      "x": 60,
+      "y": 65,
+      "rotation": 0,
+      "label": "Arduino Nano",
+      "scale": 0.65
+    },
+    {
+      "id": "resistor_red",
+      "part": "resistor",
+      "x": 320,
+      "y": 80,
+      "rotation": 0,
+      "label": "220 Ω",
+      "scale": 0.75
+    },
+    {
+      "id": "led_red",
+      "part": "LED-generic-5mm_6852162_005",
+      "x": 465,
+      "y": 80,
+      "rotation": 0,
+      "label": "Червоний LED",
+      "scale": 0.8,
+      "ledColor": "#e60000"
+    },
+    {
+      "id": "resistor_green",
+      "part": "resistor",
+      "x": 320,
+      "y": 240,
+      "rotation": 0,
+      "label": "220 Ω",
+      "scale": 0.75
+    },
+    {
+      "id": "led_green",
+      "part": "LED-generic-5mm_6852162_005",
+      "x": 465,
+      "y": 240,
+      "rotation": 0,
+      "label": "Зелений LED",
+      "scale": 0.8,
+      "ledColor": "#16a34a"
+    }
+  ],
+  "wires": [
+    {
+      "a": {
+        "node": "nano",
+        "pin": "connector20"
+      },
+      "b": {
+        "node": "resistor_red",
+        "pin": "connector0"
+      },
+      "color": "#4ade80",
+      "id": "wire_1"
+    },
+    {
+      "a": {
+        "node": "resistor_red",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "led_red",
+        "pin": "connector1"
+      },
+      "color": "#4ade80",
+      "id": "wire_2"
+    },
+    {
+      "a": {
+        "node": "led_red",
+        "pin": "connector0"
+      },
+      "b": {
+        "node": "nano",
+        "pin": "connector19"
+      },
+      "color": "#94a3b8",
+      "id": "wire_3"
+    },
+    {
+      "a": {
+        "node": "nano",
+        "pin": "connector21"
+      },
+      "b": {
+        "node": "resistor_green",
+        "pin": "connector0"
+      },
+      "color": "#4ade80",
+      "id": "wire_4"
+    },
+    {
+      "a": {
+        "node": "resistor_green",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "led_green",
+        "pin": "connector1"
+      },
+      "color": "#4ade80",
+      "id": "wire_5"
+    },
+    {
+      "a": {
+        "node": "led_green",
+        "pin": "connector0"
+      },
+      "b": {
+        "node": "nano",
+        "pin": "connector19"
+      },
+      "color": "#94a3b8",
+      "id": "wire_6"
+    }
+  ]
+}

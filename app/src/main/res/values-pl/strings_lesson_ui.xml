@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Wykryj automatycznie (system)</string>
+    <string name="lesson_playground_show">⚡ Piaskownica</string>
+    <string name="lesson_playground_hide">⚡ Ukryj edytor</string>
+</resources>

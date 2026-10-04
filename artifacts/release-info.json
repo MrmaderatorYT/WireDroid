@@ -1,0 +1,88 @@
+{
+  "applicationId": "com.ccs.wiredroid",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "apkSha256": "9bc812996a429fb598134e3dfb97abe3925cfaf50fc5be63b56b8b48d021f9f8",
+  "validationDate": "2026-10-03",
+  "jvmTestsPassed": 405,
+  "wireJvmTestsPassed": 62,
+  "javascriptSuitesPassed": 20,
+  "avrBuilderTestsPassed": 8,
+  "packagingTestsPassed": 6,
+  "catalogueEntries": 2570,
+  "parametricBindings": 484,
+  "modelFamilies": 29,
+  "nativeExamplesPassed": [
+    "blink-uno",
+    "button-uno",
+    "traffic-uno",
+    "alternating-nano",
+    "blink-esp32",
+    "servo-sweep",
+    "servo-pot",
+    "electronics-rc",
+    "motor-driver",
+    "stepper-driver",
+    "lcd-project",
+    "i2c-eeprom",
+    "a4988-microsteps",
+    "unipolar-stepper",
+    "esc-bldc",
+    "quadrature-encoder",
+    "avr-blink"
+  ],
+  "nativeValidationStatus": "final-device-tests-passed-with-open-crash-investigation",
+  "baselineGpioBuildValidation": {
+    "version": "1.6.0-electronics",
+    "compiledProfiles": 327,
+    "date": "2026-10-01"
+  },
+  "validationReport": "docs/WIREDROID-1.7-VALIDATION.md",
+  "supportLimitations": [
+    "Android AVR compiler unavailable",
+    "ATmega328P MCU backend only",
+    "USB upload hardware unverified",
+    "generic component families require device calibration",
+    "native ngspice not integrated",
+    "physical phone UI not verified"
+  ],
+  "androidTestApkSha256": "2d2b492c56025535e5af53682c3682af368467a154b6df4d36b1f74a166c047b",
+  "catalogueBoardEntries": 339,
+  "verifiedFirmwareTargets": 4,
+  "releaseStatus": "development",
+  "knownIssues": [
+    {
+      "area": "native-runtime",
+      "issue": "An earlier I2C execution exited with SIGSEGV; exact failed ELF was not retained. Its original cause remains unknown. Separate shared-build cache race is fixed."
+    },
+    {
+      "area": "embedded-compiler",
+      "issue": "An earlier Nano compile produced a Clang crash banner; isolated recheck passed. Original cause remains unknown; compiler failures now retain bounded diagnostics without automatic retry."
+    }
+  ],
+  "nativeExamplesApkSha256": "2fddc6e8d0846594e74d39ad673deb698a96bff2d3608cd15941671b7dd2f3e7",
+  "nativeSessionChecksPassed": 3,
+  "nativeIdeChecksPassed": 8,
+  "nativeMotionGesturePassed": true,
+  "nativeCreationWizardPassed": true,
+  "packageRenameValidation": {
+    "date": "2026-10-04",
+    "namespace": "com.ccs.wiredroid",
+    "javaPackagePathsChecked": 448,
+    "jvmTestsPassed": 405,
+    "debugApkBuilt": true,
+    "androidTestApkBuilt": true,
+    "oldBrandReferencesInApks": 0,
+    "deviceTestsRerun": false
+  },
+  "repositoryUrl": "https://github.com/MrmaderatorYT/WireDroid",
+  "publicationValidation": {
+    "date": "2026-10-04",
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "debugApkBuilt": true,
+    "androidTestApkBuilt": true,
+    "packagingTestsPassed": 6,
+    "deviceTestsRerun": false
+  }
+}

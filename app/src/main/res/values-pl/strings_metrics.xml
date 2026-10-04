@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_run_metrics_toggle">Pokaż wykres użycia CPU i pamięci</string>
+    <string name="run_metrics_toggle">CPU/RAM</string>
+</resources>

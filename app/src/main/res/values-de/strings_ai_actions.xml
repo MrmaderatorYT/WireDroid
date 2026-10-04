@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Schnellaktionen</string>
+    <string name="ai_action_explain">Erklären</string>
+    <string name="ai_action_find_bugs">Fehler finden</string>
+    <string name="ai_action_refactor">Refaktorieren</string>
+    <string name="ai_action_optimize">Optimieren</string>
+    <string name="ai_action_document">Dokumentieren</string>
+    <string name="ai_action_test">Tests schreiben</string>
+    <string name="ai_action_agent">Agentenmodus</string>
+    <string name="ai_agent_on">Agentenmodus an — der Assistent darf Dateien ändern</string>
+    <string name="ai_agent_off">Agentenmodus aus</string>
+    <string name="ai_need_file">Öffnen Sie zuerst eine Datei — diese Aktionen arbeiten am angezeigten Code.</string>
+</resources>

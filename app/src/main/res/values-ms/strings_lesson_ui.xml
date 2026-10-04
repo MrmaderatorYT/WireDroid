@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Kesan automatik (sistem)</string>
+    <string name="lesson_playground_show">⚡ Ruang cuba</string>
+    <string name="lesson_playground_hide">⚡ Sembunyikan editor</string>
+</resources>

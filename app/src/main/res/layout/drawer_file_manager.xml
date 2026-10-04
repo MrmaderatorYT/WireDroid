@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerRoot"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_toolbar"
+    android:layout_gravity="start">
+
+    <!-- Drawer header -->
+    <LinearLayout
+        android:id="@+id/drawerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/idea_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tabProject"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Project"
+            android:textColor="@color/idea_text"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/tabStructure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Structure"
+            android:textColor="@color/idea_text_dim"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <View
+            android:id="@+id/structureHeaderSpacer"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Shown only while the Structure tab is up; the Project tree has
+             nothing to sort. -->
+        <TextView
+            android:id="@+id/btnStructureOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/structure_options_glyph"
+            android:textColor="@color/idea_text_dim"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="2dp"
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/structure_options_desc" />
+
+    </LinearLayout>
+
+    <!-- Content Frame -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Project Container -->
+        <LinearLayout
+            android:id="@+id/projectContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Project root row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvDrawerArrow"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:text="▼"
+                    android:textColor="#808080"
+                    android:textSize="9sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tvDrawerMavenHint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/drawer_maven_hint"
+                    android:textColor="#808080"
+                    android:textSize="11sp"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/btnTreeExpandAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="⊞"
+                    android:textColor="#808080"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/tree_expand_all" />
+
+                <TextView
+                    android:id="@+id/btnTreeCollapseAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="⊟"
+                    android:textColor="#808080"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="12dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/tree_collapse_all" />
+
+            </LinearLayout>
+
+            <!-- Separator -->
+            <View
+                android:id="@+id/drawerSeparator1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/idea_separator" />
+
+            <!-- File tree -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fileTreeRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none" />
+
+            <!-- Separator -->
+            <View
+                android:id="@+id/drawerSeparator2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/idea_separator" />
+        </LinearLayout>
+
+        <!-- Structure Tree -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/structureRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <!-- New File button -->
+    <LinearLayout
+        android:id="@+id/btnNewFile"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/tvDrawerNewFilePlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/idea_accent"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tvDrawerNewFileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_new_java_file"
+            android:textColor="@color/idea_text"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!-- Import Files button -->
+    <LinearLayout
+        android:id="@+id/btnImportFiles"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⇘"
+            android:textColor="@color/idea_accent"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_import_files"
+            android:textColor="@color/idea_text"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!-- Scratches button -->
+    <LinearLayout
+        android:id="@+id/btnScratches"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/ivDrawerScratchesIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_scratch"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tvDrawerScratchesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scratch_open_title"
+            android:textColor="@color/idea_text"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Structure panel sorting and filtering.
+
+    PopupMenu draws no group headings, so each title carries its own "Sort:" or
+    "Show:" prefix rather than relying on the radio/checkbox shape alone.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/structure_sort_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/structure_sort_source"
+            android:title="@string/structure_sort_source" />
+
+        <item
+            android:id="@+id/structure_sort_alpha"
+            android:title="@string/structure_sort_alpha" />
+
+        <item
+            android:id="@+id/structure_sort_kind"
+            android:title="@string/structure_sort_kind" />
+
+        <item
+            android:id="@+id/structure_sort_visibility"
+            android:title="@string/structure_sort_visibility" />
+
+    </group>
+
+    <group
+        android:id="@+id/structure_show_group"
+        android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/structure_show_fields"
+            android:title="@string/structure_show_fields" />
+
+        <item
+            android:id="@+id/structure_show_non_public"
+            android:title="@string/structure_show_non_public" />
+
+    </group>
+
+</menu>

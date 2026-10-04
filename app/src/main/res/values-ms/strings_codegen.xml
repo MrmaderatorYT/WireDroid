@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="implement_pick_title">Kaedah untuk dilaksanakan</string>
+    <string name="implement_generate">Jana</string>
+    <string name="implement_nothing_missing">Setiap kaedah yang diwarisi telah pun dilaksanakan</string>
+    <string name="implement_failed">Tidak dapat membaca hierarki: %1$s</string>
+    <plurals name="implement_generated">
+        <item quantity="other">%d kaedah dijana</item>
+    </plurals>
+    <string name="generate_pick_fields_title">Medan untuk disertakan</string>
+    <string name="generate_no_fields">Tiada medan tika ditemui dalam kelas ini</string>
+    <string name="generate_none_selected">Tiada medan dipilih</string>
+    <string name="generate_done">Dijana</string>
+    <string name="generate_constructor_no_arg">Pembina tanpa argumen</string>
+    <string name="generate_select_none">Nyahpilih semua</string>
+    <string name="tab_split_open_beside">Buka di sebelah fail semasa</string>
+    <string name="tab_split_move_back">Pindah semula ke anak tetingkap pertama</string>
+    <string name="tab_split_swap">Tukar kedua-dua anak tetingkap</string>
+    <string name="tab_split_close">Tutup pemisahan</string>
+    <string name="tab_untitled">Tanpa tajuk</string>
+    <string name="settings_theme_follow_system">Ikut tema sistem</string>
+    <string name="settings_theme_follow_hint_night">Android dalam mod gelap — pilihan ini menjadi tema malam anda.</string>
+    <string name="settings_theme_follow_hint_day">Android dalam mod cerah — pilihan ini menjadi tema siang anda.</string>
+    <string name="settings_theme_follow_hint_off">Satu tema sepanjang masa, apa pun yang Android lakukan.</string>
+    <string name="run_config_env_note">Pemboleh ubah ditetapkan untuk larian itu dan dibuang selepasnya, jadi ia tidak bocor ke larian berikutnya.</string>
+</resources>

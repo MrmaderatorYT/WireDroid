@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ compila per JDK 21 ed esegue i file .class in una JVM integrata. Il runtime è incluso; al primo avvio vengono estratti solo circa 145 MB nella memoria interna.</string>
+    <string name="settings_ndk_bundled_desc">La toolchain C++ opzionale viene scaricata su richiesta: 344 MB di download e circa 1,85 GB di memoria interna dopo l\'installazione.</string>
+    <string name="settings_ndk_bundled_install">Scarica l\'NDK C++ (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">L\'NDK r29 viene scaricato dalla sua release originale: 344 MB dalla rete e circa 1,85 GB di memoria interna dopo l\'estrazione. Un download interrotto riprende da dove si era fermato. Continuare?</string>
+    <string name="settings_ndk_install_action">Scarica</string>
+    <string name="ndk_bundled_no_space">NDK r29 richiede almeno %1$d MB liberi nella memoria interna.</string>
+    <string name="ndk_bundled_unsupported">L\'NDK C++ richiede un dispositivo ARM64 con Android 9 o successivo.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, scaricato su richiesta)</string>
+    <string name="np_native_ndk_bundled_note">C e C++ con Clang 21. L\'NDK è un download di 344 MB e occupa circa 1,85 GB dopo l\'installazione.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Avviso: i sorgenti C++ richiedono l\'NDK. Installalo in Impostazioni → Scarica l\'NDK C++. Ignorato.</string>
+    <string name="native_compiling_sources">Compilazione dei sorgenti nativi…</string>
+    <string name="ndk_downloading">Download dell\'NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Verifica del download…</string>
+    <string name="ndk_download_http">Il download dell\'NDK ha restituito HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Il download dell\'NDK si è interrotto. Riprova per riprenderlo.</string>
+    <string name="ndk_download_too_large">Il download dell\'NDK era più lungo del previsto ed è stato interrotto.</string>
+    <string name="ndk_download_checksum_failed">Il download dell\'NDK non ha superato il controllo di integrità ed è stato eliminato. Riprova.</string>
+    <string name="ndk_download_restart">Il download parziale dell\'NDK non corrisponde più alla release. Riprova per ricominciare.</string>
+    <string name="settings_ndk_cancel">Annulla il download</string>
+    <string name="settings_ndk_cancelled">Download dell\'NDK annullato. La parte scaricata è stata conservata.</string>
+</resources>

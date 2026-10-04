@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="maven_panel_title">Maven</string>
+    <string name="maven_panel_open">Maven</string>
+    <string name="maven_panel_reload">⟳</string>
+    <string name="maven_panel_reload_desc">Reload dependencies</string>
+    <string name="maven_panel_refresh">⤓</string>
+    <string name="maven_panel_refresh_desc">Re-read the build file</string>
+    <string name="maven_panel_no_project">Open a Maven or Gradle project to use this panel.</string>
+
+    <string name="maven_branch_lifecycle">Lifecycle</string>
+    <string name="maven_branch_plugins">Plugins</string>
+    <string name="maven_branch_dependencies">Dependencies</string>
+    <string name="maven_branch_repositories">Repositories</string>
+
+    <string name="maven_none_declared">none declared</string>
+    <string name="maven_central_implicit">Maven Central (implicit)</string>
+
+    <string name="maven_validate_deps">%1$d dependencies declared</string>
+    <string name="maven_validate_ok">validate: BUILD SUCCESS</string>
+    <string name="maven_validate_warned">validate: finished with warnings</string>
+
+    <string name="maven_phase_no_verify">The built-in builder has no integration-test phase, so verify cannot run. Use test and package.</string>
+    <string name="maven_phase_no_site">Site generation needs the Maven site plugin, which does not run on device.</string>
+    <string name="maven_phase_no_deploy">Deploying to a remote repository is not supported. Use install for the local repository.</string>
+
+</resources>

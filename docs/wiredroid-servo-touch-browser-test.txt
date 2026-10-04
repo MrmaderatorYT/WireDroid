@@ -1,0 +1,1 @@
+PASS: direct servo horn gesture and keyboard control, 0–180 limits, fixed body/wires, C++ ownership and stop hint, synchronized inspector, gesture after body rotation, moving servo horn, intermediate animated angles, direct potentiometer rotation and keyboard control, powered command propagation, stop freeze, manual preview, fixed contacts and rotated geometry, phone layout

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_profile_inlay">Parameter name hints</string>
+    <string name="settings_profile_inlay_desc">Reindexes the project while you type — the costliest background pass.</string>
+    <string name="settings_profile_gutter">Git change marks</string>
+    <string name="settings_profile_gutter_desc">Runs a diff after each edit.</string>
+</resources>

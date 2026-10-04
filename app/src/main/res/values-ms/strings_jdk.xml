@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="jdk_picker_label">JDK sasaran</string>
+    <string name="jdk_picker_hint">Ditulis ke dalam fail binaan projek. Pengkompil terbina mengeluarkan Java %1$s ke %2$s.</string>
+    <string name="jdk_dialog_title">JDK sasaran</string>
+    <string name="jdk_applied">Projek kini menyasarkan %1$s</string>
+    <string name="jdk_applied_no_build_file">%1$s disimpan untuk projek ini — tiada aras pengkompil dalam fail binaan untuk dikemas kini</string>
+</resources>

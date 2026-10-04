@@ -1,0 +1,24 @@
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+FAIL: java.lang.AssertionError: document.getElementById('serialOutput').textContent.includes('42') expected true; logs="\n03:05:38 Готово · 2570 деталей Fritzing\n03:05:38 Запуск 1 C/C++ програм\n03:05:38 Arduino Uno: uno.cpp · Clang · C++17 / C11 · 11 файлів · \n03:06:01 Arduino Uno: C++ скомпільовано · запуск GPIO-моделі\n03:06:01 Arduino Uno: WARNING: linker: Warning: \"/data/app/~~Mpf7WEqTCA3jpSH46U5e3A==/com.ccs.wiredroid-j0WCxTBDYmllcd5zNATPuw==/lib/arm64/libc++_shared.so\" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)\n03:06:01 Помилка C/C++\n03:06:01 ✕ Arduino Uno: Програма завершилась, код 139"; stopOrigins="[]"
+

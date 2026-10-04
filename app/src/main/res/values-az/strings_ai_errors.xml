@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Hələ API açarı yoxdur — əlavə etmək üçün «Açar»a toxunun.</string>
+    <string name="ai_err_hint_model">Bu model sizin açarınız üçün əlçatan deyil. Siyahıdan başqasını seçin.</string>
+    <string name="ai_err_hint_key">API açarını, sonra model adını yoxlayın.</string>
+    <string name="ai_err_hint_rejected">Açar rədd edildi. «Açar»a toxunun və səbəbi görmək üçün «Saxla və yoxla»dan istifadə edin.</string>
+    <string name="ai_err_hint_rate">Sorğu limiti — bir az gözləyin və yenidən cəhd edin.</string>
+    <string name="ai_err_hint_google">Hazırda Google tərəfi işləmir. Adətən təkrar cəhd kömək edir.</string>
+    <string name="ai_err_empty">Boş cavab — çıxış büdcəsi çox güman ki daxili mühakiməyə sərf olunub. Yenidən cəhd edin və ya sualı dəyişin.</string>
+    <string name="ai_err_network">Şəbəkə xətası: %1$s</string>
+    <string name="ai_key_works">Açar işləyir.</string>
+    <string name="ai_key_rejected">Google bu açarı rədd etdi (HTTP %1$d).%2$s\n\nAdətən açar ləğv edilib, Generative Language API söndürülmüş layihəyə aiddir və ya tam kopyalanmayıb.</string>
+    <string name="ai_key_check_failed">Açarı yoxlamaq mümkün olmadı: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Açarı yoxlamaq üçün Google-a qoşulmaq mümkün olmadı: %1$s</string>
+    <string name="ai_key_problem_empty">Açar boşdur.</string>
+    <string name="ai_key_problem_url">Bu açar deyil, veb ünvandır. Onu açın və göstərilən açarı kopyalayın.</string>
+    <string name="ai_key_problem_openai">Bu OpenAI açarına oxşayır. Bu köməkçi Google Gemini ilə işləyir; açarı aistudio.google.com-dan alın.</string>
+    <string name="ai_key_problem_short">Açar %1$d simvolda kəsilmiş görünür. Tam kopyalandığını yoxlayın.</string>
+</resources>

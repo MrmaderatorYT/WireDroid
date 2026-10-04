@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21 : l’analyse en direct utilise actuellement le classpath Android. Des classes Java SE standard peuvent donc être signalées à tort comme indisponibles. Le résultat de la compilation ou de l’exécution fait foi.</string>
+</resources>

@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <instrumentation
+        android:name="com.ccs.wiredroid.wire.WireExamplesInstrumentation"
+        android:targetPackage="com.ccs.wiredroid"
+        android:functionalTest="true" />
+</manifest>

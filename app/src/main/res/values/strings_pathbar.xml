@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for the file path bar under the console (pathbar_*).
+    The › separator itself is shared with the editor breadcrumbs
+    (crumb_separator in strings_editorchrome.xml) so the two bars match.
+-->
+<resources>
+
+    <string name="pathbar_a11y">Active file path — tap to copy</string>
+    <string name="pathbar_clip_label">WireDroid file path</string>
+    <string name="pathbar_copied">Path copied to clipboard</string>
+    <string name="pathbar_copy_failed">Could not reach the clipboard</string>
+
+</resources>

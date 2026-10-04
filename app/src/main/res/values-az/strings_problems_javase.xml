@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: Canlı analiz hazırda Android classpath-dan istifadə edir, buna görə standart Java SE sinifləri səhvən əlçatmaz kimi göstərilə bilər. Düzgün nəticə üçün yığma və ya işə salma nəticəsinə əsaslanın.</string>
+</resources>

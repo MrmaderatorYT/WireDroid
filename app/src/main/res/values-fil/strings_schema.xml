@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="db_menu_schema">Schema</string>
+    <string name="schema_title">Database schema</string>
+    <string name="schema_loading">Reading the schema…</string>
+    <string name="schema_fit">Fit</string>
+    <string name="schema_no_connection">Connect to a database first</string>
+    <string name="schema_empty">This database has no tables</string>
+    <string name="schema_failed">Could not read the schema: %1$s</string>
+    <string name="schema_omitted">%1$d more not shown</string>
+    <string name="schema_no_keys">No foreign keys declared, so the tables are drawn unlinked.</string>
+
+    <plurals name="schema_tables">
+        <item quantity="one">%d table</item>
+        <item quantity="other">%d tables</item>
+    </plurals>
+    <plurals name="schema_links">
+        <item quantity="one">%d foreign key</item>
+        <item quantity="other">%d foreign keys</item>
+    </plurals>
+
+    <!-- Semantic search -->
+    <string name="semantic_title">Semantic search</string>
+    <string name="semantic_hint">Where do we write to the database?</string>
+    <string name="semantic_ready">Ask about the project in your own words.</string>
+    <string name="semantic_reading">Reading the project…</string>
+    <string name="semantic_asking">Asking about %1$d files…</string>
+    <string name="semantic_no_key">Set a Gemini API key in settings to use semantic search.</string>
+    <string name="semantic_no_project">Open a project first</string>
+    <string name="semantic_empty_project">No Java or Kotlin sources found here</string>
+    <string name="semantic_no_match">Nothing in this project matches that.</string>
+    <string name="semantic_failed">Search failed: %1$s</string>
+    <plurals name="semantic_found">
+        <item quantity="one">%d file</item>
+        <item quantity="other">%d files</item>
+    </plurals>
+
+    <!-- Inlay hints -->
+    <string name="settings_inlay_hints">Parameter name hints</string>
+
+</resources>

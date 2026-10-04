@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ na-achịkọta maka JDK 21 ma na-agba faịlụ .class n’ime JVM agbakwunyere. Runtime ahụ dị n’ime ngwa; n’oge mbụ ọ na-ewepụ naanị ihe dịka 145 MB gaa na nchekwa ime.</string>
+    <string name="settings_ndk_bundled_desc">A na-ebudata ngwá ọrụ C++ nhọrọ mgbe achọrọ ya: nbudata 344 MB na ihe dịka 1.85 GB nchekwa ime mgbe etinyere ya.</string>
+    <string name="settings_ndk_bundled_install">Budata C++ NDK (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">A na-ebudata NDK r29 site na mwepụta izizi ya: 344 MB site na netwọk na ihe dịka 1.85 GB nchekwa ime mgbe emepụtara ya. Nbudata a kwụsịrị na-aga n\'ihu ebe o kwụsịrị. Gaa n\'ihu?</string>
+    <string name="settings_ndk_install_action">Budata</string>
+    <string name="ndk_bundled_no_space">NDK r29 chọrọ opekata mpe %1$d MB ohere efu na nchekwa ime.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK chọrọ ngwaọrụ ARM64 nwere Android 9 ma ọ bụ nke ọhụrụ.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, a na-ebudata mgbe achọrọ)</string>
+    <string name="np_native_ndk_bundled_note">C na C++ na Clang 21. NDK bụ nbudata 344 MB ma na-eji ihe dịka 1.85 GB mgbe etinyere ya.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Ịdọ aka ná ntị: isi mmalite C++ chọrọ NDK. Tinye ya na Ntọala → Budata C++ NDK. A na-agafe ya.</string>
+    <string name="native_compiling_sources">A na-achịkọta isi mmalite native…</string>
+    <string name="ndk_downloading">Na-ebudata NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Na-enyocha nbudata…</string>
+    <string name="ndk_download_http">Nbudata NDK weghachiri HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Nbudata NDK kwụsịrị n\'oge. Nwaa ọzọ ka ọ gaa n\'ihu.</string>
+    <string name="ndk_download_too_large">Nbudata NDK buru ibu karịa ka a tụrụ anya ya, a kwụsịrị ya.</string>
+    <string name="ndk_download_checksum_failed">Nbudata NDK adaghị nyocha izuoke, e hichapụrụ ya. Nwaa ọzọ.</string>
+    <string name="ndk_download_restart">Nbudata NDK na-ezughị ezu adịghịzi dabara na mwepụta ahụ. Nwaa ọzọ ka ị malite ọzọ.</string>
+    <string name="settings_ndk_cancel">Kagbuo nbudata</string>
+    <string name="settings_ndk_cancelled">A kagbuola nbudata NDK. E chekwara akụkụ ebudatara.</string>
+</resources>

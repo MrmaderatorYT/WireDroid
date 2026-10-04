@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="splash_open_source">WireDroid ialah perisian sumber terbuka di bawah lesen GPL-3.0. Pautan ke kodnya ada dalam Tetapan.</string>
+    <string name="settings_source_code">Kod sumber</string>
+    <string name="settings_source_code_hint">Sumber terbuka di bawah GPL-3.0. Ketik untuk membuka repositori; tekan lama untuk menyalin alamatnya.</string>
+    <string name="settings_source_code_copied">Alamat repositori disalin</string>
+</resources>

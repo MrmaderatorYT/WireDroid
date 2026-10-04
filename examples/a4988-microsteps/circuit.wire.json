@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · A4988 та мікрокроки",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "driver",
+      "part": "pololu0002_a988",
+      "x": 390,
+      "y": 100,
+      "rotation": 0,
+      "label": "A4988",
+      "scale": 1,
+      "electrical": {
+        "type": "stepDriver",
+        "parameters": {
+          "currentLimit": 0.4,
+          "referenceVoltage": 0.32,
+          "senseResistance": 0.1
+        }
+      }
+    },
+    {
+      "id": "motor",
+      "part": "stepper_motor_bipolar",
+      "x": 650,
+      "y": 100,
+      "rotation": 0,
+      "label": "Біполярний мотор",
+      "scale": 1,
+      "electrical": {
+        "type": "stepper",
+        "parameters": {
+          "coilResistance": 4,
+          "coilInductance": 0.005,
+          "stepsPerTurn": 200
+        }
+      }
+    },
+    {
+      "id": "supply",
+      "part": "Battery block 9V",
+      "x": 370,
+      "y": 350,
+      "rotation": 0,
+      "label": "Живлення мотору 9 V",
+      "scale": 1,
+      "electrical": {
+        "type": "battery",
+        "parameters": {
+          "voltage": 9
+        }
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector9"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector8"
+      },
+      "color": "#94a3b8",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector14"
+      },
+      "color": "#94a3b8",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "supply",
+        "pin": "connector0"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "color": "#94a3b8",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_5",
+      "a": {
+        "node": "supply",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector15"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_6",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector4"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_7",
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector6"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_8",
+      "a": {
+        "node": "uno",
+        "pin": "connector64"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector7"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_9",
+      "a": {
+        "node": "uno",
+        "pin": "connector65"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_10",
+      "a": {
+        "node": "uno",
+        "pin": "connector66"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_11",
+      "a": {
+        "node": "uno",
+        "pin": "connector67"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_12",
+      "a": {
+        "node": "uno",
+        "pin": "connector68"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_13",
+      "a": {
+        "node": "uno",
+        "pin": "connector51"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector5"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_14",
+      "a": {
+        "node": "driver",
+        "pin": "connector11"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_15",
+      "a": {
+        "node": "driver",
+        "pin": "connector10"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_16",
+      "a": {
+        "node": "driver",
+        "pin": "connector12"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_17",
+      "a": {
+        "node": "driver",
+        "pin": "connector13"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: Nyocha ozugbo na-eji classpath Android ugbu a, ya mere enwere ike igosi klaasị Java SE ọkọlọtọ n’ụzọ na-ezighi ezi dịka ndị adịghị. Were nsonaazụ build ma ọ bụ run dịka nke ziri ezi.</string>
+</resources>

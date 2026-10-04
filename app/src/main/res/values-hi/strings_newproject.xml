@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">एक फ़ाइल, कोई प्रोजेक्ट नहीं · तुरंत चलती है</string>
+    <string name="np_scratch_language">भाषा</string>
+    <string name="np_scratch_location_label">फ़ाइल यहाँ बनेगी</string>
+    <string name="np_scratch_note">आपके प्रोजेक्ट के बाहर रखी जाती है, इसलिए प्रोजेक्ट बदलने पर बनी रहती है।</string>
+    <string name="np_scratch_preview_label">फ़ाइल</string>
+    <string name="np_template_scratch">स्क्रैच</string>
+</resources>

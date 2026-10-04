@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="np_template_circuit">WireDroid · Схема</string>
+<string name="np_caption_circuit">Плати, з’єднання та програмована цифрова симуляція</string>
+<string name="wire_workspace">Полотно схеми</string>
+</resources>

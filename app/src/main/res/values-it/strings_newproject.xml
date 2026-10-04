@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Un file, nessun progetto · parte subito</string>
+    <string name="np_scratch_language">Linguaggio</string>
+    <string name="np_scratch_location_label">Il file verrà creato in</string>
+    <string name="np_scratch_note">Tenuto fuori dai tuoi progetti, quindi sopravvive al passaggio dall’uno all’altro.</string>
+    <string name="np_scratch_preview_label">File</string>
+    <string name="np_template_scratch">Scratch</string>
+</resources>

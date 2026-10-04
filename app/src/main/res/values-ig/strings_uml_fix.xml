@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_applied">Emelitere eserese</string>
+    <string name="uml_btn_apply">Tinye</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_no_types_found">Ahụghị klaasị UML ọ bụla na koodu</string>
+</resources>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debugConsoleRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/debugConsoleJavaSeNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp"
+        android:background="#26E6A23C"
+        android:text="@string/debug_javase_unsupported_banner"
+        android:textColor="#E6A23C"
+        android:textSize="11sp"
+        android:lineSpacingExtra="1dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/debugConsoleScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/idea_console_bg"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/debugConsoleOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/idea_console_text"
+            android:fontFamily="monospace"
+            android:textSize="12sp"
+            android:lineSpacingMultiplier="1.2"
+            android:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>

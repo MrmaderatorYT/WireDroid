@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Detectare automată (sistem)</string>
+    <string name="lesson_playground_show">⚡ Teren de joc</string>
+    <string name="lesson_playground_hide">⚡ Ascunde editorul</string>
+</resources>

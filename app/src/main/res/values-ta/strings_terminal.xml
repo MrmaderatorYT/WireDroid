@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="terminal_title">பிரிந்த முனையம்</string>
+    <string name="terminal_pane_name">முனையம் %1$d</string>
+    <string name="terminal_pane_running">இயங்குகிறது</string>
+    <string name="terminal_close_symbol">✕</string>
+    <string name="terminal_input_hint">jshell&gt; Java குறியீட்டை உள்ளிடவும்…</string>
+    <string name="terminal_menu_add_pane">பலகத்தைச் சேர்</string>
+    <string name="terminal_menu_close_pane">பலகத்தை மூடு</string>
+    <string name="terminal_menu_split_columns">பிரிப்பு: நெடுவரிசைகள்</string>
+    <string name="terminal_menu_split_rows">பிரிப்பு: கிடைவரிசைகள்</string>
+    <string name="terminal_layout_columns">நெடுவரிசைகள்</string>
+    <string name="terminal_layout_rows">கிடைவரிசைகள்</string>
+    <string name="terminal_status">%1$d பலகங்கள் — %2$s</string>
+    <string name="terminal_status_compact">%1$d பலகங்கள் — குறுகிய சாளரம், %2$s காட்டப்படுகிறது</string>
+    <string name="terminal_switcher_label">பலகங்கள்:</string>
+    <string name="terminal_toast_max_panes">ஒரு திரையில் அதிகபட்சம் %1$d பலகங்களே பொருந்தும்</string>
+    <string name="terminal_toast_last_pane">கடைசிப் பலகத்தை மூட முடியாது</string>
+    <string name="terminal_close_confirm_title">பலகத்தை மூடவா?</string>
+    <string name="terminal_close_confirm_message">%1$s இன்னும் ஒரு கட்டளையை இயக்கிக்கொண்டிருக்கிறது. பலகத்தை மூடினால் அதுவும் அதன் வெளியீடும் அழிந்துவிடும்.</string>
+    <string name="terminal_close_confirm_yes">எப்படியும் மூடு</string>
+    <string name="terminal_cancel">ரத்துசெய்</string>
+    <string name="terminal_a11y_close_pane">%1$s ஐ மூடு</string>
+    <string name="terminal_a11y_input">%1$s க்கான கட்டளை உள்ளீடு</string>
+    <string name="terminal_a11y_output">%1$s இன் வெளியீடு</string>
+    <string name="terminal_a11y_select_pane">%1$s ஐக் காட்டு</string>
+    <string name="terminal_a11y_divider">இரு பக்கமும் உள்ள பலகங்களின் அளவை மாற்ற இழுக்கவும்</string>
+    <string name="terminal_welcome">"Android க்கான JShell க்கு வரவேற்கிறோம்.\nJava கூற்றுகளை உள்ளிடவும் (எ.கா. System.out.println(\"Hi\");)\n\n"</string>
+    <string name="terminal_prompt_echo">"jshell> %1$s\n"</string>
+    <string name="terminal_help">"கிடைக்கும் கட்டளைகள்:\n  /help    - இந்த உதவிச் செய்தியைக் காட்டு\n  /clear   - கன்சோல் வெளியீட்டை அழி\n  /reset   - JShell நினைவகத்தை மீட்டமை (மாறிகளை மறக்கச் செய்)\n  /history - உள்ளிட்ட கட்டளைகளின் வரலாற்றைக் காட்டு\n\n"</string>
+    <string name="terminal_cleared">"கன்சோல் அழிக்கப்பட்டது.\n\n"</string>
+    <string name="terminal_reset_done">"JShell நிலை மீட்டமைக்கப்பட்டது. அனைத்து மாறிகளும் மறக்கப்பட்டன.\n\n"</string>
+    <string name="terminal_history_empty">"வரலாறு காலியாக உள்ளது.\n\n"</string>
+    <string name="terminal_history_header">"வரலாறு:\n"</string>
+    <string name="terminal_history_entry">"  %1$d: %2$s\n"</string>
+    <string name="terminal_unknown_command">"தெரியாத கட்டளை: %1$s. கிடைக்கும் கட்டளைகளுக்கு /help எனத் தட்டச்சு செய்யவும்.\n\n"</string>
+    <string name="terminal_error">"பிழை: %1$s\n"</string>
+    <string name="terminal_error_no_class">"பிழை: தொகுக்கப்பட்ட வகுப்பைக் கண்டுபிடிக்க முடியவில்லை.\n"</string>
+    <string name="terminal_error_scratch_dir">"அமர்வுக்கான தற்காலிகக் கோப்பகத்தை உருவாக்க முடியவில்லை: %1$s"</string>
+</resources>

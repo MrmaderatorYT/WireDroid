@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Detección automática (sistema)</string>
+    <string name="lesson_playground_show">⚡ Zona de pruebas</string>
+    <string name="lesson_playground_hide">⚡ Ocultar el editor</string>
+</resources>

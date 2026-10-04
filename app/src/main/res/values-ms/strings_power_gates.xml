@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_profile_inlay">Petunjuk nama parameter</string>
+    <string name="settings_profile_inlay_desc">Mengindeks semula projek sambil anda menaip — proses latar yang paling mahal.</string>
+    <string name="settings_profile_gutter">Tanda perubahan Git</string>
+    <string name="settings_profile_gutter_desc">Menjalankan diff selepas setiap suntingan.</string>
+</resources>

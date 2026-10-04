@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gh_import_title">களஞ்சியத்தை இறக்குமதி செய்</string>
+    <string name="gh_import_message">GitHub, GitLab அல்லது Bitbucket இலிருந்து களஞ்சிய இணைப்பை ஒட்டவும். ஒரு கிளைக்கான அல்லது கோப்புக்கான இணைப்பும் வேலை செய்யும் — கிளை தக்கவைக்கப்படும்.</string>
+    <string name="gh_url_hint">களஞ்சிய URL, அல்லது user/repo</string>
+    <string name="gh_name_hint">திட்டக் கோப்புறையின் பெயர் (விருப்பத்தேர்வு)</string>
+    <string name="gh_user_hint">பயனர் பெயர் (விருப்பத்தேர்வு, தனிப்பட்ட களஞ்சியங்களுக்கு)</string>
+    <string name="gh_token_hint">டோக்கன் / கடவுச்சொல் (விருப்பத்தேர்வு)</string>
+    <string name="gh_import_button">இறக்குமதி செய்</string>
+    <string name="gh_url_required">களஞ்சிய URL ஐ உள்ளிடவும்</string>
+    <string name="gh_invalid_url_title">இது களஞ்சிய URL அல்ல</string>
+    <string name="gh_invalid_url_message">இது களஞ்சியம் போலத் தெரியவில்லை. இவற்றில் எதுவும் வேலை செய்யும்:\n\nhttps://github.com/user/repo\nhttps://github.com/user/repo.git\nhttps://github.com/user/repo/tree/dev\nhttps://github.com/user/repo/blob/main/src/Foo.java\ngit@github.com:user/repo.git\nuser/repo\n\nGitLab மற்றும் Bitbucket URL களும் இதே போலவே வேலை செய்கின்றன.</string>
+    <string name="gh_folder_exists">\"%1$s\" கோப்புறை ஏற்கெனவே உள்ளது, அது காலியாகவும் இல்லை. வேறு பெயரைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="gh_progress_title">%1$s இறக்குமதி செய்யப்படுகிறது</string>
+    <string name="gh_progress_preparing">தயாராகிறது…</string>
+    <string name="gh_progress_task">%1$s…</string>
+    <string name="gh_progress_configuring">திட்டம் அமைவாக்கப்படுகிறது…</string>
+    <string name="gh_cancelled">இறக்குமதி ரத்துசெய்யப்பட்டது</string>
+    <string name="gh_failed_title">இறக்குமதி தோல்வியடைந்தது</string>
+    <string name="gh_modules_title">ஒரு தொகுதியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="gh_modules_message">இந்தக் களஞ்சியத்தில் %1$d தொகுதிகள் உள்ளன. திறக்க வேண்டியதைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="gh_module_root">களஞ்சிய வேர்</string>
+    <string name="gh_detected_title">திட்டம் கண்டறியப்பட்டது</string>
+    <string name="gh_detected_line">கண்டறியப்பட்டது: %1$s</string>
+    <string name="gh_kind_maven">Maven திட்டம் (pom.xml)</string>
+    <string name="gh_kind_gradle">Gradle திட்டம் (build.gradle)</string>
+    <string name="gh_kind_eclipse">Eclipse திட்டம் (.project + .classpath)</string>
+    <string name="gh_kind_plain">வெறும் மூலங்கள் (உருவாக்க அமைப்பு இல்லை)</string>
+    <string name="gh_kind_unknown">அடையாளம் காணக்கூடியது எதுவும் இல்லை — உருவாக்க ஸ்கிரிப்டும் இல்லை, மூலங்களும் இல்லை</string>
+    <string name="gh_language_java">Java</string>
+    <string name="gh_language_kotlin">Kotlin</string>
+    <string name="gh_detail_language">மொழி: %1$s</string>
+    <string name="gh_detail_branch">கிளை: %1$s</string>
+    <string name="gh_detail_modules">தொகுதிகள்: %1$d</string>
+    <string name="gh_detail_package">தொகுப்பு: %1$s</string>
+    <string name="gh_detail_main_class">முதன்மை வகுப்பு: %1$s</string>
+    <string name="gh_detail_source_roots">மூல வேர்கள்: %1$s</string>
+    <string name="gh_detail_test_roots">சோதனை மூல வேர்கள்: %1$s</string>
+    <string name="gh_detail_libs">classpath இல் உள்ள jar கள்: %1$s</string>
+    <string name="gh_detail_generated">உருவாக்கப்பட்டவை: %1$s</string>
+    <string name="gh_detail_ready">திட்டம் அப்படியே உருவாகும் — எதுவும் உருவாக்கப்படவில்லை.</string>
+    <string name="gh_detail_unsupported">எடுத்துச் செல்லப்படவில்லை: %1$s</string>
+    <string name="gh_open">திற</string>
+    <string name="gh_keep">வைத்திரு, திறக்க வேண்டாம்</string>
+</resources>

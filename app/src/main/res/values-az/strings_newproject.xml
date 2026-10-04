@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_caption_scratch">Bir fayl, layihəsiz · dərhal işə düşür</string>
+    <string name="np_scratch_language">Dil</string>
+    <string name="np_scratch_location_label">Fayl burada yaradılacaq</string>
+    <string name="np_scratch_note">Layihələrdən kənarda saxlanılır, ona görə onlar arasında keçid edəndə itmir.</string>
+    <string name="np_scratch_preview_label">Fayl</string>
+    <string name="np_template_scratch">Qaralama</string>
+</resources>

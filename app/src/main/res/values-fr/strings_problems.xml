@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_all_filtered">Tout ce qui a été trouvé est filtré. Cochez une case ci-dessus pour l’afficher.</string>
+    <string name="problems_analysis_failed">Impossible d’analyser ce fichier : %1$s</string>
+    <string name="problems_filter_errors">Erreurs %1$d</string>
+    <string name="problems_filter_info">Infos %1$d</string>
+    <string name="problems_filter_security">Sécurité %1$d</string>
+    <string name="problems_filter_warnings">Avertissements %1$d</string>
+    <string name="problems_none">Aucun problème trouvé.</string>
+    <string name="problems_scope_current">Ce fichier seulement</string>
+    <string name="problems_truncated">…et %1$d autres résultats non affichés</string>
+</resources>

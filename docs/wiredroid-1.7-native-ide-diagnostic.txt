@@ -1,0 +1,14 @@
+FAIL java.lang.AssertionError: PASS full IDE: restored buffer is dirty; saved C++ file preserved
+PASS full IDE: diagnostic selects/clamps original source location
+PASS full IDE: debounce checkpoint works with AutoSave disabled
+PASS full IDE: explicit Save commits latest buffer and clears checkpoint
+PASS full IDE: hidden drawer blocks native restart; reopened drawer resumes
+FAIL Drawer Run changed locked source: path=/data/data/com.ccs.wiredroid/cache/ide-recovery-260876164211524/sketches/uno.cpp expected="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n" actual="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n\/\/ pending run save\n" raw="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n\/\/ pending run save\n"
+	at com.ccs.wiredroid.wire.WireIdeReliabilityChecks.run(WireIdeReliabilityChecks.java:74)
+	at com.ccs.wiredroid.wire.WireExamplesInstrumentation.onStart(WireExamplesInstrumentation.java:55)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2218)
+Caused by: java.lang.AssertionError: Drawer Run changed locked source: path=/data/data/com.ccs.wiredroid/cache/ide-recovery-260876164211524/sketches/uno.cpp expected="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n" actual="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n\/\/ pending run save\n" raw="#include <Arduino.h>\nvoid setup() { pinMode(13, OUTPUT); }\nvoid loop() { digitalWrite(13, HIGH); }\n\/\/ changed after recovery\n\/\/ pending run save\n"
+	at com.ccs.wiredroid.wire.WireIdeReliabilityChecks.requireSaved(WireIdeReliabilityChecks.java:86)
+	at com.ccs.wiredroid.wire.WireIdeReliabilityChecks.run(WireIdeReliabilityChecks.java:58)
+	... 2 more
+

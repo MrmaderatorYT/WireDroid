@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ targets JDK 21 and runs .class files in an embedded JVM. The runtime is included; the first run only extracts about 145 MB to internal storage.</string>
+    <string name="settings_ndk_bundled_desc">The optional C++ toolchain is downloaded on demand: a 344 MB download that needs about 1.85 GB of internal storage once installed.</string>
+    <string name="settings_ndk_bundled_install">Download C++ NDK (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 is downloaded from its upstream release: 344 MB over the network, and about 1.85 GB of internal storage after extraction. An interrupted download resumes where it stopped. Continue?</string>
+    <string name="settings_ndk_install_action">Download</string>
+    <string name="ndk_bundled_no_space">NDK r29 needs at least %1$d MB of free internal storage.</string>
+    <string name="ndk_bundled_unsupported">The C++ NDK requires an ARM64 device running Android 9 or newer.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, downloaded on demand)</string>
+    <string name="np_native_ndk_bundled_note">C and C++ with Clang 21. The NDK is a 344 MB download and needs about 1.85 GB once installed.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Warning: C++ sources need the NDK. Install it in Settings → Download C++ NDK. Skipping.</string>
+    <string name="native_compiling_sources">Compiling native sources…</string>
+    <string name="ndk_downloading">Downloading NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Verifying the download…</string>
+    <string name="ndk_download_http">The NDK download returned HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">The NDK download ended early. Try again to resume it.</string>
+    <string name="ndk_download_too_large">The NDK download was longer than expected and was stopped.</string>
+    <string name="ndk_download_checksum_failed">The NDK download failed its integrity check and was discarded. Try again.</string>
+    <string name="ndk_download_restart">The partial NDK download no longer matches the release. Try again to start over.</string>
+    <string name="settings_ndk_cancel">Cancel download</string>
+    <string name="settings_ndk_cancelled">NDK download cancelled. What was downloaded is kept for next time.</string>
+</resources>

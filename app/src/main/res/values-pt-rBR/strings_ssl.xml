@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for the SSL Certificate Viewer (com.ccs.wiredroid.ui.SslCertificateActivity).
+    Every key is prefixed with ssl_ so this file can live beside strings.xml without
+    colliding with anything else. ssl_title is referenced from AndroidManifest.xml.
+-->
+<resources>
+
+    <!-- ── Screen ─────────────────────────────────────────────────────────── -->
+    <string name="ssl_title">SSL Certificates</string>
+    <string name="ssl_subtitle">Inspect a TLS chain from a live host or a local file</string>
+
+    <!-- ── Input row ──────────────────────────────────────────────────────── -->
+    <string name="ssl_label_host">Host</string>
+    <string name="ssl_label_port">Port</string>
+    <string name="ssl_hint_host">example.com</string>
+    <string name="ssl_hint_port">443</string>
+    <string name="ssl_action_fetch">Fetch</string>
+    <string name="ssl_action_open_file">Open file</string>
+    <string name="ssl_action_clear">Clear</string>
+    <string name="ssl_action_copy_pem">Copy PEM</string>
+    <string name="ssl_picker_title">Select a certificate file</string>
+
+    <!-- ── Status line ────────────────────────────────────────────────────── -->
+    <string name="ssl_status_idle">Enter a host, or open a .crt / .cer / .pem / .der file</string>
+    <string name="ssl_status_connecting">Connecting to %1$s:%2$d…</string>
+    <string name="ssl_status_reading">Reading %1$s…</string>
+    <string name="ssl_status_source_host">%1$s:%2$d</string>
+    <string name="ssl_status_source_file">File: %1$s</string>
+    <string name="ssl_status_error">Error: %1$s</string>
+    <string name="ssl_status_elapsed">%1$d ms</string>
+
+    <plurals name="ssl_status_chain">
+        <item quantity="one">%1$d certificate</item>
+        <item quantity="other">%1$d certificates</item>
+    </plurals>
+
+    <!-- ── Errors ─────────────────────────────────────────────────────────── -->
+    <string name="ssl_error_empty_host">Enter a host name first</string>
+    <string name="ssl_error_bad_port">Port must be a number between 1 and 65535</string>
+    <string name="ssl_error_no_certs">No certificates found in this source</string>
+    <string name="ssl_error_read_file">Cannot read file: %1$s</string>
+    <string name="ssl_error_parse">Not a recognised X.509 certificate: %1$s</string>
+    <string name="ssl_error_too_large">File is too large to be a certificate (%1$d KB)</string>
+    <string name="ssl_error_no_picker">No file picker is available on this device</string>
+    <string name="ssl_error_missing_file">File not found: %1$s</string>
+
+    <!-- ── Trust notice (shown under the input row) ───────────────────────── -->
+    <string name="ssl_notice_inspection">Inspection mode: certificate validation is switched off while fetching, so expired and self-signed chains can still be read. This connection is used only for this screen.</string>
+
+    <!-- ── Connection summary card ────────────────────────────────────────── -->
+    <string name="ssl_section_connection">Connection</string>
+    <string name="ssl_label_peer">Peer</string>
+    <string name="ssl_label_protocol">Protocol</string>
+    <string name="ssl_label_cipher">Cipher suite</string>
+    <string name="ssl_label_handshake">Handshake</string>
+
+    <!-- ── Certificate card sections ──────────────────────────────────────── -->
+    <string name="ssl_section_subject">Subject</string>
+    <string name="ssl_section_issuer">Issuer</string>
+    <string name="ssl_section_validity">Validity</string>
+    <string name="ssl_section_details">Details</string>
+    <string name="ssl_section_san">Subject Alternative Names</string>
+    <string name="ssl_section_usage">Constraints and usage</string>
+    <string name="ssl_section_fingerprints">Fingerprints</string>
+
+    <!-- ── Field labels ───────────────────────────────────────────────────── -->
+    <string name="ssl_label_not_before">Not before</string>
+    <string name="ssl_label_not_after">Not after</string>
+    <string name="ssl_label_remaining">Remaining</string>
+    <string name="ssl_label_serial">Serial (hex)</string>
+    <string name="ssl_label_sig_alg">Signature alg.</string>
+    <string name="ssl_label_key">Public key</string>
+    <string name="ssl_label_version">Version</string>
+    <string name="ssl_label_basic_constraints">Basic constraints</string>
+    <string name="ssl_label_key_usage">Key usage</string>
+    <string name="ssl_label_ext_key_usage">Extended key usage</string>
+    <string name="ssl_label_sha256">SHA-256</string>
+    <string name="ssl_label_sha1">SHA-1</string>
+
+    <!-- ── Field values ───────────────────────────────────────────────────── -->
+    <string name="ssl_value_none">—</string>
+    <string name="ssl_value_version">v%1$d</string>
+    <string name="ssl_value_key_sized">%1$s, %2$d bits</string>
+    <string name="ssl_value_ca_yes">Certificate Authority</string>
+    <string name="ssl_value_ca_no">End-entity (not a CA)</string>
+    <string name="ssl_value_path_len">CA, may sign %1$d more level(s) below</string>
+    <string name="ssl_value_path_len_unlimited">CA, unlimited chain depth</string>
+    <string name="ssl_value_self_signed">Self-signed (subject equals issuer)</string>
+    <string name="ssl_value_expired">Expired %1$d day(s) ago</string>
+    <string name="ssl_value_expires_today">Expires today</string>
+    <string name="ssl_value_expiring_soon">Expires in %1$d day(s)</string>
+    <string name="ssl_value_valid">%1$d day(s) left</string>
+    <string name="ssl_value_not_yet_valid">Not valid yet — starts in %1$d day(s)</string>
+    <string name="ssl_date_format">yyyy-MM-dd HH:mm:ss z</string>
+
+    <!-- ── Chain position ─────────────────────────────────────────────────── -->
+    <string name="ssl_depth_badge">#%1$d</string>
+    <string name="ssl_depth_leaf">leaf</string>
+    <string name="ssl_depth_intermediate">intermediate</string>
+    <string name="ssl_depth_root">root</string>
+    <string name="ssl_chain_break">Chain break — the issuer of this certificate does not match the subject of the next one</string>
+    <string name="ssl_chain_unnamed">(no common name)</string>
+
+    <!-- ── Distinguished-name attribute labels ────────────────────────────── -->
+    <string name="ssl_rdn_cn">Common name</string>
+    <string name="ssl_rdn_o">Organisation</string>
+    <string name="ssl_rdn_ou">Organisational unit</string>
+    <string name="ssl_rdn_c">Country</string>
+    <string name="ssl_rdn_st">State / province</string>
+    <string name="ssl_rdn_l">Locality</string>
+    <string name="ssl_rdn_street">Street</string>
+    <string name="ssl_rdn_email">Email</string>
+    <string name="ssl_rdn_dc">Domain component</string>
+    <string name="ssl_rdn_uid">User ID</string>
+    <string name="ssl_rdn_serial">Serial</string>
+    <string name="ssl_rdn_title">Title</string>
+
+    <!-- ── Extended key usage OID labels ──────────────────────────────────── -->
+    <string name="ssl_eku_any">Any usage</string>
+    <string name="ssl_eku_server_auth">TLS server authentication</string>
+    <string name="ssl_eku_client_auth">TLS client authentication</string>
+    <string name="ssl_eku_code_signing">Code signing</string>
+    <string name="ssl_eku_email">Email protection</string>
+    <string name="ssl_eku_timestamp">Time stamping</string>
+    <string name="ssl_eku_ocsp">OCSP signing</string>
+
+    <!-- ── Toasts ────────────────────────────────────────────────────────── -->
+    <string name="ssl_toast_pem_copied">PEM copied to clipboard</string>
+    <string name="ssl_clip_label">Certificate PEM</string>
+
+    <!-- ── Accessibility ─────────────────────────────────────────────────── -->
+    <string name="ssl_a11y_host">Host name to inspect</string>
+    <string name="ssl_a11y_port">TLS port, 443 by default</string>
+    <string name="ssl_a11y_fetch">Fetch the certificate chain</string>
+    <string name="ssl_a11y_open_file">Open a certificate file</string>
+    <string name="ssl_a11y_clear">Clear the results</string>
+    <string name="ssl_a11y_copy_pem">Copy this certificate as PEM</string>
+
+    <!-- ── SAN entry types, indexed by GeneralName tag 0..8 ───────────────── -->
+    <string-array name="ssl_san_types">
+        <item>Other name</item>
+        <item>Email</item>
+        <item>DNS</item>
+        <item>X.400 address</item>
+        <item>Directory name</item>
+        <item>EDI party name</item>
+        <item>URI</item>
+        <item>IP address</item>
+        <item>Registered ID</item>
+    </string-array>
+
+    <!-- ── KeyUsage bits, indexed 0..8 as returned by getKeyUsage() ───────── -->
+    <string-array name="ssl_key_usage_bits">
+        <item>Digital signature</item>
+        <item>Non-repudiation</item>
+        <item>Key encipherment</item>
+        <item>Data encipherment</item>
+        <item>Key agreement</item>
+        <item>Certificate signing</item>
+        <item>CRL signing</item>
+        <item>Encipher only</item>
+        <item>Decipher only</item>
+    </string-array>
+
+</resources>

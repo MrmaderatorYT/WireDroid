@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · Уніполярний мотор та ULN2003",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "driver",
+      "part": "ULN2003A",
+      "x": 390,
+      "y": 100,
+      "rotation": 0,
+      "label": "ULN2003A",
+      "scale": 1
+    },
+    {
+      "id": "motor",
+      "part": "stepper_motor_unipolar",
+      "x": 650,
+      "y": 100,
+      "rotation": 0,
+      "label": "Уніполярний мотор",
+      "scale": 1,
+      "electrical": {
+        "type": "unipolarStepper",
+        "parameters": {
+          "coilResistance": 20,
+          "coilInductance": 0.005,
+          "stepsPerTurn": 200
+        }
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector7"
+      },
+      "color": "#94a3b8",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector8"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector1"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector4"
+      },
+      "color": "#f87171",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_5",
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_6",
+      "a": {
+        "node": "driver",
+        "pin": "connector15"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_7",
+      "a": {
+        "node": "uno",
+        "pin": "connector64"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_8",
+      "a": {
+        "node": "driver",
+        "pin": "connector14"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_9",
+      "a": {
+        "node": "uno",
+        "pin": "connector65"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_10",
+      "a": {
+        "node": "driver",
+        "pin": "connector13"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_11",
+      "a": {
+        "node": "uno",
+        "pin": "connector66"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_12",
+      "a": {
+        "node": "driver",
+        "pin": "connector12"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector5"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

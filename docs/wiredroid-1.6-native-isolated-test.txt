@@ -1,0 +1,51 @@
+INSTRUMENTATION_STATUS: stream=PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: stream=PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: stream=PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: existing project overwrite rejected
+
+INSTRUMENTATION_CODE: -1

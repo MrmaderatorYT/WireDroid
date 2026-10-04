@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_truncated">…dan %1$d penemuan lagi tidak dipaparkan</string>
+    <string name="problems_analysis_failed">Tidak dapat menganalisis fail ini: %1$s</string>
+    <string name="problems_filter_errors">Ralat %1$d</string>
+    <string name="problems_filter_security">Keselamatan %1$d</string>
+    <string name="problems_filter_warnings">Amaran %1$d</string>
+    <string name="problems_filter_info">Maklumat %1$d</string>
+    <string name="problems_all_filtered">Semua yang ditemui telah ditapis keluar. Tandakan kotak di atas untuk melihatnya.</string>
+    <string name="problems_none">Tiada masalah ditemui.</string>
+    <string name="problems_scope_current">Fail ini sahaja</string>
+</resources>

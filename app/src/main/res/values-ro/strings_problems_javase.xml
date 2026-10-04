@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: analiza în timp real utilizează momentan classpath-ul Android, astfel încât clasele Java SE standard pot fi raportate eronat ca indisponibile. Rezultatul compilării sau rulării este cel relevant.</string>
+</resources>

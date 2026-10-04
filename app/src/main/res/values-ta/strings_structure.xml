@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="structure_options_desc">அமைப்பு வரிசைப்படுத்தலும் வடிகட்டலும்</string>
+    <string name="structure_sort_source">வரிசை: மூலக் குறியீட்டு வரிசை</string>
+    <string name="structure_sort_alpha">வரிசை: அகர வரிசையில்</string>
+    <string name="structure_sort_kind">வரிசை: வகைப்படி</string>
+    <string name="structure_sort_visibility">வரிசை: தெரிவுநிலைப்படி</string>
+    <string name="structure_show_fields">காட்டு: புலங்கள்</string>
+    <string name="structure_show_non_public">காட்டு: public அல்லாதவை</string>
+</resources>

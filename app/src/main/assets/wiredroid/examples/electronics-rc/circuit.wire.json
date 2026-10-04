@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · RC та напруга",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "r",
+      "part": "resistor",
+      "x": 390,
+      "y": 100,
+      "rotation": 0,
+      "label": "10 kΩ",
+      "scale": 1,
+      "electrical": {
+        "type": "resistor",
+        "parameters": {
+          "resistance": 10000
+        }
+      }
+    },
+    {
+      "id": "c",
+      "part": "SMD_elko_0405",
+      "x": 570,
+      "y": 130,
+      "rotation": 0,
+      "label": "100 µF",
+      "scale": 1,
+      "electrical": {
+        "type": "capacitor",
+        "parameters": {
+          "capacitance": 0.0001
+        }
+      }
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector52"
+      },
+      "b": {
+        "node": "r",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "r",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "c",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "c",
+        "pin": "connector1"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "c",
+        "pin": "connector0"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Автовизначення (система)</string>
+    <string name="lesson_playground_show">⚡ Пісочниця</string>
+    <string name="lesson_playground_hide">⚡ Сховати редактор</string>
+</resources>

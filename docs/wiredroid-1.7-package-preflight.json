@@ -1,0 +1,28 @@
+{
+  "versionCode": 38,
+  "versionName": "1.7.0-embedded",
+  "applicationId": "com.ccs.wiredroid",
+  "variantName": "debug",
+  "apkSha256": "10b313ca7f5c2d244e2dfd60107f705fd1acc4845023b9224fb2dcf131e008ba",
+  "apkBytes": 118761552,
+  "apkCrcVerified": true,
+  "apkEntries": 6028,
+  "firmware": {
+    "profile": "arduino:avr:uno",
+    "coreVersion": "1.8.6",
+    "hexSha256": "678ccbab899fcd680fcfd3e5f89e9aaef8941261a4e2a3fc39d12403ad5299c9",
+    "sourceDigest": "fa67952d3a5209debe92df1d17b923444793e331b6baf6fb841f4c9104618d32",
+    "configDigest": "3340e25f66e7c893fbe297f5f92a4573ef53eed5f7316e0b6ab38ccd772d6664"
+  },
+  "androidTestApkSha256": "5a4ff951cb13c5b5c807aea35f58bef10507cd479f166bd37d507042dd8b4050",
+  "root": "WireDroid/",
+  "entryCount": 6229,
+  "inputBytes": 487630470,
+  "excludedCounts": {
+    "intermediate-directory": 6,
+    "local-machine-file": 6,
+    "apk-replaced-by-validated-artifact": 2
+  },
+  "apkEntry": "WireDroid/artifacts/WireDroid-debug.apk",
+  "checkOnly": true
+}

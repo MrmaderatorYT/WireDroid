@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Ayyuka masu sauri</string>
+    <string name="ai_action_explain">Bayyana</string>
+    <string name="ai_action_find_bugs">Nemo kurakurai</string>
+    <string name="ai_action_refactor">Sake gyarawa</string>
+    <string name="ai_action_optimize">Inganta</string>
+    <string name="ai_action_document">Rubuta bayani</string>
+    <string name="ai_action_test">Rubuta gwaje-gwaje</string>
+    <string name="ai_action_agent">Yanayin wakili</string>
+    <string name="ai_agent_on">An kunna yanayin wakili — mataimakin na iya gyara fayiloli</string>
+    <string name="ai_agent_off">An kashe yanayin wakili</string>
+    <string name="ai_need_file">Da farko buɗe fayil — waɗannan ayyukan suna aiki da lambar da kake gani.</string>
+</resources>

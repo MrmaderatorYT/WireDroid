@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_console_scroll_to_end">Scroll console to end</string>
+    <string name="console_autoscroll_following">Auto-scroll on — console follows new output</string>
+    <string name="console_autoscroll_paused">Auto-scroll paused — tap to jump to the end</string>
+</resources>

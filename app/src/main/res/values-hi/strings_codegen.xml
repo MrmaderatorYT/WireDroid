@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="generate_constructor_no_arg">बिना तर्क वाला कंस्ट्रक्टर</string>
+    <string name="generate_select_none">कुछ भी न चुनें</string>
+</resources>

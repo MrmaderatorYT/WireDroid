@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maven_panel_title">Maven</string>
+    <string name="maven_panel_open">Maven</string>
+    <string name="maven_panel_reload">⟳</string>
+    <string name="maven_panel_reload_desc">சார்புகளை மீண்டும் ஏற்று</string>
+    <string name="maven_panel_refresh">⤓</string>
+    <string name="maven_panel_refresh_desc">உருவாக்கக் கோப்பை மீண்டும் படி</string>
+    <string name="maven_panel_no_project">இந்தப் பலகத்தைப் பயன்படுத்த Maven அல்லது Gradle திட்டத்தைத் திறக்கவும்.</string>
+    <string name="maven_branch_lifecycle">வாழ்க்கைச் சுழற்சி</string>
+    <string name="maven_branch_plugins">சொருகிகள்</string>
+    <string name="maven_branch_dependencies">சார்புகள்</string>
+    <string name="maven_branch_repositories">களஞ்சியங்கள்</string>
+    <string name="maven_none_declared">எதுவும் அறிவிக்கப்படவில்லை</string>
+    <string name="maven_central_implicit">Maven Central (உள்ளார்ந்தது)</string>
+    <string name="maven_validate_deps">%1$d சார்புகள் அறிவிக்கப்பட்டுள்ளன</string>
+    <string name="maven_validate_ok">validate: BUILD SUCCESS</string>
+    <string name="maven_validate_warned">validate: எச்சரிக்கைகளுடன் முடிந்தது</string>
+    <string name="maven_phase_no_verify">உள்ளிணைந்த உருவாக்கியில் integration-test கட்டம் இல்லை, எனவே verify இயங்காது. test மற்றும் package ஐப் பயன்படுத்தவும்.</string>
+    <string name="maven_phase_no_site">தள உருவாக்கத்திற்கு Maven site சொருகி தேவை, அது சாதனத்தில் இயங்காது.</string>
+    <string name="maven_phase_no_deploy">தொலைநிலைக் களஞ்சியத்தில் பயன்படுத்துவது ஆதரிக்கப்படவில்லை. உள்ளூர்க் களஞ்சியத்திற்கு install ஐப் பயன்படுத்தவும்.</string>
+</resources>

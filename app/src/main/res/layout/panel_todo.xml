@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Split out of activity_main so it can sit behind a ViewStub: this starts
+    hidden and many sessions never show it, but it was still inflated on
+    every cold start.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/todoPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/idea_console_bg"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/todoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/idea_toolbar"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp">
+
+        <!--
+            Scope switch, the way the TODO tool window in an IDE has one: the
+            whole project, or just the file on screen. Painted in code so it
+            follows the theme like the other segmented controls.
+        -->
+        <TextView
+            android:id="@+id/todoScopeProject"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/todo_scope_project"
+            android:textSize="11sp"
+            android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/todoScopeFile"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/todo_scope_file"
+            android:textSize="11sp"
+            android:background="?attr/selectableItemBackground" />
+
+        <View
+            android:id="@+id/todoScopeSep"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/idea_separator" />
+
+        <EditText
+            android:id="@+id/todoSearch"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:hint="@string/todo_search_hint"
+            android:textColorHint="@color/idea_text_dim"
+            android:textColor="@color/idea_console_text"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:background="@android:color/transparent"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp" />
+
+        <TextView
+            android:id="@+id/todoRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="↻"
+            android:textColor="@color/idea_accent"
+            android:textSize="14sp"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/todoToolbarSep"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+    <TextView
+        android:id="@+id/todoStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="10sp"
+        android:textColor="@color/idea_text_dim"
+        android:fontFamily="monospace"
+        android:background="@color/idea_console_bg" />
+
+    <View
+        android:id="@+id/todoDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/idea_separator" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todoRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/idea_console_bg"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Kò sí kọ́kọ́rọ́ API síbẹ̀ — tẹ “Kọ́kọ́rọ́” láti fi ọ̀kan kún.</string>
+    <string name="ai_err_hint_model">Àwòṣe yìí kò sí fún kọ́kọ́rọ́ rẹ. Yan òmíràn nínú àtòjọ.</string>
+    <string name="ai_err_hint_key">Ṣàyẹ̀wò kọ́kọ́rọ́ API, lẹ́yìn náà orúkọ àwòṣe.</string>
+    <string name="ai_err_hint_rejected">A kọ̀ kọ́kọ́rọ́ náà. Tẹ “Kọ́kọ́rọ́” kí o sì lo “Fi pamọ́ kí o sì ṣàyẹ̀wò” láti rí ìdí rẹ̀.</string>
+    <string name="ai_err_hint_rate">Ìbéèrè pọ̀ jù — dúró díẹ̀ kí o sì tún gbìyànjú.</string>
+    <string name="ai_err_hint_google">Ẹ̀gbẹ́ Google ń kùnà báyìí. Gbígbìyànjú lẹ́ẹ̀kejì máa ń ṣiṣẹ́.</string>
+    <string name="ai_err_empty">Ìdáhùn òfìfo — ó ṣeé ṣe kí ìnáwó àbájáde lọ sí ìrònú inú. Tún gbìyànjú tàbí yí ìbéèrè padà.</string>
+    <string name="ai_err_network">Àṣìṣe nẹ́tíwọ̀kì: %1$s</string>
+    <string name="ai_key_works">Kọ́kọ́rọ́ náà ń ṣiṣẹ́.</string>
+    <string name="ai_key_rejected">Google kọ̀ kọ́kọ́rọ́ yìí (HTTP %1$d).%2$s\n\nNí ọ̀pọ̀ ìgbà a ti fagilé rẹ̀, ó jẹ́ ti iṣẹ́ tí Generative Language API ti pa, tàbí a dà á kọ ní apá kan.</string>
+    <string name="ai_key_check_failed">A kò lè ṣàyẹ̀wò kọ́kọ́rọ́: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">A kò lè dé ọ̀dọ̀ Google láti ṣàyẹ̀wò kọ́kọ́rọ́: %1$s</string>
+    <string name="ai_key_problem_empty">Kọ́kọ́rọ́ náà òfìfo ni.</string>
+    <string name="ai_key_problem_url">Ìyẹn jẹ́ àdírẹ́sì wẹ́ẹ̀bù, kì í ṣe kọ́kọ́rọ́. Ṣí i, kí o sì dà kọ́kọ́rọ́ tí ó fi hàn kọ.</string>
+    <string name="ai_key_problem_openai">Ìyẹn dàbí kọ́kọ́rọ́ OpenAI. Olùrànlọ́wọ́ yìí ń bá Google Gemini sọ̀rọ̀; gba kọ́kọ́rọ́ ní aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Kọ́kọ́rọ́ náà dàbí èyí tí a gé kúrú ní àmì %1$d. Ṣàyẹ̀wò bóyá a dà á kọ pátápátá.</string>
+</resources>

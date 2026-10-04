@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_native_section">Kod natif (JNI)</string>
+    <string name="settings_native_enable">Bina sumber natif</string>
+    <string name="settings_native_enable_desc">Apabila hidup, fail .c dan .cpp dalam projek dikompil menjadi .so dan diletakkan pada laluan pustaka, supaya System.loadLibrary menemuinya. Apabila mati, fail itu diabaikan.</string>
+    <string name="settings_native_backend">Pengkompil</string>
+    <string name="settings_native_tcc">TCC — terbina dalam</string>
+    <string name="settings_native_tcc_desc">Disertakan dalam aplikasi, tiada apa untuk dimuat turun, mengkompil dalam sekelip mata. C sahaja: ia tidak boleh membina C++, dan pengoptimumannya sangat sedikit.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">Rantaian alat Android sebenar: C dan C++, pengoptimuman yang betul. Memerlukan muat turun ~130 MB yang berkembang kepada kira-kira 500 MB.</string>
+    <string name="settings_native_ndk_missing">NDK dipilih tetapi belum dipasang — pasangnya di bawah, atau tukar kepada TCC.</string>
+    <string name="native_disabled_skipped">Sumber natif dilangkau: pembinaannya dimatikan dalam tetapan.</string>
+    <string name="native_tcc_cannot_cpp">%1$s ialah C++, yang tidak boleh dibina oleh TCC. Tukar pengkompil kepada NDK dalam tetapan.</string>
+    <string name="np_native_label">Kod natif (JNI)</string>
+    <string name="np_native_note">Mengkompil fail .c dan .cpp dalam projek ini menjadi .so dan meletakkannya pada laluan pustaka, supaya System.loadLibrary menemuinya.</string>
+    <string name="np_native_tcc">TCC — terbina dalam</string>
+    <string name="np_native_tcc_note">Tiada muat turun, mengkompil serta-merta. C sahaja, dan pengoptimumannya sangat sedikit.</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">C dan C++ dengan pengoptimuman sebenar. Memerlukan muat turun ~130 MB.</string>
+</resources>

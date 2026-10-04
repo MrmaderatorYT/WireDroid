@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_ast_saving_hint">Power saving is in effect, so the power-saving profile below decides this. Change it there.</string>
+</resources>

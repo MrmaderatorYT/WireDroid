@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a11y_console_scroll_to_end">Tatal konsol ke hujung</string>
+    <string name="console_autoscroll_following">Tatal automatik hidup — konsol mengikut output baharu</string>
+    <string name="console_autoscroll_paused">Tatal automatik dijeda — ketik untuk melompat ke hujung</string>
+</resources>

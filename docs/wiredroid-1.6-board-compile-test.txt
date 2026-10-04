@@ -1,0 +1,7 @@
+50/327 board programs verified
+100/327 board programs verified
+150/327 board programs verified
+200/327 board programs verified
+250/327 board programs verified
+300/327 board programs verified
+PASS: 327 generated board GPIO profiles compiled and linked with Arduino API/STL as ARM64 Android ELF

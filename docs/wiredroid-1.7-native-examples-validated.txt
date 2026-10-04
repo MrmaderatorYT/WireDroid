@@ -1,0 +1,36 @@
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: a4988-microsteps · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: unipolar-stepper · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: esc-bldc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: quadrature-encoder · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: avr-blink · project copy, real AVR firmware execution, pause/step/reset/stop, per-board size 50% saved
+PASS: blink-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: button-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: traffic-uno · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: alternating-nano · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: blink-esp32 · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-sweep · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: servo-pot · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: electronics-rc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: motor-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: stepper-driver · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: lcd-project · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: i2c-eeprom · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: a4988-microsteps · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: unipolar-stepper · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: esc-bldc · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: quadrature-encoder · project copy, native C/C++ build and expected circuit behavior, per-board size 50% saved
+PASS: avr-blink · project copy, real AVR firmware execution, pause/step/reset/stop, per-board size 50% saved
+PASS: existing project overwrite rejected
+

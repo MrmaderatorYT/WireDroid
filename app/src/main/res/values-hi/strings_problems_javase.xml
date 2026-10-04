@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: लाइव विश्लेषण अभी Android classpath का उपयोग करता है, इसलिए मानक Java SE क्लासें गलती से अनुपलब्ध दिखाई जा सकती हैं। सही स्थिति के लिए बिल्ड या रन परिणाम देखें।</string>
+</resources>

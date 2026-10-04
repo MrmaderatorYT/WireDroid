@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Quick actions</string>
+    <string name="ai_action_explain">Explain</string>
+    <string name="ai_action_find_bugs">Find bugs</string>
+    <string name="ai_action_refactor">Refactor</string>
+    <string name="ai_action_optimize">Optimize</string>
+    <string name="ai_action_document">Document</string>
+    <string name="ai_action_test">Write tests</string>
+    <string name="ai_action_agent">Agent mode</string>
+    <string name="ai_agent_on">Agent mode on — the assistant can edit files</string>
+    <string name="ai_agent_off">Agent mode off</string>
+    <string name="ai_need_file">Open a file first — these actions work on the code you are looking at.</string>
+</resources>

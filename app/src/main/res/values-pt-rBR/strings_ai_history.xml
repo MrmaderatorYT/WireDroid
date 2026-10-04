@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Excluir</string>
+    <string name="ai_history_delete_message">“%1$s” será removida permanentemente.</string>
+    <string name="ai_history_delete_title">Excluir esta conversa?</string>
+    <string name="ai_history_empty">Ainda não há conversas salvas. Pergunte algo ao assistente e ela aparecerá aqui.</string>
+    <string name="ai_history_meta">%1$d mensagens · %2$s</string>
+    <string name="ai_history_restored">Conversa salva restaurada (%1$d mensagens).</string>
+    <string name="ai_history_title">Conversas salvas</string>
+    <string name="ai_history_untitled">Conversa sem título</string>
+    <string name="ai_new_chat">Nova conversa</string>
+    <string name="ai_new_chat_started">Nova conversa iniciada. A anterior está salva.</string>
+    <string name="md_pane_preview_on">Renderizado aqui. Toque no olho de novo para voltar ao editor.</string>
+</resources>

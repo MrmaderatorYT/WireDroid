@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="implement_pick_title">செயல்படுத்த வேண்டிய முறைகள்</string>
+    <string name="implement_generate">உருவாக்கு</string>
+    <string name="implement_nothing_missing">மரபுரிமையாகப் பெற்ற ஒவ்வொரு முறையும் ஏற்கெனவே செயல்படுத்தப்பட்டுள்ளது</string>
+    <string name="implement_failed">படிநிலையைப் படிக்க முடியவில்லை: %1$s</string>
+    <plurals name="implement_generated">
+        <item quantity="one">%d முறை உருவாக்கப்பட்டது</item>
+        <item quantity="other">%d முறைகள் உருவாக்கப்பட்டன</item>
+    </plurals>
+    <string name="generate_pick_fields_title">சேர்க்க வேண்டிய புலங்கள்</string>
+    <string name="generate_no_fields">இந்த வகுப்பில் நிகழ்வுப் புலங்கள் எதுவும் இல்லை</string>
+    <string name="generate_none_selected">புலங்கள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை</string>
+    <string name="generate_done">உருவாக்கப்பட்டது</string>
+    <string name="generate_constructor_no_arg">அளபுரு இல்லாத கட்டமைப்பான்</string>
+    <string name="generate_select_none">எதையும் தேர்ந்தெடுக்காதே</string>
+    <string name="tab_split_open_beside">நடப்புக் கோப்பின் அருகில் திற</string>
+    <string name="tab_split_move_back">முதல் பலகத்திற்குத் திரும்ப நகர்த்து</string>
+    <string name="tab_split_swap">இரு பலகங்களையும் இடமாற்று</string>
+    <string name="tab_split_close">பிரிப்பை மூடு</string>
+    <string name="tab_untitled">தலைப்பில்லாதது</string>
+    <string name="settings_theme_follow_system">கணினித் தோற்றத்தைப் பின்பற்று</string>
+    <string name="settings_theme_follow_hint_night">Android இருண்ட பயன்முறையில் உள்ளது — இந்தத் தேர்வு உங்கள் இரவுத் தோற்றமாகும்.</string>
+    <string name="settings_theme_follow_hint_day">Android ஒளிரும் பயன்முறையில் உள்ளது — இந்தத் தேர்வு உங்கள் பகல் தோற்றமாகும்.</string>
+    <string name="settings_theme_follow_hint_off">Android எதைச் செய்தாலும், எப்போதும் ஒரே தோற்றம்.</string>
+    <string name="run_config_env_note">மாறிகள் இயக்கத்திற்காக அமைக்கப்பட்டு பிறகு நீக்கப்படுகின்றன, எனவே அவை அடுத்த இயக்கத்திற்குக் கசியாது.</string>
+</resources>

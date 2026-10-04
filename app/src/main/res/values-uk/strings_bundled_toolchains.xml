@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ компілює для JDK 21 і запускає файли .class у вбудованій JVM. Runtime уже включено; під час першого запуску він лише розпаковує близько 145 МБ у внутрішню пам’ять.</string>
+    <string name="settings_ndk_bundled_desc">Необов’язковий C++ toolchain завантажується за потреби: 344 МБ завантаження та близько 1,85 ГБ внутрішньої пам’яті після встановлення.</string>
+    <string name="settings_ndk_bundled_install">Завантажити C++ NDK (344 МБ)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 завантажується з офіційного релізу: 344 МБ через мережу та близько 1,85 ГБ внутрішньої пам’яті після розпакування. Перерване завантаження продовжиться з того самого місця. Продовжити?</string>
+    <string name="settings_ndk_install_action">Завантажити</string>
+    <string name="ndk_bundled_no_space">Для NDK r29 потрібно щонайменше %1$d МБ вільної внутрішньої пам’яті.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK потребує ARM64-пристрою з Android 9 або новішою версією.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, завантаження за потреби)</string>
+    <string name="np_native_ndk_bundled_note">C і C++ з Clang 21. NDK — це 344 МБ завантаження і близько 1,85 ГБ після встановлення.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Попередження: для C++ потрібен NDK. Установіть його в Налаштуваннях → Завантажити C++ NDK. Компіляцію пропущено.</string>
+    <string name="native_compiling_sources">Компіляція native-коду…</string>
+    <string name="ndk_downloading">Завантаження NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Перевірка завантаженого файлу…</string>
+    <string name="ndk_download_http">Завантаження NDK повернуло HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Завантаження NDK перервалося. Спробуйте ще раз, щоб продовжити.</string>
+    <string name="ndk_download_too_large">Завантаження NDK виявилося довшим за очікуване й було припинене.</string>
+    <string name="ndk_download_checksum_failed">Завантажений NDK не пройшов перевірку цілісності й був видалений. Спробуйте ще раз.</string>
+    <string name="ndk_download_restart">Частково завантажений NDK більше не відповідає релізу. Спробуйте ще раз, щоб почати заново.</string>
+    <string name="settings_ndk_cancel">Скасувати завантаження</string>
+    <string name="settings_ndk_cancelled">Завантаження NDK скасовано. Завантажену частину збережено для наступного разу.</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uml_title">UML diagram</string>
+    <string name="uml_failed">UML — could not read the project: %1$s</string>
+    <string name="uml_btn_source">PlantUML source</string>
+    <string name="uml_btn_canvas">Diagram</string>
+    <string name="uml_btn_copy">Copy</string>
+    <string name="uml_btn_fit">Fit</string>
+    <string name="uml_btn_apply">Apply</string>
+    <string name="uml_btn_zoom_in">+</string>
+    <string name="uml_btn_zoom_out">-</string>
+    <string name="uml_applied">Na-update ang diagram</string>
+    <string name="uml_no_types_found">Walang nahanap na mga klase ng UML</string>
+    <plurals name="uml_summary">
+        <item quantity="one">%1$d class · %2$d relations</item>
+        <item quantity="other">%1$d classes · %2$d relations</item>
+    </plurals>
+</resources>

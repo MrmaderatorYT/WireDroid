@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ cible JDK 21 et exécute les fichiers .class dans une JVM intégrée. Le runtime est inclus ; le premier lancement décompresse seulement environ 145 Mo dans le stockage interne.</string>
+    <string name="settings_ndk_bundled_desc">La chaîne d\'outils C++ facultative est téléchargée à la demande : 344 Mo de téléchargement, puis environ 1,85 Go de stockage interne.</string>
+    <string name="settings_ndk_bundled_install">Télécharger le NDK C++ (344 Mo)</string>
+    <string name="settings_ndk_bundled_install_message">Le NDK r29 est téléchargé depuis sa version d\'origine : 344 Mo sur le réseau et environ 1,85 Go de stockage interne après extraction. Un téléchargement interrompu reprend où il s\'est arrêté. Continuer ?</string>
+    <string name="settings_ndk_install_action">Télécharger</string>
+    <string name="ndk_bundled_no_space">NDK r29 nécessite au moins %1$d Mo d’espace libre dans le stockage interne.</string>
+    <string name="ndk_bundled_unsupported">Le NDK C++ nécessite un appareil ARM64 sous Android 9 ou version ultérieure.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, téléchargé à la demande)</string>
+    <string name="np_native_ndk_bundled_note">C et C++ avec Clang 21. Le NDK représente 344 Mo à télécharger et environ 1,85 Go une fois installé.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Avertissement : les sources C++ nécessitent le NDK. Installez-le dans Paramètres → Télécharger le NDK C++. Ignoré.</string>
+    <string name="native_compiling_sources">Compilation des sources natives…</string>
+    <string name="ndk_downloading">Téléchargement du NDK r29… %1$s / %2$s</string>
+    <string name="ndk_verifying">Vérification du téléchargement…</string>
+    <string name="ndk_download_http">Le téléchargement du NDK a renvoyé HTTP %1$d.</string>
+    <string name="ndk_download_incomplete">Le téléchargement du NDK s\'est arrêté trop tôt. Réessayez pour le reprendre.</string>
+    <string name="ndk_download_too_large">Le téléchargement du NDK était plus long que prévu et a été arrêté.</string>
+    <string name="ndk_download_checksum_failed">Le téléchargement du NDK a échoué au contrôle d\'intégrité et a été supprimé. Réessayez.</string>
+    <string name="ndk_download_restart">Le téléchargement partiel du NDK ne correspond plus à la version publiée. Réessayez pour recommencer.</string>
+    <string name="settings_ndk_cancel">Annuler le téléchargement</string>
+    <string name="settings_ndk_cancelled">Téléchargement du NDK annulé. La partie téléchargée est conservée.</string>
+</resources>

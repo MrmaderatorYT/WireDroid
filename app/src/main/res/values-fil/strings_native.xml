@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="settings_native_section">Native code (JNI)</string>
+    <string name="settings_native_enable">Build native sources</string>
+    <string name="settings_native_enable_desc">When on, .c and .cpp files in a project are compiled to .so and put on the library path, so System.loadLibrary finds them. Off, they are ignored.</string>
+
+    <string name="settings_native_backend">Compiler</string>
+    <string name="settings_native_tcc">TCC — built in</string>
+    <string name="settings_native_tcc_desc">Ships inside the app, nothing to download, compiles in a blink. C only: it cannot build C++, and it optimises very little.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">The real Android toolchain: C and C++, proper optimisation. Costs a ~130 MB download that unpacks to about 500 MB.</string>
+
+    <string name="settings_native_ndk_missing">NDK is selected but not installed — install it below, or switch to TCC.</string>
+    <string name="native_disabled_skipped">Native sources skipped: building them is turned off in settings.</string>
+    <string name="native_tcc_cannot_cpp">%1$s is C++, which TCC cannot build. Switch the compiler to NDK in settings.</string>
+
+    <!-- asked during project creation -->
+    <string name="np_native_label">Native code (JNI)</string>
+    <string name="np_native_note">Compiles .c and .cpp files in this project to .so and puts them on the library path, so System.loadLibrary finds them.</string>
+    <string name="np_native_tcc">TCC — built in</string>
+    <string name="np_native_tcc_note">No download, compiles instantly. C only, and it optimises very little.</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">C and C++ with real optimisation. Needs a ~130 MB download.</string>
+
+</resources>

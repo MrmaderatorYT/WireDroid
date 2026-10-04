@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="build_panel_open">Build-Werkzeug</string>
+    <string name="gradle_branch_tasks">Tasks</string>
+    <string name="gradle_repos_none">In build.gradle sind keine Repositories deklariert</string>
+    <string name="gradle_task_no_javadoc">Die App bringt kein Javadoc-Werkzeug mit, daher lässt sich dieser Task auf dem Gerät nicht ausführen.</string>
+    <string name="gradle_task_no_publish">Das Veröffentlichen in ein entferntes Repository wird nicht unterstützt. Verwenden Sie publishToMavenLocal.</string>
+</resources>

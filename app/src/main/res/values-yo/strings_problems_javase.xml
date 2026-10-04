@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: Ìtúpalẹ̀ lẹ́sẹ̀kẹsẹ̀ ń lo classpath Android lọ́wọ́lọ́wọ́, nítorí náà a lè fi àwọn kiláàsì Java SE boṣewa hàn ní àṣìṣe bí ẹni pé wọn kò sí. Lo àbájáde build tàbí run gẹ́gẹ́ bí ìtọ́kasí.</string>
+</resources>

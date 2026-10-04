@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">தானாகக் கண்டறி (கணினி)</string>
+    <string name="lesson_playground_show">⚡ சோதனைக் களம்</string>
+    <string name="lesson_playground_hide">⚡ திருத்தியை மறை</string>
+</resources>

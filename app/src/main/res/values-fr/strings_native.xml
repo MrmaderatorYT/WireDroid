@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="native_disabled_skipped">Sources natives ignorées : leur compilation est désactivée dans les paramètres.</string>
+    <string name="native_tcc_cannot_cpp">%1$s est du C++, que TCC ne sait pas compiler. Basculez le compilateur sur NDK dans les paramètres.</string>
+    <string name="np_native_label">Code natif (JNI)</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">C et C++ avec une vraie optimisation. Nécessite un téléchargement d’environ 130 Mo.</string>
+    <string name="np_native_note">Compile les fichiers .c et .cpp de ce projet en .so et les place sur le chemin des bibliothèques, pour que System.loadLibrary les trouve.</string>
+    <string name="np_native_tcc">TCC — intégré</string>
+    <string name="np_native_tcc_note">Aucun téléchargement, compilation instantanée. C uniquement, et il optimise très peu.</string>
+    <string name="settings_native_backend">Compilateur</string>
+    <string name="settings_native_enable">Compiler les sources natives</string>
+    <string name="settings_native_enable_desc">Activé, les fichiers .c et .cpp d’un projet sont compilés en .so et placés sur le chemin des bibliothèques, pour que System.loadLibrary les trouve. Désactivé, ils sont ignorés.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">La vraie chaîne d’outils Android : C et C++, optimisation correcte. Coûte un téléchargement d’environ 130 Mo qui se décompresse en près de 500 Mo.</string>
+    <string name="settings_native_ndk_missing">Le NDK est sélectionné mais n’est pas installé — installez-le ci-dessous ou passez à TCC.</string>
+    <string name="settings_native_section">Code natif (JNI)</string>
+    <string name="settings_native_tcc">TCC — intégré</string>
+    <string name="settings_native_tcc_desc">Livré dans l’application, rien à télécharger, compile en un clin d’œil. C uniquement : il ne compile pas le C++ et optimise très peu.</string>
+</resources>

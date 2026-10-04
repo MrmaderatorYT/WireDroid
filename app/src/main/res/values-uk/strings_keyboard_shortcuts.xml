@@ -1,0 +1,11 @@
+<resources>
+    <string name="settings_keyboard_shortcuts">Клавіатурні скорочення</string>
+    <string name="settings_keyboard_shortcuts_desc">Натисніть на скорочення та введіть нову комбінацію Ctrl/Alt/Shift.</string>
+    <string name="settings_shortcut_duplicate_line">Дублювати рядок</string>
+    <string name="settings_shortcut_toggle_comment">Перемкнути коментар</string>
+    <string name="settings_shortcut_save">Зберегти файл</string>
+    <string name="settings_shortcut_find">Пошук</string>
+    <string name="settings_shortcut_run">Запустити / зупинити</string>
+    <string name="settings_shortcut_delete_line">Видалити рядок</string>
+    <string name="settings_shortcut_reset">Скинути клавіатурні скорочення</string>
+</resources>

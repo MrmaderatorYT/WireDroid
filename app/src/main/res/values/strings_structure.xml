@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Strings for the Structure panel's sorting and filtering menu.
+    Every key is prefixed structure_ so this file stays self-contained.
+-->
+<resources>
+
+    <!-- Drawer header button -->
+    <string name="structure_options_glyph" translatable="false">⇅</string>
+    <string name="structure_options_desc">Structure sorting and filtering</string>
+
+    <!-- Sort order, single choice -->
+    <string name="structure_sort_source">Sort: Source order</string>
+    <string name="structure_sort_alpha">Sort: Alphabetically</string>
+    <string name="structure_sort_kind">Sort: By Kind</string>
+    <string name="structure_sort_visibility">Sort: By Visibility</string>
+
+    <!-- Filters, independent toggles -->
+    <string name="structure_show_fields">Show: Fields</string>
+    <string name="structure_show_non_public">Show: Non-public</string>
+
+</resources>

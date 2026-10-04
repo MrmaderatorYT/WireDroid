@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Legacy -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- IntelliJ IDEA Darcula theme -->
+    <color name="idea_bg">#2B2B2B</color>
+    <color name="idea_toolbar">#3C3F41</color>
+    <color name="idea_tab_active">#4E5254</color>
+    <color name="idea_tab_inactive">#3C3F41</color>
+    <color name="idea_text">#BBBBBB</color>
+    <color name="idea_text_dim">#808080</color>
+    <color name="idea_accent">#4A86C8</color>
+    <color name="idea_run_green">#499C54</color>
+    <color name="idea_console_bg">#1E1E1E</color>
+    <color name="idea_console_text">#A9B7C6</color>
+    <color name="idea_error_text">#FF6B6B</color>
+    <color name="idea_separator">#515151</color>
+    <color name="idea_statusbar">#3C3F41</color>
+    <color name="idea_statusbar_text">#BBBBBB</color>
+    <color name="idea_tab_border">#4A86C8</color>
+
+    <!-- Launcher adaptive icon (фон як у логотипу) -->
+    <color name="ic_launcher_background">#FF000000</color>
+</resources>

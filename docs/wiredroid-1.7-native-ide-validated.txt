@@ -1,0 +1,9 @@
+PASS full IDE: restored buffer is dirty; saved C++ file preserved
+PASS full IDE: diagnostic selects/clamps original source location
+PASS full IDE: debounce checkpoint works with AutoSave disabled
+PASS full IDE: explicit Save commits latest buffer and clears checkpoint
+PASS full IDE: hidden drawer blocks native restart; reopened drawer resumes
+PASS full IDE: failed AutoSave keeps dirty buffer and prevents running old source
+PASS full IDE: read-only Save failure blocks drawer and JS Run without losing buffer
+PASS full IDE: retry after unlocking commits latest code before Run
+

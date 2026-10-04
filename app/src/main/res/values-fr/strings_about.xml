@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_source_code">Code source</string>
+    <string name="settings_source_code_copied">Adresse du dépôt copiée</string>
+    <string name="settings_source_code_hint">Open source sous licence GPL-3.0. Touchez pour ouvrir le dépôt ; appui long pour copier l’adresse.</string>
+    <string name="splash_open_source">WireDroid est un logiciel open source sous licence GPL-3.0. Le lien vers le code se trouve dans les paramètres.</string>
+</resources>

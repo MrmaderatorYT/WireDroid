@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · DC двигун та L293D",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "driver",
+      "part": "L293D",
+      "x": 390,
+      "y": 90,
+      "rotation": 0,
+      "label": "L293D",
+      "scale": 1
+    },
+    {
+      "id": "motor",
+      "part": "dc_motor",
+      "x": 640,
+      "y": 120,
+      "rotation": 0,
+      "label": "DC Motor",
+      "scale": 1
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "driver",
+        "pin": "connector3"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "driver",
+        "pin": "connector15"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "driver",
+        "pin": "connector7"
+      },
+      "b": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "uno",
+        "pin": "connector52"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_5",
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_6",
+      "a": {
+        "node": "uno",
+        "pin": "connector64"
+      },
+      "b": {
+        "node": "driver",
+        "pin": "connector6"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_7",
+      "a": {
+        "node": "driver",
+        "pin": "connector2"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_8",
+      "a": {
+        "node": "driver",
+        "pin": "connector5"
+      },
+      "b": {
+        "node": "motor",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Maɓalli</string>
+    <string name="ai_ready">Mataimakin AI a shirye yake. Tambaya game da Java, bayanin lambar, neman kurakurai, sake tsarawa, ingantawa ko gwaje-gwaje.</string>
+    <string name="ai_loaded_file">An loda %1$s (haruffa %2$d). Tambaya kome game da wannan lambar.</string>
+    <string name="ai_loaded_file_short">An loda %1$s (haruffa %2$d).</string>
+    <string name="ai_key_not_set">Babu maɓallin API tukuna. Danna “Maɓalli” don ƙara maɓallin Gemini daga aistudio.google.com</string>
+    <string name="ai_key_needed_first">Da farko ƙara maɓallin API — danna “Maɓalli”.</string>
+    <string name="ai_model_changed">An canza samfurin zuwa %1$s</string>
+    <string name="ai_key_saved_checking">An ajiye maɓalli. Ana duba shi da Google…</string>
+    <string name="ai_key_verified">An tabbatar da maɓalli. Samfuri: %1$s</string>
+    <string name="ai_key_saved_unverified">An ajiye maɓalli, amma dubawar ba ta yi nasara ba:\n%1$s</string>
+    <string name="ai_key_save_failed_title">An kasa ajiye maɓallin</string>
+    <string name="ai_key_save_failed_message">Ma’ajiyar tsaro ta wannan na’urar ta ƙi shi, don haka ba a ajiye maɓallin ba. Da gangan ba a ajiye shi ba tare da ɓoyewa ba.</string>
+    <string name="ai_key_check_title">Duba wannan maɓallin</string>
+    <string name="ai_key_save_anyway">Ajiye duk da haka</string>
+    <string name="ai_key_save_verify">Ajiye kuma tabbatar</string>
+    <string name="ai_key_get">Sami maɓalli</string>
+    <string name="ai_insert_into_editor">↧ Saka cikin edita</string>
+    <string name="ai_insert_desc">Saka wannan lambar cikin editan da aka buɗe</string>
+    <string name="ai_queued">A jere (%1$s) — koma editan don amfani da shi</string>
+</resources>

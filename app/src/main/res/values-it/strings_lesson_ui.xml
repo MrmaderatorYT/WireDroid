@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Rilevamento automatico (sistema)</string>
+    <string name="lesson_playground_show">⚡ Sandbox</string>
+    <string name="lesson_playground_hide">⚡ Nascondi l’editor</string>
+</resources>

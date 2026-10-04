@@ -1,0 +1,150 @@
+{
+  "compiledElfSha256": "7776efad7a3438461a0ab1b6bf5bd8c81443accb86e1f32315619d8fa32bfd75",
+  "expectedExit": "2 after controlled input EOF; every run must print42 beforeEOF",
+  "runs": [
+    {
+      "run": 1,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 2,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 3,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 4,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 5,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 6,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 7,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 8,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 9,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 10,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 11,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 12,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 13,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 14,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 15,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 16,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 17,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 18,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 19,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 20,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 21,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 22,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 23,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    },
+    {
+      "run": 24,
+      "exitCode": 2,
+      "serial42": true,
+      "inputEOFReported": true
+    }
+  ]
+}

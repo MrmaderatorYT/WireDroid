@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Acciones rápidas</string>
+    <string name="ai_action_explain">Explicar</string>
+    <string name="ai_action_find_bugs">Buscar errores</string>
+    <string name="ai_action_refactor">Refactorizar</string>
+    <string name="ai_action_optimize">Optimizar</string>
+    <string name="ai_action_document">Documentar</string>
+    <string name="ai_action_test">Escribir pruebas</string>
+    <string name="ai_action_agent">Modo agente</string>
+    <string name="ai_agent_on">Modo agente activado: el asistente puede editar archivos</string>
+    <string name="ai_agent_off">Modo agente desactivado</string>
+    <string name="ai_need_file">Abre primero un archivo: estas acciones actúan sobre el código que ves.</string>
+</resources>

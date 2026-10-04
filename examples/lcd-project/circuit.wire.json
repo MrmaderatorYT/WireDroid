@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "name": "Arduino Uno · LCD та C++ проєкт",
+  "nodes": [
+    {
+      "id": "uno",
+      "part": "arduino_Uno_Rev3(fix)",
+      "x": 30,
+      "y": 60,
+      "rotation": 0,
+      "label": "Arduino Uno",
+      "scale": 0.8
+    },
+    {
+      "id": "lcd",
+      "part": "lcd-GDM1602K",
+      "x": 390,
+      "y": 100,
+      "rotation": 0,
+      "label": "LCD screen",
+      "scale": 1
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire_1",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector0"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_2",
+      "a": {
+        "node": "uno",
+        "pin": "connector40"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector1"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_3",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector4"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_4",
+      "a": {
+        "node": "uno",
+        "pin": "connector44"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector2"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_5",
+      "a": {
+        "node": "uno",
+        "pin": "connector55"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector3"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_6",
+      "a": {
+        "node": "uno",
+        "pin": "connector54"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector5"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_7",
+      "a": {
+        "node": "uno",
+        "pin": "connector66"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector10"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_8",
+      "a": {
+        "node": "uno",
+        "pin": "connector65"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector11"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_9",
+      "a": {
+        "node": "uno",
+        "pin": "connector64"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector12"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    },
+    {
+      "id": "wire_10",
+      "a": {
+        "node": "uno",
+        "pin": "connector63"
+      },
+      "b": {
+        "node": "lcd",
+        "pin": "connector13"
+      },
+      "color": "#60a5fa",
+      "routing": "orthogonal"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">अभी कोई API कुंजी नहीं है — जोड़ने के लिए “कुंजी” दबाएँ।</string>
+    <string name="ai_err_hint_model">यह मॉडल आपकी कुंजी के लिए उपलब्ध नहीं है। सूची से दूसरा चुनें।</string>
+    <string name="ai_err_hint_key">API कुंजी जाँचें, फिर मॉडल का नाम।</string>
+    <string name="ai_err_hint_rejected">कुंजी अस्वीकृत हुई। “कुंजी” दबाकर “सहेजें और जाँचें” से कारण देखें।</string>
+    <string name="ai_err_hint_rate">बहुत अधिक अनुरोध — थोड़ा रुककर फिर कोशिश करें।</string>
+    <string name="ai_err_hint_google">अभी Google की ओर से गड़बड़ी है। दोबारा कोशिश करने से आमतौर पर काम बनता है।</string>
+    <string name="ai_err_empty">खाली उत्तर — आउटपुट बजट संभवतः आंतरिक तर्क में खर्च हो गया। दोबारा कोशिश करें या प्रश्न बदलें।</string>
+    <string name="ai_err_network">नेटवर्क त्रुटि: %1$s</string>
+    <string name="ai_key_works">कुंजी काम करती है।</string>
+    <string name="ai_key_rejected">Google ने यह कुंजी अस्वीकार की (HTTP %1$d).%2$s\n\nअक्सर कुंजी रद्द कर दी गई होती है, ऐसे प्रोजेक्ट की होती है जहाँ Generative Language API बंद है, या अधूरी कॉपी हुई होती है।</string>
+    <string name="ai_key_check_failed">कुंजी जाँची नहीं जा सकी: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">कुंजी जाँचने के लिए Google से संपर्क नहीं हो सका: %1$s</string>
+    <string name="ai_key_problem_empty">कुंजी खाली है।</string>
+    <string name="ai_key_problem_url">यह वेब पता है, कुंजी नहीं। इसे खोलें और वहाँ दिखी कुंजी कॉपी करें।</string>
+    <string name="ai_key_problem_openai">यह OpenAI कुंजी जैसी लगती है। यह सहायक Google Gemini से जुड़ता है; कुंजी aistudio.google.com से लें।</string>
+    <string name="ai_key_problem_short">कुंजी %1$d वर्णों पर कटी लगती है। जाँचें कि पूरी कॉपी हुई या नहीं।</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_title">புதிய திட்டம்</string>
+    <string name="np_template_java">Java</string>
+    <string name="np_template_kotlin">Kotlin</string>
+    <string name="np_template_bytecode">Bytecode</string>
+    <string name="np_template_scratch">விரைவுக் குறிப்பு</string>
+    <string name="np_scratch_location_label">கோப்பு இங்கே உருவாக்கப்படும்</string>
+    <string name="np_scratch_preview_label">கோப்பு</string>
+    <string name="np_template_playground">சோதனைக் களம்</string>
+    <string name="np_caption_java">Maven அல்லது Gradle · JUnit 4 · மூலங்கள் src/main/java இல்</string>
+    <string name="np_caption_kotlin">Gradle மட்டும் · Kotlin %1$s · மூலங்கள் src/main/kotlin இல்</string>
+    <string name="np_caption_bytecode">உருவாக்க அமைப்பு இல்லை · .asm மூலங்கள், வகுப்புகள் out/ இல்</string>
+    <string name="np_caption_scratch">ஒரே கோப்பு, திட்டம் இல்லை · உடனே இயங்கும்</string>
+    <string name="np_scratch_language">மொழி</string>
+    <string name="np_scratch_note">உங்கள் திட்டங்களுக்கு வெளியே வைக்கப்படுகிறது, எனவே திட்டங்களை மாற்றினாலும் நீடிக்கும்.</string>
+    <string name="np_caption_playground">ஒவ்வொரு அம்சத்திற்கும் ஒரு கோப்பு கொண்ட நிலையான மாதிரித் திட்டம்</string>
+    <string name="np_name_label">பெயர்</string>
+    <string name="np_name_hint">திட்டத்தின் பெயர்</string>
+    <string name="np_name_exists">%1$s என்ற பெயரில் ஒரு திட்டம் இங்கே ஏற்கெனவே உள்ளது</string>
+    <string name="np_location_label">திட்டம் இங்கே உருவாக்கப்படும்</string>
+    <string name="np_location_resolving">WireDroid கோப்புறை தேடப்படுகிறது…</string>
+    <string name="np_playground_replaces">தற்போதுள்ள சோதனைக் கள கோப்புறை நீக்கப்பட்டு மீண்டும் எழுதப்படும்</string>
+    <string name="np_build_label">உருவாக்க அமைப்பு</string>
+    <string name="np_build_maven">Maven</string>
+    <string name="np_build_gradle">Gradle</string>
+    <string name="np_kotlin_gradle_only">Kotlin திட்டங்கள் Gradle க்கு மட்டுமே உருவாக்கப்படுகின்றன</string>
+    <string name="np_git_label">Git களஞ்சியத்தை உருவாக்கு</string>
+    <string name="np_git_note">git init ஐ இயக்கி ஒரு தொடக்க commit ஐச் செய்கிறது</string>
+    <string name="np_git_initial_commit">தொடக்க commit</string>
+    <string name="np_git_failed">திட்டம் உருவாக்கப்பட்டது, ஆனால் Git களஞ்சியம் தோல்வியடைந்தது: %1$s</string>
+    <string name="np_advanced_collapsed">▸ மேம்பட்ட அமைப்புகள்</string>
+    <string name="np_advanced_expanded">▾ மேம்பட்ட அமைப்புகள்</string>
+    <string name="np_group_label">GroupId</string>
+    <string name="np_group_hint">com.example.app</string>
+    <string name="np_group_invalid">புள்ளிகளால் பிரிக்கப்பட்ட தொகுப்பைப் பயன்படுத்தவும், எடுத்துக்காட்டாக com.acme.app</string>
+    <string name="np_artifact_label">ArtifactId</string>
+    <string name="np_artifact_hint">artifact-id</string>
+    <string name="np_artifact_sanitized">%1$s என எழுதப்படும்</string>
+    <string name="np_preview_label">திட்ட அமைப்பு</string>
+    <string name="np_creating">உருவாக்கப்படுகிறது…</string>
+    <string name="np_replace">மாற்று</string>
+    <string name="np_failed">திட்டத்தை உருவாக்க முடியவில்லை: %1$s</string>
+    <string name="np_template_samples">மாதிரிகள்</string>
+    <string name="np_caption_samples">உடனே இயக்கக்கூடிய 30+ Java எடுத்துக்காட்டுகளும் கற்றல் வார்ப்புருக்களும்</string>
+    <string name="np_sample_label">மாதிரியைத் தேர்ந்தெடு</string>
+</resources>

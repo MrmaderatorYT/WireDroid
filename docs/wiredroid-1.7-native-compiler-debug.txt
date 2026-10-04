@@ -1,0 +1,5 @@
+--------- beginning of radio
+--------- beginning of main
+--------- beginning of system
+--------- beginning of events
+--------- beginning of crash

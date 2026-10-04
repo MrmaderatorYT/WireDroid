@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Klucz</string>
+    <string name="ai_ready">Asystent AI gotowy. Pytaj o Javę, wyjaśnienie kodu, szukanie błędów, refaktoryzację, optymalizację lub testy.</string>
+    <string name="ai_loaded_file">Wczytano %1$s (%2$d znaków). Pytaj o cokolwiek w tym kodzie.</string>
+    <string name="ai_loaded_file_short">Wczytano %1$s (%2$d znaków).</string>
+    <string name="ai_key_not_set">Brak klucza API. Dotknij „Klucz”, aby dodać swój klucz Gemini z aistudio.google.com</string>
+    <string name="ai_key_needed_first">Najpierw dodaj klucz API — dotknij „Klucz”.</string>
+    <string name="ai_model_changed">Zmieniono model na %1$s</string>
+    <string name="ai_key_saved_checking">Klucz zapisany. Sprawdzam go w Google…</string>
+    <string name="ai_key_verified">Klucz zweryfikowany. Model: %1$s</string>
+    <string name="ai_key_saved_unverified">Klucz zapisano, ale weryfikacja się nie powiodła:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Nie udało się zapisać klucza</string>
+    <string name="ai_key_save_failed_message">Bezpieczny magazyn tego urządzenia go odrzucił, więc klucz nie został zachowany. Celowo nie zapisujemy go bez szyfrowania.</string>
+    <string name="ai_key_check_title">Sprawdź ten klucz</string>
+    <string name="ai_key_save_anyway">Zapisz mimo to</string>
+    <string name="ai_key_save_verify">Zapisz i sprawdź</string>
+    <string name="ai_key_get">Zdobądź klucz</string>
+    <string name="ai_insert_into_editor">↧ Wstaw do edytora</string>
+    <string name="ai_insert_desc">Wstaw ten kod do otwartego edytora</string>
+    <string name="ai_queued">W kolejce (%1$s) — wróć do edytora, aby zastosować</string>
+</resources>

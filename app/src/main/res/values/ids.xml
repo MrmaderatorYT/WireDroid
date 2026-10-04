@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbarPreview" type="id" />
+    <item name="toolbarBack" type="id" />
+    <item name="md_root" type="id" />
+</resources>

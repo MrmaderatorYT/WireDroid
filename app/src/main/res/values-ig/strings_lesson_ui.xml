@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lang_auto_detect">Achọpụta n\'onwe ya (sistemu)</string>
+    <string name="lesson_playground_show">⚡ Ebe egwuregwu</string>
+    <string name="lesson_playground_hide">⚡ Zoo editọ</string>
+</resources>

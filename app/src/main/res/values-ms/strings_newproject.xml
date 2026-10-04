@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_title">Projek Baharu</string>
+    <string name="np_template_java">Java</string>
+    <string name="np_template_kotlin">Kotlin</string>
+    <string name="np_template_bytecode">Bytecode</string>
+    <string name="np_template_scratch">Cebisan</string>
+    <string name="np_scratch_location_label">Fail akan dicipta dalam</string>
+    <string name="np_scratch_preview_label">Fail</string>
+    <string name="np_template_playground">Ruang cuba</string>
+    <string name="np_caption_java">Maven atau Gradle · JUnit 4 · sumber dalam src/main/java</string>
+    <string name="np_caption_kotlin">Gradle sahaja · Kotlin %1$s · sumber dalam src/main/kotlin</string>
+    <string name="np_caption_bytecode">Tiada sistem binaan · sumber .asm, kelas dalam out/</string>
+    <string name="np_caption_scratch">Satu fail, tiada projek · terus boleh dijalankan</string>
+    <string name="np_scratch_language">Bahasa</string>
+    <string name="np_scratch_note">Disimpan di luar projek anda, jadi ia kekal apabila anda bertukar antara projek.</string>
+    <string name="np_caption_playground">Projek contoh tetap dengan satu fail bagi setiap ciri</string>
+    <string name="np_name_label">Nama</string>
+    <string name="np_name_hint">Nama projek</string>
+    <string name="np_name_exists">Projek bernama %1$s sudah wujud di sini</string>
+    <string name="np_location_label">Projek akan dicipta dalam</string>
+    <string name="np_location_resolving">Mencari folder WireDroid…</string>
+    <string name="np_playground_replaces">Folder Ruang cuba sedia ada akan dipadam dan ditulis semula</string>
+    <string name="np_build_label">Sistem binaan</string>
+    <string name="np_build_maven">Maven</string>
+    <string name="np_build_gradle">Gradle</string>
+    <string name="np_kotlin_gradle_only">Projek Kotlin dijana untuk Gradle sahaja</string>
+    <string name="np_git_label">Cipta repositori Git</string>
+    <string name="np_git_note">Menjalankan git init dan membuat satu commit awal</string>
+    <string name="np_git_initial_commit">Commit awal</string>
+    <string name="np_git_failed">Projek dicipta, tetapi repositori Git gagal: %1$s</string>
+    <string name="np_advanced_collapsed">▸ Tetapan lanjutan</string>
+    <string name="np_advanced_expanded">▾ Tetapan lanjutan</string>
+    <string name="np_group_label">GroupId</string>
+    <string name="np_group_hint">com.example.app</string>
+    <string name="np_group_invalid">Gunakan pakej bertitik, contohnya com.acme.app</string>
+    <string name="np_artifact_label">ArtifactId</string>
+    <string name="np_artifact_hint">artifact-id</string>
+    <string name="np_artifact_sanitized">Akan ditulis sebagai %1$s</string>
+    <string name="np_preview_label">Struktur projek</string>
+    <string name="np_creating">Mencipta…</string>
+    <string name="np_replace">Ganti</string>
+    <string name="np_failed">Tidak dapat mencipta projek: %1$s</string>
+    <string name="np_template_samples">Contoh</string>
+    <string name="np_caption_samples">Lebih 30 contoh Java sedia jalan dan templat pembelajaran</string>
+    <string name="np_sample_label">Pilih Contoh</string>
+</resources>

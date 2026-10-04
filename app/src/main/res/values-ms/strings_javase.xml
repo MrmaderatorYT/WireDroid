@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_label">Masa jalan Java</string>
+    <string name="np_runtime_art">ART</string>
+    <string name="np_runtime_java_se">Java SE 21</string>
+    <string name="np_runtime_art_note">Masa jalan Android yang pantas dengan akses terus kepada API Android.</string>
+    <string name="np_runtime_java_se_note">ECJ menyasarkan JDK 21 dan menjalankan fail .class dalam JVM terbenam. Larian pertama memuat turun kira-kira 150 MB dan menyimpan kira-kira 145 MB.</string>
+    <string name="javase_runtime_downloading">Memuat turun masa jalan Java SE 21… %1$d%%</string>
+    <string name="javase_runtime_verifying">Mengesahkan masa jalan Java SE 21…</string>
+    <string name="javase_runtime_installing">Memasang masa jalan Java SE 21… %1$d%%</string>
+    <string name="javase_runtime_ready">Masa jalan Java SE 21 sedia digunakan</string>
+    <string name="javase_runtime_no_space">Java SE 21 memerlukan sekurang-kurangnya %1$d MB storan dalaman kosong untuk pemasangan.</string>
+    <string name="javase_runtime_checksum_failed">Muat turun Java SE 21 gagal pemeriksaan integritinya.</string>
+    <string name="javase_runtime_invalid">Masa jalan Java SE 21 yang dipasang tidak lengkap.</string>
+    <string name="javase_process_died">Proses Java SE berhenti sebelum sempat melaporkan keputusan.</string>
+    <string name="javase_compiling">Mengkompil dengan ECJ untuk JDK 21…</string>
+    <string name="javase_running">Menjalankan %1$s dalam JVM terbenam…</string>
+    <string name="javase_no_sources">Tiada sumber Java ditemui.</string>
+    <string name="problems_javase_classpath_note">Java SE 21: Analisis langsung buat masa ini menggunakan classpath Android, jadi kelas Java SE standard mungkin dilaporkan tidak tersedia. Jadikan keputusan binaan atau larian sebagai rujukan sebenar.</string>
+</resources>

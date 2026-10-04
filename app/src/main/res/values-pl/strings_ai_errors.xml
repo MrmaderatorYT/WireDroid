@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_err_no_key">Brak klucza API — dotknij „Klucz”, aby go dodać.</string>
+    <string name="ai_err_hint_model">Ten model nie jest dostępny dla twojego klucza. Wybierz inny z listy.</string>
+    <string name="ai_err_hint_key">Sprawdź klucz API, potem nazwę modelu.</string>
+    <string name="ai_err_hint_rejected">Klucz został odrzucony. Dotknij „Klucz” i użyj „Zapisz i sprawdź”, aby zobaczyć dlaczego.</string>
+    <string name="ai_err_hint_rate">Zbyt wiele żądań — poczekaj chwilę i spróbuj ponownie.</string>
+    <string name="ai_err_hint_google">Po stronie Google występuje awaria. Zwykle pomaga ponowna próba.</string>
+    <string name="ai_err_empty">Pusta odpowiedź — budżet wyjścia prawdopodobnie poszedł na wewnętrzne rozumowanie. Spróbuj ponownie lub przeformułuj.</string>
+    <string name="ai_err_network">Błąd sieci: %1$s</string>
+    <string name="ai_key_works">Klucz działa.</string>
+    <string name="ai_key_rejected">Google odrzucił ten klucz (HTTP %1$d).%2$s\n\nZwykle został unieważniony, należy do projektu z wyłączonym Generative Language API albo skopiowano go tylko częściowo.</string>
+    <string name="ai_key_check_failed">Nie udało się sprawdzić klucza: HTTP %1$d%2$s</string>
+    <string name="ai_key_unreachable">Nie udało się połączyć z Google, aby sprawdzić klucz: %1$s</string>
+    <string name="ai_key_problem_empty">Klucz jest pusty.</string>
+    <string name="ai_key_problem_url">To adres internetowy, nie klucz. Otwórz go i skopiuj pokazany klucz.</string>
+    <string name="ai_key_problem_openai">To wygląda na klucz OpenAI. Ten asystent korzysta z Google Gemini; klucz zdobędziesz na aistudio.google.com.</string>
+    <string name="ai_key_problem_short">Klucz wygląda na ucięty — %1$d znaków. Sprawdź, czy skopiowano go w całości.</string>
+</resources>

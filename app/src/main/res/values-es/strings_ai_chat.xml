@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Clave</string>
+    <string name="ai_ready">Asistente de IA listo. Pregunta sobre Java, explicación de código, búsqueda de errores, refactorización, optimización o tests.</string>
+    <string name="ai_loaded_file">%1$s cargado (%2$d caracteres). Pregunta lo que quieras sobre este código.</string>
+    <string name="ai_loaded_file_short">%1$s cargado (%2$d caracteres).</string>
+    <string name="ai_key_not_set">Aún no hay clave de API. Toca «Clave» para añadir tu clave de Gemini desde aistudio.google.com</string>
+    <string name="ai_key_needed_first">Añade primero tu clave de API: toca «Clave».</string>
+    <string name="ai_model_changed">Modelo cambiado a %1$s</string>
+    <string name="ai_key_saved_checking">Clave guardada. Comprobándola con Google…</string>
+    <string name="ai_key_verified">Clave verificada. Modelo: %1$s</string>
+    <string name="ai_key_saved_unverified">La clave se guardó, pero la comprobación no pasó:\n%1$s</string>
+    <string name="ai_key_save_failed_title">No se pudo guardar la clave</string>
+    <string name="ai_key_save_failed_message">El almacenamiento seguro de este dispositivo la rechazó, así que la clave no se guardó. Deliberadamente no se almacena sin cifrar.</string>
+    <string name="ai_key_check_title">Comprueba esta clave</string>
+    <string name="ai_key_save_anyway">Guardar de todos modos</string>
+    <string name="ai_key_save_verify">Guardar y comprobar</string>
+    <string name="ai_key_get">Obtener una clave</string>
+    <string name="ai_insert_into_editor">↧ Insertar en el editor</string>
+    <string name="ai_insert_desc">Insertar este código en el editor abierto</string>
+    <string name="ai_queued">En cola (%1$s): vuelve al editor para aplicarlo</string>
+</resources>

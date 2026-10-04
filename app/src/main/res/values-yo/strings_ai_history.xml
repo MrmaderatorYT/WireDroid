@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Paarẹ́</string>
+    <string name="ai_history_delete_message">A ó paarẹ́ “%1$s” pátápátá.</string>
+    <string name="ai_history_delete_title">Paarẹ́ ìjíròrò yìí?</string>
+    <string name="ai_history_empty">Kò sí ìjíròrò tí a fi pamọ́ síbẹ̀. Béèrè nǹkan lọ́wọ́ olùrànlọ́wọ́, yóò sì hàn níbí.</string>
+    <string name="ai_history_meta">ìránṣẹ́ %1$d · %2$s</string>
+    <string name="ai_history_restored">A dá ìjíròrò tí a fi pamọ́ padà (ìránṣẹ́ %1$d).</string>
+    <string name="ai_history_title">Àwọn ìjíròrò tí a fi pamọ́</string>
+    <string name="ai_history_untitled">Ìjíròrò aláìlórúkọ</string>
+    <string name="ai_new_chat">Ìjíròrò tuntun</string>
+    <string name="ai_new_chat_started">A ti bẹ̀rẹ̀ ìjíròrò tuntun. A fi èyí tẹ́lẹ̀ pamọ́.</string>
+    <string name="md_pane_preview_on">A ṣàfihàn rẹ̀ níbí. Tẹ ojú náà lẹ́ẹ̀kejì láti padà sí olóòtú.</string>
+</resources>

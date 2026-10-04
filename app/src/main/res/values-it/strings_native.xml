@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="native_disabled_skipped">Sorgenti native ignorate: la loro compilazione è disattivata nelle impostazioni.</string>
+    <string name="native_tcc_cannot_cpp">%1$s è C++, che TCC non sa compilare. Passa il compilatore a NDK nelle impostazioni.</string>
+    <string name="np_native_label">Codice nativo (JNI)</string>
+    <string name="np_native_ndk">NDK — Clang/LLVM</string>
+    <string name="np_native_ndk_note">C e C++ con ottimizzazione vera. Richiede un download di circa 130 MB.</string>
+    <string name="np_native_note">Compila i file .c e .cpp di questo progetto in .so e li mette nel percorso delle librerie, così System.loadLibrary li trova.</string>
+    <string name="np_native_tcc">TCC — integrato</string>
+    <string name="np_native_tcc_note">Nessun download, compila all’istante. Solo C, e ottimizza pochissimo.</string>
+    <string name="settings_native_backend">Compilatore</string>
+    <string name="settings_native_enable">Compila i sorgenti nativi</string>
+    <string name="settings_native_enable_desc">Se attivo, i file .c e .cpp di un progetto vengono compilati in .so e messi nel percorso delle librerie, così System.loadLibrary li trova. Se disattivo, vengono ignorati.</string>
+    <string name="settings_native_ndk">NDK — Clang/LLVM</string>
+    <string name="settings_native_ndk_desc">La vera toolchain Android: C e C++, ottimizzazione seria. Costa un download di circa 130 MB che si espande a circa 500 MB.</string>
+    <string name="settings_native_ndk_missing">L’NDK è selezionato ma non installato: installalo qui sotto oppure passa a TCC.</string>
+    <string name="settings_native_section">Codice nativo (JNI)</string>
+    <string name="settings_native_tcc">TCC — integrato</string>
+    <string name="settings_native_tcc_desc">È dentro l’app, niente da scaricare, compila in un attimo. Solo C: non compila il C++ e ottimizza pochissimo.</string>
+</resources>

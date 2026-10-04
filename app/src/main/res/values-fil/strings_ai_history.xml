@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">Burahin</string>
+    <string name="ai_history_delete_message">Permanenteng aalisin ang “%1$s”.</string>
+    <string name="ai_history_delete_title">Burahin ang usapang ito?</string>
+    <string name="ai_history_empty">Wala pang naka-save na usapan. Magtanong sa assistant at lilitaw ito rito.</string>
+    <string name="ai_history_meta">%1$d mensahe · %2$s</string>
+    <string name="ai_history_restored">Naibalik ang naka-save na usapan (%1$d mensahe).</string>
+    <string name="ai_history_title">Mga naka-save na usapan</string>
+    <string name="ai_history_untitled">Usapang walang pamagat</string>
+    <string name="ai_new_chat">Bagong usapan</string>
+    <string name="ai_new_chat_started">Nagsimula ng bagong usapan. Naka-save ang nauna.</string>
+    <string name="md_pane_preview_on">Naka-render dito. Pindutin ulit ang mata para bumalik sa editor.</string>
+</resources>

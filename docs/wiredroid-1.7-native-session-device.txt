@@ -1,0 +1,4 @@
+PASS native sessions: two actual concurrent Clang projects with id uno execute their own Serial output and private ELF paths
+PASS native cancellation: closed session files removed after child exit; concurrent B continues emitting Serial
+PASS native restart: same board/project compiles and executes again at a new private path
+

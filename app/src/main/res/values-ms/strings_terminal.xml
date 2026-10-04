@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="terminal_title">Terminal Terbelah</string>
+    <string name="terminal_pane_name">Terminal %1$d</string>
+    <string name="terminal_pane_running">berjalan</string>
+    <string name="terminal_close_symbol">✕</string>
+    <string name="terminal_input_hint">jshell&gt; masukkan kod Java…</string>
+    <string name="terminal_menu_add_pane">Tambah anak tetingkap</string>
+    <string name="terminal_menu_close_pane">Tutup anak tetingkap</string>
+    <string name="terminal_menu_split_columns">Belah: lajur</string>
+    <string name="terminal_menu_split_rows">Belah: baris</string>
+    <string name="terminal_layout_columns">lajur</string>
+    <string name="terminal_layout_rows">baris</string>
+    <string name="terminal_status">%1$d anak tetingkap — %2$s</string>
+    <string name="terminal_status_compact">%1$d anak tetingkap — tetingkap sempit, memaparkan %2$s</string>
+    <string name="terminal_switcher_label">Anak tetingkap:</string>
+    <string name="terminal_toast_max_panes">Paling banyak %1$d anak tetingkap muat pada satu skrin</string>
+    <string name="terminal_toast_last_pane">Anak tetingkap terakhir tidak boleh ditutup</string>
+    <string name="terminal_close_confirm_title">Tutup anak tetingkap?</string>
+    <string name="terminal_close_confirm_message">%1$s masih menjalankan satu arahan. Menutupnya akan membuang arahan itu bersama outputnya.</string>
+    <string name="terminal_close_confirm_yes">Tutup juga</string>
+    <string name="terminal_cancel">Batal</string>
+    <string name="terminal_a11y_close_pane">Tutup %1$s</string>
+    <string name="terminal_a11y_input">Input arahan untuk %1$s</string>
+    <string name="terminal_a11y_output">Output %1$s</string>
+    <string name="terminal_a11y_select_pane">Tunjukkan %1$s</string>
+    <string name="terminal_a11y_divider">Seret untuk mengubah saiz anak tetingkap di kedua-dua belah</string>
+    <string name="terminal_welcome">"Selamat datang ke JShell untuk Android.\nTaip pernyataan Java (cth. System.out.println(\"Hi\");)\n\n"</string>
+    <string name="terminal_prompt_echo">"jshell> %1$s\n"</string>
+    <string name="terminal_help">"Arahan yang ada:\n  /help    - Papar mesej bantuan ini\n  /clear   - Kosongkan output konsol\n  /reset   - Set semula memori JShell (lupakan pemboleh ubah)\n  /history - Papar sejarah arahan yang dimasukkan\n\n"</string>
+    <string name="terminal_cleared">"Konsol dikosongkan.\n\n"</string>
+    <string name="terminal_reset_done">"Keadaan JShell diset semula. Semua pemboleh ubah dilupakan.\n\n"</string>
+    <string name="terminal_history_empty">"Sejarah kosong.\n\n"</string>
+    <string name="terminal_history_header">"Sejarah:\n"</string>
+    <string name="terminal_history_entry">"  %1$d: %2$s\n"</string>
+    <string name="terminal_unknown_command">"Arahan tidak dikenali: %1$s. Taip /help untuk melihat arahan yang ada.\n\n"</string>
+    <string name="terminal_error">"Ralat: %1$s\n"</string>
+    <string name="terminal_error_no_class">"Ralat: Tidak dapat mencari kelas terkompil.\n"</string>
+    <string name="terminal_error_scratch_dir">"Tidak dapat mencipta direktori sementara sesi: %1$s"</string>
+</resources>

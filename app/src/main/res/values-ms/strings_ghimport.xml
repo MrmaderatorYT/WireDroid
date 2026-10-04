@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gh_import_title">Import Repositori</string>
+    <string name="gh_import_message">Tampal pautan repositori daripada GitHub, GitLab atau Bitbucket. Pautan ke cabang atau ke fail juga boleh — cabangnya akan dikekalkan.</string>
+    <string name="gh_url_hint">URL repositori, atau user/repo</string>
+    <string name="gh_name_hint">Nama folder projek (pilihan)</string>
+    <string name="gh_user_hint">Nama pengguna (pilihan, untuk repositori peribadi)</string>
+    <string name="gh_token_hint">Token / kata laluan (pilihan)</string>
+    <string name="gh_import_button">Import</string>
+    <string name="gh_url_required">Masukkan URL repositori</string>
+    <string name="gh_invalid_url_title">Bukan URL repositori</string>
+    <string name="gh_invalid_url_message">Itu tidak kelihatan seperti repositori. Mana-mana daripada ini boleh digunakan:\n\nhttps://github.com/user/repo\nhttps://github.com/user/repo.git\nhttps://github.com/user/repo/tree/dev\nhttps://github.com/user/repo/blob/main/src/Foo.java\ngit@github.com:user/repo.git\nuser/repo\n\nURL GitLab dan Bitbucket berfungsi dengan cara yang sama.</string>
+    <string name="gh_folder_exists">Folder \"%1$s\" sudah wujud dan tidak kosong. Pilih nama lain.</string>
+    <string name="gh_progress_title">Mengimport %1$s</string>
+    <string name="gh_progress_preparing">Menyediakan…</string>
+    <string name="gh_progress_task">%1$s…</string>
+    <string name="gh_progress_configuring">Mengkonfigurasi projek…</string>
+    <string name="gh_cancelled">Import dibatalkan</string>
+    <string name="gh_failed_title">Import gagal</string>
+    <string name="gh_modules_title">Pilih satu modul</string>
+    <string name="gh_modules_message">Repositori ini mempunyai %1$d modul. Pilih yang hendak dibuka.</string>
+    <string name="gh_module_root">Akar repositori</string>
+    <string name="gh_detected_title">Projek dikesan</string>
+    <string name="gh_detected_line">Dikesan: %1$s</string>
+    <string name="gh_kind_maven">Projek Maven (pom.xml)</string>
+    <string name="gh_kind_gradle">Projek Gradle (build.gradle)</string>
+    <string name="gh_kind_eclipse">Projek Eclipse (.project + .classpath)</string>
+    <string name="gh_kind_plain">Sumber biasa (tiada sistem binaan)</string>
+    <string name="gh_kind_unknown">Tiada apa yang dikenali — tiada skrip binaan dan tiada sumber</string>
+    <string name="gh_language_java">Java</string>
+    <string name="gh_language_kotlin">Kotlin</string>
+    <string name="gh_detail_language">Bahasa: %1$s</string>
+    <string name="gh_detail_branch">Cabang: %1$s</string>
+    <string name="gh_detail_modules">Modul: %1$d</string>
+    <string name="gh_detail_package">Pakej: %1$s</string>
+    <string name="gh_detail_main_class">Kelas utama: %1$s</string>
+    <string name="gh_detail_source_roots">Akar sumber: %1$s</string>
+    <string name="gh_detail_test_roots">Akar sumber ujian: %1$s</string>
+    <string name="gh_detail_libs">Jar pada classpath: %1$s</string>
+    <string name="gh_detail_generated">Dijana: %1$s</string>
+    <string name="gh_detail_ready">Projek boleh dibina sebagaimana adanya — tiada apa yang dijana.</string>
+    <string name="gh_detail_unsupported">Tidak dibawa: %1$s</string>
+    <string name="gh_open">Buka</string>
+    <string name="gh_keep">Simpan, jangan buka</string>
+</resources>

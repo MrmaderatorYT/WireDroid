@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: Die Live-Analyse verwendet derzeit den Android-Klassenpfad. Daher können Standardklassen von Java SE fälschlich als nicht verfügbar gemeldet werden. Entscheidend ist das Build- oder Ausführungsergebnis.</string>
+</resources>

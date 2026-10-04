@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_javase_classpath_note">Java SE 21: аналіз у вкладці «Проблеми» поки використовує Android classpath, тому стандартні класи Java SE можуть помилково позначатися як недоступні. Орієнтуйтеся на результат збірки або запуску.</string>
+</resources>

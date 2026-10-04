@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Repository import: clone a URL, detect what it is, configure it.
+  Every key here is prefixed gh_ and belongs to that flow only.
+-->
+<resources>
+
+    <!-- Entry dialog -->
+    <string name="gh_import_title">Import Repository</string>
+    <string name="gh_import_message">Paste a repository link from GitHub, GitLab or Bitbucket. A link to a branch or a file works too — the branch is kept.</string>
+    <string name="gh_url_hint">Repository URL, or user/repo</string>
+    <string name="gh_name_hint">Project folder name (optional)</string>
+    <string name="gh_user_hint">Username (optional, for private repos)</string>
+    <string name="gh_token_hint">Token / password (optional)</string>
+    <string name="gh_import_button">Import</string>
+
+    <!-- URL problems -->
+    <string name="gh_url_required">Enter a repository URL</string>
+    <string name="gh_invalid_url_title">Not a repository URL</string>
+    <string name="gh_invalid_url_message">That does not look like a repository. Any of these work:\n\nhttps://github.com/user/repo\nhttps://github.com/user/repo.git\nhttps://github.com/user/repo/tree/dev\nhttps://github.com/user/repo/blob/main/src/Foo.java\ngit@github.com:user/repo.git\nuser/repo\n\nGitLab and Bitbucket URLs work the same way.</string>
+    <string name="gh_folder_exists">The folder \"%1$s\" already exists and is not empty. Choose another name.</string>
+
+    <!-- Progress -->
+    <string name="gh_progress_title">Importing %1$s</string>
+    <string name="gh_progress_preparing">Preparing…</string>
+    <string name="gh_progress_task">%1$s…</string>
+    <string name="gh_progress_configuring">Configuring project…</string>
+    <string name="gh_cancelled">Import cancelled</string>
+    <string name="gh_failed_title">Import failed</string>
+
+    <!-- Module picker -->
+    <string name="gh_modules_title">Choose a module</string>
+    <string name="gh_modules_message">This repository has %1$d modules. Pick the one to open.</string>
+    <string name="gh_module_root">Repository root</string>
+
+    <!-- What was detected -->
+    <string name="gh_detected_title">Project detected</string>
+    <string name="gh_detected_line">Detected: %1$s</string>
+    <string name="gh_kind_maven">Maven project (pom.xml)</string>
+    <string name="gh_kind_gradle">Gradle project (build.gradle)</string>
+    <string name="gh_kind_eclipse">Eclipse project (.project + .classpath)</string>
+    <string name="gh_kind_plain">Plain sources (no build system)</string>
+    <string name="gh_kind_unknown">Nothing recognisable — no build script and no sources</string>
+    <string name="gh_language_java">Java</string>
+    <string name="gh_language_kotlin">Kotlin</string>
+    <string name="gh_detail_language">Language: %1$s</string>
+    <string name="gh_detail_branch">Branch: %1$s</string>
+    <string name="gh_detail_modules">Modules: %1$d</string>
+    <string name="gh_detail_package">Package: %1$s</string>
+    <string name="gh_detail_main_class">Main class: %1$s</string>
+    <string name="gh_detail_source_roots">Source roots: %1$s</string>
+    <string name="gh_detail_test_roots">Test source roots: %1$s</string>
+    <string name="gh_detail_libs">Jars on the classpath: %1$s</string>
+    <string name="gh_detail_generated">Generated: %1$s</string>
+    <string name="gh_detail_ready">The project builds as it is — nothing was generated.</string>
+    <string name="gh_detail_unsupported">Not carried over: %1$s</string>
+    <string name="gh_open">Open</string>
+    <string name="gh_keep">Keep, don\'t open</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_delete_confirm">हटाएँ</string>
+    <string name="ai_history_delete_message">“%1$s” स्थायी रूप से हटा दी जाएगी।</string>
+    <string name="ai_history_delete_title">यह बातचीत हटाएँ?</string>
+    <string name="ai_history_empty">अभी कोई सहेजी गई बातचीत नहीं है। सहायक से कुछ पूछें, वह यहाँ दिखेगी।</string>
+    <string name="ai_history_meta">%1$d संदेश · %2$s</string>
+    <string name="ai_history_restored">सहेजी गई बातचीत बहाल हुई (%1$d संदेश)।</string>
+    <string name="ai_history_title">सहेजी गई बातचीतें</string>
+    <string name="ai_history_untitled">बिना शीर्षक बातचीत</string>
+    <string name="ai_new_chat">नई बातचीत</string>
+    <string name="ai_new_chat_started">नई बातचीत शुरू हुई। पिछली सहेज ली गई है।</string>
+    <string name="md_pane_preview_on">यहाँ रेंडर किया गया। एडिटर पर लौटने के लिए फिर से आँख दबाएँ।</string>
+</resources>

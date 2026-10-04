@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_java_se_bundled_note">ECJ JDK 21 üçün tərtib edir və .class fayllarını daxili JVM-də işə salır. İcra mühiti daxildir; ilk işəsalma yalnız təxminən 145 MB məlumatı daxili yaddaşa çıxarır.</string>
+    <string name="settings_ndk_bundled_desc">İstəyə bağlı C++ alət dəsti tələb olunduqda yüklənir: 344 MB yükləmə və quraşdırıldıqdan sonra təxminən 1,85 GB daxili yaddaş.</string>
+    <string name="settings_ndk_bundled_install">C++ NDK-nı yüklə (344 MB)</string>
+    <string name="settings_ndk_bundled_install_message">NDK r29 öz rəsmi buraxılışından yüklənir: şəbəkə üzərindən 344 MB və açıldıqdan sonra təxminən 1,85 GB daxili yaddaş. Kəsilmiş yükləmə dayandığı yerdən davam edir. Davam edilsin?</string>
+    <string name="settings_ndk_install_action">Yüklə</string>
+    <string name="ndk_bundled_no_space">NDK r29 üçün daxili yaddaşda ən azı %1$d MB boş yer olmalıdır.</string>
+    <string name="ndk_bundled_unsupported">C++ NDK Android 9 və ya daha yeni ARM64 cihaz tələb edir.</string>
+    <string name="cpp_module_cpp_bundled_option">C++ (NDK, tələb olunduqda yüklənir)</string>
+    <string name="np_native_ndk_bundled_note">Clang 21 ilə C və C++. NDK 344 MB yükləmədir və quraşdırıldıqdan sonra təxminən 1,85 GB tutur.</string>
+    <string name="ndk_warning_cpp_requires_bundled_ndk">Xəbərdarlıq: C++ mənbələri üçün NDK lazımdır. Onu Parametrlər → C++ NDK-nı yüklə bölməsindən quraşdırın. Ötürülür.</string>
+    <string name="native_compiling_sources">Native mənbələr tərtib edilir…</string>
+    <string name="ndk_downloading">NDK r29 yüklənir… %1$s / %2$s</string>
+    <string name="ndk_verifying">Yükləmə yoxlanılır…</string>
+    <string name="ndk_download_http">NDK yükləməsi HTTP %1$d qaytardı.</string>
+    <string name="ndk_download_incomplete">NDK yükləməsi vaxtından əvvəl bitdi. Davam etmək üçün yenidən cəhd edin.</string>
+    <string name="ndk_download_too_large">NDK yükləməsi gözləniləndən uzun oldu və dayandırıldı.</string>
+    <string name="ndk_download_checksum_failed">NDK yükləməsi bütövlük yoxlamasından keçmədi və silindi. Yenidən cəhd edin.</string>
+    <string name="ndk_download_restart">Yarımçıq NDK yükləməsi artıq buraxılışa uyğun gəlmir. Yenidən başlamaq üçün cəhd edin.</string>
+    <string name="settings_ndk_cancel">Yükləməni ləğv et</string>
+    <string name="settings_ndk_cancelled">NDK yükləməsi ləğv edildi. Yüklənmiş hissə saxlanıldı.</string>
+</resources>

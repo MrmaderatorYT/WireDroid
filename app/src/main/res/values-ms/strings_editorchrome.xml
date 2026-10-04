@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gutter_a11y_overlay">Penanda perubahan Git</string>
+    <string name="gutter_hunk_added">Ditambah pada baris %1$d</string>
+    <string name="gutter_hunk_modified">Diubah pada baris %1$d</string>
+    <string name="gutter_hunk_deleted">Dipadam sebelum baris %1$d</string>
+    <string name="gutter_hunk_no_original">Blok ini baharu sejak commit terakhir.</string>
+    <string name="gutter_revert_hunk">Kembalikan bahagian ini</string>
+    <string name="gutter_close">Tutup</string>
+    <string name="gutter_reverted">Bahagian dikembalikan</string>
+    <string name="gutter_revert_failed">Tidak dapat mengembalikan bahagian ini</string>
+    <string name="crumb_a11y_bar">Jejak laluan fail</string>
+    <string name="crumb_separator">›</string>
+    <string name="crumb_no_member">…</string>
+    <string name="crumb_empty">(folder kosong)</string>
+    <string name="crumb_no_members">(tiada kaedah atau medan ditemui)</string>
+    <string name="crumb_member_entry">%1$s — baris %2$d</string>
+</resources>

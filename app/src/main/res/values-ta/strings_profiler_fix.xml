@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profiler_complete">பகுப்பாய்வு முடிந்தது. முடிவுகள் Profile தாவலில் உள்ளன.</string>
+    <string name="profiler_failed">பகுப்பாய்வு முடியவில்லை — நிரல் இயங்கவில்லை.</string>
+    <string name="profiler_no_classes">பகுப்பாய்வு செய்ய எதுவும் இல்லை: தொகுப்பான் எந்த வகுப்பையும் உருவாக்கவில்லை.</string>
+</resources>

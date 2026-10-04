@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_insert_desc">Ipasok ang code na ito sa bukas na editor</string>
+    <string name="ai_insert_into_editor">↧ Ipasok sa editor</string>
+    <string name="ai_key_button">Key</string>
+    <string name="ai_key_check_title">Suriin ang key na ito</string>
+    <string name="ai_key_get">Kumuha ng key</string>
+    <string name="ai_key_needed_first">Idagdag muna ang iyong API key — pindutin ang “Key”.</string>
+    <string name="ai_key_not_set">Wala pang API key. Pindutin ang “Key” para idagdag ang iyong Gemini key mula sa aistudio.google.com</string>
+    <string name="ai_key_save_anyway">I-save pa rin</string>
+    <string name="ai_key_save_failed_message">Tinanggihan ito ng ligtas na imbakan ng device, kaya hindi naitago ang key. Sinasadyang hindi ito iniimbak nang walang enkripsiyon.</string>
+    <string name="ai_key_save_failed_title">Hindi na-save ang key</string>
+    <string name="ai_key_save_verify">I-save at i-verify</string>
+    <string name="ai_key_saved_checking">Na-save ang key. Sinusuri ito sa Google…</string>
+    <string name="ai_key_saved_unverified">Na-save ang key, pero hindi pumasa ang pagsusuri:
+%1$s</string>
+    <string name="ai_key_verified">Na-verify ang key. Modelo: %1$s</string>
+    <string name="ai_loaded_file">Na-load ang %1$s (%2$d na karakter). Magtanong ng kahit ano tungkol sa code na ito.</string>
+    <string name="ai_loaded_file_short">Na-load ang %1$s (%2$d na karakter).</string>
+    <string name="ai_model_changed">Pinalitan ang modelo ng %1$s</string>
+    <string name="ai_queued">Nakapila (%1$s) — bumalik sa editor para ilapat</string>
+    <string name="ai_ready">Handa na ang AI Assistant. Magtanong tungkol sa Java, paliwanag ng code, paghahanap ng bug, refactoring, optimisasyon o paggawa ng test.</string>
+</resources>

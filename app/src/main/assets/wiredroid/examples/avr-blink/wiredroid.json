@@ -1,0 +1,9 @@
+{
+  "boards": {
+    "uno": {
+      "profile": "arduino:avr:uno",
+      "coreVersion": "1.8.6",
+      "mode": "mcu"
+    }
+  }
+}

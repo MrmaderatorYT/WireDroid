@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Chiave</string>
+    <string name="ai_ready">Assistente IA pronto. Chiedi di Java, spiegazioni del codice, ricerca di bug, refactoring, ottimizzazione o test.</string>
+    <string name="ai_loaded_file">%1$s caricato (%2$d caratteri). Chiedi qualsiasi cosa su questo codice.</string>
+    <string name="ai_loaded_file_short">%1$s caricato (%2$d caratteri).</string>
+    <string name="ai_key_not_set">Nessuna chiave API. Tocca «Chiave» per aggiungere la tua chiave Gemini da aistudio.google.com</string>
+    <string name="ai_key_needed_first">Aggiungi prima la chiave API — tocca «Chiave».</string>
+    <string name="ai_model_changed">Modello cambiato in %1$s</string>
+    <string name="ai_key_saved_checking">Chiave salvata. Verifica presso Google…</string>
+    <string name="ai_key_verified">Chiave verificata. Modello: %1$s</string>
+    <string name="ai_key_saved_unverified">La chiave è stata salvata, ma la verifica non è riuscita:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Impossibile salvare la chiave</string>
+    <string name="ai_key_save_failed_message">L’archivio sicuro di questo dispositivo l’ha rifiutata, quindi la chiave non è stata conservata. Non viene deliberatamente salvata in chiaro.</string>
+    <string name="ai_key_check_title">Controlla questa chiave</string>
+    <string name="ai_key_save_anyway">Salva comunque</string>
+    <string name="ai_key_save_verify">Salva e verifica</string>
+    <string name="ai_key_get">Ottieni una chiave</string>
+    <string name="ai_insert_into_editor">↧ Inserisci nell’editor</string>
+    <string name="ai_insert_desc">Inserisci questo codice nell’editor aperto</string>
+    <string name="ai_queued">In coda (%1$s) — torna all’editor per applicarlo</string>
+</resources>

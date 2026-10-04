@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="np_runtime_label">Java இயக்க நேரம்</string>
+    <string name="np_runtime_art">ART</string>
+    <string name="np_runtime_java_se">Java SE 21</string>
+    <string name="np_runtime_art_note">Android API களை நேரடியாக அணுகும் வேகமான Android இயக்க நேரம்.</string>
+    <string name="np_runtime_java_se_note">ECJ, JDK 21 ஐ இலக்காகக் கொண்டு .class கோப்புகளை உள்ளிணைந்த JVM இல் இயக்குகிறது. முதல் முறை சுமார் 150 MB பதிவிறக்கி, சுமார் 145 MB சேமிக்கிறது.</string>
+    <string name="javase_runtime_downloading">Java SE 21 இயக்க நேரம் பதிவிறக்கப்படுகிறது… %1$d%%</string>
+    <string name="javase_runtime_verifying">Java SE 21 இயக்க நேரம் சரிபார்க்கப்படுகிறது…</string>
+    <string name="javase_runtime_installing">Java SE 21 இயக்க நேரம் நிறுவப்படுகிறது… %1$d%%</string>
+    <string name="javase_runtime_ready">Java SE 21 இயக்க நேரம் தயாராக உள்ளது</string>
+    <string name="javase_runtime_no_space">Java SE 21 நிறுவலுக்கு உள் சேமிப்பில் குறைந்தது %1$d MB இடம் தேவை.</string>
+    <string name="javase_runtime_checksum_failed">Java SE 21 பதிவிறக்கம் நேர்மைச் சோதனையில் தோல்வியடைந்தது.</string>
+    <string name="javase_runtime_invalid">நிறுவப்பட்ட Java SE 21 இயக்க நேரம் முழுமையடையவில்லை.</string>
+    <string name="javase_process_died">முடிவைத் தெரிவிக்கும் முன்பே Java SE செயல்முறை நின்றுவிட்டது.</string>
+    <string name="javase_compiling">JDK 21 க்காக ECJ ஆல் தொகுக்கப்படுகிறது…</string>
+    <string name="javase_running">உள்ளிணைந்த JVM இல் %1$s இயக்கப்படுகிறது…</string>
+    <string name="javase_no_sources">Java மூலக் கோப்புகள் எதுவும் இல்லை.</string>
+    <string name="problems_javase_classpath_note">Java SE 21: நேரடி ஆய்வு தற்போது Android classpath ஐப் பயன்படுத்துகிறது, எனவே நிலையான Java SE வகுப்புகள் கிடைக்கவில்லை எனத் தெரிவிக்கப்படலாம். உருவாக்கம் அல்லது இயக்க முடிவையே உண்மையாகக் கொள்ளவும்.</string>
+</resources>

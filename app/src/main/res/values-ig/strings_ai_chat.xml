@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_key_button">Igodo</string>
+    <string name="ai_ready">Onye enyemaka AI adịla njikere. Jụọ maka Java, nkọwa koodu, ịchọta njehie, ịhazigharị, imeziwanye ma ọ bụ ule.</string>
+    <string name="ai_loaded_file">Ebugoro %1$s (mkpụrụedemede %2$d). Jụọ ihe ọ bụla gbasara koodu a.</string>
+    <string name="ai_loaded_file_short">Ebugoro %1$s (mkpụrụedemede %2$d).</string>
+    <string name="ai_key_not_set">Enweghị igodo API ka ugbu a. Pịa “Igodo” iji tinye igodo Gemini gị site na aistudio.google.com</string>
+    <string name="ai_key_needed_first">Buru ụzọ tinye igodo API gị — pịa “Igodo”.</string>
+    <string name="ai_model_changed">Agbanwere ụdị gaa na %1$s</string>
+    <string name="ai_key_saved_checking">Echekwara igodo. A na-enyocha ya na Google…</string>
+    <string name="ai_key_verified">Enyochara igodo. Ụdị: %1$s</string>
+    <string name="ai_key_saved_unverified">Echekwara igodo, mana nyocha agafeghị:\n%1$s</string>
+    <string name="ai_key_save_failed_title">Enweghị ike ichekwa igodo</string>
+    <string name="ai_key_save_failed_message">Ebe nchekwa echedoro nke ngwaọrụ a jụrụ ya, ya mere echekwaghị igodo ahụ. A na-ezughị ezu ichekwa ya na-enweghị nzuzo.</string>
+    <string name="ai_key_check_title">Lelee igodo a</string>
+    <string name="ai_key_save_anyway">Chekwaa ya agbanyeghị</string>
+    <string name="ai_key_save_verify">Chekwaa ma nyochaa</string>
+    <string name="ai_key_get">Nweta igodo</string>
+    <string name="ai_insert_into_editor">↧ Tinye n’ime editọ</string>
+    <string name="ai_insert_desc">Tinye koodu a n’ime editọ mepere emepe</string>
+    <string name="ai_queued">Nọ n’usoro (%1$s) — laghachi n’editọ iji tinye ya</string>
+</resources>

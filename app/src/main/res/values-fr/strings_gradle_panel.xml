@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="build_panel_open">Outil de build</string>
+    <string name="gradle_branch_tasks">Tâches</string>
+    <string name="gradle_repos_none">Aucun dépôt déclaré dans build.gradle</string>
+    <string name="gradle_task_no_javadoc">L’application ne contient pas d’outil Javadoc, cette tâche ne peut donc pas s’exécuter sur l’appareil.</string>
+    <string name="gradle_task_no_publish">La publication vers un dépôt distant n’est pas prise en charge. Utilisez publishToMavenLocal.</string>
+</resources>

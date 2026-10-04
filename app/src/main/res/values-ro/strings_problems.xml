@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="problems_all_filtered">Tot ce s-a găsit este filtrat. Bifează o casetă de mai sus pentru a vedea.</string>
+    <string name="problems_analysis_failed">Acest fișier nu a putut fi analizat: %1$s</string>
+    <string name="problems_filter_errors">Erori %1$d</string>
+    <string name="problems_filter_info">Informații %1$d</string>
+    <string name="problems_filter_security">Securitate %1$d</string>
+    <string name="problems_filter_warnings">Avertismente %1$d</string>
+    <string name="problems_none">Nu s-au găsit probleme.</string>
+    <string name="problems_scope_current">Doar acest fișier</string>
+    <string name="problems_truncated">…și încă %1$d rezultate neafișate</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_menu_schema">Skema</string>
+    <string name="schema_title">Skema pangkalan data</string>
+    <string name="schema_loading">Membaca skema…</string>
+    <string name="schema_fit">Muat</string>
+    <string name="schema_no_connection">Sambung ke pangkalan data dahulu</string>
+    <string name="schema_empty">Pangkalan data ini tiada jadual</string>
+    <string name="schema_failed">Tidak dapat membaca skema: %1$s</string>
+    <string name="schema_omitted">%1$d lagi tidak dipaparkan</string>
+    <string name="schema_no_keys">Tiada kunci asing diisytiharkan, jadi jadual dilukis tanpa pautan.</string>
+    <plurals name="schema_tables">
+        <item quantity="other">%d jadual</item>
+    </plurals>
+    <plurals name="schema_links">
+        <item quantity="other">%d kunci asing</item>
+    </plurals>
+    <string name="semantic_title">Carian semantik</string>
+    <string name="semantic_hint">Di mana kita menulis ke pangkalan data?</string>
+    <string name="semantic_ready">Tanya tentang projek ini dengan perkataan anda sendiri.</string>
+    <string name="semantic_reading">Membaca projek…</string>
+    <string name="semantic_asking">Bertanya tentang %1$d fail…</string>
+    <string name="semantic_no_key">Tetapkan kunci API Gemini dalam tetapan untuk menggunakan carian semantik.</string>
+    <string name="semantic_no_project">Buka projek dahulu</string>
+    <string name="semantic_empty_project">Tiada sumber Java atau Kotlin ditemui di sini</string>
+    <string name="semantic_no_match">Tiada apa-apa dalam projek ini yang sepadan.</string>
+    <string name="semantic_failed">Carian gagal: %1$s</string>
+    <plurals name="semantic_found">
+        <item quantity="other">%d fail</item>
+    </plurals>
+    <string name="settings_inlay_hints">Petunjuk nama parameter</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_history_title">Збережені розмови</string>
+    <string name="ai_history_empty">Збережених розмов ще немає. Запитайте щось в асистента — і вона зʼявиться тут.</string>
+    <string name="ai_history_untitled">Розмова без назви</string>
+    <string name="ai_history_meta">%1$d повідомлень · %2$s</string>
+    <string name="ai_history_delete_title">Видалити цю розмову?</string>
+    <string name="ai_history_delete_message">«%1$s» буде видалено назавжди.</string>
+    <string name="ai_history_delete_confirm">Видалити</string>
+    <string name="ai_new_chat">Нова розмова</string>
+    <string name="ai_new_chat_started">Почато нову розмову. Попередню збережено.</string>
+    <string name="ai_history_restored">Відновлено збережену розмову (%1$d повідомлень).</string>
+    <string name="md_pane_preview_on">Показано тут. Натисніть око ще раз, щоб повернутись до редактора.</string>
+</resources>

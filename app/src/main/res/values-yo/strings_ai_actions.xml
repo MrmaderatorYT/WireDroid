@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ai_actions_title">Àwọn ìṣe kíákíá</string>
+    <string name="ai_action_explain">Ṣàlàyé</string>
+    <string name="ai_action_find_bugs">Wá àwọn àṣìṣe</string>
+    <string name="ai_action_refactor">Tún kọ́</string>
+    <string name="ai_action_optimize">Mú dára sí i</string>
+    <string name="ai_action_document">Ṣe àkọsílẹ̀</string>
+    <string name="ai_action_test">Kọ àwọn ìdánwò</string>
+    <string name="ai_action_agent">Ipò aṣojú</string>
+    <string name="ai_agent_on">Ipò aṣojú ti tan — olùrànlọ́wọ́ lè ṣàtúnṣe àwọn fáìlì</string>
+    <string name="ai_agent_off">Ipò aṣojú ti pa</string>
+    <string name="ai_need_file">Kọ́kọ́ ṣí fáìlì — àwọn ìṣe wọ̀nyí ń ṣiṣẹ́ lórí kóòdù tí o ń wò.</string>
+</resources>
